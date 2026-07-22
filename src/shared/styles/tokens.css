@@ -2,35 +2,49 @@
 
   /* Brand */
 
-  --color-primary: #344C3D;
-  --color-primary-light: #8EA58C;
-  --color-primary-dark: #233228;
+   --color-primary-50:  #f5f8f4;
+   --color-primary-100: #e8eee7;
+   --color-primary-200: #d2ddcf;
+   --color-primary-300: #b9c7b6;
+   --color-primary-400: #8ea58c;
+   --color-primary-500: #6d8263;   /* Brand */
+   --color-primary-600: #5d7154;
+   --color-primary-700: #4a5d47;
+   --color-primary-800: #354b3b;
+   --color-primary-900: #233228;
+
+   --color-neutral-0:   #ffffff;
+   --color-neutral-100: #f8f8f8;
+   --color-neutral-200: #e5e5e5;
+   --color-neutral-400: #9ca3af;
+   --color-neutral-700: #4b5563;
+   --color-neutral-900: #282828;
 
   /* Backgrounds */
 
-    --color-background: #BFCFBB;
-    --color-surface: #ffffff;
-    --color-surface-light: #f8faf8;
-    --color-surface-dark: #e5ece4;
+   --color-background: var(--color-neutral-0);
+   --color-surface: var(--color-neutral-100);
+   --color-surface-light: var(--color-primary-100);
+   --color-surface-dark:   var(--color-primary-800);
 
   /* Text */
 
-  --color-text-heading: #344C3D;
-  --color-text-body: #282828;
-  --color-text-inverse: #ffffff;
-  --color-text-placeholder: #808080;
+   --color-text-heading:   var(--color-primary-900);
+   --color-text-body:      var(--color-neutral-900);
+   --color-text-inverse:   var(--color-neutral-100);
+   --color-text-placeholder:var(--color-neutral-400);
 
   /* Borders */
 
   /* Border Colors */
-  --color-border: #344C3D;
-  --color-border-light: #8EA58C;
-  --color-border-dark: #233228;
+   --color-border:         var(--color-primary-500);
+   --color-border-light:   var(--color-primary-300);
+   --color-border-dark:    var(--color-primary-800);
 
   /* Border Widths */
   --border-width-thin:1px;
   --border-width-medium:2px;
-  --border-width-thick:4px;
+  --border-width-thick:3px;
 
   /*Opacity*/
     --opacity-disabled:0.5;
@@ -40,10 +54,10 @@
 
   /* Status */
 
-  --color-success: #0a5425;
-  --color-warning: #a37d3c;
-  --color-danger: #dc2626;
-  --color-info: #2563eb;
+   --color-success: #2e7d32;
+   --color-warning: #d89a29;
+   --color-danger:  #dc2626;
+   --color-info:    #2563eb;
 
   /* Typography */
 
@@ -87,14 +101,14 @@
 
 /* Spacing */
 
-    --spacing-xs:4px;
-    --spacing-sm:8px;
-    --spacing-md:16px;
-    --spacing-lg:24px;
-    --spacing-xl:32px;
-    --spacing-2xl:40px;
-    --spacing-3xl:48px;
-    --spacing-4xl:64px;
+   --spacing-xs: 0.25rem;   /* 4px */
+   --spacing-sm: 0.5rem;    /* 8px */
+   --spacing-md: 1rem;      /* 16px */
+   --spacing-lg: 1.5rem;    /* 24px */
+   --spacing-xl: 2rem;      /* 32px */
+   --spacing-2xl: 2.5rem;   /* 40px */
+   --spacing-3xl: 3rem;     /* 48px */
+   --spacing-4xl: 4rem;     /* 64px */
 
  /* Shadows */
 
