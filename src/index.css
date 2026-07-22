@@ -2,6 +2,6 @@
 @import "tailwindcss";
 
 /* Design system */
-@import "./styles/tokens.css";
-@import "./styles/globals.css";
-@import "./styles/reset.css";
+@import "./shared/styles/tokens.css";
+@import "./shared/styles/globals.css";
+@import "./shared/styles/reset.css";
