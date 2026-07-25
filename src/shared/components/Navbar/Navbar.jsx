@@ -1,6 +1,6 @@
 import { NavLink } from "react-router-dom";
 import styles from "./Navbar.module.css";
-import { navLinks } from "./navbar.js";
+import { navLinks } from "../../data/navbar.js";
 import Container from "../Container/Container";
 import { Button } from "../Button/Button";
 import logo from "../../../assets/logo-without-name-500x500.svg";

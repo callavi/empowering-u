@@ -1,0 +1,35 @@
+.footerHeading {
+    color: var(--color-neutral-700);
+    font-size: var(--text-lg);
+    font-weight: var(--font-weight-semibold);
+}
+
+.logo {
+    font-size: var(--text-2xl);
+    font-weight: var(--font-weight-normal);
+    color: var(--color-primary-500);
+    text-decoration: none;
+}
+
+.infoText {
+    color: var(--color-neutral-500);
+    font-size: var(--text-base);
+    font-weight: var(--font-weight-normal);
+}
+
+.link {
+    text-decoration: none;
+    color: var(--color-neutral-500);
+    transition:
+        color var(--transition-fast)
+        var(--ease-standard);
+}
+
+.link:hover {
+    color: var(--color-primary-700);
+}
+
+.icon {
+    color: var(--color-primary-700);
+    flex-shrink: 0;
+}
