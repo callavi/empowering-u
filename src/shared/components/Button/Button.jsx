@@ -20,10 +20,12 @@ export function Button({
   size = SIZES[1],
   className,
   children,
+  type = "button",
   ...props
 }) {
   return (
     <button
+      type = {type}
       className={clsx(
         styles.base,
         styles[variant],

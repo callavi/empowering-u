@@ -7,6 +7,11 @@ import "./shared/styles/tokens.css";
 import "./shared/styles/globals.css";
 import "./index.css";
 
+import "@fontsource/montserrat/400.css";
+import "@fontsource/montserrat/500.css";
+import "@fontsource/montserrat/600.css";
+import "@fontsource/montserrat/700.css";
+
 import App from "./app/App";
 
 createRoot(document.getElementById("root")).render(
