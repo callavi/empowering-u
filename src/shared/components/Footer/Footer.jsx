@@ -68,10 +68,11 @@ export default function Footer() {
         </div>  
         </div>
       </div>
-        <div className="flex justify-center mt-12 border-t border-gray-200 pt-6">
+        <div className="flex justify-between mt-12 border-t border-gray-200 pt-6">
             <p className={styles.infoText}>
                 © 2026 Empowering U. All rights reserved.
             </p>
+            <a href="https://storyset.com/marketing">Marketing illustrations by Storyset</a>
         </div>
       </Container>
     </footer>

@@ -21,6 +21,8 @@ export function Button({
   className,
   children,
   type = "button",
+  startIcon,
+  endIcon,
   ...props
 }) {
   return (
@@ -34,7 +36,9 @@ export function Button({
       )}
       {...props}
     >
-      {children}
+      {startIcon}
+      <span>{children}</span>
+      {endIcon}
     </button>
   );
 }

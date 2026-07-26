@@ -1,0 +1,77 @@
+@keyframes ZoomIn {
+  from {
+    transform: scale(1);
+  }
+
+  to {
+    transform: scale(1.04);
+  }
+}
+
+@keyframes ShiftLeft {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-24px);
+  }
+}
+
+@keyframes SlideUp {
+  from {
+    transform: translateY(0);
+  }
+
+  to {
+    transform: translateY(-20px);
+  }
+}
+
+@keyframes Float {
+  0%,100% {
+    transform: translateY(-20px);
+  }
+
+  50% {
+    transform: translateY(-26px);
+  }
+}
+
+#background,
+#rocket,
+#clouds,
+#growbusinessbackground,
+#Arrows,
+#Character {
+  transform-origin: center;
+}
+
+
+.pathway-card:hover #rocket {
+  animation:
+    SlideUp 500ms ease-out forwards,
+    Float 2.2s ease-in-out 500ms infinite;
+}
+
+.pathway-card:hover #background {
+  animation: ZoomIn 800ms ease forwards;
+}
+
+.pathway-card:hover #clouds {
+  animation: ShiftLeft 4s linear forwards;
+}
+
+.pathway-card:hover #growbusinessbackground {
+    animation: ZoomIn 800ms ease forwards;
+}
+
+.pathway-card:hover #Arrows {
+    animation:
+    SlideUp 500ms ease-out forwards,
+    Float 2.2s ease-in-out 500ms infinite;
+}
+
+.pathway-card:hover #Character {
+    animation: SlideUp 500ms ease-out forwards;
+}
