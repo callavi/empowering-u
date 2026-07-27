@@ -1,0 +1,49 @@
+.article {
+    background: var(--color-neutral-50);
+    box-shadow: var(--shadow-md);
+    border-radius: var(--radius-xl);
+    transition:
+        transform var(--duration-medium) var(--ease-standard),
+        box-shadow var(--duration-medium) var(--ease-standard),
+        border-color var(--duration-medium) var(--ease-standard),
+        background-color var(--duration-medium) var(--ease-standard);
+    border: 1px solid transparent;
+}
+
+.article:hover {
+    transform: translateY(-6px);
+    box-shadow: var(--shadow-xl);
+    border-color: var(--color-primary-200);
+}
+
+.article:hover .button {
+    color: blue;
+    transform: translateX(4px);
+}
+
+.icon {
+    color: var(--color-primary-600);
+}
+
+.iconWrapper {
+    border-radius: var(--radius-4xl);
+    background-color: var(--color-primary-50);
+}
+
+.article:hover .icon {
+    color: var(--color-primary-200);
+}
+
+.article:hover .iconWrapper {
+    background-color: var(--color-primary-700);
+}
+
+.cardheading {
+    font-size: var(--text-xl);
+    font-weight: var(--font-weight-semibold);
+    line-height: var(--line-height-tight);
+}
+
+.carddescription {
+    color: var(--color-neutral-700);
+}

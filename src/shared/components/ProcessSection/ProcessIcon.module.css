@@ -1,0 +1,37 @@
+.icon {
+  width: 140px;
+  height: auto;
+  margin-bottom: 1rem;
+}
+
+.lucideIcon {
+    color: var(--color-primary-700);
+}
+
+.iconWrapper {
+    border-radius: var(--radius-4xl);
+    background-color: var(--color-primary-100);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 64px;
+    height: 64px;
+}
+
+.number {
+    width: 3rem;
+    height: 3rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: var(--radius-full);
+
+    background: var(--color-primary-100);
+    color: var(--color-primary-700);
+
+    font-weight: 700;
+    font-size: 1.125rem;
+}
+

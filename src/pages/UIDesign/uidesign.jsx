@@ -1,7 +1,13 @@
 import { Button } from "../../shared/components/Button/Button";
 import { PathwayCard } from "../../shared/components/Cards/PathwayCard/PathwayCard";
+import { ServiceCard } from "../../shared/components/Cards/ServiceCard/ServiceCard";
 import Container from "../../shared/components/Container/Container";
-import { pathway } from "../../shared/data/pathway";
+import ProcessSection from "../../shared/components/ProcessSection/ProcessSection";
+import { pathways } from "../../shared/data/pathway";
+import { services } from "../../shared/data/serviceinfo";
+import { businessProcess } from "../../shared/data/businessprocess";
+import { GSTRegistration } from "../../shared/data/GSTprocess";
+import { startYourBusiness } from "../../shared/data/startyourbusinessprocess";
 
 export default function UIDesign() {
   return (
@@ -30,6 +36,9 @@ export default function UIDesign() {
           <h2 className="mb-6 text-2xl font-semibold">
             Color Palette
           </h2>
+          <div className= "mb-5 flex h-14 w-14 items-center justify-center rounded-4xl">
+            <h3>#6d3</h3>
+          </div>
         </section>
 
         {/* Buttons */}
@@ -83,21 +92,42 @@ export default function UIDesign() {
         </section>
 
         {/* Cards */}
-        <section>
+        <section className="flex flex-col justify-between mb-4">
           <h2 className="mb-6 text-2xl font-semibold">
             Cards
           </h2>
 
-          <div className="grid gap-12 md:grid-cols-2">
-            {pathway.map((item) => (
+          <div className="grid gap-12 md:grid-cols-2 mb-4">
+            {pathways.map((item) => (
               <PathwayCard
                 key={item.path}
                 pathway={item}
               />
             ))}
           </div>
-        </section>
 
+          <div className="grid gap-8 md:grid-cols-2 xl:grid-cols-4 mb-4">
+            {services.map((item) => (
+              <ServiceCard
+                key={item.path}
+                service={item}
+              />
+            ))}
+          </div>
+
+        </section>
+        <section className="flex flex-col justify-between text-center mb-4">
+          <h3 className="mb-6 text-2xl font-semibold">Business Process</h3>
+          <ProcessSection businessProcess={businessProcess} heading="Simple process. Zero hassle."/>
+        </section>
+        <section className="flex flex-col justify-between text-center mb-4">
+          <h3 className="mb-6 text-2xl font-semibold">Service Process</h3>
+          <ProcessSection businessProcess={GSTRegistration} heading="Process"/>
+        </section>
+        <section className="flex flex-col justify-between text-center mb-4">
+          <h3 className="mb-6 text-2xl font-semibold">Campaign Process</h3>
+          <ProcessSection businessProcess={startYourBusiness} heading="Our Simple 4-Step Process"/>
+        </section>
       </Container>
     </main>
   );

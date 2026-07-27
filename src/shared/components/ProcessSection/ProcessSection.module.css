@@ -1,0 +1,19 @@
+.steps {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+
+}
+
+.sectionheading {
+    color: var(--color-primary-900);
+    font-size: var(--text-2xl);
+    font-weight: var(--font-weight-semibold);
+}
+
+.connector {
+    opacity: 0.6;
+    color: var(--color-neutral-50);
+}
+

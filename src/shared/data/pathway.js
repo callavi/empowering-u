@@ -1,7 +1,7 @@
 import StartBusiness from "../Illustration/StartBusiness";
 import GrowBusiness from "../Illustration/GrowBusiness";
 
-export const pathway = [
+export const pathways = [
   {
     id: "StartBusiness",
     name: "I want to start a business",
