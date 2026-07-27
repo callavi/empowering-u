@@ -8,6 +8,7 @@ import { services } from "../../shared/data/serviceinfo";
 import { businessProcess } from "../../shared/data/businessprocess";
 import { GSTRegistration } from "../../shared/data/GSTprocess";
 import { startYourBusiness } from "../../shared/data/startyourbusinessprocess";
+import { TrustBar } from "../../shared/components/TrustBar/TrustBar";
 
 export default function UIDesign() {
   return (
@@ -116,6 +117,11 @@ export default function UIDesign() {
           </div>
 
         </section>
+        {/* Process Section */}
+        <section className="flex flex-col justify-between mb-4">
+          <h2 className="mb-6 text-2xl font-semibold">
+            Process Sections
+          </h2>
         <section className="flex flex-col justify-between text-center mb-4">
           <h3 className="mb-6 text-2xl font-semibold">Business Process</h3>
           <ProcessSection businessProcess={businessProcess} heading="Simple process. Zero hassle."/>
@@ -127,6 +133,14 @@ export default function UIDesign() {
         <section className="flex flex-col justify-between text-center mb-4">
           <h3 className="mb-6 text-2xl font-semibold">Campaign Process</h3>
           <ProcessSection businessProcess={startYourBusiness} heading="Our Simple 4-Step Process"/>
+        </section>
+        </section>
+        {/* Trust Bar */}
+        <section className="flex flex-col justify-between mb-4">
+          <h2 className="mb-6 text-2xl font-semibold">
+            Trust Bar
+          </h2>
+          <TrustBar />
         </section>
       </Container>
     </main>
