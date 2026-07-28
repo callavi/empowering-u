@@ -20,6 +20,10 @@
    --color-neutral-700: #4b5563;
    --color-neutral-900: #282828;
 
+   --color-accent: #C58A1C;
+   --color-accent-dark:#A87317;
+   --color-accent-light: #F5E8C4;
+
   /* Backgrounds */
 
    --color-background: var(--color-neutral-0);
@@ -75,6 +79,7 @@
     --text-xl: 1.25rem;
     --text-2xl: 1.5rem;
     --text-3xl: 2rem;
+    --text-4xl: 2.5rem;
 
     /*Line Heights*/
     --line-height-tight:1.2;

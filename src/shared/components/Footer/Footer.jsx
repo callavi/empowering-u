@@ -72,7 +72,8 @@ export default function Footer() {
             <p className={styles.infoText}>
                 © 2026 Empowering U. All rights reserved.
             </p>
-            <a href="https://storyset.com/marketing">Marketing illustrations by Storyset</a>
+            <a href="https://storyset.com/marketing" className={styles.infoText}>Marketing illustrations by Storyset</a>
+            <p className={styles.infoText}>Thanks to SVGR by Greg Bergé</p>
         </div>
       </Container>
     </footer>

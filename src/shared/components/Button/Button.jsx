@@ -3,6 +3,8 @@ import styles from "./Button.module.css";
 
 const VARIANTS = [
   "primary",
+  "primaryInverse",
+  "accent",
   "secondary",
   "outline",
   "text",
@@ -36,9 +38,19 @@ export function Button({
       )}
       {...props}
     >
-      {startIcon}
+    {startIcon && (
+        <span className={styles.startIcon}>
+          {startIcon}
+        </span>
+      )}
+
       <span>{children}</span>
-      {endIcon}
+
+      {endIcon && (
+        <span className={styles.endIcon}>
+          {endIcon}
+        </span>
+      )}
     </button>
   );
 }

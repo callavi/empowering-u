@@ -1,0 +1,89 @@
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+
+  padding: 0.5rem 1rem;
+
+  border-radius: var(--radius-full);
+
+  color: var(--color-text-body);
+  font-size: var(--text-sm);
+  font-weight: var(--font-weight-semibold);
+
+  background: rgb(255 255 255 / 0.18);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+
+  border: var(--border-width-thin) solid rgb(255 255 255 / 0.25);
+
+  box-shadow:
+    var(--shadow-md),
+    inset 0 1px 0 rgb(255 255 255 / 0.3);
+}
+
+.heading {
+    font-size: var(--text-4xl);
+    font-weight: var(--font-weight-bold);
+    line-height: var(--line-height-relaxed);
+}
+
+.subheading {
+    font-size: var(--text-base);
+    font-weight: var(--font-weight-medium);
+    line-height: var(--line-height-relaxed);
+}
+
+.hero {
+  position: relative;
+  overflow: hidden;
+  background: #fff;
+}
+
+.heroContent {
+    position: relative;
+    z-index: 2;
+}
+
+.hero::before {
+  content: "";
+
+  position: absolute;
+  inset: 0;
+
+  background:
+    radial-gradient(
+      circle at 28% 35%,
+      rgba(92, 135, 91, 0.08),
+      transparent 40%
+    ),
+    radial-gradient(
+      circle at 80% 25%,
+      rgb(245 158 11 / 0.07),
+      transparent 45%
+    );
+
+  pointer-events: none;
+}
+
+.hero::after {
+  content: "";
+
+  position: absolute;
+  inset: 0;
+
+  background:
+    linear-gradient(
+      120deg,
+      transparent,
+      rgb(37 99 235 / 0.03),
+      transparent
+    );
+
+  pointer-events: none;
+}
+
+.media {
+    position: relative;
+    z-index: 2;
+}

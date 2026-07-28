@@ -9,6 +9,10 @@ import { businessProcess } from "../../shared/data/businessprocess";
 import { GSTRegistration } from "../../shared/data/GSTprocess";
 import { startYourBusiness } from "../../shared/data/startyourbusinessprocess";
 import { TrustBar } from "../../shared/components/TrustBar/TrustBar";
+import { ctas } from "../../shared/data/ctaConfig";
+import { CTA } from "../../shared/components/CTA/cta";
+import { Heroes } from "../../shared/data/heroConfig";
+import { Hero } from "../../shared/components/Hero/hero";
 
 export default function UIDesign() {
   return (
@@ -18,6 +22,10 @@ export default function UIDesign() {
         <h1 className="mb-12 text-4xl font-bold">
           Design System
         </h1>
+
+        <section className="mb-16">
+          <Hero hero={Heroes.homepage} />
+        </section>
 
         {/* Typography */}
         <section className="mb-16">
@@ -50,6 +58,8 @@ export default function UIDesign() {
 
           <div className="flex flex-wrap gap-4">
             <Button variant="primary">Primary</Button>
+            <Button variant="primaryInverse">Primary Inverse</Button>
+            <Button variant="accent">Accent</Button>
             <Button variant="secondary">Secondary</Button>
             <Button variant="outline">Outline</Button>
             <Button variant="text">Text</Button>
@@ -141,6 +151,12 @@ export default function UIDesign() {
             Trust Bar
           </h2>
           <TrustBar />
+        </section>
+        <section className="flex flex-col justify-between mb-4">
+          <h2 className="mb-6 text-2xl font-semibold">
+            CTAs
+          </h2>
+          <CTA info={ctas.consultation} />
         </section>
       </Container>
     </main>

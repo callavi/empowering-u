@@ -1,0 +1,1899 @@
+import "../illustrationAnimations.css";
+
+const HomeIllustration = (props) => (
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 750 500" {...props}>
+    <g id="freepik--background-simple--inject-178">
+      <path
+        d="M649.92 229.15S591 118.75 501.81 76.43s-196.88-33.11-249.32 13.8-38.64 79.12-121.43 162.84-67.16 193.19 69 210.67 138-16.56 252.08-9.2S660 471.1 683 405.78s-33.08-176.63-33.08-176.63"
+        style={{
+          fill: "#6d8263",
+        }}
+      />
+      <path
+        d="M649.92 229.15S591 118.75 501.81 76.43s-196.88-33.11-249.32 13.8-38.64 79.12-121.43 162.84-67.16 193.19 69 210.67 138-16.56 252.08-9.2S660 471.1 683 405.78s-33.08-176.63-33.08-176.63"
+        style={{
+          fill: "#fff",
+          opacity: 0.7000000000000001,
+        }}
+      />
+    </g>
+    <g
+      id="freepik--Calendar--inject-178"
+      style={{
+        opacity: 0.30000000000000004,
+      }}
+    >
+      <path
+        d="M601.88 270.2h80.94v74.26h-80.94z"
+        style={{
+          fill: "none",
+          stroke: "#000",
+          strokeLinecap: "round",
+          strokeLinejoin: "round",
+        }}
+      />
+      <path
+        d="M607.58 300.45h7.54v7.54h-7.54z"
+        style={{
+          fill: "none",
+          stroke: "#000",
+          strokeLinecap: "round",
+          strokeLinejoin: "round",
+        }}
+      />
+      <path
+        d="M617.91 300.45h7.54v7.54h-7.54z"
+        style={{
+          fill: "none",
+          stroke: "#000",
+          strokeLinecap: "round",
+          strokeLinejoin: "round",
+        }}
+      />
+      <path
+        d="M628.25 300.45h7.54v7.54h-7.54z"
+        style={{
+          fill: "none",
+          stroke: "#000",
+          strokeLinecap: "round",
+          strokeLinejoin: "round",
+        }}
+      />
+      <path
+        d="M638.58 300.45h7.54v7.54h-7.54z"
+        style={{
+          fill: "none",
+          stroke: "#000",
+          strokeLinecap: "round",
+          strokeLinejoin: "round",
+        }}
+      />
+      <path
+        d="M648.91 300.45h7.54v7.54h-7.54z"
+        style={{
+          fill: "none",
+          stroke: "#000",
+          strokeLinecap: "round",
+          strokeLinejoin: "round",
+        }}
+      />
+      <path
+        d="M659.25 300.45h7.54v7.54h-7.54z"
+        style={{
+          fill: "none",
+          stroke: "#000",
+          strokeLinecap: "round",
+          strokeLinejoin: "round",
+        }}
+      />
+      <path
+        d="M669.58 300.45h7.54v7.54h-7.54z"
+        style={{
+          fill: "none",
+          stroke: "#000",
+          strokeLinecap: "round",
+          strokeLinejoin: "round",
+        }}
+      />
+      <path
+        d="M607.58 313h7.54v7.54h-7.54z"
+        style={{
+          fill: "none",
+          stroke: "#000",
+          strokeLinecap: "round",
+          strokeLinejoin: "round",
+        }}
+      />
+      <path
+        d="M617.91 313h7.54v7.54h-7.54z"
+        style={{
+          fill: "none",
+          stroke: "#000",
+          strokeLinecap: "round",
+          strokeLinejoin: "round",
+        }}
+      />
+      <path
+        d="M628.25 313h7.54v7.54h-7.54z"
+        style={{
+          fill: "none",
+          stroke: "#000",
+          strokeLinecap: "round",
+          strokeLinejoin: "round",
+        }}
+      />
+      <path
+        d="M638.58 313h7.54v7.54h-7.54z"
+        style={{
+          fill: "none",
+          stroke: "#000",
+          strokeLinecap: "round",
+          strokeLinejoin: "round",
+        }}
+      />
+      <path
+        d="M648.91 313h7.54v7.54h-7.54z"
+        style={{
+          fill: "none",
+          stroke: "#000",
+          strokeLinecap: "round",
+          strokeLinejoin: "round",
+        }}
+      />
+      <path
+        d="M659.25 313h7.54v7.54h-7.54z"
+        style={{
+          fill: "none",
+          stroke: "#000",
+          strokeLinecap: "round",
+          strokeLinejoin: "round",
+        }}
+      />
+      <path
+        d="M669.58 313h7.54v7.54h-7.54z"
+        style={{
+          fill: "none",
+          stroke: "#000",
+          strokeLinecap: "round",
+          strokeLinejoin: "round",
+        }}
+      />
+      <path
+        d="M607.58 325.54h7.54v7.54h-7.54z"
+        style={{
+          fill: "none",
+          stroke: "#000",
+          strokeLinecap: "round",
+          strokeLinejoin: "round",
+        }}
+      />
+      <path
+        d="M617.91 325.54h7.54v7.54h-7.54z"
+        style={{
+          fill: "none",
+          stroke: "#000",
+          strokeLinecap: "round",
+          strokeLinejoin: "round",
+        }}
+      />
+      <path
+        d="M628.25 325.54h7.54v7.54h-7.54z"
+        style={{
+          fill: "none",
+          stroke: "#000",
+          strokeLinecap: "round",
+          strokeLinejoin: "round",
+        }}
+      />
+      <path
+        d="M638.58 325.54h7.54v7.54h-7.54z"
+        style={{
+          fill: "none",
+          stroke: "#000",
+          strokeLinecap: "round",
+          strokeLinejoin: "round",
+        }}
+      />
+      <path
+        d="M648.91 325.54h7.54v7.54h-7.54z"
+        style={{
+          fill: "none",
+          stroke: "#000",
+          strokeLinecap: "round",
+          strokeLinejoin: "round",
+        }}
+      />
+      <path
+        d="M659.25 325.54h7.54v7.54h-7.54z"
+        style={{
+          fill: "none",
+          stroke: "#000",
+          strokeLinecap: "round",
+          strokeLinejoin: "round",
+        }}
+      />
+      <path
+        d="M669.58 325.54h7.54v7.54h-7.54z"
+        style={{
+          fill: "none",
+          stroke: "#000",
+          strokeLinecap: "round",
+          strokeLinejoin: "round",
+        }}
+      />
+      <path d="M615.75 260.9h4.94v12.92h-4.94z" />
+      <path d="M639.88 260.9h4.94v12.92h-4.94z" />
+      <path d="M664.01 260.9h4.94v12.92h-4.94z" />
+      <path
+        d="M608.51 282.56h69.16v12.54h-69.16z"
+        style={{
+          fill: "none",
+          stroke: "#000",
+          strokeLinecap: "round",
+          strokeLinejoin: "round",
+        }}
+      />
+    </g>
+    <g
+      id="freepik--Clock--inject-178"
+      style={{
+        opacity: 0.30000000000000004,
+      }}
+    >
+      <circle
+        cx={563.68}
+        cy={119.75}
+        r={41.39}
+        style={{
+          fill: "none",
+          stroke: "#000",
+          strokeLinecap: "round",
+          strokeLinejoin: "round",
+        }}
+        transform="rotate(-45 563.672 119.75)"
+      />
+      <circle
+        cx={563.68}
+        cy={119.75}
+        r={35.11}
+        style={{
+          fill: "none",
+          stroke: "#000",
+          strokeLinecap: "round",
+          strokeLinejoin: "round",
+        }}
+        transform="rotate(-45 563.672 119.75)"
+      />
+      <path
+        d="M567.06 119.75a3.39 3.39 0 1 1-3.38-3.39 3.38 3.38 0 0 1 3.38 3.39"
+        style={{
+          fill: "none",
+          stroke: "#000",
+          strokeLinecap: "round",
+          strokeLinejoin: "round",
+        }}
+      />
+      <path
+        d="m561.13 122.4-10.63 9.19"
+        style={{
+          fill: "none",
+          stroke: "#000",
+          strokeLinecap: "round",
+          strokeLinejoin: "round",
+        }}
+      />
+      <path
+        d="M567.06 119.75h27.38"
+        style={{
+          fill: "none",
+          stroke: "#000",
+          strokeLinecap: "round",
+          strokeLinejoin: "round",
+        }}
+      />
+    </g>
+    <g
+      id="freepik--Picture--inject-178"
+      style={{
+        opacity: 0.30000000000000004,
+      }}
+    >
+      <path
+        d="M254.53 391.57h-114V61h114ZM373.16 61h-114v330.57h114Zm118.64 0h-114v330.57h114Z"
+        style={{
+          fill: "none",
+          stroke: "#000",
+          strokeLinecap: "round",
+          strokeLinejoin: "round",
+        }}
+      />
+      <path
+        d="M140.49 149.27c4 1 13.81-4.22 33.66-50.53A208 208 0 0 1 194.73 61"
+        style={{
+          fill: "none",
+          stroke: "#000",
+          strokeLinecap: "round",
+          strokeLinejoin: "round",
+        }}
+      />
+      <path
+        d="M377.76 247.76c6.73 8.52 14.08 18.74 22.14 31.27a506.3 506.3 0 0 1 54.24 112.54"
+        style={{
+          fill: "none",
+          stroke: "#000",
+          strokeLinecap: "round",
+          strokeLinejoin: "round",
+        }}
+      />
+      <path
+        d="M306.15 61c-4.93 19.68-7.55 47.21-.31 81.6 12.91 61.37 30.09 54.59 67.33 99.46"
+        style={{
+          fill: "none",
+          stroke: "#000",
+          strokeLinecap: "round",
+          strokeLinejoin: "round",
+        }}
+      />
+      <path
+        d="M140.48 277.79c7-11 14.1-26 20.34-46.58 23.51-77.6 80-109.74 80-37.62s-35.13 110.08-36.06 159.9a105.1 105.1 0 0 0 5.94 38.08"
+        style={{
+          fill: "none",
+          stroke: "#000",
+          strokeLinecap: "round",
+          strokeLinejoin: "round",
+        }}
+      />
+      <path
+        d="M325.3 391.57c-11.72-53.28-14.52-109.75.92-114.9 16.13-5.37 31.89 68.18 40.2 114.9"
+        style={{
+          fill: "none",
+          stroke: "#000",
+          strokeLinecap: "round",
+          strokeLinejoin: "round",
+        }}
+      />
+      <path
+        d="M435.17 61c-25.62 52.88-67.92 148.31-40.76 150.58 21.64 1.8 64.55-47 97.39-89.16"
+        style={{
+          fill: "none",
+          stroke: "#000",
+          strokeLinecap: "round",
+          strokeLinejoin: "round",
+        }}
+      />
+      <circle
+        cx={340.32}
+        cy={103.44}
+        r={24.3}
+        style={{
+          fill: "none",
+          stroke: "#000",
+          strokeLinecap: "round",
+          strokeLinejoin: "round",
+        }}
+        transform="rotate(-76.86 340.31 103.446)"
+      />
+      <path
+        d="M450.06 152.82a5.49 5.49 0 1 1-5.49-5.48 5.49 5.49 0 0 1 5.49 5.48"
+        style={{
+          fill: "none",
+          stroke: "#000",
+          strokeLinecap: "round",
+          strokeLinejoin: "round",
+        }}
+      />
+      <circle
+        cx={178.46}
+        cy={289.6}
+        r={9.01}
+        style={{
+          fill: "none",
+          stroke: "#000",
+          strokeLinecap: "round",
+          strokeLinejoin: "round",
+        }}
+      />
+      <circle
+        cx={206.68}
+        cy={89.73}
+        r={5.88}
+        style={{
+          fill: "none",
+          stroke: "#000",
+          strokeLinecap: "round",
+          strokeLinejoin: "round",
+        }}
+      />
+      <circle
+        cx={286.24}
+        cy={223.37}
+        r={9.41}
+        style={{
+          fill: "none",
+          stroke: "#000",
+          strokeLinecap: "round",
+          strokeLinejoin: "round",
+        }}
+        transform="rotate(-22.64 286.2 223.344)"
+      />
+      <circle
+        cx={448.89}
+        cy={284.9}
+        r={21.56}
+        style={{
+          fill: "none",
+          stroke: "#000",
+          strokeLinecap: "round",
+          strokeLinejoin: "round",
+        }}
+      />
+    </g>
+    <g id="freepik--speech-bubble-2--inject-178">
+      <path
+        d="M534.4 188.63h52.94A11.64 11.64 0 0 1 599 200.27v40.17a11.64 11.64 0 0 1-11.64 11.64h-43.77l-20 17.48L533.2 252a11.63 11.63 0 0 1-10.44-11.57v-40.16a11.64 11.64 0 0 1 11.64-11.64"
+        style={{
+          fill: "#fff",
+          stroke: "#263238",
+          strokeLinecap: "round",
+          strokeLinejoin: "round",
+        }}
+      />
+      <path
+        d="M554.25 231v-7.82a37.3 37.3 0 0 0 5.07-4.88 22.6 22.6 0 0 0 3.58-5.59 15.3 15.3 0 0 0 1.31-6.26 5.66 5.66 0 0 0-1-3.57 3.39 3.39 0 0 0-2.84-1.19 3.53 3.53 0 0 0-2.62 1 3.58 3.58 0 0 0-1 2.63A6.3 6.3 0 0 0 557 207c.15.49.3 1 .46 1.59l-8.36 1.89a22 22 0 0 1-.68-2.66 14.7 14.7 0 0 1-.24-2.65 10.92 10.92 0 0 1 3.21-8.34q3.2-3 9.19-3t9.4 3.24q3.3 3.22 3.3 9.22a19.5 19.5 0 0 1-1.28 7.08 22.4 22.4 0 0 1-3.7 6.2 37 37 0 0 1-5.71 5.47v6Zm-.3 12.89V235h9v8.86Z"
+        style={{
+          fill: "#263238",
+        }}
+      />
+    </g>
+    <g id="freepik--speech-bubble-1--inject-178">
+      <path
+        d="M278.7 110.94h-71.89a11.64 11.64 0 0 0-11.64 11.64v40.17a11.64 11.64 0 0 0 11.64 11.64h62.71l20 17.48-9.63-17.54a11.65 11.65 0 0 0 10.44-11.58v-40.17a11.64 11.64 0 0 0-11.63-11.64"
+        style={{
+          fill: "#fff",
+          stroke: "#263238",
+          strokeLinecap: "round",
+          strokeLinejoin: "round",
+        }}
+      />
+      <path
+        d="M228.51 144a4.53 4.53 0 1 0-4.53 4.53 4.53 4.53 0 0 0 4.53-4.53"
+        style={{
+          fill: "#263238",
+          stroke: "#263238",
+          strokeLinecap: "round",
+          strokeLinejoin: "round",
+        }}
+      />
+      <path
+        d="M247.29 144a4.53 4.53 0 1 0-4.53 4.53 4.53 4.53 0 0 0 4.53-4.53"
+        style={{
+          fill: "#263238",
+          stroke: "#263238",
+          strokeLinecap: "round",
+          strokeLinejoin: "round",
+        }}
+      />
+      <path
+        d="M266.06 144a4.53 4.53 0 1 0-4.53 4.53 4.53 4.53 0 0 0 4.53-4.53"
+        style={{
+          fill: "#263238",
+          stroke: "#263238",
+          strokeLinecap: "round",
+          strokeLinejoin: "round",
+        }}
+      />
+    </g>
+    <g id="freepik--Plant--inject-178">
+      <path
+        d="M79.77 272.26 96 427.76"
+        style={{
+          fill: "none",
+          stroke: "#263238",
+          strokeLinecap: "round",
+          strokeLinejoin: "round",
+        }}
+      />
+      <path
+        d="m95.67 424.89-8.26-8.69"
+        style={{
+          fill: "none",
+          stroke: "#263238",
+          strokeLinecap: "round",
+          strokeLinejoin: "round",
+        }}
+      />
+      <path
+        d="M90.13 419a10.15 10.15 0 0 0-3.57-7.61c-2.3-2.06-14.43-7.16-15.58-2.89-1.25 4.68 11.16 13.81 19.15 10.5"
+        style={{
+          fill: "#6d8263",
+          stroke: "#263238",
+          strokeLinecap: "round",
+          strokeLinejoin: "round",
+        }}
+      />
+      <path
+        d="m90.13 419.04-11.54-7.19"
+        style={{
+          fill: "none",
+          stroke: "#263238",
+          strokeLinecap: "round",
+          strokeLinejoin: "round",
+        }}
+      />
+      <path
+        d="m90.06 370.88-8.15-7.34"
+        style={{
+          fill: "none",
+          stroke: "#263238",
+          strokeLinecap: "round",
+          strokeLinejoin: "round",
+        }}
+      />
+      <path
+        d="M84.64 366.39a10.2 10.2 0 0 0-3.58-7.62c-2.3-2.06-14.43-7.16-15.58-2.89-1.25 4.65 11.16 13.77 19.16 10.51"
+        style={{
+          fill: "#6d8263",
+          stroke: "#263238",
+          strokeLinecap: "round",
+          strokeLinejoin: "round",
+        }}
+      />
+      <path
+        d="m84.64 366.39-11.55-7.2"
+        style={{
+          fill: "none",
+          stroke: "#263238",
+          strokeLinecap: "round",
+          strokeLinejoin: "round",
+        }}
+      />
+      <path
+        d="m92.33 393.83-8.17-8.71"
+        style={{
+          fill: "none",
+          stroke: "#263238",
+          strokeLinecap: "round",
+          strokeLinejoin: "round",
+        }}
+      />
+      <path
+        d="M86.89 388a10.15 10.15 0 0 0-3.57-7.61c-2.31-2.06-14.43-7.16-15.58-2.89-1.26 4.61 11.16 13.73 19.15 10.5"
+        style={{
+          fill: "#6d8263",
+          stroke: "#263238",
+          strokeLinecap: "round",
+          strokeLinejoin: "round",
+        }}
+      />
+      <path
+        d="m86.89 387.96-11.55-7.19"
+        style={{
+          fill: "none",
+          stroke: "#263238",
+          strokeLinecap: "round",
+          strokeLinejoin: "round",
+        }}
+      />
+      <path
+        d="m86.43 336.83-8.18-8.34"
+        style={{
+          fill: "none",
+          stroke: "#263238",
+          strokeLinecap: "round",
+          strokeLinejoin: "round",
+        }}
+      />
+      <path
+        d="M81 331.33a10.15 10.15 0 0 0-3.57-7.61c-2.31-2.06-14.43-7.16-15.59-2.89C60.57 325.48 73 334.6 81 331.33"
+        style={{
+          fill: "#6d8263",
+          stroke: "#263238",
+          strokeLinecap: "round",
+          strokeLinejoin: "round",
+        }}
+      />
+      <path
+        d="m80.98 331.33-11.55-7.19"
+        style={{
+          fill: "none",
+          stroke: "#263238",
+          strokeLinecap: "round",
+          strokeLinejoin: "round",
+        }}
+      />
+      <path
+        d="m82.49 299.34-7.91-6.05"
+        style={{
+          fill: "none",
+          stroke: "#263238",
+          strokeLinecap: "round",
+          strokeLinejoin: "round",
+        }}
+      />
+      <path
+        d="M77.3 296.13a10.16 10.16 0 0 0-3.57-7.62c-2.3-2.06-14.43-7.16-15.58-2.89-1.25 4.65 11.16 13.77 19.15 10.51"
+        style={{
+          fill: "#6d8263",
+          stroke: "#263238",
+          strokeLinecap: "round",
+          strokeLinejoin: "round",
+        }}
+      />
+      <path
+        d="m77.3 296.13-11.54-7.2"
+        style={{
+          fill: "none",
+          stroke: "#263238",
+          strokeLinecap: "round",
+          strokeLinejoin: "round",
+        }}
+      />
+      <path
+        d="m94.87 412.91 6.83-11.13"
+        style={{
+          fill: "none",
+          stroke: "#263238",
+          strokeLinecap: "round",
+          strokeLinejoin: "round",
+        }}
+      />
+      <path
+        d="M99.62 405.13a10.16 10.16 0 0 1 1.92-8.19c1.83-2.49 12.64-10 14.65-6 2.18 4.24-8.08 15.73-16.57 14.19"
+        style={{
+          fill: "#6d8263",
+          stroke: "#263238",
+          strokeLinecap: "round",
+          strokeLinejoin: "round",
+        }}
+      />
+      <path
+        d="m99.62 405.13 8.12-7.62"
+        style={{
+          fill: "none",
+          stroke: "#263238",
+          strokeLinecap: "round",
+          strokeLinejoin: "round",
+        }}
+      />
+      <path
+        d="M88.95 356.13 95.77 345"
+        style={{
+          fill: "none",
+          stroke: "#263238",
+          strokeLinecap: "round",
+          strokeLinejoin: "round",
+        }}
+      />
+      <path
+        d="M93.69 348.34a10.16 10.16 0 0 1 1.92-8.19c1.83-2.48 10.29-8.72 12.3-4.78 2.18 4.29-5.72 14.52-14.22 12.97"
+        style={{
+          fill: "#6d8263",
+          stroke: "#263238",
+          strokeLinecap: "round",
+          strokeLinejoin: "round",
+        }}
+      />
+      <path
+        d="m93.69 348.34 10.4-9.93"
+        style={{
+          fill: "none",
+          stroke: "#263238",
+          strokeLinecap: "round",
+          strokeLinejoin: "round",
+        }}
+      />
+      <path
+        d="m86.34 331.18 6.83-11.13"
+        style={{
+          fill: "none",
+          stroke: "#263238",
+          strokeLinecap: "round",
+          strokeLinejoin: "round",
+        }}
+      />
+      <path
+        d="M91.09 323.39A10.16 10.16 0 0 1 93 315.2c1.83-2.49 12.64-10 14.65-6 2.19 4.24-8.07 15.73-16.56 14.19"
+        style={{
+          fill: "#6d8263",
+          stroke: "#263238",
+          strokeLinecap: "round",
+          strokeLinejoin: "round",
+        }}
+      />
+      <path
+        d="m91.09 323.39 10.39-9.94"
+        style={{
+          fill: "none",
+          stroke: "#263238",
+          strokeLinecap: "round",
+          strokeLinejoin: "round",
+        }}
+      />
+      <path
+        d="m82.52 294.59 6.83-11.13"
+        style={{
+          fill: "none",
+          stroke: "#263238",
+          strokeLinecap: "round",
+          strokeLinejoin: "round",
+        }}
+      />
+      <path
+        d="M87.27 286.8a10.14 10.14 0 0 1 1.92-8.18c1.83-2.49 12.64-10 14.65-6.05 2.16 4.29-8.08 15.78-16.57 14.23"
+        style={{
+          fill: "#6d8263",
+          stroke: "#263238",
+          strokeLinecap: "round",
+          strokeLinejoin: "round",
+        }}
+      />
+      <path
+        d="m87.27 286.8 10.39-9.93"
+        style={{
+          fill: "none",
+          stroke: "#263238",
+          strokeLinecap: "round",
+          strokeLinejoin: "round",
+        }}
+      />
+      <path
+        d="M79.61 271.2a10.16 10.16 0 0 1 1.92-8.2c1.83-2.49 12.64-10 14.65-6 2.18 4.26-8.08 15.75-16.57 14.2"
+        style={{
+          fill: "#6d8263",
+          stroke: "#263238",
+          strokeLinecap: "round",
+          strokeLinejoin: "round",
+        }}
+      />
+      <path
+        d="M79.61 271.2 90 261.27"
+        style={{
+          fill: "none",
+          stroke: "#263238",
+          strokeLinecap: "round",
+          strokeLinejoin: "round",
+        }}
+      />
+      <path
+        d="M80.21 271.63a10.14 10.14 0 0 1-7.94-2.77c-2.29-2.08-8.61-13.62-4.48-15.2 4.49-1.73 14.84 9.68 12.42 17.97"
+        style={{
+          fill: "#6d8263",
+          stroke: "#263238",
+          strokeLinecap: "round",
+          strokeLinejoin: "round",
+        }}
+      />
+      <path
+        d="m80.21 271.63-8.79-11.38"
+        style={{
+          fill: "none",
+          stroke: "#263238",
+          strokeLinecap: "round",
+          strokeLinejoin: "round",
+        }}
+      />
+      <path
+        d="M109.43 221.12v207.05"
+        style={{
+          fill: "none",
+          stroke: "#263238",
+          strokeLinecap: "round",
+          strokeLinejoin: "round",
+        }}
+      />
+      <path
+        d="m132 298.39-13.57 129.13"
+        style={{
+          fill: "none",
+          stroke: "#263238",
+          strokeLinecap: "round",
+          strokeLinejoin: "round",
+        }}
+      />
+      <path
+        d="m122.03 395.19-6.76-5.64"
+        style={{
+          fill: "none",
+          stroke: "#263238",
+          strokeLinecap: "round",
+          strokeLinejoin: "round",
+        }}
+      />
+      <path
+        d="M117.38 391.5a10.2 10.2 0 0 0-1.93-8.19c-1.83-2.48-12.65-10-14.65-6-2.18 4.26 8.08 15.74 16.58 14.19"
+        style={{
+          fill: "#6d8263",
+          stroke: "#263238",
+          strokeLinecap: "round",
+          strokeLinejoin: "round",
+        }}
+      />
+      <path
+        d="m117.38 391.5-9.82-9.42"
+        style={{
+          fill: "none",
+          stroke: "#263238",
+          strokeLinecap: "round",
+          strokeLinejoin: "round",
+        }}
+      />
+      <path
+        d="m119.51 419.04-6.46-9.3"
+        style={{
+          fill: "none",
+          stroke: "#263238",
+          strokeLinecap: "round",
+          strokeLinejoin: "round",
+        }}
+      />
+      <path
+        d="M115.14 413.08a10.2 10.2 0 0 0-1.93-8.19c-1.83-2.48-12.65-10-14.65-6-2.18 4.26 8.08 15.74 16.58 14.19"
+        style={{
+          fill: "#6d8263",
+          stroke: "#263238",
+          strokeLinecap: "round",
+          strokeLinejoin: "round",
+        }}
+      />
+      <path
+        d="m115.14 413.08-9.82-9.42"
+        style={{
+          fill: "none",
+          stroke: "#263238",
+          strokeLinecap: "round",
+          strokeLinejoin: "round",
+        }}
+      />
+      <path
+        d="m125.45 360.62-6.52-7.52"
+        style={{
+          fill: "none",
+          stroke: "#263238",
+          strokeLinecap: "round",
+          strokeLinejoin: "round",
+        }}
+      />
+      <path
+        d="M121 356.45a10.2 10.2 0 0 0-1.93-8.19c-1.83-2.49-12.65-10-14.66-6-2.16 4.25 8.11 15.74 16.59 14.19"
+        style={{
+          fill: "#6d8263",
+          stroke: "#263238",
+          strokeLinecap: "round",
+          strokeLinejoin: "round",
+        }}
+      />
+      <path
+        d="m121.02 356.45-9.82-9.42"
+        style={{
+          fill: "none",
+          stroke: "#263238",
+          strokeLinecap: "round",
+          strokeLinejoin: "round",
+        }}
+      />
+      <path
+        d="m128.88 327.67-6.29-9.77"
+        style={{
+          fill: "none",
+          stroke: "#263238",
+          strokeLinecap: "round",
+          strokeLinejoin: "round",
+        }}
+      />
+      <path
+        d="M124.67 321.24a10.2 10.2 0 0 0-1.93-8.19c-1.83-2.49-12.65-10-14.65-6-2.18 4.25 8.08 15.74 16.58 14.19"
+        style={{
+          fill: "#6d8263",
+          stroke: "#263238",
+          strokeLinecap: "round",
+          strokeLinejoin: "round",
+        }}
+      />
+      <path
+        d="m124.67 321.24-9.82-9.42"
+        style={{
+          fill: "none",
+          stroke: "#263238",
+          strokeLinecap: "round",
+          strokeLinejoin: "round",
+        }}
+      />
+      <path
+        d="m123.71 382.35 8.97-9.48"
+        style={{
+          fill: "none",
+          stroke: "#263238",
+          strokeLinecap: "round",
+          strokeLinejoin: "round",
+        }}
+      />
+      <path
+        d="M130 375.71a10.16 10.16 0 0 1 3.57-7.62c2.3-2.06 14.43-7.17 15.58-2.9 1.2 4.65-11.15 13.81-19.15 10.52"
+        style={{
+          fill: "#6d8263",
+          stroke: "#263238",
+          strokeLinecap: "round",
+          strokeLinejoin: "round",
+        }}
+      />
+      <path
+        d="m129.95 375.71 12.22-7.58"
+        style={{
+          fill: "none",
+          stroke: "#263238",
+          strokeLinecap: "round",
+          strokeLinejoin: "round",
+        }}
+      />
+      <path
+        d="m126.3 357.4 8.97-9.49"
+        style={{
+          fill: "none",
+          stroke: "#263238",
+          strokeLinecap: "round",
+          strokeLinejoin: "round",
+        }}
+      />
+      <path
+        d="M132.54 350.75a10.15 10.15 0 0 1 3.57-7.61c2.3-2.06 14.43-7.17 15.58-2.9 1.25 4.64-11.15 13.76-19.15 10.51"
+        style={{
+          fill: "#6d8263",
+          stroke: "#263238",
+          strokeLinecap: "round",
+          strokeLinejoin: "round",
+        }}
+      />
+      <path
+        d="m132.54 350.75 12.22-7.58"
+        style={{
+          fill: "none",
+          stroke: "#263238",
+          strokeLinecap: "round",
+          strokeLinejoin: "round",
+        }}
+      />
+      <path
+        d="m129.99 318.94 9.07-7.62"
+        style={{
+          fill: "none",
+          stroke: "#263238",
+          strokeLinecap: "round",
+          strokeLinejoin: "round",
+        }}
+      />
+      <path
+        d="M136.34 314.17a10.16 10.16 0 0 1 3.57-7.62c2.3-2.06 14.42-7.17 15.58-2.9 1.25 4.65-11.16 13.78-19.15 10.52"
+        style={{
+          fill: "#6d8263",
+          stroke: "#263238",
+          strokeLinecap: "round",
+          strokeLinejoin: "round",
+        }}
+      />
+      <path
+        d="m136.34 314.17 12.22-7.59"
+        style={{
+          fill: "#6d8263",
+          stroke: "#263238",
+          strokeLinecap: "round",
+          strokeLinejoin: "round",
+        }}
+      />
+      <path
+        d="M132.05 297.32a10.17 10.17 0 0 1 3.57-7.62c2.3-2.06 14.43-7.16 15.58-2.89 1.25 4.64-11.15 13.77-19.15 10.51"
+        style={{
+          fill: "#6d8263",
+          stroke: "#263238",
+          strokeLinecap: "round",
+          strokeLinejoin: "round",
+        }}
+      />
+      <path
+        d="m132.05 297.32 12.22-7.58"
+        style={{
+          fill: "none",
+          stroke: "#263238",
+          strokeLinecap: "round",
+          strokeLinejoin: "round",
+        }}
+      />
+      <path
+        d="M132.55 297.86a10.18 10.18 0 0 1-7.2-4.34c-1.8-2.51-5.61-15.1-1.24-15.8 4.75-.72 12.52 12.53 8.44 20.14"
+        style={{
+          fill: "#6d8263",
+          stroke: "#263238",
+          strokeLinecap: "round",
+          strokeLinejoin: "round",
+        }}
+      />
+      <path
+        d="m132.55 297.86-6.26-12.94"
+        style={{
+          fill: "none",
+          stroke: "#263238",
+          strokeLinecap: "round",
+          strokeLinejoin: "round",
+        }}
+      />
+      <path
+        d="m109.11 424.55-7.43-9.92"
+        style={{
+          fill: "none",
+          stroke: "#263238",
+          strokeLinecap: "round",
+          strokeLinejoin: "round",
+        }}
+      />
+      <path
+        d="M104.1 417.74a10.18 10.18 0 0 0-2.76-7.95c-2.08-2.28-13.61-8.62-15.2-4.49-1.73 4.49 9.67 14.86 17.96 12.44"
+        style={{
+          fill: "#6d8263",
+          stroke: "#263238",
+          strokeLinecap: "round",
+          strokeLinejoin: "round",
+        }}
+      />
+      <path
+        d="m104.1 417.74-10.74-8.36"
+        style={{
+          fill: "none",
+          stroke: "#263238",
+          strokeLinecap: "round",
+          strokeLinejoin: "round",
+        }}
+      />
+      <path
+        d="m109.37 376.69-7.69-7.15"
+        style={{
+          fill: "none",
+          stroke: "#263238",
+          strokeLinecap: "round",
+          strokeLinejoin: "round",
+        }}
+      />
+      <path
+        d="M104.1 372.64a10.17 10.17 0 0 0-2.76-7.94c-2.08-2.29-13.61-8.62-15.2-4.49-1.73 4.49 9.67 14.85 17.96 12.43"
+        style={{
+          fill: "#6d8263",
+          stroke: "#263238",
+          strokeLinecap: "round",
+          strokeLinejoin: "round",
+        }}
+      />
+      <path
+        d="m104.1 372.64-10.74-8.35"
+        style={{
+          fill: "none",
+          stroke: "#263238",
+          strokeLinecap: "round",
+          strokeLinejoin: "round",
+        }}
+      />
+      <path
+        d="m109.63 326.96-7.95-10.37"
+        style={{
+          fill: "none",
+          stroke: "#263238",
+          strokeLinecap: "round",
+          strokeLinejoin: "round",
+        }}
+      />
+      <path
+        d="M104.1 319.7a10.17 10.17 0 0 0-2.76-7.94c-2.08-2.29-13.61-8.62-15.2-4.49-1.73 4.49 9.67 14.85 17.96 12.43"
+        style={{
+          fill: "#6d8263",
+          stroke: "#263238",
+          strokeLinecap: "round",
+          strokeLinejoin: "round",
+        }}
+      />
+      <path
+        d="m104.1 319.7-10.74-8.35"
+        style={{
+          fill: "none",
+          stroke: "#263238",
+          strokeLinecap: "round",
+          strokeLinejoin: "round",
+        }}
+      />
+      <path
+        d="m109.11 288.04-7.43-6.69"
+        style={{
+          fill: "none",
+          stroke: "#263238",
+          strokeLinecap: "round",
+          strokeLinejoin: "round",
+        }}
+      />
+      <path
+        d="M104.1 284.46a10.16 10.16 0 0 0-2.76-7.94c-2.08-2.29-13.61-8.62-15.2-4.49-1.73 4.49 9.67 14.85 17.96 12.43"
+        style={{
+          fill: "#6d8263",
+          stroke: "#263238",
+          strokeLinecap: "round",
+          strokeLinejoin: "round",
+        }}
+      />
+      <path
+        d="m104.1 284.46-10.74-8.35"
+        style={{
+          fill: "none",
+          stroke: "#263238",
+          strokeLinecap: "round",
+          strokeLinejoin: "round",
+        }}
+      />
+      <path
+        d="m109.54 252.78-7.71-5.64"
+        style={{
+          fill: "none",
+          stroke: "#263238",
+          strokeLinecap: "round",
+          strokeLinejoin: "round",
+        }}
+      />
+      <path
+        d="M104.1 249.06a10.17 10.17 0 0 0-2.76-7.94c-2.08-2.29-13.61-8.62-15.2-4.49-1.73 4.49 9.67 14.85 17.96 12.43"
+        style={{
+          fill: "#6d8263",
+          stroke: "#263238",
+          strokeLinecap: "round",
+          strokeLinejoin: "round",
+        }}
+      />
+      <path
+        d="m104.1 249.06-10.74-8.35"
+        style={{
+          fill: "none",
+          stroke: "#263238",
+          strokeLinecap: "round",
+          strokeLinejoin: "round",
+        }}
+      />
+      <path
+        d="m109.45 367.04 7.94-10.36"
+        style={{
+          fill: "none",
+          stroke: "#263238",
+          strokeLinecap: "round",
+          strokeLinejoin: "round",
+        }}
+      />
+      <path
+        d="M115 359.79a10.16 10.16 0 0 1 2.76-7.94c2.08-2.29 13.61-8.62 15.2-4.5 1.7 4.5-9.69 14.86-17.96 12.44"
+        style={{
+          fill: "#6d8263",
+          stroke: "#263238",
+          strokeLinecap: "round",
+          strokeLinejoin: "round",
+        }}
+      />
+      <path
+        d="m114.98 359.79 11.37-8.8"
+        style={{
+          fill: "none",
+          stroke: "#263238",
+          strokeLinecap: "round",
+          strokeLinejoin: "round",
+        }}
+      />
+      <path
+        d="m109.45 331.65 7.94-10.37"
+        style={{
+          fill: "none",
+          stroke: "#263238",
+          strokeLinecap: "round",
+          strokeLinejoin: "round",
+        }}
+      />
+      <path
+        d="M115 324.39a10.17 10.17 0 0 1 2.76-7.94c2.08-2.29 13.61-8.62 15.2-4.49 1.7 4.49-9.69 14.85-17.96 12.43"
+        style={{
+          fill: "#6d8263",
+          stroke: "#263238",
+          strokeLinecap: "round",
+          strokeLinejoin: "round",
+        }}
+      />
+      <path
+        d="m114.98 324.39 11.37-8.8"
+        style={{
+          fill: "none",
+          stroke: "#263238",
+          strokeLinecap: "round",
+          strokeLinejoin: "round",
+        }}
+      />
+      <path
+        d="m109.45 284.86 7.94-10.36"
+        style={{
+          fill: "none",
+          stroke: "#263238",
+          strokeLinecap: "round",
+          strokeLinejoin: "round",
+        }}
+      />
+      <path
+        d="M115 277.61a10.18 10.18 0 0 1 2.76-7.95c2.08-2.28 13.61-8.62 15.2-4.49 1.7 4.49-9.69 14.83-17.96 12.44"
+        style={{
+          fill: "#6d8263",
+          stroke: "#263238",
+          strokeLinecap: "round",
+          strokeLinejoin: "round",
+        }}
+      />
+      <path
+        d="m114.98 277.61 11.37-8.81"
+        style={{
+          fill: "none",
+          stroke: "#263238",
+          strokeLinecap: "round",
+          strokeLinejoin: "round",
+        }}
+      />
+      <path
+        d="m109.79 244.48 7.79-6.07"
+        style={{
+          fill: "none",
+          stroke: "#263238",
+          strokeLinecap: "round",
+          strokeLinejoin: "round",
+        }}
+      />
+      <path
+        d="M115 240.82a10.17 10.17 0 0 1 2.76-7.94c2.08-2.29 13.61-8.62 15.2-4.49 1.7 4.49-9.69 14.85-17.96 12.43"
+        style={{
+          fill: "#6d8263",
+          stroke: "#263238",
+          strokeLinecap: "round",
+          strokeLinejoin: "round",
+        }}
+      />
+      <path
+        d="m114.98 240.82 11.37-8.8"
+        style={{
+          fill: "none",
+          stroke: "#263238",
+          strokeLinecap: "round",
+          strokeLinejoin: "round",
+        }}
+      />
+      <path
+        d="M109 224.51a10.15 10.15 0 0 1 2.77-7.94c2.08-2.29 13.61-8.62 15.2-4.49 1.69 4.49-9.71 14.85-17.97 12.43"
+        style={{
+          fill: "#6d8263",
+          stroke: "#263238",
+          strokeLinecap: "round",
+          strokeLinejoin: "round",
+        }}
+      />
+      <path
+        d="m108.97 224.51 11.38-8.8"
+        style={{
+          fill: "none",
+          stroke: "#263238",
+          strokeLinecap: "round",
+          strokeLinejoin: "round",
+        }}
+      />
+      <path
+        d="M109.53 225a10.18 10.18 0 0 1-7.61-3.58c-2.06-2.31-7.14-14.44-2.87-15.59 4.64-1.24 13.75 11.17 10.48 19.17"
+        style={{
+          fill: "#6d8263",
+          stroke: "#263238",
+          strokeLinecap: "round",
+          strokeLinejoin: "round",
+        }}
+      />
+      <path
+        d="m109.53 225-7.56-12.23"
+        style={{
+          fill: "none",
+          stroke: "#263238",
+          strokeLinecap: "round",
+          strokeLinejoin: "round",
+        }}
+      />
+    </g>
+    <g id="freepik--Character1--inject-178">
+      <path
+        d="m386.14 428.17-15.49-62.73-119.65.85c-6.25 10.53-19.6 46.19-25.36 61.88Z"
+        style={{
+          fill: "#263238",
+          stroke: "#263238",
+          strokeLinecap: "round",
+          strokeLinejoin: "round",
+        }}
+      />
+      <path
+        d="m463.21 334.26 9.16 1.57s18.84-1.31 20.41-1.31 12.83 9.16 12.83 9.16l-19.11-.26s-13.6 3.92-18.31 3.92-10.47-5.49-10.47-5.49Z"
+        style={{
+          fill: "#fff",
+          stroke: "#263238",
+          strokeLinecap: "round",
+          strokeLinejoin: "round",
+        }}
+      />
+      <path
+        d="M466.88 340.28s17 .52 18.84.26 5.76-2.62 5.76-.26-2.62 1.57-5 3.14a24 24 0 0 1-4.44 2.35s-3.67 1.05-6.81 1.57-3.92.26-7.06 0a11 11 0 0 1-5.24-1.83"
+        style={{
+          fill: "#fff",
+          stroke: "#263238",
+          strokeLinecap: "round",
+          strokeLinejoin: "round",
+        }}
+      />
+      <path
+        d="m419.72 279.11-13-26.92s.55-30.19 0-34.58-1.09-8.51-9.6-11-58.74 1.64-58.74 1.64-13.38 1.32-25.22 3.41-38 2.24-39.34 6.36-7.5 98-7.5 98l-24.56 55.26s23 18.94 70.81 16.19S377.1 370 377.1 370l-13.45-48s22.23-19.76 22.78-25.8.82-10.71.82-10.71 13.73 21.14 16.47 22.79 54.5 37.92 54.5 37.92l7.14-12.63-43.79-50.55-1.85-3.82"
+        style={{
+          fill: "#858585",
+          stroke: "#263238",
+          strokeLinecap: "round",
+          strokeLinejoin: "round",
+        }}
+      />
+      <path
+        d="m387.25 285.4 4.64-44.16"
+        style={{
+          fill: "none",
+          stroke: "#263238",
+          strokeLinecap: "round",
+          strokeLinejoin: "round",
+        }}
+      />
+      <path
+        d="M390.74 255.58s8.61-7.74 12.05-17.49"
+        style={{
+          fill: "none",
+          stroke: "#263238",
+          strokeLinecap: "round",
+          strokeLinejoin: "round",
+        }}
+      />
+      <path
+        d="M399.28 257.94a23.4 23.4 0 0 0 4.08-1.5"
+        style={{
+          fill: "none",
+          stroke: "#263238",
+          strokeLinecap: "round",
+          strokeLinejoin: "round",
+        }}
+      />
+      <path
+        d="M389.88 260.17s3-.58 6.25-1.39"
+        style={{
+          fill: "none",
+          stroke: "#263238",
+          strokeLinecap: "round",
+          strokeLinejoin: "round",
+        }}
+      />
+      <path
+        d="m327.14 207.18-9.88 35.41 10.71 9-11.81 11.53s4.39 17.29 10.71 30.74 10.43 19.54 10.43 19.54 25.53-12.08 32.11-22.78 15.37-27.45 15.37-27.45l-7.68-7.68 11.25-6s-3.7-15.84-6-25.8a73 73 0 0 0-6-16.75Z"
+        style={{
+          fill: "#6d8263",
+          stroke: "#263238",
+          strokeLinecap: "round",
+          strokeLinejoin: "round",
+        }}
+      />
+      <path
+        d="M335.38 211.76s-.24 31.62-1.18 42.72 0 27.61 1.42 34.69 4.25 17.71 4.25 17.71 19.35-15.82 21.95-22.43 7.31-32.8 7.31-32.8l4.25-30.22Z"
+        style={{
+          fill: "#fff",
+          stroke: "#263238",
+          strokeLinecap: "round",
+          strokeLinejoin: "round",
+        }}
+      />
+      <path
+        d="m336.32 206.09-2.12 44.38 18.88-12.28 15.82 17.47 4.01-36.35z"
+        style={{
+          fill: "#fff",
+          stroke: "#263238",
+          strokeLinecap: "round",
+          strokeLinejoin: "round",
+        }}
+      />
+      <path
+        d="m343.17 221.2 7.83 35.87 14.4-29.26s-17.06-.68-22.23-6.61"
+        style={{
+          fill: "#fff",
+          stroke: "#263238",
+          strokeLinecap: "round",
+          strokeLinejoin: "round",
+        }}
+      />
+      <path
+        d="M327.35 184.48a105 105 0 0 1-6.62-12.12c-2.52-5.71-2.06-8 .45-13.94s12.8-23.08 19.66-26.06a39 39 0 0 1 12.57-3.2s25.37-.68 37 11.66 11.88 33.37 9.14 38.86a17.34 17.34 0 0 1-9.83 8.68c-2.28.69-4.09 1.33-4.09 1.33h-4.59c-1.83 0-11.43-5.48-19.89-12.57a139 139 0 0 1-11.2-10s-9.83 7.08-13.25 10.28-4.35 5.26-4.35 5.26l-1.33 5.15Z"
+        style={{
+          fill: "#263238",
+          stroke: "#263238",
+          strokeLinecap: "round",
+          strokeLinejoin: "round",
+        }}
+      />
+      <path
+        d="M327.13 189.05s-8.46-1.37-13.26 3.2-5.26 16-.69 19.43 15 6.47 19.89 5 6.4-6.18 6.4-11-4.8-14.4-5.72-16.22-6.62-.41-6.62-.41"
+        style={{
+          fill: "#263238",
+          stroke: "#263238",
+          strokeLinecap: "round",
+          strokeLinejoin: "round",
+        }}
+      />
+      <path
+        d="M331.05 187.8s-4.1-6.63-7.26-1 1.58 11.05 5 12.94a19.3 19.3 0 0 0 5.37 2.21Z"
+        style={{
+          fill: "#fff",
+          stroke: "#263238",
+          strokeLinecap: "round",
+          strokeLinejoin: "round",
+        }}
+      />
+      <path
+        d="M385.66 189.69s6-3.47 6.63 1.58-3.79 10.1-6 11.68-3.79 2.84-3.79 2.84Z"
+        style={{
+          fill: "#fff",
+          stroke: "#263238",
+          strokeLinecap: "round",
+          strokeLinejoin: "round",
+        }}
+      />
+      <path
+        d="M330.42 178.64s3.79 30.36 7.58 36.62 10.74 17.36 19.58 17.36 18.62-9.78 22.41-18.94 5.68-24 5.68-24-14.84-6-26.52-18-8.83-13.58-8.83-13.58-13.59 17.7-19.9 20.54"
+        style={{
+          fill: "#fff",
+          stroke: "#263238",
+          strokeLinecap: "round",
+          strokeLinejoin: "round",
+        }}
+      />
+      <path
+        d="M354.32 206.42s5.72 4.57 10.75.46"
+        style={{
+          fill: "none",
+          stroke: "#263238",
+          strokeLinecap: "round",
+          strokeLinejoin: "round",
+        }}
+      />
+      <path
+        d="M350.9 213.05s7.77 7.54 17.82-.23"
+        style={{
+          fill: "none",
+          stroke: "#263238",
+          strokeLinecap: "round",
+          strokeLinejoin: "round",
+        }}
+      />
+      <path
+        d="M349.55 191.49a2.35 2.35 0 1 1-2.31-2.81 2.6 2.6 0 0 1 2.31 2.81"
+        style={{
+          fill: "#263238",
+        }}
+      />
+      <path
+        d="M373.1 192.93a2.36 2.36 0 1 1-2.32-2.81 2.61 2.61 0 0 1 2.32 2.81"
+        style={{
+          fill: "#263238",
+        }}
+      />
+      <path
+        d="M342 183.11s4.34-2.75 11.43-.46"
+        style={{
+          fill: "none",
+          stroke: "#263238",
+          strokeLinecap: "round",
+          strokeLinejoin: "round",
+        }}
+      />
+      <path
+        d="M367.35 184.25s3.2-3.2 13.26 3.43"
+        style={{
+          fill: "none",
+          stroke: "#263238",
+          strokeLinecap: "round",
+          strokeLinejoin: "round",
+        }}
+      />
+      <rect
+        width={20.8}
+        height={13.26}
+        x={337.74}
+        y={185.18}
+        rx={4.13}
+        style={{
+          fill: "none",
+          stroke: "#263238",
+          strokeLinecap: "round",
+          strokeLinejoin: "round",
+        }}
+        transform="rotate(3.06 348.122 191.707)"
+      />
+      <rect
+        width={20.8}
+        height={13.26}
+        x={362.69}
+        y={186.68}
+        rx={4.13}
+        style={{
+          fill: "none",
+          stroke: "#263238",
+          strokeLinecap: "round",
+          strokeLinejoin: "round",
+        }}
+        transform="rotate(2.9 398.47 207.316)"
+      />
+      <path
+        d="m358.63 188.76 4.54.3"
+        style={{
+          fill: "none",
+          stroke: "#263238",
+          strokeLinecap: "round",
+          strokeLinejoin: "round",
+        }}
+      />
+      <path
+        d="m337.9 188.62-7.13-2.18"
+        style={{
+          fill: "none",
+          stroke: "#263238",
+          strokeLinecap: "round",
+          strokeLinejoin: "round",
+        }}
+      />
+      <path
+        d="m383.61 191.23 2.05-1.54"
+        style={{
+          fill: "none",
+          stroke: "#263238",
+          strokeLinecap: "round",
+          strokeLinejoin: "round",
+        }}
+      />
+      <path
+        d="m228.62 272.57-2.74-8s-2.2-7.68-4.67-11-7.13-4.39-9.06-6.86-4.39-9.33-6-11.25-4.94-.28-4.12 4.11 2.74 5.77 3.57 7.42 2.74 6 2.74 6-17.84-3-18.94-3.29-4.39-3.84-5.21-6-.55-11-3.85-8.23-1.37 8.51-.82 9.88 0 11 1.37 15.92 6 9.88 12.9 13.17 20.32 4.4 20.32 4.4l5.21 5.21Z"
+        style={{
+          fill: "#fff",
+          stroke: "#263238",
+          strokeLinecap: "round",
+          strokeLinejoin: "round",
+        }}
+      />
+      <path
+        d="M177.57 259.12S174 252.7 174 248s.32-9.08 2.76-7.94 2 1 2.69 5.35a44.5 44.5 0 0 0 2.82 9.73c.33.49 2.92 7 .65 7.14s-5.35-3.16-5.35-3.16"
+        style={{
+          fill: "#fff",
+          stroke: "#263238",
+          strokeLinecap: "round",
+          strokeLinejoin: "round",
+        }}
+      />
+      <path
+        d="M185 259.12s-4.94-14-7.41-11.53-2.2 5.49 0 11.53 6.86 10.71 10.7 11.26l3.85.55Z"
+        style={{
+          fill: "#fff",
+          stroke: "#263238",
+          strokeLinecap: "round",
+          strokeLinejoin: "round",
+        }}
+      />
+      <path
+        d="M215.17 269.83s-6-4.94-9.88-4.94-12.9 1.37-12.9 1.37-6.31-21.14-8.23-17.57-1.38 7.14.55 12.63 4.66 10.43 9 13.17 20.32 4.4 20.32 4.4"
+        style={{
+          fill: "#fff",
+          stroke: "#263238",
+          strokeLinecap: "round",
+          strokeLinejoin: "round",
+        }}
+      />
+      <path
+        d="m234.94 276.42-6.32-6.32-13.99 13.45 6.86 5.49z"
+        style={{
+          fill: "#fff",
+          stroke: "#263238",
+          strokeLinecap: "round",
+          strokeLinejoin: "round",
+        }}
+      />
+      <path
+        d="M298.44 213.43s-19.59.68-24.25 2.87-5.22 5.49-5.49 6.87-8.51 74.66-8.51 74.66l-26.9-25.53L216 289s23.88 31.29 29.37 39.8 10.43 16.47 15.09 17.29 6.32 1.1 12.08-.54S285.72 331.08 286 330s12.63-70.31 12.63-70.31"
+        style={{
+          fill: "#858585",
+          stroke: "#263238",
+          strokeLinecap: "round",
+          strokeLinejoin: "round",
+        }}
+      />
+      <path
+        d="m274.06 305.86 3.66 2.12"
+        style={{
+          fill: "none",
+          stroke: "#263238",
+          strokeLinecap: "round",
+          strokeLinejoin: "round",
+        }}
+      />
+      <path
+        d="m260.19 297.83 11.62 6.73"
+        style={{
+          fill: "none",
+          stroke: "#263238",
+          strokeLinecap: "round",
+          strokeLinejoin: "round",
+        }}
+      />
+      <path
+        d="M304.69 334.14c-2.21.92-4.25 1.72-6 2.35"
+        style={{
+          fill: "none",
+          stroke: "#263238",
+          strokeLinecap: "round",
+          strokeLinejoin: "round",
+        }}
+      />
+      <path
+        d="M345.1 315.63s-18.54 9-33.65 15.63"
+        style={{
+          fill: "none",
+          stroke: "#263238",
+          strokeLinecap: "round",
+          strokeLinejoin: "round",
+        }}
+      />
+      <path
+        d="m354.47 316.91-23.42 12.34"
+        style={{
+          fill: "none",
+          stroke: "#263238",
+          strokeLinecap: "round",
+          strokeLinejoin: "round",
+        }}
+      />
+    </g>
+    <g id="freepik--character-2--inject-178">
+      <path
+        d="M548.19 340.35h30.62s4.43 0 2.82 6.85-8.06 44.31-8.87 58.41-1.61 22.56-1.61 22.56H452.34l14.33-82.61a6.75 6.75 0 0 1 6.67-5.59Z"
+        style={{
+          fill: "#263238",
+          stroke: "#263238",
+          strokeLinecap: "round",
+          strokeLinejoin: "round",
+        }}
+      />
+      <path
+        d="M452.51 286.71s-34.78 9.74-35.34 13.08-15.3 84.87-15.3 84.87-72.87-18.92-77.08-18.92-20.32 13.63-22.54 15.3-5.29 3.07-5.57 6.4-3.06 8.63 0 11.13 5 4.74 6.12 3.34-.27-6.12-.55-7 17.53-10 17.53-10l7.23-1.67a54 54 0 0 1-8.35 6.12c-4.73 2.78-6.39 7.52-3.89 7.79s2.78-.83 10-3.06 13.35-9.46 13.35-9.46 70.4 32.84 74.3 32.84 3.34.83 6.68-3.62 14.19-36.17 14.19-36.17l4.17 41.18v9.19h109.38s-.56-118.55-1.11-120.22-43.26-28.58-43.26-28.58Z"
+        style={{
+          fill: "#6d8263",
+          stroke: "#263238",
+          strokeLinecap: "round",
+          strokeLinejoin: "round",
+        }}
+      />
+      <path
+        d="m422.99 364.5-2.41-3.09"
+        style={{
+          fill: "none",
+          stroke: "#263238",
+          strokeLinecap: "round",
+          strokeLinejoin: "round",
+        }}
+      />
+      <path
+        d="m433.31 377.71-8.2-10.49"
+        style={{
+          fill: "none",
+          stroke: "#263238",
+          strokeLinecap: "round",
+          strokeLinejoin: "round",
+        }}
+      />
+      <path
+        d="m422.81 343.74-1.26-4.05"
+        style={{
+          fill: "none",
+          stroke: "#263238",
+          strokeLinecap: "round",
+          strokeLinejoin: "round",
+        }}
+      />
+      <path
+        d="m427.74 340.35 5.57 37.35-9.2-29.74"
+        style={{
+          fill: "none",
+          stroke: "#263238",
+          strokeLinecap: "round",
+          strokeLinejoin: "round",
+        }}
+      />
+      <path
+        d="m511.28 284.87-8.81-5.59-50 7.43 23.37 50.37Z"
+        style={{
+          fill: "#fff",
+          stroke: "#263238",
+          strokeLinecap: "round",
+          strokeLinejoin: "round",
+        }}
+      />
+      <path
+        d="M450 212.36c-6.65 4.58-16.13 14.6-14 21 2.24 6.72 5.6 8.21 5.6 8.21s-3 9.33-.37 12.32a21.8 21.8 0 0 1 3.73 6s-5.6 15.68-3 17.55l2.61 1.86s4.48 17.92 7.84 19 13.44-1.87 13.44-1.87L476 323.7l26.51-44.42-2.62-9s15.68-25.75 9.34-44c-3.65-10.51-13.11-17.77-23.55-20.82-11.53-3.36-21.49.34-32.21 4.93a20.7 20.7 0 0 0-3.47 1.97"
+        style={{
+          fill: "#c2c2c2",
+          stroke: "#263238",
+          strokeLinecap: "round",
+          strokeLinejoin: "round",
+        }}
+      />
+      <path
+        d="M509.19 226.28c-3.65-10.51-13.11-17.77-23.55-20.82-11.53-3.36-21.49.34-32.21 4.93a20.7 20.7 0 0 0-3.41 2c-6.65 4.58-16.13 14.6-14 21 2.24 6.72 5.6 8.21 5.6 8.21a7.93 7.93 0 0 0 6.44-2.17c2.78-2.78 10-7.79 15.86-7s5.84 7.79 3.89 11.13-2.5 7.24 2.51 8.35 6.4 1.11 6.4 5-.28 7 2.78 6.4 3.34-1.95 4.73-5 7.51-7.79 10.85 1.67-3.34 13.91-3.34 13.91a46.3 46.3 0 0 0 8.37-4c1.99-3.42 14.94-26.7 9.08-43.61"
+        style={{
+          fill: "#263238",
+          stroke: "#263238",
+          strokeLinecap: "round",
+          strokeLinejoin: "round",
+        }}
+      />
+      <path
+        d="M448.33 258.33s8.07-3.62 13.36 0"
+        style={{
+          fill: "none",
+          stroke: "#263238",
+          strokeLinecap: "round",
+          strokeLinejoin: "round",
+        }}
+      />
+      <path
+        d="M448.06 283.37s8.62 3.34 14.19-2.78"
+        style={{
+          fill: "none",
+          stroke: "#263238",
+          strokeLinecap: "round",
+          strokeLinejoin: "round",
+        }}
+      />
+      <path
+        d="m444.61 279.28 4.56.76"
+        style={{
+          fill: "none",
+          stroke: "#263238",
+          strokeLinecap: "round",
+          strokeLinejoin: "round",
+        }}
+      />
+      <path
+        d="M458.35 264.65c0 1.57-.87 2.85-2 2.85s-1.95-1.28-1.95-2.85.87-2.84 1.95-2.84 2 1.27 2 2.84"
+        style={{
+          fill: "#263238",
+        }}
+      />
+      <path
+        d="M465.89 296.45s10-3.89 12.78-5.84 4.45-3.34 4.45-3.34l-13.64 18.09Z"
+        style={{
+          fill: "#263238",
+        }}
+      />
+      <path
+        d="M349.47 371.35c-12.74-3.15-23.18-5.61-24.68-5.61-4.18 0-20.32 13.63-22.54 15.3s-5.29 3.07-5.57 6.4-3.06 8.63 0 11.13 5 4.74 6.12 3.34-.27-6.12-.55-7 17.53-10 17.53-10l7.23-1.67a54 54 0 0 1-8.35 6.12c-4.73 2.78-6.39 7.52-3.89 7.79s2.78-.83 10-3.06 13.35-9.46 13.35-9.46 3.25 1.52 8.38 3.89a22.32 22.32 0 0 0 2.97-17.17"
+        style={{
+          fill: "#c2c2c2",
+          stroke: "#263238",
+          strokeLinecap: "round",
+          strokeLinejoin: "round",
+        }}
+      />
+      <path
+        d="m338.14 384.66 3.06-7.23"
+        style={{
+          fill: "#fff",
+          stroke: "#263238",
+          strokeLinecap: "round",
+          strokeLinejoin: "round",
+        }}
+      />
+      <path
+        d="M310.87 381.6s-13.63 8.63-16.14 10.3-11.13 3.61-10.29 5.28 2.78 2.51 6.68 1.39a100 100 0 0 0 13.08-4.17c4.45-1.95 15.58-9.46 15.58-9.46"
+        style={{
+          fill: "#c2c2c2",
+          stroke: "#263238",
+          strokeLinecap: "round",
+          strokeLinejoin: "round",
+        }}
+      />
+      <path
+        d="M532.93 299s18.92 8.35 21.42 13.08 7.52 108 7.79 111a4.1 4.1 0 0 1-3.61 4.45c-1.39.28-90.16-.27-92.66-.27s-8.63-.56-12.25-2.23-6.4-1.11-6.68-5.57a86 86 0 0 1 .28-9.73c0-1.67-1.11-6.4 0-9.19s3.34-2.78 4.45-3.06a32.5 32.5 0 0 1 5.29 0 6.81 6.81 0 0 1 7-.83c4.17 1.67 11.13 11.68 11.13 11.68s6.68 1.95 17.25.28 34.5-6.68 34.5-6.68l-9.46-59.27"
+        style={{
+          fill: "#6d8263",
+          stroke: "#263238",
+          strokeLinecap: "round",
+          strokeLinejoin: "round",
+        }}
+      />
+      <path
+        d="m526.8 401.91 1.4 10.02"
+        style={{
+          fill: "none",
+          stroke: "#263238",
+          strokeLinecap: "round",
+          strokeLinejoin: "round",
+        }}
+      />
+      <path
+        d="M481.44 427.32c-2.92-9.67-.59-15.2 1.72-18.06a33.8 33.8 0 0 1-8.11-.95s-7-10-11.13-11.68a6.81 6.81 0 0 0-7 .83 32.5 32.5 0 0 0-5.29 0c-1.11.28-3.34.28-4.45 3.06s0 7.52 0 9.19a86 86 0 0 0-.28 9.73c.28 4.46 3.06 3.9 6.68 5.57s9.74 2.23 12.25 2.23Z"
+        style={{
+          fill: "#c2c2c2",
+          stroke: "#263238",
+          strokeLinecap: "round",
+          strokeLinejoin: "round",
+        }}
+      />
+    </g>
+    <g id="freepik--Device--inject-178">
+      <path
+        d="M315.6 422.91H198.3l-20.18-82.96h117.29z"
+        style={{
+          fill: "#fff",
+          stroke: "#263238",
+          strokeLinecap: "round",
+          strokeLinejoin: "round",
+        }}
+      />
+      <path
+        d="M260.85 383c0 2.57-7.58 4.65-16.92 4.65S227 385.59 227 383s7.57-4.64 16.92-4.64 16.93 2.1 16.93 4.64"
+        style={{
+          fill: "#fff",
+          stroke: "#263238",
+          strokeLinecap: "round",
+          strokeLinejoin: "round",
+        }}
+      />
+      <path
+        d="M198.3 422.91h192.17v5.26H198.3z"
+        style={{
+          fill: "#c2c2c2",
+          stroke: "#263238",
+          strokeLinecap: "round",
+          strokeLinejoin: "round",
+        }}
+      />
+      <path
+        d="M317.24 422.91h73.23v5.26h-73.23z"
+        style={{
+          fill: "#fff",
+          stroke: "#263238",
+          strokeLinecap: "round",
+          strokeLinejoin: "round",
+        }}
+      />
+      <path
+        d="M322.92 424.41h6.34v1.15h-6.34z"
+        style={{
+          fill: "#fff",
+          stroke: "#263238",
+          strokeLinecap: "round",
+          strokeLinejoin: "round",
+        }}
+      />
+      <path
+        d="M339.05 424.41h6.34v1.15h-6.34z"
+        style={{
+          fill: "#fff",
+          stroke: "#263238",
+          strokeLinecap: "round",
+          strokeLinejoin: "round",
+        }}
+      />
+    </g>
+    <path
+      id="freepik--Table--inject-178"
+      d="M649.95 428.17H63.35"
+      style={{
+        fill: "none",
+        stroke: "#263238",
+        strokeLinecap: "round",
+        strokeLinejoin: "round",
+      }}
+    />
+  </svg>
+)
+export default HomeIllustration

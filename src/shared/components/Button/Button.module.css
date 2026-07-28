@@ -10,6 +10,7 @@
                 color var(--duration-fast) var(--ease-in-out), 
                 border-color var(--duration-fast) var(--ease-in-out), 
                 box-shadow var(--duration-fast) var(--ease-in-out);
+    gap: 0.5rem; /* 8px */
 }
 .base:disabled {
     cursor: not-allowed;
@@ -32,14 +33,34 @@
     background-color: var(--color-primary-700);
     border-color: var(--color-primary-700);
 }
+.primaryInverse {
+    background-color: var(--color-primary-100);
+    color: var(--color-text-body);
+    border-color: var(--color-primary-100);
+}
+.primaryInverse:hover {
+    background-color: var(--color-primary-300);
+    border-color: var(--color-primary-300);
+}
+.accent {
+    background-color: var(--color-accent);
+    color: var(--color-text-inverse);
+    border-color: var(--color-accent);
+}
+.accent:hover {
+    background-color: var(--color-accent-light);
+    border-color: var(--color-accent);
+    color: var(--color-text-body);
+}
 .secondary {
     background: var(--color-primary-100);
     color: var(--color-primary-800);
     border: 1px solid var(--color-primary-200);
 }
 .secondary:hover {
-    background-color: var(--color-primary-300);
-    border-color: var(--color-primary-300);
+    border-color: var(--color-primary-700);
+    color: var(--color-text-body);
+    
 }
 .outline {
     background-color: var(--color-neutral-0);
@@ -89,3 +110,4 @@
 .icon.small { width: 32px; height: 32px; }
 .icon.medium { width: 44px; height: 44px; }
 .icon.large { width: 56px; height: 56px; }
+

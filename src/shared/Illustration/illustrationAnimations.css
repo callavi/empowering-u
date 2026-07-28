@@ -38,12 +38,73 @@
   }
 }
 
+@keyframes CharacterLean {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-8px);
+  }
+}
+
+@keyframes PlantSway {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  25% {
+    transform: rotate(2deg);
+  }
+
+  50% {
+    transform: rotate(-1.5deg);
+  }
+
+  75% {
+    transform: rotate(1deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes ChevronPulse {
+  0%,
+  100% {
+    opacity: 0.35;
+  }
+
+  50% {
+    opacity: 1;
+  }
+}
+
+@keyframes ScreenPop {
+  from {
+    transform: scale(1);
+  }
+
+  to {
+    transform: scale(1.02);
+  }
+}
+
+#ctaPlants {
+  transform-origin: bottom center;
+}
+
+
 #background,
 #rocket,
 #clouds,
 #growbusinessbackground,
 #Arrows,
-#Character {
+#Character,
+#ctaCharacter,
+#ctaIcons,
+#ctaScreen {
   transform-origin: center;
 }
 
@@ -74,4 +135,20 @@
 
 .pathway-card:hover #Character {
     animation: SlideUp 500ms ease-out forwards;
+}
+
+.cta-illustration:hover #ctaCharacter {
+  animation: CharacterLean 400ms ease-out forwards;
+}
+
+.cta-illustration:hover #ctaPlants {
+  animation: PlantSway 1.6s ease-in-out;
+}
+
+.cta-illustration:hover #ctaIcons {
+  animation: ChevronPulse 900ms ease-in-out infinite;
+}
+
+.cta-illustration:hover #ctaScreen {
+  animation: ScreenPop 300ms ease-in forwards;
 }
