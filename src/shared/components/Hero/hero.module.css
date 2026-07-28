@@ -23,7 +23,7 @@
 }
 
 .heading {
-    font-size: var(--text-4xl);
+    font-size: clamp(3.5rem, 5vw, 3rem);
     font-weight: var(--font-weight-bold);
     line-height: var(--line-height-relaxed);
 }
@@ -86,4 +86,12 @@
 .media {
     position: relative;
     z-index: 2;
+    align-content: center;
+    display: block;
+}
+
+.highlight {
+  text-decoration: underline;
+  font-style: italic;
+  color:var(--color-primary-500);
 }

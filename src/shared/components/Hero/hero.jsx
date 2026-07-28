@@ -18,45 +18,50 @@ export function Hero ({hero}) {
     console.log(primaryActions);
 
     return (
-        <Container>
-            <section className = {`grid md:grid-cols-2 gap-6 ${styles.hero}`}>
-                <div className={styles.heroContent}>
-                    {badge && (
-                    <div className={styles.badge}>
-                        {badge}
-                    </div>
-                    )}
-                    <div className="flex flex-col gap-2 mb-4">
-                        <h1 className={styles.heading}>
-                            {title}
-                        </h1>
-                        <p className={styles.subheading}>
-                            {description}
-                        </p>
-                    </div>
-                    <div>
-                        {primaryActions.map((action) => (
-                            <NavLink
-                                key={action.label}
-                                to={action.to}
-                            >
-                                <Button
-                                    variant={action.variant}
-                                    size={action.size}
-                                    className={styles.button}
-                                >
-                                    {action.label}
-                                </Button>
-                            </NavLink>
-                        )
+        <section  className={styles.hero}>
+            <Container>
+                <section className = "grid md:grid-cols-2 gap-36 py-20">
+                    <div className={styles.heroContent}>
+                        {badge && (
+                        <div className={styles.badge}>
+                            {badge}
+                        </div>
                         )}
+                        <div className="flex flex-col gap-2 mb-4">
+                            <h1 className={styles.heading}>
+                                {title.before}{" "}
+                                    <span className={styles.highlight}>
+                                        {title.highlight}
+                                    </span>
+                            </h1>
+                            <p className={styles.subheading}>
+                                {description}
+                            </p>
+                        </div>
+                        <div>
+                            {primaryActions.map((action) => (
+                                <NavLink
+                                    key={action.label}
+                                    to={action.to}
+                                >
+                                    <Button
+                                        variant={action.variant}
+                                        size={action.size}
+                                        className={styles.button}
+                                    >
+                                        {action.label}
+                                    </Button>
+                                </NavLink>
+                            )
+                            )}
+                        </div>
                     </div>
-                </div>
-                <div className={styles.media}>
-                    {Illustration && <Illustration cards={floatingCards} />}
-                </div>
-            </section>
-        </Container>
+                    <div className={styles.media}>
+                        {Illustration && <Illustration cards={floatingCards} />}
+                    </div>
+                </section>
+            </Container>
+        </section>
     )
 
 }

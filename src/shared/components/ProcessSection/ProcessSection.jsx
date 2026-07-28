@@ -4,6 +4,7 @@ import { Fragment } from "react";
 import {ProcessStep} from "./ProcessStep";
 import {Connector} from "./Connector";
 import Container from "../Container/Container";
+import { SectionHeading } from "../SectionHeading/SectionHeading";
 
 import styles from "./ProcessSection.module.css";
 
@@ -11,7 +12,7 @@ export function ProcessSection({ heading, businessProcess }) {
   return (
     <Container>
       <section className="flex flex-col items-center gap-8">
-        <h2 className= {styles.sectionheading}>{heading}</h2>
+      <SectionHeading title = {heading} align="center" />
 
         <div className = {styles.steps}>
           {businessProcess.map((step, index) => (

@@ -5,10 +5,13 @@ export const Heroes = {
 homepage: {
   badge: "All-in-one Business Solutions",
 
-  title: "We make starting and growing a business in India ridiculously easy.",
+  title: {
+    before:"We make starting and growing your business in India",
+    highlight: "easy.",
+  },
 
   description:
-    "From registrations to compliance, websites to branding - we handle the paperwork so you can focus on your business.",
+    "From registrations and compliance to websites and branding, we handle the paperwork so you can focus on growing your business.",
 
   primaryActions: [
     {

@@ -14,7 +14,7 @@ export function PathwayCard({ pathway }) {
 } = pathway;
   return (
     <NavLink to={path}>
-      <article className={`flex flex-col w-full max-w-sm pathway-card ${styles.article}`}>
+      <article className={`flex w-full pathway-card ${styles.article}`}>
         <div className={styles.illustration}>
           <Illustration />
         </div>
