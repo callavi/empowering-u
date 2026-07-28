@@ -2,7 +2,7 @@ import { Button } from "../../shared/components/Button/Button";
 import { PathwayCard } from "../../shared/components/Cards/PathwayCard/PathwayCard";
 import { ServiceCard } from "../../shared/components/Cards/ServiceCard/ServiceCard";
 import Container from "../../shared/components/Container/Container";
-import ProcessSection from "../../shared/components/ProcessSection/ProcessSection";
+import {ProcessSection} from "../../shared/components/ProcessSection/ProcessSection";
 import { pathways } from "../../shared/data/pathway";
 import { services } from "../../shared/data/serviceinfo";
 import { businessProcess } from "../../shared/data/businessprocess";

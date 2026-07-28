@@ -7,7 +7,7 @@ import Container from "../Container/Container";
 
 import styles from "./ProcessSection.module.css";
 
-export default function ProcessSection({ heading, businessProcess }) {
+export function ProcessSection({ heading, businessProcess }) {
   return (
     <Container>
       <section className="flex flex-col items-center gap-8">
