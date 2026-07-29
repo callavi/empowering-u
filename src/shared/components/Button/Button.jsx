@@ -20,6 +20,7 @@ const SIZES = [
 export function Button({
   variant = VARIANTS[0],
   size = SIZES[1],
+  fullWidth = false,
   className,
   children,
   type = "button",
@@ -34,6 +35,7 @@ export function Button({
         styles.base,
         styles[variant],
         styles[size],
+        fullWidth ? "w-full":"",
         className
       )}
       {...props}

@@ -42,8 +42,10 @@
     font-size: var(--text-xl);
     font-weight: var(--font-weight-semibold);
     line-height: var(--line-height-tight);
+    color: var(--color-primary-700);
 }
 
 .carddescription {
-    color: var(--color-neutral-700);
+    color: var(--color-neutral-400);
+    font-weight: var(--font-weight-medium);
 }

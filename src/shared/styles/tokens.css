@@ -121,6 +121,8 @@
     --shadow-md:0 4px 10px rgba(0,0,0,.08);
     --shadow-lg:0 10px 25px rgba(0,0,0,.12);
     --shadow-none:none;
+    --shadow-md-right:8px 0 6px -6px rgba(0,0,0,.08);
+    --shadow-lg-right:12px 0 6px -6px rgba(0,0,0,.12);
 
  /* Z-Index */
 

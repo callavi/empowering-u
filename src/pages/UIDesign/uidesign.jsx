@@ -13,6 +13,8 @@ import { ctas } from "../../shared/data/ctaConfig";
 import { CTA } from "../../shared/components/CTA/cta";
 import { Heroes } from "../../shared/data/heroConfig";
 import { Hero } from "../../shared/components/Hero/hero";
+import { products } from "../../shared/data/catalogueInfo";
+import { ProductCard } from "../../shared/components/Cards/ProductCard/ProductCard";
 
 export default function UIDesign() {
   return (
@@ -108,7 +110,7 @@ export default function UIDesign() {
             Cards
           </h2>
 
-          <div className="grid gap-12 md:grid-cols-2 mb-4">
+          <div className="grid gap-18 md:grid-cols-2 mb-4">
             {pathways.map((item) => (
               <PathwayCard
                 key={item.path}
@@ -122,6 +124,15 @@ export default function UIDesign() {
               <ServiceCard
                 key={item.path}
                 service={item}
+              />
+            ))}
+          </div>
+
+          <div className="grid gap-8 md:grid-cols-4 xl:grid-cols-4 py-20">
+            {products.map((item) => (
+              <ProductCard
+                key={item.id}
+                product={item}
               />
             ))}
           </div>

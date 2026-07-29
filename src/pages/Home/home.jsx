@@ -21,7 +21,7 @@ export default function Home() {
     <Container>
       <section className="flex flex-col justify-between py-20">
         <SectionHeading title="Choose Your Path. We'll handle the rest" eyebrow="Not sure what you need?" align="center"/>
-        <div className="grid gap-12 md:grid-cols-2 mb-4">
+        <div className="grid gap-18 md:grid-cols-2 mb-4">
           {pathways.map((item) => (
             <PathwayCard
               key={item.path}

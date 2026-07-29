@@ -1,6 +1,5 @@
 .icon {
-  width: 140px;
-  height: auto;
+  transform: scale(1.2);
   margin-bottom: 1rem;
 }
 
