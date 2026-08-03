@@ -7,8 +7,10 @@ import { FileBadge,
         Headset,
         Clock,
         FolderLock,
+        IndianRupee,
+        BadgeCheck,
  } from "lucide-react";
- //import GSTIllustration from "../assets/illustrations/gst-illustration.svg";
+ import RegistrationIllustration from "../../Illustration/ProductIllustrations/RegistrationIllustration";
 
 export const gst =
   {
@@ -30,7 +32,28 @@ export const gst =
       title: "GST Registration",
       description:
         "Register your business under GST and stay 100% compliant.",
-      //illustration: GSTIllustration,
+      illustration: RegistrationIllustration,
+      cards: [
+        {
+          icon: null,
+          label: "GST",
+          className: "top-right",
+        },
+        {
+            icon: IndianRupee,
+            label: null,
+            className: "top-left",
+            iconSize: 28,
+            iconOnly: true,
+        },
+        {
+            icon: BadgeCheck,
+            label: null,
+            className: "bottom-right",
+            iconSize: 28,
+            iconOnly: true,
+        },
+      ],
       highlights: [
         {
           icon: LaptopMinimal,

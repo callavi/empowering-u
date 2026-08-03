@@ -3,6 +3,7 @@
 
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 0.5rem;
 
   padding: 0.75rem 1rem;
@@ -14,11 +15,16 @@
   box-shadow: var(--shadow-md);
   will-change: transform;
   transform-origin: center;
+  color: var(--color-primary-200);
+  background-color: #3f3908;
 }
 
-.icon {
-  width: 1.1rem;
-  height: 1.1rem;
+.iconOnly {
+  width: 3.5rem;
+  height: 3.5rem;
+  padding: 0;
+  justify-content: center;
+  align-items: center;
 }
 
 .registration {
@@ -43,4 +49,30 @@
   bottom: 10%;
   right: -15%;
   transform: translate(-50%, -50%);
+}
+
+.top-right {
+  top: 15%;
+  right: -5%;
+  transform: translate(-50%, -50%);
+  font-weight: var(--font-weight-bold);
+  font-size: var(--text-xl);
+}
+
+.top-left {
+  top: 15%;
+  left: 25%;
+  transform: translate(-50%, -50%);
+}
+
+.bottom-left {
+  bottom: 20%;
+  left: 5%;
+  transform: translate(-50%, -50%);
+}
+
+.bottom-right {
+  bottom: 30%;
+  right: 10%;
+  transform: trtanslate(-50%, -50%);
 }

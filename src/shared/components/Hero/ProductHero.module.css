@@ -1,0 +1,40 @@
+    .illustration {
+    position: relative;
+    z-index: 2;
+    align-content: center;
+    display: block;
+    }
+
+.heading {
+    font-size: clamp(3.5rem, 5vw, 3rem);
+    font-weight: var(--font-weight-bold);
+    line-height: var(--line-height-relaxed);
+}
+
+.subheading {
+    font-size: var(--text-base);
+    font-weight: var(--font-weight-normal);
+    line-height: var(--line-height-tight);
+}
+
+.list {
+  gap: 2rem;
+  display: flex;
+  flex-direction: column;
+
+  list-style: none;
+  margin-top: 1.2rem;
+  padding: 0;
+}
+
+.list li {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+
+  color: var(--text-secondary);
+  font-size: var(--color-text-body);
+  font-weight: 500;
+  line-height: 1.4;
+}
+    
