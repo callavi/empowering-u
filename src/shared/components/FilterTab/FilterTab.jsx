@@ -1,4 +1,4 @@
-import { tabs } from "../../data/catalogueInfo"
+import { tabs } from "../../data/services/catalogueInfo"
 import styles from "./FilterTab.module.css"
 
 export function FilterTab({activeCategory, onChange}) {

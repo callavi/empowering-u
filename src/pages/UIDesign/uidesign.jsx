@@ -6,17 +6,18 @@ import {ProcessSection} from "../../shared/components/ProcessSection/ProcessSect
 import { pathways } from "../../shared/data/pathway";
 import { services } from "../../shared/data/serviceinfo";
 import { businessProcess } from "../../shared/data/businessprocess";
-import { GSTRegistration } from "../../shared/data/GSTprocess";
+import { gst } from "../../shared/data/services/GSTRegistration";
 import { startYourBusiness } from "../../shared/data/startyourbusinessprocess";
 import { TrustBar } from "../../shared/components/TrustBar/TrustBar";
 import { ctas } from "../../shared/data/ctaConfig";
 import { CTA } from "../../shared/components/CTA/cta";
 import { Heroes } from "../../shared/data/heroConfig";
 import { Hero } from "../../shared/components/Hero/hero";
-import { products } from "../../shared/data/catalogueInfo";
+import { products } from "../../shared/data/services/index";
 import { ProductCard } from "../../shared/components/Cards/ProductCard/ProductCard";
 import { FilterTab } from "../../shared/components/FilterTab/FilterTab";
 import { CatalogueGrid } from "../../shared/components/CatalogueGrid/CatalogueGrid";
+import { ProductHero } from "../../shared/components/Hero/ProductHero";
 
 export default function UIDesign() {
   return (
@@ -32,7 +33,7 @@ export default function UIDesign() {
         </section>
 
         <section className="mb-16">
-          <Hero hero={Heroes.homepage} />
+          <ProductHero product={products[0]} />
         </section>
 
         {/* Typography */}
@@ -156,15 +157,15 @@ export default function UIDesign() {
           </h2>
         <section className="flex flex-col justify-between text-center mb-4">
           <h3 className="mb-6 text-2xl font-semibold">Business Process</h3>
-          <ProcessSection businessProcess={businessProcess} heading="Simple process. Zero hassle."/>
+          <ProcessSection steps={businessProcess} heading="Simple process. Zero hassle."/>
         </section>
         <section className="flex flex-col justify-between text-center mb-4">
           <h3 className="mb-6 text-2xl font-semibold">Service Process</h3>
-          <ProcessSection businessProcess={GSTRegistration} heading="Process"/>
+          <ProcessSection steps={gst.process} heading="Process"/>
         </section>
         <section className="flex flex-col justify-between text-center mb-4">
           <h3 className="mb-6 text-2xl font-semibold">Campaign Process</h3>
-          <ProcessSection businessProcess={startYourBusiness} heading="Our Simple 4-Step Process"/>
+          <ProcessSection steps={startYourBusiness} heading="Our Simple 4-Step Process"/>
         </section>
         </section>
         {/* Trust Bar */}
