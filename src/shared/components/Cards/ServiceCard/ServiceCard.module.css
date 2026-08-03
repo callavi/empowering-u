@@ -39,13 +39,14 @@
 }
 
 .cardheading {
-    font-size: var(--text-xl);
+    font-size: var(--text-2xl);
     font-weight: var(--font-weight-semibold);
     line-height: var(--line-height-tight);
     color: var(--color-primary-700);
 }
 
 .carddescription {
-    color: var(--color-neutral-400);
+    color: var(--color-neutral-600);
     font-weight: var(--font-weight-medium);
+    font-size: var(--text-md);
 }

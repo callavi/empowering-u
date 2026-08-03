@@ -1,0 +1,19 @@
+import { tabs } from "../../data/catalogueInfo"
+import styles from "./FilterTab.module.css"
+
+export function FilterTab({activeCategory, onChange}) {
+    return (
+        <div className={`flex items-center gap-4 wrap mb-10 ${styles.tabs}`}>
+            {tabs.map((tab)=> (
+                <button 
+                    key={tab.value}
+                    onClick={() => onChange(tab.value)}
+                    className={`${styles.tab} ${activeCategory === tab.value ? styles.active : ""}`}
+                >
+                    {tab.label}
+                </button>
+            )
+            )}
+        </div>
+    )
+}

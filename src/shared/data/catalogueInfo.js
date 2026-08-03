@@ -5,6 +5,14 @@ export const CATEGORIES = {
   CONSULTING: "consulting",
 };
 
+export const tabs = [
+    { label: "All", value: "all" },
+    { label: "Registration", value: CATEGORIES.REGISTRATION },
+    { label: "Compliance", value: CATEGORIES.COMPLIANCE },
+    { label: "Consulting", value: CATEGORIES.CONSULTING },
+    { label: "Growth", value: CATEGORIES.GROWTH },
+];
+
 export const products = [
     {
         id: "gst",

@@ -15,15 +15,21 @@ import { Heroes } from "../../shared/data/heroConfig";
 import { Hero } from "../../shared/components/Hero/hero";
 import { products } from "../../shared/data/catalogueInfo";
 import { ProductCard } from "../../shared/components/Cards/ProductCard/ProductCard";
+import { FilterTab } from "../../shared/components/FilterTab/FilterTab";
+import { CatalogueGrid } from "../../shared/components/CatalogueGrid/CatalogueGrid";
 
 export default function UIDesign() {
   return (
-    <main className="py-16">
+    <main>
       <Container>
 
         <h1 className="mb-12 text-4xl font-bold">
           Design System
         </h1>
+
+        <section className="mb-16">
+          <Hero hero={Heroes.homepage} />
+        </section>
 
         <section className="mb-16">
           <Hero hero={Heroes.homepage} />
@@ -50,6 +56,11 @@ export default function UIDesign() {
           <div className= "mb-5 flex h-14 w-14 items-center justify-center rounded-4xl">
             <h3>#6d3</h3>
           </div>
+        </section>
+
+        {/*Filter Tab*/}
+        <section className="mb-16">
+          <FilterTab />
         </section>
 
         {/* Buttons */}
@@ -168,6 +179,9 @@ export default function UIDesign() {
             CTAs
           </h2>
           <CTA info={ctas.consultation} />
+        </section>
+        <section className="flex flex-col justify-between mb-4">
+          <CatalogueGrid products={products}/>
         </section>
       </Container>
     </main>

@@ -1,0 +1,28 @@
+.tabs {
+    overflow-x:auto;
+}
+
+
+.tab {
+    display: inline-flex;
+    align-items: center;
+
+    padding: 1rem 1.5rem;
+
+    border: var(--border-width-thin) solid rgb(74, 93, 71,0.1);
+    border-radius: var(--radius-4xl);
+    background-color: var(--color-neutral-200);
+
+    transition: border-color var(--duration-medium) var(--ease-standard);
+
+    color: var(--color-primary-700);
+}
+
+.tab:hover {
+    border-color: var(--color-primary-900);
+}
+
+.active {
+    background-color: var(--color-primary-700);
+    color: var(--color-text-inverse);
+}
