@@ -2,14 +2,7 @@ import styles from "./ProductHero.module.css";
 import Container from "../Container/Container";
 import { ProductIllustration } from "../../Illustration/ProductIllustrations/ProductIllustration";
 
-export function ProductHero ({product}) {
-  const {title,
-  description,
-  illustration,
-  highlights,
-  cards,
-  } = product.hero;
-
+export function ProductHero ({title,description,illustration,highlights,cards}) {
     return (
         <Container>
             <section className="grid grid-cols-1 md:grid-cols-2 gap-4">

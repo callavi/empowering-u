@@ -1,0 +1,41 @@
+.accordionItem {
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-2xl);
+    background: var(--color-primary-100);
+    color: var(--color-primary-900);
+
+    transition: .25s ease;
+}
+
+.active {
+    border: var(--border-width-medium) solid rgb(109, 130, 99,0.15);
+    box-shadow: 0 10px 30px rgb(0 0 0 / 0.06);
+}
+
+.accordionItem:hover {
+    box-shadow: 0 8px 24px rgb(0 0 0 / .05);
+}
+
+.chevron {
+    transition: transform .25s ease;
+}
+
+.rotate {
+    transform: rotate(180deg);
+}
+
+.content {
+    display: grid;
+    grid-template-rows: 0fr;
+    transition: grid-template-rows .3s ease;
+    font-size: var(--text-lg);
+}
+
+.content > div {
+    overflow: hidden;
+    min-height: 0;
+}
+
+.open {
+    grid-template-rows: 1fr;
+}

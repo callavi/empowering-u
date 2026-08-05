@@ -20,7 +20,7 @@ export function ProcessStep({
 
       <h3 className={styles.title}>{title}</h3>
 
-      <p className={styles.subtitle}>{description}</p>
+      {description && <p className={styles.subtitle}>{description}</p>}
     
     </article>
   );

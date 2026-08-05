@@ -80,6 +80,10 @@
     --text-2xl: 1.5rem;
     --text-3xl: 2rem;
     --text-4xl: 2.5rem;
+    --text-5xl: 3rem;
+    --text-6xl: 3.5rem;
+    --text-7xl: 4rem;
+    --text-8xl: 4.5rem;
 
     /*Line Heights*/
     --line-height-tight:1.2;

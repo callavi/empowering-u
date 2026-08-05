@@ -8,14 +8,14 @@ import { SectionHeading } from "../SectionHeading/SectionHeading";
 
 import styles from "./ProcessSection.module.css";
 
-export function ProcessSection({ heading, steps }) {
+export function ProcessSection({heading,accent,features}) {
   return (
     <Container>
       <section className="flex flex-col items-center gap-8">
-      <SectionHeading title = {heading} align="center" />
+      <SectionHeading title = {heading} align="center" accent={accent} />
 
         <div className = {styles.steps}>
-          {steps.map((step, index) => (
+          {features.map((step, index) => (
             <Fragment key={step.id}>
               <ProcessStep
                 number={step.number}
@@ -25,7 +25,7 @@ export function ProcessSection({ heading, steps }) {
                 description={step.description}
               />
 
-              {index < steps.length - 1 && (
+              {index < features.length - 1 && (
                 <Connector className={`flex items-center justify-center ${styles.connector}`} />
               )}
             </Fragment>

@@ -1,3 +1,12 @@
+import { CatalogueGrid } from "../../shared/components/CatalogueGrid/CatalogueGrid";
+import { productList } from "../../shared/data/services";
+
+
 export default function Catalogue() {
-  return <h1>Catalogue</h1>;
+  return (
+    <>
+      <CatalogueGrid products={productList} />
+    </>
+
+  )
 }

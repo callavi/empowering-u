@@ -1,4 +1,7 @@
- export const startYourBusiness = [
+ export const startYourBusiness = {
+    heading: "Our 4-Step Business Process",
+    accent: null,
+    features: [
     {
         id: "Service-1",
         title: "Share your details",
@@ -23,5 +26,5 @@
         number: 4,
         variant: "number",
     },
-
- ]
+ ],
+};

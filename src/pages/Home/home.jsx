@@ -43,7 +43,7 @@ export default function Home() {
         </div>
       </section>
       <section className="flex flex-col justify-between text-center py-20">
-        <ProcessSection businessProcess={businessProcess} heading="Simple process. Zero hassle."/>
+        <ProcessSection {...businessProcess}/>
       </section>
       <section className = "py-20">
         <CTA info={ctas.consultation}  />

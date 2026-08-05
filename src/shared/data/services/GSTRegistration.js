@@ -9,8 +9,13 @@ import { FileBadge,
         FolderLock,
         IndianRupee,
         BadgeCheck,
+        UserRound,
+        Folder,
+        Landmark,
+        MapPinCheck,
  } from "lucide-react";
  import RegistrationIllustration from "../../Illustration/ProductIllustrations/RegistrationIllustration";
+
 
 export const gst =
   {
@@ -25,7 +30,7 @@ export const gst =
     priceType: "fixed",
 
     // Routing
-    path: "/gst-registration",
+    path: "/catalogue/gst-registration",
 
     // Hero
     hero: {
@@ -78,7 +83,7 @@ export const gst =
     overview: {
       title: "Who needs GST Registration?",
       description:
-        "If your business turnover exceeds...",
+        "If your business turnover exceeds...\n\nIt helps you:",
       benefits: [
         "Collect tax legally",
         "Build business credibility",
@@ -91,14 +96,17 @@ export const gst =
     pricing: {
       headline: "Starting From",
       features: [
-        "Government Fees Extra",
-        "Expert Assistance",
-        "No Hidden Charges",
+        {text: "Government Fees Extra"},
+        {text: "Expert Assistance"},
+        {text: "No Hidden Charges"},
       ],
     },
 
     // Process
-process: [
+process: {
+    heading: "Process",
+    accent: null,
+    features:[
   {
     id: "1",
     title: "Apply Online",
@@ -124,20 +132,73 @@ process: [
     icon: ShieldCheck,
   },
 ],
+},
 
     // Documents
     documents: [
-      "PAN Card",
-      "Aadhaar Card",
-      "Address Proof",
+      {
+        title: "Individual",
+        icon: UserRound,
+        list: [
+          "PAN Card",
+          "Aadhaar Card",
+          "Passport-size Photograph",
+        ],
+      },
+      {
+        title: "Business Address",
+        icon: MapPinCheck,
+        list: [
+          "Electricity Bill or Property Tax Receipt",
+          "Rent Agreement (if rented)",
+          "NOC from Owner (if applicable)",
+        ],
+      },
+      {
+        title: "Bank Details",
+        icon:Landmark,
+        list: [
+          "Cancelled Cheque or Bank Statement",
+        ],
+      },
+      {
+        title: "Business Documents \n (if applicable)",
+        icon: Folder,
+        list: [
+          "Certificate of Incorporation",
+          "Partnership Deed",
+          "MOA & AOA",
+        ],
+      },
     ],
 
     // FAQs
-    faqs: [
-      {
-        question: "...",
-        answer: "...",
-      },
-    ],
+        faqs: [
+          {
+            question: "Who needs GST Registration?",
+            answer:
+              "Businesses whose turnover exceeds the prescribed threshold or those required under GST law must register. Our experts can help determine your eligibility.",
+          },
+          {
+            question: "How long does GST Registration take?",
+            answer:
+              "The processing time depends on document verification and government approval. Most applications are completed within a few working days after all required documents are submitted.",
+          },
+          {
+            question: "What documents are required?",
+            answer:
+              "Typically you'll need identity proof, address proof, bank account details, and business-related documents. The exact requirements depend on your business type.",
+          },
+          {
+            question: "Can I apply if my business is newly started?",
+            answer:
+              "Yes. New businesses can apply for GST Registration if they meet the eligibility criteria or are required to register under GST regulations.",
+          },
+          {
+            question: "Will I receive support during the process?",
+            answer:
+              "Yes. Our team will guide you through document collection, application submission, and respond to any queries raised during the registration process.",
+          },
+        ],
 
   }

@@ -5,7 +5,10 @@ import CertificateIcon from "../../assets/Business deal-bro.svg";
 
 
 
-export const businessProcess = [
+export const businessProcess = {
+  heading: "Simple Process.",
+  accent: "Zero Hassle.",
+  features:[
   {
     id: "requirements",
     title: "Tell us your requirements",
@@ -34,4 +37,5 @@ export const businessProcess = [
     variant: "illustration",
     icon: CertificateIcon,
   },
-];
+],
+};
