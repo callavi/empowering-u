@@ -1,63 +1,21 @@
 import { Hero } from "../../shared/components/Hero/hero"
-import { PathwayCard } from "../../shared/components/Cards/PathwayCard/PathwayCard"
-import { TrustBar } from "../../shared/components/TrustBar/TrustBar"
-import { ServiceCard } from "../../shared/components/Cards/ServiceCard/ServiceCard"
 import {ProcessSection} from "../../shared/components/ProcessSection/ProcessSection"
-import { CTA } from "../../shared/components/CTA/cta"
-import { SectionHeading } from "../../shared/components/SectionHeading/SectionHeading"
-import Container from "../../shared/components/Container/Container"
-import { NavLink } from "react-router-dom"
-import { Button } from "../../shared/components/Button/Button"
-
+import { PathwaySection } from "../../shared/components/PathwaySection/PathwaySection"
+import { ServicesSection } from "../../shared/components/ServicesSection/ServicesSection"
+import { CTASection } from "../../shared/components/CTASection/CTASection";
 
 import { Heroes } from "../../shared/data/heroConfig";
 import { businessProcess } from "../../shared/data/businessprocess"
-import { pathways } from "../../shared/data/pathway"
-import { services } from "../../shared/data/serviceinfo"
 import { ctas } from "../../shared/data/ctaConfig"
 
 export default function Home() {
   return (
-    <main>
+    <>
     <Hero hero={Heroes.homepage} />
-    <Container>
-      <section className="flex flex-col justify-between py-20">
-        <SectionHeading title="Choose Your Path. We'll handle the rest" eyebrow="Not sure what you need?" align="center"/>
-        <div className="grid gap-18 md:grid-cols-2 mb-4">
-          {pathways.map((item) => (
-            <PathwayCard
-              key={item.path}
-              pathway={item}
-            />
-          ))}
-        </div>
-      </section>
-      <TrustBar />
-      <section className="flex flex-col justify-between py-20">
-        <SectionHeading title="Or, browse all our services" align="center" />
-        <div className="grid gap-8 md:grid-cols-2 xl:grid-cols-4">
-          {services.map((item) => (
-            <ServiceCard
-              key={item.path}
-              service={item}
-            />
-          ))}
-        </div>
-        <div className="flex items-center justify-center py-12">
-          <NavLink to="/catalogue">
-            <Button variant="text" size="large">
-              View All
-            </Button>
-          </NavLink>
-        </div>
-      </section>
-      <section className="flex flex-col justify-between text-center py-20">
-        <ProcessSection {...businessProcess}/>
-      </section>
-      <section className = "py-20">
-        <CTA info={ctas.consultation}  />
-      </section>
-    </Container>
-  </main>
+    <PathwaySection />
+    <ServicesSection />
+    <ProcessSection {...businessProcess}/>
+    <CTASection cta={ctas.consultation} />
+  </>
   )
 }

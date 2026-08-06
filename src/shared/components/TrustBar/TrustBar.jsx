@@ -7,7 +7,7 @@ import styles from "./TrustBar.module.css";
 
 export function TrustBar () {
     return (
-        <section className="grid md:grid-cols-4 gap-4">
+        <section className={`grid md:grid-cols-4 gap-4 ${styles.trust}`}>
             <div className="flex gap-2">
                 <CircleDollarSign className={styles.icon} />
                 <p>Transparent Pricing</p>

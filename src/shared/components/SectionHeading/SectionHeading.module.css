@@ -53,17 +53,6 @@
     color: var(--color-accent);
 }
 
-.accent::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: -0.15em;
-    width: 100%;
-    height: 3px;
-    border-radius: 999px;
-    background: currentColor;
-    opacity: .3;
-}
 
 .description {
     max-width: 60ch;

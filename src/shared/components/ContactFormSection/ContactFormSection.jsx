@@ -1,0 +1,44 @@
+import { ContactForm } from "../ContactForm/ContactForm";
+import { ContactInfo } from "../ContactInfo/ContactInfo";
+import styles from "./ContactFormSection.module.css";
+import Container from "../Container/Container";
+import { products } from "../../data/services/index";
+import { information } from "../../data/contactInfo";
+import { SectionHeading } from "../SectionHeading/SectionHeading";
+
+const services = Object.values(products).map(({ label }) => label);
+
+export function ContactFormSection() {
+
+    async function handleSubmit(formData) {
+        console.log(formData);
+
+        // Later:
+        // await fetch(...)
+    }
+
+    return (
+        <section className={styles.section}>
+            <Container>
+                <div className="flex flex-col gap-8">
+                    <SectionHeading 
+                    title="Talk to Us" 
+                    eyebrow="Not sure which service you need?" 
+                    description="Don't worry—we'll help you choose the right one before you spend anything."
+                    align="center" />
+                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 w-full">
+                        <div className="flex items-center justify-center">
+                            <ContactForm
+                                services={services}
+                                onSubmit={handleSubmit}
+                            />
+                        </div>
+                        <div>
+                            <ContactInfo {...information} />
+                        </div>
+                    </div>
+                </div>
+            </Container>
+    </section>
+    );
+}

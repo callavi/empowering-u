@@ -1,0 +1,36 @@
+.section {
+  min-height: calc(100vh - 80px);
+  display:flex;
+  align-items:center;
+  padding-block:clamp(3rem, 6vw, 5rem);
+  position: relative;
+  z-index: 2;
+  padding-bottom: 6rem;
+}
+
+
+.section::after {
+    content: "";
+    position: absolute;
+
+    width: 700px;
+    height: 700px;
+
+    right: 120px;
+    top: 70%;
+
+    transform: translateY(-50%);
+
+    background:
+        radial-gradient(
+            circle,
+            rgba(255, 231, 217, 0.8) 0%,
+            rgba(255, 231, 217, 0.45) 35%,
+            transparent 75%
+        );
+
+    filter: blur(40px);
+
+    pointer-events: none;
+    z-index: -1;
+}

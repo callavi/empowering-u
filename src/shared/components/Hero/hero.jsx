@@ -14,9 +14,6 @@ export function Hero ({hero}) {
         floatingCards,
     } = hero;
 
-    console.log(hero);
-    console.log(primaryActions);
-
     return (
         <section  className={styles.hero}>
             <Container>
@@ -38,7 +35,7 @@ export function Hero ({hero}) {
                                 {description}
                             </p>
                         </div>
-                        <div>
+                        <div className="flex gap-4">
                             {primaryActions.map((action) => (
                                 <NavLink
                                     key={action.label}

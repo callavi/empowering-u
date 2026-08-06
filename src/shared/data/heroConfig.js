@@ -1,5 +1,6 @@
 import {HomepageIllustration} from "../Illustration/HeroIllustrations/HomepageIllustration";
-import { UserPlus, ShieldCheck, Briefcase, TrendingUp } from "lucide-react";
+import { UserPlus, ShieldCheck, Briefcase, TrendingUp, Clock3, MessageCircle} from "lucide-react";
+import { ContactPageIllustration } from "../Illustration/HeroIllustrations/ContactPageIllustration";
 
 export const Heroes = {
 homepage: {
@@ -50,5 +51,50 @@ homepage: {
     },
   ],
 },
+contact: {
+  badge: "Let's Talk",
 
+  title: {
+    before:"Have a Question? We're Here to",
+    highlight: "Help.",
+  },
+  description:
+      "Whether you're starting a business, registering for GST, designing a website, or growing your brand, we're here to help. Tell us what you need, and we'll guide you to the right solution.",
+
+  primaryActions: [
+      {
+          label: "Call Us",
+          href: "tel:+91XXXXXXXXXX",
+          variant: "secondary",
+      },
+      {
+          label: "WhatsApp",
+          href: "https://wa.me/91XXXXXXXXXX",
+          variant: "outline",
+      },
+  ],
+
+  illustration: ContactPageIllustration,
+
+  floatingCards: [
+    {
+        id: "contactPill-1",
+        icon: MessageCircle,
+        label: "Friendly Guidance",
+        className: "guidance",
+    },
+    {
+        id: "contactPill-2",
+        icon: Clock3,
+        label: "Quick Response",
+        className: "response",
+    },
+    {
+        id: "contactPill-3",
+        icon: ShieldCheck,
+        label: "Trusted Support",
+        className: "support",
+    },
+  ],
+},
 };

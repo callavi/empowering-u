@@ -27,11 +27,13 @@
   align-items: center;
 }
 
-.registration {
+.registration,
+.guidance {
   top: 15%;
   right: 5%;
   transform: translate(-50%, -50%);
 }
+
 
 .compliance {
   top: 15%;
@@ -42,6 +44,18 @@
 .consulting {
   bottom: 20%;
   left: 5%;
+  transform: translate(-50%, -50%);
+}
+
+.response {
+  bottom: 0.5%;
+  right: 0.5%;
+  transform: translate(-50%, -50%);
+}
+
+.support {
+  bottom: 0.5%;
+  left: 0.5%;
   transform: translate(-50%, -50%);
 }
 

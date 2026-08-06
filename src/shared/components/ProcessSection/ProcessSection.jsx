@@ -37,7 +37,7 @@ const layout = isJourney ? "vertical" : "horizontal";
                   : styles.stepsHorizontal
               )}
             >
-              {features.map((step, index) => (
+              {features.map((step) => (
                 <Fragment key={step.id}>
                   <ProcessStep
                     number={step.number}
@@ -46,7 +46,6 @@ const layout = isJourney ? "vertical" : "horizontal";
                     title={step.title}
                     description={step.description}
                     layout={layout}
-                    isLast={index === features.length - 1}
                   />
                 </Fragment>
               ))}

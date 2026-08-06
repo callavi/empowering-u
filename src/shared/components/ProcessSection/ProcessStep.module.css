@@ -4,21 +4,30 @@
 
 .stepHorizontal {
     text-align: center;
-    max-width: 16rem;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+    min-width: 0;
 }
 
 .stepVertical {
     display: flex;
     gap: 1rem;
-    align-items: flex-start;
-    max-width: 32rem;
+    align-items: center;
+
+    width: 100%;
+    max-width: none;
 }
 
 .visual {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     flex-shrink: 0;
+    width: 120px;
+    height: 120px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .stepHorizontal .visual {
@@ -26,7 +35,7 @@
 }
 
 .stepVertical .visual {
-    margin-top: 0.25rem;
+    margin-top: 0;
 }
 
 .content {
@@ -39,11 +48,6 @@
 
 .stepVertical .content {
     text-align: left;
-    display: flex;
-    flex: 1 1 200px;
-    align-items: center;
-    justify-content: center;
-    gap: 1rem;
 }
 
 .title {
@@ -58,11 +62,4 @@
     font-weight: var(--font-weight-medium);
     font-size: var(--text-sm);
     line-height: var(--line-height-tight);
-}
-
-.timeline {
-    width: 2px;
-    height: 48px;
-    background: var(--color-primary-200);
-    margin-top: 0.75rem;
 }

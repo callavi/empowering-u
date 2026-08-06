@@ -20,13 +20,19 @@ export function ProcessStep({
           : styles.stepHorizontal
       )}
     >
+      <div className={styles.visual}>
+        <ProcessIcon
+          icon={icon}
+          variant={iconVariant}
+          number={number}
+        />
+      </div>
+
       <div className={styles.content}>
-          <ProcessIcon icon={icon} 
-                      variant={iconVariant}
-                      number={number}
-          />
         <h3 className={styles.title}>{title}</h3>
-        {description && <p className={styles.subtitle}>{description}</p>}
+        {description && (
+          <p className={styles.subtitle}>{description}</p>
+        )}
       </div>
     </article>
   );
