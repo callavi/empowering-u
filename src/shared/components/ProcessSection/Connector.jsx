@@ -1,12 +1,13 @@
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, ArrowDown } from "lucide-react";
 
-export function Connector() {
+export function Connector({direction="horizontal"}) {
   return (
-    <div
-      className=""
-      aria-hidden="true"
-    >
-      <ArrowRight className="flex items-center mt-4 text-gray-600" />
+    <div aria-hidden="true">
+      {direction === "vertical" ? (
+        <ArrowDown className="text-gray-600" />
+      ) : (
+        <ArrowRight className="text-gray-600" />
+      )}
     </div>
   );
 }

@@ -5,7 +5,3 @@
 @import "./shared/styles/tokens.css";
 @import "./shared/styles/globals.css";
 @import "./shared/styles/reset.css";
-
-body {
-  background: #f8e7d9;
-}

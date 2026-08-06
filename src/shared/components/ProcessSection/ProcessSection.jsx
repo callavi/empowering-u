@@ -2,36 +2,64 @@ import { Fragment } from "react";
 
 
 import {ProcessStep} from "./ProcessStep";
-import {Connector} from "./Connector";
 import Container from "../Container/Container";
 import { SectionHeading } from "../SectionHeading/SectionHeading";
+import clsx from "clsx";
 
 import styles from "./ProcessSection.module.css";
 
-export function ProcessSection({heading,accent,features}) {
+export function ProcessSection({heading,accent,features,variant="default",illustration: Illustration}) {
+
+const isJourney = variant === "journey";
+const layout = isJourney ? "vertical" : "horizontal";
   return (
-    <Container>
-      <section className="flex flex-col items-center gap-8">
-      <SectionHeading title = {heading} align="center" accent={accent} />
+    <section className={styles.section}>
+      <Container>
+        <div className={clsx(
+          styles.content,
+          variant === "journey"
+            ? styles.twoColumn
+            : styles.singleColumn
+        )}>
 
-        <div className = {styles.steps}>
-          {features.map((step, index) => (
-            <Fragment key={step.id}>
-              <ProcessStep
-                number={step.number}
-                icon={step.icon}
-                iconVariant={step.variant}
-                title={step.title}
-                description={step.description}
-              />
+          <div className={styles.main}>
+            <SectionHeading
+              title={heading}
+              align={variant === "journey" ? "left" : "center"}
+              accent={accent}
+            />
 
-              {index < features.length - 1 && (
-                <Connector className={`flex items-center justify-center ${styles.connector}`} />
+            <div
+              className={clsx(
+                styles.steps,
+                layout === "vertical"
+                  ? styles.stepsVertical
+                  : styles.stepsHorizontal
               )}
-            </Fragment>
-          ))}
+            >
+              {features.map((step, index) => (
+                <Fragment key={step.id}>
+                  <ProcessStep
+                    number={step.number}
+                    icon={step.icon}
+                    iconVariant={step.variant}
+                    title={step.title}
+                    description={step.description}
+                    layout={layout}
+                    isLast={index === features.length - 1}
+                  />
+                </Fragment>
+              ))}
+            </div>
+          </div>
+
+          {variant === "journey" && Illustration && (
+            <div className={styles.illustration}>
+              <Illustration />
+            </div>
+          )}
         </div>
-      </section>
     </Container>
+    </section>
   );
 }

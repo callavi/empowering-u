@@ -6,6 +6,8 @@ import {ProcessSection} from "../../shared/components/ProcessSection/ProcessSect
 import { CTA } from "../../shared/components/CTA/cta"
 import { SectionHeading } from "../../shared/components/SectionHeading/SectionHeading"
 import Container from "../../shared/components/Container/Container"
+import { NavLink } from "react-router-dom"
+import { Button } from "../../shared/components/Button/Button"
 
 
 import { Heroes } from "../../shared/data/heroConfig";
@@ -40,6 +42,13 @@ export default function Home() {
               service={item}
             />
           ))}
+        </div>
+        <div className="flex items-center justify-center py-12">
+          <NavLink to="/catalogue">
+            <Button variant="text" size="large">
+              View All
+            </Button>
+          </NavLink>
         </div>
       </section>
       <section className="flex flex-col justify-between text-center py-20">

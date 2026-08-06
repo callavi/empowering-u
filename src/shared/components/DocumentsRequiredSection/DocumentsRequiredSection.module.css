@@ -2,8 +2,9 @@
     background-color: var(--color-primary-50);
     border-radius: var(--radius-lg);
     border: var(--border-width-thin) solid rgb(74, 93, 71,0.15);
-    position: relative;
+    position: relative; 
     overflow: hidden;
+    box-shadow: var(--shadow-md);
 }
 
 .documentCard::after {
@@ -19,13 +20,12 @@
     border-radius: 50%;
 
     background:
-        radial-gradient(circle at 30% 40%, var(--color-accent-light) 20%, transparent 26%),
-        radial-gradient(circle at 53% 30%, var(--color-accent-light) 25%, transparent 31%),
-        radial-gradient(circle at 23% 63%, var(--color-accent-light) 22%, transparent 25%),
-        radial-gradient(circle at 53% 69%, var(--color-accent-light) 22%, transparent 23%);
+        radial-gradient(circle at 30% 40%, var(--color-primary-500) 20%, transparent 20%),
+        radial-gradient(circle at 53% 30%, var(--color-primary-500) 29%, transparent 25%),
+        radial-gradient(circle at 23% 63%, var(--color-primary-500) 22%, transparent 20%);
 
     filter: blur(2px);
-    opacity: .45;
+    opacity: 0.25;
 }
 
 .heading {
@@ -74,4 +74,54 @@
 .cardHeader svg {
   color: var(--color-primary);
   flex-shrink: 0;
+}
+
+.section {
+  min-height: calc(100vh - 80px);
+  display:flex;
+  align-items:center;
+  padding-block:clamp(3rem, 6vw, 5rem);
+  position: relative;
+  z-index: 2;
+  padding-bottom: 6rem;
+}
+
+.section::before{
+    content:"";
+    position:absolute;
+
+    width:700px;
+    height:700px;
+
+    background:var(--surface-page);
+    border-radius:50%;
+
+    left:-150px;
+    top:50%;
+
+    transform:translateY(-50%);
+    opacity: 0.5;
+
+    filter:blur(50px);
+    z-index: -1;
+}
+
+.section::after{
+    content:"";
+    position:absolute;
+
+    width:500px;
+    height:500px;
+
+    background:var(--surface-page);
+    border-radius:50%;
+
+    right:50px;
+    top:70%;
+
+    transform:translateY(-50%);
+    opacity: 0.5;
+
+    filter:blur(50px);
+    z-index: -1;
 }

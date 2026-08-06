@@ -3,7 +3,7 @@
     align-items: center;
     justify-content: center;
     font-weight: var(--font-weight-semibold);
-    border-radius: var(--radius-md);
+    border-radius: var(--radius-full);
     border: var(--border-width-thick) solid transparent;
     cursor: pointer;
     transition: background-color var(--duration-fast) var(--ease-in-out), 

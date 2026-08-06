@@ -1,23 +1,56 @@
 .step {
     position: relative;
-    text-align: center;
-    max-width: 18ch;
-    gap: 2rem;
+}
 
+.stepHorizontal {
+    text-align: center;
+    max-width: 16rem;
+}
+
+.stepVertical {
+    display: flex;
+    gap: 1rem;
+    align-items: flex-start;
+    max-width: 32rem;
 }
 
 .visual {
     display: flex;
     flex-direction: column;
     align-items: center;
+    flex-shrink: 0;
+}
+
+.stepHorizontal .visual {
     margin-bottom: 1rem;
+}
+
+.stepVertical .visual {
+    margin-top: 0.25rem;
+}
+
+.content {
+    flex: 1;
+}
+
+.stepHorizontal .content {
+    text-align: center;
+}
+
+.stepVertical .content {
+    text-align: left;
+    display: flex;
+    flex: 1 1 200px;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
 }
 
 .title {
     font-size: var(--text-lg);
     font-weight: var(--font-weight-semibold);
     color: var(--color-primary-500);
-    margin-bottom: 1rem;
+    margin-bottom: 0.5rem;
 }
 
 .subtitle {
@@ -25,4 +58,11 @@
     font-weight: var(--font-weight-medium);
     font-size: var(--text-sm);
     line-height: var(--line-height-tight);
+}
+
+.timeline {
+    width: 2px;
+    height: 48px;
+    background: var(--color-primary-200);
+    margin-top: 0.75rem;
 }

@@ -15,6 +15,7 @@ import { FileBadge,
         MapPinCheck,
  } from "lucide-react";
  import ConsultingIllustration from "../../Illustration/ProductIllustrations/ConsultingIllustration";
+ import StepsIllustration from "../../Illustration/ProductIllustrations/StepsIllustration";
 
 
 export const startup =
@@ -100,6 +101,8 @@ export const startup =
   process: {
     heading: "Process",
     accent: null,
+    variant: "journey",
+    illustration: StepsIllustration,
     features: [
       {
         id: "1",

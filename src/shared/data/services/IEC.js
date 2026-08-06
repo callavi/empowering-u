@@ -15,7 +15,7 @@ import { FileBadge,
         MapPinCheck,
  } from "lucide-react";
  import RegistrationIllustration from "../../Illustration/ProductIllustrations/RegistrationIllustration";
-
+ import StepsIllustration from "../../Illustration/ProductIllustrations/StepsIllustration";
 
 export const iec =
 {
@@ -100,6 +100,8 @@ export const iec =
   process: {
     heading: "Process",
     accent: null,
+    variant: "journey",
+    illustration: StepsIllustration,
     features: [
       {
         id: "1",

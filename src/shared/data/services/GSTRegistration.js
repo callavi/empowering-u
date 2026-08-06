@@ -15,6 +15,7 @@ import { FileBadge,
         MapPinCheck,
  } from "lucide-react";
  import RegistrationIllustration from "../../Illustration/ProductIllustrations/RegistrationIllustration";
+ import StepsIllustration from "../../Illustration/ProductIllustrations/StepsIllustration";
 
 
 export const gst =
@@ -106,6 +107,8 @@ export const gst =
 process: {
     heading: "Process",
     accent: null,
+    variant: "journey",
+    illustration: StepsIllustration,
     features:[
   {
     id: "1",

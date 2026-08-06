@@ -16,25 +16,31 @@
    --color-neutral-0:   #ffffff;
    --color-neutral-100: #f8f8f8;
    --color-neutral-200: #e5e5e5;
-   --color-neutral-400: #9ca3af;
-   --color-neutral-700: #4b5563;
-   --color-neutral-900: #282828;
+   --color-neutral-400: #8d9ab0;
+   --color-neutral-700: #475466;
+   --color-neutral-900: #253238;
 
    --color-accent: #C58A1C;
    --color-accent-dark:#A87317;
    --color-accent-light: #F5E8C4;
 
+   --color-alternative: #3F3909;
+
+   
+
   /* Backgrounds */
 
-   --color-background: var(--color-neutral-0);
-   --color-surface: var(--color-neutral-100);
-   --color-surface-light: var(--color-primary-100);
-   --color-surface-dark:   var(--color-primary-800);
+  --surface-page: #F9E9DB;      /* Main peach */
+  --surface-primary: #FFFFFF;   /* White cards/sections */
+  --surface-secondary: #F6F9F3; /* Soft green section */
+  --surface-tertiary: #FFFBF7;  /* Warm cream (optional) */
+
 
   /* Text */
 
-   --color-text-heading:   var(--color-primary-900);
+   --color-text-heading:   var(--color-primary-700);
    --color-text-body:      var(--color-neutral-900);
+   --color-text-alternative: var(--color-alternative);
    --color-text-inverse:   var(--color-neutral-100);
    --color-text-placeholder:var(--color-neutral-400);
 
@@ -86,6 +92,7 @@
     --text-8xl: 4.5rem;
 
     /*Line Heights*/
+    --line-height-tighter:1.05;
     --line-height-tight:1.2;
     --line-height-normal:1.5;
     --line-height-loose:1.8;

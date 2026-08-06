@@ -39,3 +39,42 @@
 .open {
     grid-template-rows: 1fr;
 }
+
+.section {
+  min-height: calc(100vh - 80px);
+  display:flex;
+  align-items:center;
+  padding-block:clamp(3rem, 6vw, 5rem);
+  position: relative;
+  overflow-x: hidden;
+  z-index: 1;
+  padding-bottom: 6rem;
+}
+
+.section::after{
+    content:"";
+    position:absolute;
+
+    width:500px;
+    height:500px;
+
+    background:var(--surface-page);
+    border-radius:50%;
+
+    right:-150px;
+    top:70%;
+
+    transform:translateY(-50%);
+    opacity: 0.5;
+
+    filter:blur(50px);
+    z-index: -1;
+}
+
+.illustration {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 75%;
+    margin: auto
+}

@@ -15,6 +15,7 @@ import { FileBadge,
         MapPinCheck,
  } from "lucide-react";
  import GrowthIllustration from "../../Illustration/ProductIllustrations/GrowthIllustration";
+ import StepsIllustration from "../../Illustration/ProductIllustrations/StepsIllustration";
 
 
 export const logo =
@@ -100,6 +101,8 @@ export const logo =
   process: {
     heading: "Process",
     accent: null,
+    variant: "journey",
+    illustration: StepsIllustration,
     features: [
       {
         id: "1",

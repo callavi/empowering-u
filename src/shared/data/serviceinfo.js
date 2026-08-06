@@ -10,28 +10,28 @@ import { FileBadge,
         name: "Registration",
         description: "Company,GST,MSME and more",
         icon: FileBadge,
-        path: "/registration"
+        path: "/catalogue?category=registration"
     },
        {
         id: "Service-2",
         name: "Compliance",
         description: "Stay compliant and worry free",
         icon: ClipboardPenLine,
-        path: "/compliance"
+        path: "/catalogue?category=compliance"
     },
        {
         id: "Service-3",
         name: "Consulting",
         description: "Expert advice for your business",
         icon: BriefcaseBusiness,
-        path: "/consulting"
+        path: "/catalogue?category=consulting"
     },
        {
         id: "Service-4",
         name: "Growth Services",
         description: "Build,brand and grow online",
         icon: ChartNoAxesCombined,
-        path: "/growth"
+        path: "/catalogue?category=growth"
     },
 
  ]

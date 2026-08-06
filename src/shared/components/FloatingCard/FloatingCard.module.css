@@ -29,7 +29,7 @@
 
 .registration {
   top: 15%;
-  right: -5%;
+  right: 5%;
   transform: translate(-50%, -50%);
 }
 
@@ -46,14 +46,14 @@
 }
 
 .growthservices {
-  bottom: 10%;
-  right: -15%;
+  bottom: 0.5%;
+  right: 0.5%;
   transform: translate(-50%, -50%);
 }
 
 .top-right {
   top: 15%;
-  right: -5%;
+  right: 5%;
   transform: translate(-50%, -50%);
   font-weight: var(--font-weight-bold);
   font-size: var(--text-xl);
@@ -74,5 +74,5 @@
 .bottom-right {
   bottom: 30%;
   right: 10%;
-  transform: trtanslate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }

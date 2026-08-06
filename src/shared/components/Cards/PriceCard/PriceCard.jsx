@@ -41,7 +41,7 @@ const { pricing } = product;
 const { headline, features } = pricing;
 
     return (
-        <article className={`flex flex-col p-8 w-full max-w-sm min-h-[400px] ${styles.card}`}>
+        <article className={`flex flex-col p-8 w-full max-w-sm min-h-[200px] ${styles.card}`}>
             <div className ="flex flex-col space-y-4">
                 {headline && (<h3 className={styles.eyebrow}>{headline}</h3>)}
                 <h2 className={styles.heading}>
@@ -73,7 +73,7 @@ const { headline, features } = pricing;
                     </Button>
                 </NavLink>
                 <NavLink to={secondaryLink}>
-                    <Button variant="secondary" fullWidth>
+                    <Button variant="outline" fullWidth>
                         {secondaryText}
                     </Button>
                 </NavLink>

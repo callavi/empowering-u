@@ -2,25 +2,32 @@
     position: relative;
     z-index: 2;
     align-content: center;
-    display: block;
+    display: block  ;
+    overflow: visible;
+    width: 100%;
+    margin: auto
     }
 
 .heading {
-    font-size: clamp(3.5rem, 5vw, 3rem);
-    font-weight: var(--font-weight-bold);
-    line-height: var(--line-height-relaxed);
+  font-size:clamp(3rem,6vw,5rem);
+  line-height:var(--line-height-tighter);
+  max-width:10ch;
+  font-weight: var(--font-weight-bold);
+  color: var(--color-text-heading);
+
 }
 
 .subheading {
-    font-size: var(--text-base);
+    font-size: var(--text-xl);
     font-weight: var(--font-weight-normal);
-    line-height: var(--line-height-tight);
+    line-height: var(--line-height-loose);
+    max-width:32rem;
+    opacity: 0.85;
+    color: var(--color-text-body);
 }
 
 .list {
   gap: 2rem;
-  display: flex;
-  flex-direction: column;
 
   list-style: none;
   margin-top: 1.2rem;
@@ -31,10 +38,72 @@
   display: flex;
   align-items: center;
   gap: 0.75rem;
+  width: 250px;
 
-  color: var(--text-secondary);
+  border-radius: var(--radius-4xl);
+  background: var(--color-neutral-300);
+  box-shadow: var(--shadow-md);
+
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+
+  border: var(--border-width-thin) solid rgb(63, 57, 9,0.25);
+
+  padding: 0.75rem;
+  color: var(--color-text-alternative);
   font-size: var(--color-text-body);
   font-weight: 500;
+  font-size: var(--text-md);
   line-height: 1.4;
 }
     
+
+
+.section {
+  min-height: calc(100vh - 80px);
+  display:flex;
+  align-items:center;
+  padding-block:clamp(3rem, 6vw, 5rem);
+  position: relative;
+  overflow-x: hidden;
+  z-index: 1;
+  padding-bottom: 6rem;
+}
+
+.section::before{
+    content:"";
+    position:absolute;
+
+    width:700px;
+    height:700px;
+
+    background:var(--surface-page);
+    border-radius:50%;
+
+    right:-150px;
+    top:40%;
+
+    transform:translateY(-50%);
+
+    filter:blur(40px);
+    z-index: -1;
+}
+
+.section::after{
+    content:"";
+    position:absolute;
+
+    width:700px;
+    height:700px;
+
+    background:var(--surface-page);
+    border-radius:50%;
+
+    left:-150px;
+    bottom:30%;
+
+    transform:translateY(-50%);
+
+    filter:blur(50px);
+    z-index: -1;
+}
