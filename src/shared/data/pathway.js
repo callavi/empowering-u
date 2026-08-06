@@ -9,7 +9,7 @@ export const pathways = [
            { text: "my business"},],
     description: "We handle the setup so you can start with confidence.",
     button: "Start Now",
-    path: "/start-a-business",
+    path: "/start-your-business",
     Illustration: StartBusiness,
   },
   {

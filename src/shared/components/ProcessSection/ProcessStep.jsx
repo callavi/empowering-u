@@ -10,7 +10,6 @@ export function ProcessStep({
   title,
   description,
   layout,
-  isLast,
 }) {
   return (
     <article

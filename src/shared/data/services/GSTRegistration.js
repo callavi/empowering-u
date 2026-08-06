@@ -96,12 +96,22 @@ export const gst =
     // Pricing Card
     pricing: {
       headline: "Starting From",
-      features: [
+      highlights: [
         {text: "Government Fees Extra"},
         {text: "Expert Assistance"},
         {text: "No Hidden Charges"},
       ],
+    cta: {
+      primary: {
+        text: "Get Started Now",
+        link: "/checkout",
+      },
+      secondary: {
+        text: "Request a Callback",
+        link: "/contact",
+      },
     },
+  },
 
     // Process
 process: {

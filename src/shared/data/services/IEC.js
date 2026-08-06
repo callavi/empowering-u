@@ -90,11 +90,21 @@ export const iec =
 
   pricing: {
     headline: "Starting From",
-    features: [
+    highlights: [
       { text: "Expert Assistance" },
       { text: "Complete Documentation Support" },
       { text: "No Hidden Charges" },
     ],
+    cta: {
+      primary: {
+        text: "Get Started Now",
+        link: "/checkout",
+      },
+      secondary: {
+        text: "Request a Callback",
+        link: "/contact",
+      },
+    },
   },
 
   process: {

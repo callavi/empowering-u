@@ -91,11 +91,21 @@ export const startup =
 
   pricing: {
     headline: null,
-    features: [
+    highlights: [
       { text: "Personalized Guidance" },
       { text: "Business Strategy Sessions" },
       { text: "Actionable Recommendations" },
     ],
+    cta: {
+      primary: {
+        text: "Get Started Now",
+        link: "/checkout",
+      },
+      secondary: {
+        text: "Request a Callback",
+        link: "/contact",
+      },
+    },
   },
 
   process: {

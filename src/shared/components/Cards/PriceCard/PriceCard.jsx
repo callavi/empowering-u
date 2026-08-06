@@ -4,41 +4,49 @@ import { Button } from "../../Button/Button";
 import { NavLink } from "react-router-dom";
 
 export function PriceCard ({product}) {
-    const isFixed = product.priceType === "fixed";
+const isFixed = product.priceType === "fixed";
 
- const cardContent = isFixed
+const {
+  headline,
+  highlights,
+  cta = {},
+} = product.pricing;
+
+const price = isFixed
+  ? product.price.toLocaleString("en-IN", {
+      style: "currency",
+      currency: "INR",
+      maximumFractionDigits: 0,
+    })
+  : "Custom Quote";
+
+const description = isFixed
+  ? null
+  : "Pricing depends on your requirements.";
+
+const defaultPrimary = isFixed
   ? {
-      price: product.price.toLocaleString("en-IN", {
-        style: "currency",
-        currency: "INR",
-        maximumFractionDigits: 0,
-      }),
-      description: null,
-      primaryText: "Add to Cart",
-      secondaryText: "Buy Now",
-      primaryLink: "/cart",
-      secondaryLink: "/checkout",
+      text: "Add to Cart",
+      link: "/cart",
     }
   : {
-      price: "Custom Quote",
-      description: "Pricing depends on your requirements.",
-      primaryText: "Request Quote",
-      secondaryText: "Talk to an Expert",
-      primaryLink: "/contact",
-      secondaryLink: "/contact",
+      text: "Request Quote",
+      link: "/contact",
     };
 
-    const {
-    price,
-    description,
-    primaryText,
-    secondaryText,
-    primaryLink,
-    secondaryLink,
-} = cardContent;
+const defaultSecondary = isFixed
+  ? {
+      text: "Buy Now",
+      link: "/checkout",
+    }
+  : {
+      text: "Talk to an Expert",
+      link: "/contact",
+    };
 
-const { pricing } = product;
-const { headline, features } = pricing;
+const primary = cta.primary ?? defaultPrimary;
+const secondary = cta.secondary ?? defaultSecondary;
+
 
     return (
         <article className={`flex flex-col p-8 w-full max-w-sm min-h-[200px] ${styles.card}`}>
@@ -56,7 +64,7 @@ const { headline, features } = pricing;
             </div>
             <div className="mb-4 mt-4 ">
                 <ul className = "flex-1">
-                    {features.map(({text}) => (
+                    {highlights.map(({text}) => (
                         <li 
                         key = {text}
                         className ={styles.listItem}>
@@ -67,14 +75,14 @@ const { headline, features } = pricing;
                 </ul>
             </div>
             <div className="flex flex-col gap-4 mt-3">
-                <NavLink to={primaryLink}>
+                <NavLink to={primary.link}>
                     <Button variant="primary" fullWidth>
-                        {primaryText}
+                        {primary.text}
                     </Button>
                 </NavLink>
-                <NavLink to={secondaryLink}>
+                <NavLink to={secondary.link}>
                     <Button variant="outline" fullWidth>
-                        {secondaryText}
+                        {secondary.text}
                     </Button>
                 </NavLink>
             </div>

@@ -91,11 +91,21 @@ export const logo =
 
   pricing: {
     headline: null,
-    features: [
+    highlights: [
       { text: "Custom Design" },
       { text: "Multiple Revisions" },
       { text: "High-Quality Files" },
     ],
+    cta: {
+      primary: {
+        text: "Get Started Now",
+        link: "/checkout",
+      },
+      secondary: {
+        text: "Request a Callback",
+        link: "/contact",
+      },
+    },
   },
 
   process: {
