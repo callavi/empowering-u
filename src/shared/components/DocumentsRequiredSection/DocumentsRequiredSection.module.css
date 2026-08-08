@@ -66,13 +66,13 @@
   border-radius: 9999px;
 
   background: var(--color-primary-200); /* or a very light brand colour */
-  color: var(--color-primary);
+  color: var(--color-primary-500);
 
   flex-shrink: 0;
 }
 
 .cardHeader svg {
-  color: var(--color-primary);
+  color: var(--color-primary-500);
   flex-shrink: 0;
 }
 

@@ -19,7 +19,7 @@
 }
 
 .cta:hover {
-    box-shadow: var(--shadow-xl);
+    box-shadow: var(--shadow-md);
     transform: translateY(-6px);
 }
 

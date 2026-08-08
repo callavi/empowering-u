@@ -1,5 +1,5 @@
 .article {
-    background: var(--color-neutral-50);
+    background: var(--color-neutral-0);
     box-shadow: var(--shadow-md);
     border-radius: var(--radius-xl);
     transition:
@@ -12,7 +12,7 @@
 
 .article:hover {
     transform: translateY(-6px);
-    box-shadow: var(--shadow-xl);
+    box-shadow: var(--shadow-md);
     border-color: var(--color-primary-200);
 }
 
@@ -46,7 +46,7 @@
 }
 
 .carddescription {
-    color: var(--color-neutral-600);
+    color: var(--color-neutral-400);
     font-weight: var(--font-weight-medium);
-    font-size: var(--text-md);
+    font-size: var(--text-base);
 }

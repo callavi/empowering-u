@@ -12,16 +12,16 @@
 }
 
 .infoText {
-    color: var(--color-neutral-500);
+    color: var(--color-neutral-700);
     font-size: var(--text-base);
     font-weight: var(--font-weight-normal);
 }
 
 .link {
     text-decoration: none;
-    color: var(--color-neutral-500);
+    color: var(--color-neutral-700);
     transition:
-        color var(--transition-fast)
+        color var(--duration-fast)
         var(--ease-standard);
 }
 

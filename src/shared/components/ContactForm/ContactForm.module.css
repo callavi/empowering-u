@@ -15,14 +15,14 @@
 
 .field:focus {
     outline: none;
-    border-color: var(--color-primary);
+    border-color: var(--color-primary-500);
     box-shadow: var(--shadow-sm);
 }
 
 .label {
     font-size: var(--text-sm);
     font-weight: var(--font-semibold);
-    color: var(--color-text);
+    color: var(--color-text-body);
 }
 
 .textarea {

@@ -67,7 +67,7 @@
     }
 
     .stepsHorizontal {
-        flex-direction: column;
+        grid-template-columns: 1fr;
         align-items: center;
     }
 }

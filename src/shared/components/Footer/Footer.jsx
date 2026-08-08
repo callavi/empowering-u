@@ -23,7 +23,7 @@ export default function Footer() {
                 <img src={logo} alt="Empowering U Logo" className="h-12 w-auto" />
                 Empowering U
             </Link>
-            <p className={`max-w-xs $q{styles.infoText}`}>
+            <p className={`max-w-xs ${styles.infoText}`}>
                 Empowering U helps entrepreneurs and businesses navigate registration, compliance, and growth with practical guidance and straightforward services.
             </p>
         </div>

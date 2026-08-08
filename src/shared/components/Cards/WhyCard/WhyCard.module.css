@@ -30,8 +30,8 @@
 }
 
 .carddescription {
-    color: var(--color-neutral-600);
+    color: var(--color-neutral-400);
     font-weight: var(--font-weight-medium);
-    font-size: var(--text-md);
+    font-size: var(--text-base);
 }
 

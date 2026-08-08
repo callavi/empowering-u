@@ -1,6 +1,6 @@
 .article {
     background: linear-gradient(to right, 
-                                var(--color-neutral-50) 0%, 
+                                var(--color-neutral-0) 0%, 
                                 var(--color-neutral-100) 50%,
                                 var(--color-primary-50) 50%,
                                 var(--color-primary-50) 100%);
@@ -27,7 +27,7 @@
 }
 
 .cardheading {
-    font-weight: var(--font-weight-base);
+    font-weight: var(--font-weight-normal);
     font-size: var(--text-3xl);
     line-height: var(--line-height-snug);
     color: var(--color-primary-900);

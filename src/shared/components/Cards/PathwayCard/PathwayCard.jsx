@@ -15,10 +15,10 @@ export function PathwayCard({ pathway }) {
   return (
     <NavLink to={path}>
       <article className={`flex w-full pathway-card min-h-[400px] max-w-xl gap-10 group ${styles.article}`}>
-        <div className={`[basis-[55%] flex-1 ${styles.illustration}`}>
+        <div className={`basis-[55%] flex-1 ${styles.illustration}`}>
           <Illustration />
         </div>
-        <div className = "[basis-[45%] flex flex-col flex-1 items-center justify-center p-8 space-y-8">
+        <div className = "basis-[45%] flex flex-col flex-1 items-center justify-center p-8 space-y-8">
         <h2 className={`${styles.cardheading}`}>
             {title.map((part, index) => (
               <span

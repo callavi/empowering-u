@@ -14,7 +14,7 @@ export function OverviewSection ({product}) {
                                 xl:gap-24
                                 items-center">
                     <OverviewSectionContent product={product} />
-                    <div className="w-100 m-auto">
+                    <div className="w-full m-auto">
                         <PriceCard product={product}/>
                     </div>
                 </section>
