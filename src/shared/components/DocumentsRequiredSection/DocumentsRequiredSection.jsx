@@ -12,7 +12,7 @@ export function DocumentsRequiredSection ({contents}) {
     return (
         <section className={styles.section}>
             <Container>
-                <SectionHeading title="Documents Required" description="Keep these documents ready before you apply." align="center" />
+                <SectionHeading title="Documents Required" description="Keep these documents ready before you apply." align="left" />
                 <div className ="flex gap-16 flex-wrap">
                     {documents.map((group) => {
                         const Icon=group.icon;

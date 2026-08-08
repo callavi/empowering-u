@@ -4,7 +4,7 @@ import Container from "../Container/Container";
 import { SectionHeading } from "../SectionHeading/SectionHeading";
 
 import styles from "./PathwaySection.module.css"
-import { TrustBar } from "../TrustBar/TrustBar";
+
 
 export function PathwaySection () {
     return (
@@ -19,9 +19,6 @@ export function PathwaySection () {
                         pathway={item}
                         />
                     ))}
-                    </div>
-                    <div className="m-12">
-                        <TrustBar />
                     </div>
                 </div>
             </Container>

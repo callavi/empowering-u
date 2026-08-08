@@ -8,3 +8,8 @@
     font-weight: 500;
     font-size: medium;
 }
+
+.trust {
+  padding-top: clamp(3rem, 6vw, 5rem);
+  padding-bottom: 6rem;
+}

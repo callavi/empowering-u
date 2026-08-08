@@ -1,20 +1,45 @@
-import { Outlet, useLocation } from "react-router-dom";
+import { useLocation, useOutlet } from "react-router-dom";
 
 import Navbar from "../shared/components/Navbar/Navbar";
 import Footer from "../shared/components/Footer/Footer";
 
-import styles from "./MainLayout.module.css"
+import { AnimatePresence, motion } from "motion/react";
+
+import { pageVariants } from "../shared/motion/variants";
+import { transitions } from "../shared/motion/transitions";
+
 
 export default function MainLayout() {
     const location = useLocation();
+    const outlet = useOutlet();
+
     return (
         <>
             <Navbar />
 
-            <main 
-            key={location.pathname}
-            className={styles.page}>
-                <Outlet />
+            <main className="relative">
+                <AnimatePresence
+                    initial={false}
+                    mode="wait"
+                    onExitComplete={() => {
+                        window.scrollTo({
+                            top: 0,
+                            left: 0,
+                            behavior: "instant",
+                        });
+                    }}
+                >
+                    <motion.div
+                        key={location.pathname}
+                        initial="initial"
+                        animate="animate"
+                        exit="exit"
+                        transition={transitions.page}
+                        variants={pageVariants}
+                    >
+                        {outlet}
+                    </motion.div>
+                </AnimatePresence>
             </main>
 
             <Footer />

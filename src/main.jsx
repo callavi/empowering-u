@@ -12,14 +12,11 @@ import "@fontsource/montserrat/500.css";
 import "@fontsource/montserrat/600.css";
 import "@fontsource/montserrat/700.css";
 
-import { ScrollToTop } from "./shared/components/ScrollTotheTop/ScrollToTop";
-
 import App from "./app/App";
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
     <BrowserRouter>
-    <ScrollToTop />
       <App />
     </BrowserRouter>
   </StrictMode>
