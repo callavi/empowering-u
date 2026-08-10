@@ -70,5 +70,9 @@
         grid-template-columns: 1fr;
         align-items: center;
     }
+
+    .stepsVertical {
+        grid-template-columns: 1fr;
+    }
 }
 

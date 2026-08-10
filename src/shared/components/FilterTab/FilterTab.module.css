@@ -1,11 +1,15 @@
 .tabs {
-    overflow-x:auto;
+    overflow-x: auto;
+    scrollbar-width: none;
 }
 
-
+.tabs::-webkit-scrollbar {
+    display: none;
+}
 .tab {
     display: inline-flex;
     align-items: center;
+    justify-content: center;
 
     padding: 1rem 1.5rem;
 
@@ -16,6 +20,8 @@
     transition: border-color var(--duration-medium) var(--ease-standard);
 
     color: var(--color-primary-700);
+    flex: 0 0 auto;
+    white-space: nowrap;
 }
 
 .tab:hover {
@@ -25,4 +31,11 @@
 .active {
     background-color: var(--color-primary-700);
     color: var(--color-text-inverse);
+}
+
+@media (max-width: 767px) {
+    .tab {
+        min-width: 120px;
+        text-align: center;
+    }
 }

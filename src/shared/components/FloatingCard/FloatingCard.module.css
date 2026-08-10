@@ -90,3 +90,61 @@
   right: 10%;
   transform: translate(-50%, -50%);
 }
+
+@media (max-width: 767px) {
+  .registration,
+  .guidance {
+    top: 15%;
+    right: 2%;
+    transform: translate(0, -50%);
+  }
+
+  .compliance {
+    top: 15%;
+    left: 2%;
+    transform: translate(0, -50%);
+  }
+
+  .consulting {
+    bottom: 20%;
+    left: 2%;
+    transform: translate(0, 50%);
+  }
+
+  .response,
+  .growthservices {
+    bottom: 0.5%;
+    right: 2%;
+    transform: translate(0, 50%);
+  }
+
+  .support {
+    bottom: 0.5%;
+    left: 2%;
+    transform: translate(0, 50%);
+  }
+
+  .top-right {
+    top: 15%;
+    right: 2%;
+    transform: translate(0, -50%);
+  }
+
+  .top-left {
+    top: 15%;
+    left: 2%;
+    transform: translate(0, -50%);
+  }
+
+  .bottom-left {
+    bottom: 20%;
+    left: 2%;
+    transform: translate(0, 50%);
+  }
+
+  .bottom-right {
+    bottom: 30%;
+    right: 2%;
+    transform: translate(0, 50%);
+  }
+}

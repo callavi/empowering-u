@@ -27,11 +27,7 @@ export const gst =
     category: CATEGORIES.REGISTRATION,
     label: "GST Registration",
     subtitle: "Register your Business under GST",
-    price: 999,
-    priceType: "fixed",
 
-    // Routing
-    path: "/catalogue/gst-registration",
 
     // Hero
     hero: {

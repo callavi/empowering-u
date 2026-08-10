@@ -11,13 +11,9 @@ import GrowthIllustration from "../Illustration/ProductIllustrations/GrowthIllus
 export const growYourBusiness = {
   id: "growbusiness",
   slug: "grow-your-business",
-  path: "/grow-your-business",
-
-  price: 14999,
-  priceType: "fixed",
 
   seo: {
-    title: "Grow Your Business | Empower U",
+    title: "Grow Your Business | Empowering U",
     description:
       "Build a stronger brand and reach more customers with website design, SEO, logo design, branding, and business mentoring in one complete growth package.",
   },

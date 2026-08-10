@@ -3,8 +3,9 @@ import { useSearchParams } from "react-router-dom";
 import { FilterTab } from "../FilterTab/FilterTab";
 import { ProductCard } from "../Cards/ProductCard/ProductCard";
 import { Button } from "../Button/Button";
+import styles from "./CatalogueGrid.module.css";
 
-const INITIAL_COUNT = 4;
+const INITIAL_COUNT = 12;
 
 export function CatalogueGrid ({products}){
 const [searchParams, setSearchParams] = useSearchParams();
@@ -33,10 +34,11 @@ const filteredProducts =
                     setShowAll(false);
                 }}
             />
+        <div className="flex items-center justify-center p-6"><p className={styles.subheading}>23 services available</p></div>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 mt-4">
             {visibleProducts.map((item)=> (
                 <ProductCard 
-                key={item.path}
+                key={item.id}
                 product={item}
                 />
             ))}
@@ -44,7 +46,7 @@ const filteredProducts =
         {filteredProducts.length > INITIAL_COUNT && (
             <div className="mt-8 text-center">
                 <Button variant="text" onClick={() => setShowAll(!showAll)}>
-                    {showAll ? "Show Less" : "Show More"}
+                    {showAll ? "Show fewer services" : "Show all 23 services"}
                 </Button>
             </div>
         )}

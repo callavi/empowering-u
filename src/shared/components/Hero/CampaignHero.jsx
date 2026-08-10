@@ -20,7 +20,7 @@ export function CampaignHero ({campaign}) {
     return (
         <section className={styles.section}>
             <Container>
-                <div className="flex flex-col gap-12">
+                <div className="flex flex-col gap-8 lg:gap-12">
                     <div className="flex flex-col items-center text-center gap-2">
                         <h1 className={styles.heading}>
                             {title}{" "}

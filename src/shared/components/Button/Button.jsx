@@ -24,12 +24,13 @@ export function Button({
   className,
   children,
   type = "button",
+  as: Component = "button",
   startIcon,
   endIcon,
   ...props
 }) {
   return (
-    <button
+    <Component
       type = {type}
       className={clsx(
         styles.base,
@@ -38,6 +39,7 @@ export function Button({
         fullWidth ? "w-full":"",
         className
       )}
+      {...(Component === "button" ? {type} : {})}
       {...props}
     >
     {startIcon && (
@@ -53,6 +55,6 @@ export function Button({
           {endIcon}
         </span>
       )}
-    </button>
+    </Component>
   );
 }

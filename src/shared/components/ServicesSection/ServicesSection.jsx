@@ -13,22 +13,22 @@ export function ServicesSection () {
     return (
         <section className={styles.section}>
             <Container>
-                <div className="flex flex-col gap-4">
+                <div className="flex flex-col gap-4" id="services">
                     <SectionHeading title="Or, browse all our services" align="center" />
-                    <div className="grid gap-8 md:grid-cols-2 xl:grid-cols-4">
+                    <div className="grid gap-8 grid-cols-1 md:grid-cols-2 xl:grid-cols-3">
                     {services.map((item) => (
                         <ServiceCard
-                        key={item.path}
+                        key={item.id}
                         service={item}
                         />
                     ))}
                     </div>
                     <div className="flex items-center justify-center mt-4">
-                        <NavLink to="/catalogue">
-                            <Button variant="text" size="large">
+                            <Button variant="text" size="large"
+                            as={NavLink}
+                            to="/catalogue">
                             View All
                             </Button>
-                        </NavLink>
                     </div>
                 </div>
             </Container>

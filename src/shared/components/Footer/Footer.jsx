@@ -68,7 +68,7 @@ export default function Footer() {
         </div>  
         </div>
       </div>
-        <div className="flex justify-between mt-12 border-t border-gray-200 pt-6">
+        <div className="flex flex-col gap-3 mt-12 border-t border-gray-200 pt-6 md:flex-row md:justify-between">
             <p className={styles.infoText}>
                 © 2026 Empowering U. All rights reserved.
             </p>

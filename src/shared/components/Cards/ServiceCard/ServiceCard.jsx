@@ -11,13 +11,9 @@ export function ServiceCard ({service}) {
         icon: Icon,
     } = service;
     return (
-        <NavLink to={path} className="block h-full">
             <article
                 className={`
-                ${styles.article}
-                flex h-full flex-col group
-                p-10 w-full max-w-sm min-h-[300px]`}
-            >
+                ${styles.article} p-6 sm:p-8 lg:p-10 w-full max-w-sm min-h-[300px]`}>
                 <div className="flex flex-1 flex-col space-y-2">
                     <div className='min-h-16'>
                     <div className={`${styles.iconWrapper} flex h-14 w-14 items-center justify-center`}>
@@ -38,11 +34,12 @@ export function ServiceCard ({service}) {
                     variant="text"
                     endIcon={<ArrowRight size={18} className="transition-transform group-hover:translate-x-1" />}
                     className="mt-8 self-start"
+                    as = {NavLink}
+                    to={path}
                     >
                     Explore More
                 </Button>
             </article>
-        </NavLink>
     )
 }
 

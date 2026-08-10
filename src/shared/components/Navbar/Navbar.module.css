@@ -20,6 +20,13 @@
     transition: color var(--duration-medium) var(--ease-standard);
 }
 
+.highlight {
+    position: inherit;
+
+    font-size: 1rem;
+    font-weight: 500;
+}
+
 .link:hover {
     color: var(--color-primary-700);
 }
@@ -51,4 +58,96 @@
 
 .active {
     color: var(--color-primary-700);
+}
+
+.menuButton {
+    display: none;
+}
+
+.mobileMenu {
+    display: none;
+}
+
+.backdrop {
+  display: none;
+}
+
+@media (max-width: 767px) {
+  .backdrop {
+    display: block;
+
+    position: fixed;
+    inset: 0;
+
+    width: 100vw;
+    height: 100vh;
+
+    padding: 0;
+    margin: 0;
+    border: none;
+
+    background: rgb(0 0 0 / 35%);
+
+    z-index: 30;
+  }
+
+  .mobileMenu {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+
+    width: min(80vw, 320px);
+    height: 100vh;
+
+    padding: 6rem 1.5rem 2rem;
+
+    background: var(--surface-page);
+
+    transform: translateX(100%);
+    transition: transform 300ms ease;
+
+    z-index: 40;
+  }
+
+  .mobileMenuOpen {
+    transform: translateX(0);
+  }
+
+  .menuButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: relative;
+    z-index: 50;
+
+    width: 40px;
+    height: 40px;
+
+    padding: 0;
+    border: none;
+    background: transparent;
+
+    font-size: 1.75rem;
+    line-height: 1;
+    cursor: pointer;
+  }
+
+    .logoText {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+
+        font-size: 0.8rem;
+        line-height: 1.15;
+  }
+    .highlight {
+        display: block;
+        font-size: 0.65rem;
+  }
 }

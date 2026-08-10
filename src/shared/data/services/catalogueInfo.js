@@ -1,14 +1,12 @@
 export const CATEGORIES = {
-  REGISTRATION: "registration",
-  COMPLIANCE: "compliance",
-  GROWTH: "growth-services",
-  CONSULTING: "consulting",
+  REGISTRATION: "registration-compliance",
+  GROWTH: "business-growth",
+  CONSULTING: "business-planning-support",
 };
 
 export const tabs = [
     { label: "All", value: "all" },
-    { label: "Registration", value: CATEGORIES.REGISTRATION },
-    { label: "Compliance", value: CATEGORIES.COMPLIANCE },
-    { label: "Consulting", value: CATEGORIES.CONSULTING },
-    { label: "Growth", value: CATEGORIES.GROWTH },
+    { label: "Registration & Compliance", value: CATEGORIES.REGISTRATION },
+    { label: "Business Planning & Support", value: CATEGORIES.CONSULTING },
+    { label: "Business Growth", value: CATEGORIES.GROWTH },
 ];

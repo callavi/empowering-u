@@ -8,17 +8,16 @@ export function PathwayCard({ pathway }) {
   const {
   title,
   description,
-  path,
+  slug,
   Illustration,
   button,
 } = pathway;
   return (
-    <NavLink to={path}>
-      <article className={`flex w-full pathway-card min-h-[400px] max-w-xl gap-10 group ${styles.article}`}>
+      <article className={`flex flex-col md:flex-row w-full pathway-card min-h-[400px] max-w-xl gap-6 md:gap-10 group ${styles.article}`}>
         <div className={`basis-[55%] flex-1 ${styles.illustration}`}>
           <Illustration />
         </div>
-        <div className = "basis-[45%] flex flex-col flex-1 items-center justify-center p-8 space-y-8">
+        <div className = "basis-[45%] flex flex-col flex-1 items-center justify-center p-6 md:p-8 space-y-6 md:space-y-8">
         <h2 className={`${styles.cardheading}`}>
             {title.map((part, index) => (
               <span
@@ -31,12 +30,11 @@ export function PathwayCard({ pathway }) {
         </h2>
         <p className={`${styles.carddescription}`}>{description}</p>
         <div className = "w-full mt-3">
-          <Button variant="primary" size="medium" endIcon={<ArrowRight className="transition-transform group-hover:translate-x-1"/>} fullWidth>
+          <Button as = {NavLink} to={`/${slug}`} variant="primary" size="medium" endIcon={<ArrowRight className="transition-transform group-hover:translate-x-1"/>} fullWidth>
             {button}
           </Button>
         </div>
         </div>
       </article>
-    </NavLink>
   );
 }

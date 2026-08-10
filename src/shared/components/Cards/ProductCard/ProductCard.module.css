@@ -8,9 +8,10 @@
 }
 
 .heading {
-    font-weight: var(--font-weight-semibold);
-    font-size: var(--text-xl);
+    font-weight: var(--font-weight-bold);
+    font-size: var(--text-2xl);
     color: var(--color-primary-900);
+    line-height: 1.5;
 }
 
 .price {
@@ -19,6 +20,7 @@
 }
 
 .subheading {
-    color: var(--color-neutral-400);
+    color: var(--color-neutral-500);
     font-weight: var(--font-weight-medium);
+    line-height: 1.5;
 }

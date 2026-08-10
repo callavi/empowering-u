@@ -26,10 +26,7 @@ export const logo =
   category: CATEGORIES.GROWTH,
   label: "Logo Design",
   subtitle: "Professional Branding for Your Business",
-  price: "Custom",
-  priceType: "flexible",
 
-  path: "/catalogue/logo-design",
 
   hero: {
     title: "Logo Design",

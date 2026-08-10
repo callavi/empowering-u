@@ -1,0 +1,7 @@
+.subheading {
+    color: var(--color-neutral-500);
+    font-weight: var(--font-weight-semibold);
+    line-height: 1.5;
+    font-size: var(--text-lg);
+    text-align: center;
+}

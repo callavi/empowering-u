@@ -28,11 +28,11 @@ export function ProductHero ({title,description,illustration,highlights,cards}) 
                             )
                             )}
                         </ul>
-                        <NavLink to="/contact">
-                            <Button variant="primary" size="large">
+                            <Button variant="primary" size="large"
+                            as={NavLink}
+                            to="/contact">
                                 Talk to an Expert
                             </Button>
-                        </NavLink>
                     </div>
                     <div className= {`${styles.illustration}`}>
                         <ProductIllustration illustration={illustration} cards={cards} />

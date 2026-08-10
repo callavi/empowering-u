@@ -38,8 +38,12 @@ export function ContactInfo ({
                 <h4 className={styles.heading}>{subheading}</h4>
             </div>
             <div className = "flex flex-col gap-3 sm:flex-row">
-                <Button variant="primary">{primaryText}</Button>
-                <Button variant="outline">{secondaryText}</Button>
+                <Button variant="primary" as="a" href="tel:+917908466757">{primaryText}</Button>
+                <Button variant="outline" as="a" href="https://wa.me/917908466757?text=Hi%2C%20I%27m%20interested%20in%20your%20services."
+                                                target="_blank"
+                                                rel="noopener noreferrer">
+                    {secondaryText}
+                </Button>
             </div>
         </article>
     )

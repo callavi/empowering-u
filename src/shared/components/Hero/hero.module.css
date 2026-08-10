@@ -23,9 +23,9 @@
 }
 
 .heading {
-    font-size: clamp(3.5rem, 5vw, 3rem);
+    font-size: clamp(2.5rem, 5vw, 3rem);
     font-weight: var(--font-weight-bold);
-    line-height: var(--line-height-relaxed);
+    line-height: var(--line-height-tight);
 }
 
 .subheading {
@@ -95,6 +95,8 @@
     z-index: 2;
     align-content: center;
     display: block;
+    width: 100%;
+    min-width: 0;
 }
 
 .highlight {

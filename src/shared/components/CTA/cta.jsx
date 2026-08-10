@@ -1,5 +1,4 @@
 import { Button } from "../Button/Button";
-import { NavLink } from "react-router-dom";
 import styles from "./cta.module.css";
 
 export function CTA ({info}) {
@@ -22,37 +21,21 @@ export function CTA ({info}) {
                     <div className="flex justify-start gap-2">
                         {actions.map((action) => {
                             const Icon = action.icon;
-                            return action.href ? (
-                                <a
-                                    key={action.label}
-                                    href={action.href}
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                >
+                            return (
                                     <Button
                                         variant={action.variant}
                                         size={action.size}
                                         startIcon={Icon && <Icon size={18} />}
                                         className={styles.button}
+                                        as = "a"
+                                        key={action.label}
+                                        href={action.to}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
                                     >
                                         {action.label}
                                     </Button>
-                                </a>
-                            ) : (
-                                <NavLink
-                                    key={action.label}
-                                    to={action.to}
-                                >
-                                    <Button
-                                        variant={action.variant}
-                                        size={action.size}
-                                        startIcon={Icon && <Icon size={18} />}
-                                        className={styles.button}
-                                    >
-                                        {action.label}
-                                    </Button>
-                                </NavLink>
-                            );
+                            )
                         })}
                     </div>
                 </div>

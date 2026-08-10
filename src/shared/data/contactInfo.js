@@ -2,9 +2,9 @@ import { Clock2Icon, MailOpen, MapPinIcon, PhoneCall, } from "lucide-react";
 
 
 export const contactInfo = {
-  phone: "+91 ...",
+  phone: "+917908466757",
   email: "empoweringminds19@gmail.com",
-  address: "...",
+  address: "86, Golaghata Road, Kolkata-700048",
   hours: "Mon–Fri, 9 AM – 6 PM",
 };
 
@@ -17,7 +17,7 @@ export const information = {
     {
       text:"Call us",
       icon: PhoneCall,
-      description:"+91..."
+      description:"+917908466757"
     },
     {
       text:"Email",
@@ -27,7 +27,7 @@ export const information = {
     {
       text:"Office",
       icon: MapPinIcon,
-      description:"..."
+      description:"86, Golaghata Road, Kolkata-700048"
     },
     {
       text:"Business Hours",

@@ -10,13 +10,10 @@ import StepsIllustration from "../Illustration/ProductIllustrations/StepsIllustr
 export const startYourBusiness = {
   id: "startbusiness",
   slug: "start-your-business",
-  path: "/start-your-business",
 
-  price: 7999,
-  priceType: "fixed",
 
   seo: {
-    title: "Start Your Business | Empower U",
+    title: "Start Your Business | Empowering U",
     description:
       "Start your business the right way with company registration, GST, PAN, TAN, MSME registration, business email setup, and expert guidance—all in one convenient package.",
   },

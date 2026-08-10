@@ -11,14 +11,14 @@ export const ctas = {
         actions: [
             {
                 label: "Schedule a Free Call",
-                to: "/contact",
+                to: "tel:+917908466757",
                 variant: "accent",
                 size: "medium",
                 icon: Phone,
             },
             {
                 label: "WhatsApp",
-                to: "/contact",
+                to: "https://wa.me/917908466757?text=Hi%2C%20I%27m%20interested%20in%20your%20services.",
                 variant: "secondary",
                 size:"medium",
                 icon : WhatsAppIcon,

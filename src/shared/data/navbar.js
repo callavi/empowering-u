@@ -5,7 +5,7 @@ export const navLinks = [
   },
   {
     name: "Catalogue",
-    path: "/Catalogue",
+    path: "/catalogue",
   },
 //  {
   //  name: "Checkout",

@@ -75,16 +75,12 @@ const secondary = cta.secondary ?? defaultSecondary;
                 </ul>
             </div>
             <div className="flex flex-col gap-4 mt-3">
-                <NavLink to={primary.link}>
-                    <Button variant="primary" fullWidth>
+                    <Button variant="primary" fullWidth as={NavLink} to={primary.link}>
                         {primary.text}
                     </Button>
-                </NavLink>
-                <NavLink to={secondary.link}>
-                    <Button variant="outline" fullWidth>
+                    <Button variant="outline" fullWidth as={NavLink} to={secondary.link}>
                         {secondary.text}
                     </Button>
-                </NavLink>
             </div>
         </article>
     )

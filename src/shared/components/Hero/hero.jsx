@@ -1,4 +1,3 @@
-import { NavLink } from "react-router-dom";
 import { Button } from "../Button/Button";
 import styles from "./hero.module.css";
 import Container from "../Container/Container";
@@ -17,7 +16,7 @@ export function Hero ({hero}) {
     return (
         <section  className={styles.hero}>
             <Container>
-                <section className = "grid md:grid-cols-2 gap-36 py-20">
+                <section className = "grid grid-cols-1 md:grid-cols-2 gap-12 lg:gap-36 py-12 md:py-20">
                     <div className={styles.heroContent}>
                         {badge && (
                         <div className={styles.badge}>
@@ -35,20 +34,18 @@ export function Hero ({hero}) {
                                 {description}
                             </p>
                         </div>
-                        <div className="flex gap-4">
+                        <div className="flex flex-col sm:flex-row gap-4">
                             {primaryActions.map((action) => (
-                                <NavLink
-                                    key={action.label}
-                                    to={action.to}
-                                >
                                     <Button
                                         variant={action.variant}
                                         size={action.size}
                                         className={styles.button}
+                                        as="a"
+                                        key={action.label}
+                                        href={action.to}
                                     >
                                         {action.label}
                                     </Button>
-                                </NavLink>
                             )
                             )}
                         </div>

@@ -26,10 +26,7 @@ export const startup =
   category: CATEGORIES.CONSULTING,
   label: "Startup Mentoring",
   subtitle: "Guidance to Help Your Business Grow",
-  price: "Custom",
-  priceType: "flexible",
 
-  path: "/catalogue/startup-mentoring",
 
   hero: {
     title: "Startup Mentoring",
