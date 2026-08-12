@@ -83,8 +83,9 @@
     border-color: transparent;
 }
 .icon {
-    background-color: var(--color-neutral-100);
+    background-color: var(--color-primary-200);
     border-radius: var(--radius-lg);
+    color: var(--color-alternative);
     padding: 0;
 }
 .icon:hover {

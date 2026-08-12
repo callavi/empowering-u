@@ -1,3 +1,4 @@
+import { CATEGORIES } from "./services/catalogueInfo";
 import {
   Globe,
   Search,
@@ -11,6 +12,10 @@ import GrowthIllustration from "../Illustration/ProductIllustrations/GrowthIllus
 export const growYourBusiness = {
   id: "growbusiness",
   slug: "grow-your-business",
+
+    category: CATEGORIES.BUNDLE,
+    label: "Grow your business",
+    subtitle: "Scale to your heart's content",
 
   seo: {
     title: "Grow Your Business | Empowering U",
@@ -47,7 +52,7 @@ export const growYourBusiness = {
     cta: {
       primary: {
         text: "Grow My Business",
-        link: "/checkout",
+        link: "/cart",
       },
       secondary: {
         text: "Talk to an Expert",

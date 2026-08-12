@@ -99,8 +99,8 @@ export const gst =
       ],
     cta: {
       primary: {
-        text: "Get Started Now",
-        link: "/checkout",
+        text: "Add to Cart",
+        link: "/cart",
       },
       secondary: {
         text: "Request a Callback",

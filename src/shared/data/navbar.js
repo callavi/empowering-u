@@ -8,7 +8,7 @@ export const navLinks = [
     path: "/catalogue",
   },
 //  {
-  //  name: "Checkout",
-    //path: "/Checkout",
+  //  name: "cart",
+    //path: "/cart",
   //}
 ];

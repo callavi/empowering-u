@@ -87,7 +87,7 @@ export const startup =
   },
 
   pricing: {
-    headline: null,
+    headline: "Starting from",
     highlights: [
       { text: "Personalized Guidance" },
       { text: "Business Strategy Sessions" },
@@ -96,7 +96,7 @@ export const startup =
     cta: {
       primary: {
         text: "Get Started Now",
-        link: "/checkout",
+        link: "/cart",
       },
       secondary: {
         text: "Request a Callback",

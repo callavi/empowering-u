@@ -2,21 +2,49 @@ import { Button } from "../../Button/Button";
 import { NavLink } from "react-router-dom";
 import styles from "./ProductCard.module.css";
 import { ArrowRight } from "lucide-react";
+import { useState } from "react";
+import { useCart } from "../../../context/useCart";
 
 export function ProductCard ({product}) {
     const isFixed = product.priceType === "fixed";
+    const isStartingFrom = product.priceType === "starting_from";
+    const {addToCart} = useCart();
+    const [added, setAdded] = useState(false);
 
-    const priceText = isFixed 
+
+    function handleAddToCart() {
+        addToCart(product);
+
+        setAdded(true);
+
+        setTimeout(() => {
+            setAdded(false);
+        }, 1800);
+    }
+
+
+const priceText =
+    isFixed
         ? product.price.toLocaleString("en-IN", {
-            style: "currency",
-            currency: "INR",
-            maximumFractionDigits: 0,
-        })
+              style: "currency",
+              currency: "INR",
+              maximumFractionDigits: 0,
+          })
+        : isStartingFrom
+        ? `Starting from ${product.price.toLocaleString("en-IN", {
+              style: "currency",
+              currency: "INR",
+              maximumFractionDigits: 0,
+          })}`
         : "Pricing on Request";
-    const buttonText = isFixed 
+
+    const canAddToCart = product.purchaseType === "cart";
+
+    const buttonText = canAddToCart
         ? "Add to Cart"
         : "Request Quote";
-    const primaryLink = isFixed
+
+    const primaryLink = canAddToCart
         ? "/cart"
         : "/contact";
 
@@ -28,8 +56,11 @@ export function ProductCard ({product}) {
                 <p className= {`mt-6 ${styles.price}`}>{priceText}</p>
             </div>
             <div className ="mt-auto gap-2 flex flex-col">
-                    <Button variant = "primary" fullWidth as={NavLink} to={primaryLink}>
-                        {buttonText}
+                    <Button variant = "primary" fullWidth type="button" 
+                        onClick={canAddToCart ? handleAddToCart : undefined}
+                        as={!canAddToCart ? NavLink : undefined}
+                        to={!canAddToCart ? primaryLink : undefined}>
+                        {canAddToCart && added ? " ✓ Added to Cart": buttonText}
                     </Button>
                     <Button 
                     variant="text" fullWidth 

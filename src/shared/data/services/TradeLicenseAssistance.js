@@ -27,7 +27,6 @@ export const tradeLicenseAssistance =
   label: "Trade License Assistance",
   subtitle: "Get help with your local trade license",
 
-  path: "/catalogue/trade-license-assistance",
 
   hero: {
     title: "Trade License Assistance",
@@ -65,7 +64,7 @@ export const tradeLicenseAssistance =
       { text: "Dedicated Support" },
     ],
     cta: {
-      primary: { text: "Get Started Now", link: "/checkout" },
+      primary: { text: "Get Started Now", link: "/cart" },
       secondary: { text: "Request a Callback", link: "/contact" },
     },
   },

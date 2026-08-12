@@ -30,7 +30,7 @@ export function PathwayCard({ pathway }) {
         </h2>
         <p className={`${styles.carddescription}`}>{description}</p>
         <div className = "w-full mt-3">
-          <Button as = {NavLink} to={`/${slug}`} variant="primary" size="medium" endIcon={<ArrowRight className="transition-transform group-hover:translate-x-1"/>} fullWidth>
+          <Button as = {NavLink} to={`/catalogue/${slug}`} variant="primary" size="medium" endIcon={<ArrowRight className="transition-transform group-hover:translate-x-1"/>} fullWidth>
             {button}
           </Button>
         </div>

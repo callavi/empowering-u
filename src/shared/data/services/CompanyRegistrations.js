@@ -63,7 +63,7 @@ export const companyRegistrations =
       { text: "Dedicated Support" },
     ],
     cta: {
-      primary: { text: "Get Started Now", link: "/checkout" },
+      primary: { text: "Get Started Now", link: "/cart" },
       secondary: { text: "Request a Callback", link: "/contact" },
     },
   },

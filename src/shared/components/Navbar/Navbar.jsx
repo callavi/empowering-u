@@ -4,10 +4,16 @@ import { navLinks } from "../../data/navbar.js";
 import { Button } from "../Button/Button";
 import logo from "../../../assets/logo-without-name-500x500.svg";
 import { useState , useEffect } from "react";
-import { Menu, X } from "lucide-react";
+import { Menu, X, ShoppingCart } from "lucide-react";
+import { useCart } from "../../context/useCart.js";
+import { motion } from "motion/react";
 
 export default function Navbar() {
       const [menuOpen, setMenuOpen] = useState(false);
+      const { items } = useCart();
+    const cartCount = items.reduce(
+    (total, item) => total + item.quantity,
+    0);
       useEffect(() => {
             const body = document.body;
             const html = document.documentElement;
@@ -51,6 +57,24 @@ export default function Navbar() {
                     </NavLink>
                     ))}
                         <Button variant="primary" as={NavLink} to="/contact">Contact Us</Button>
+                        <Button variant="icon" as={NavLink} to="/cart" className={styles.cartLink}>
+                        <ShoppingCart /> 
+                            {cartCount > 0 && (
+                                <motion.span
+                                    key={cartCount}
+                                    className={styles.cartBadge}
+                                    initial={{ scale: 0.5 }}
+                                    animate={{ scale: 1 }}
+                                    transition={{
+                                        type: "spring",
+                                        stiffness: 500,
+                                        damping: 20,
+                                    }}
+                                >
+                                    {cartCount}
+                                </motion.span>
+                            )}
+                        </Button>
                 </nav>
                 <button
                     className={styles.menuButton}

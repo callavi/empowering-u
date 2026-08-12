@@ -1,3 +1,4 @@
+import { CATEGORIES } from "./services/catalogueInfo";
 import {
   LaptopMinimalCheck,
   FileStack,
@@ -10,6 +11,10 @@ import StepsIllustration from "../Illustration/ProductIllustrations/StepsIllustr
 export const startYourBusiness = {
   id: "startbusiness",
   slug: "start-your-business",
+  
+    category: CATEGORIES.BUNDLE,
+    label: "Start your business",
+    subtitle: "We help kickstart your dreams",
 
 
   seo: {
@@ -49,7 +54,7 @@ export const startYourBusiness = {
     cta: {
       primary: {
         text: "Get Started Now",
-        link: "/checkout",
+        link: "/cart",
       },
       secondary: {
         text: "Request a Callback",

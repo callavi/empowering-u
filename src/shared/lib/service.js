@@ -21,7 +21,8 @@ export async function getService(slug) {
         currency,
         is_active,
         merchant_product_id,
-        merchant_price_id
+        merchant_price_id,
+        purchase_type
       `
     )
     .eq("slug", slug)
@@ -43,6 +44,7 @@ export async function getService(slug) {
 
     price: data.price,
     priceType: data.price_type,
+    purchaseType: data.purchase_type,
 
     commerce: {
       currency: data.currency,
@@ -63,7 +65,8 @@ export async function getServices() {
       currency,
       is_active,
       merchant_product_id,
-      merchant_price_id
+      merchant_price_id,
+      purchase_type
     `)
     .eq("is_active", true);
 
@@ -89,6 +92,7 @@ export async function getServices() {
 
         price: databaseService.price,
         priceType: databaseService.price_type,
+        purchaseType: databaseService.purchase_type,
 
         commerce: {
           currency: databaseService.currency,

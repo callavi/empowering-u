@@ -72,6 +72,33 @@
   display: none;
 }
 
+.cartLink {
+    position: relative;
+}
+
+.cartBadge {
+    position: absolute;
+    top: -0.45rem;
+    right: -0.6rem;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    min-width: 1.15rem;
+    height: 1.15rem;
+    padding: 0 0.3rem;
+
+    border-radius: 999px;
+
+    background: var(--color-primary-500);
+    color: var(--color-text-inverse);
+
+    font-size: 0.65rem;
+    font-weight: 700;
+    line-height: 1;
+}
+
 @media (max-width: 767px) {
   .backdrop {
     display: block;

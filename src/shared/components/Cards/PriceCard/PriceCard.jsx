@@ -1,10 +1,26 @@
 import styles from "./PriceCard.module.css";
 import { Check } from "lucide-react";
 import { Button } from "../../Button/Button";
-import { NavLink } from "react-router-dom";
+import { NavLink} from "react-router-dom";
+import { useCart } from "../../../../shared/context/useCart";
+import { useState } from "react";
+
 
 export function PriceCard ({product}) {
 const isFixed = product.priceType === "fixed";
+const isStartingFrom = product.priceType === "starting_from";
+const {addToCart} = useCart();
+const [added, setAdded] = useState(false);
+
+function handleAddToCart() {
+    addToCart(product);
+
+    setAdded(true);
+
+    setTimeout(() => {
+        setAdded(false);
+    }, 1800);
+}
 
 const {
   headline,
@@ -12,40 +28,27 @@ const {
   cta = {},
 } = product.pricing;
 
+const formattedPrice = product.price?.toLocaleString("en-IN", {
+    style: "currency",
+    currency: "INR",
+    maximumFractionDigits: 0,
+});
+
 const price = isFixed
-  ? product.price.toLocaleString("en-IN", {
-      style: "currency",
-      currency: "INR",
-      maximumFractionDigits: 0,
-    })
-  : "Custom Quote";
+    ? formattedPrice
+    : isStartingFrom
+    ? `${formattedPrice}/session`
+    : "Custom Quote";
 
 const description = isFixed
-  ? null
-  : "Pricing depends on your requirements.";
+    ? null
+    : isStartingFrom
+    ? "Final pricing depends on your requirements."
+    : "Pricing depends on your requirements.";
 
-const defaultPrimary = isFixed
-  ? {
-      text: "Add to Cart",
-      link: "/cart",
-    }
-  : {
-      text: "Request Quote",
-      link: "/contact",
-    };
-
-const defaultSecondary = isFixed
-  ? {
-      text: "Buy Now",
-      link: "/checkout",
-    }
-  : {
-      text: "Talk to an Expert",
-      link: "/contact",
-    };
-
-const primary = cta.primary ?? defaultPrimary;
-const secondary = cta.secondary ?? defaultSecondary;
+const primary = cta.primary;
+const secondary = cta.secondary;
+const canAddToCart = product.purchaseType === "cart";
 
 
     return (
@@ -75,8 +78,17 @@ const secondary = cta.secondary ?? defaultSecondary;
                 </ul>
             </div>
             <div className="flex flex-col gap-4 mt-3">
-                    <Button variant="primary" fullWidth as={NavLink} to={primary.link}>
-                        {primary.text}
+                    <Button
+                        variant="primary"
+                        fullWidth
+                        type="button"
+                        onClick={canAddToCart ? handleAddToCart : undefined}
+                        as={!canAddToCart ? NavLink : undefined}
+                        to={!canAddToCart ? "/contact" : undefined}
+                    >
+                        {canAddToCart && added
+                            ? "✓ Added to Cart"
+                            : primary.text}
                     </Button>
                     <Button variant="outline" fullWidth as={NavLink} to={secondary.link}>
                         {secondary.text}

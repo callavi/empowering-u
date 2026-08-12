@@ -13,11 +13,14 @@ import "@fontsource/montserrat/600.css";
 import "@fontsource/montserrat/700.css";
 
 import App from "./app/App";
+import { CartProvider } from "./shared/context/CartProvider";
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
-    <BrowserRouter>
-      <App />
-    </BrowserRouter>
+    <CartProvider>
+      <BrowserRouter>
+        <App />
+      </BrowserRouter>
+    </CartProvider>
   </StrictMode>
 );
