@@ -11,6 +11,7 @@ import CataloguePage from "../pages/CataloguePage/CataloguePage";
 import StartYourBusiness from "../pages/CampaignPage/StartYourBusiness";
 import GrowYourBusiness from "../pages/CampaignPage/GrowYourBusiness";
 import Cart from "../pages/Cart/cart";
+import Checkout from "../pages/Checkout/checkout";
 
 export default function Router() {
   return (
@@ -23,6 +24,7 @@ export default function Router() {
           element={<CataloguePage />}
       />
       <Route path="/cart" element={<Cart />} />
+      <Route path="/checkout" element={<Checkout />} />
       <Route path="/uidesign" element={<UIDesign />} />
       <Route path="/contact" element={<Contact />} />
       <Route path="/catalogue/start-your-business" element={<StartYourBusiness />} />

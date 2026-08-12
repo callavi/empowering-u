@@ -13,6 +13,7 @@ import { useCart } from "../../shared/context/useCart";
 import { getService } from "../../shared/lib/service";
 import { Button } from "../../shared/components/Button/Button";
 import Container from "../../shared/components/Container/Container";
+import { SectionHeading } from "../../shared/components/SectionHeading/SectionHeading";
 
 import styles from "./cart.module.css";
 
@@ -144,12 +145,8 @@ export default function Cart() {
             <Container>
                 <header className={styles.header}>
                     <div>
-                        <p className={styles.eyebrow}>Your selection</p>
-                        <h1>Your Cart</h1>
-                        <p>
-                            Review the services you've selected before
-                            continuing.
-                        </p>
+                        <SectionHeading title="Your Cart" eyebrow="Your selection" description="Review the services you've selected before
+                            continuing." />
                     </div>
 
                     <NavLink
@@ -343,9 +340,8 @@ export default function Cart() {
                                 size="large"
                                 fullWidth
                                 endIcon={<ArrowRight size={18} />}
-                                onClick={() => {
-                                    // Checkout will be connected later.
-                                }}
+                                as ={NavLink}
+                                to="/checkout"
                             >
                                 Proceed to Checkout
                             </Button>
