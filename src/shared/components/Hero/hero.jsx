@@ -43,8 +43,8 @@ export function Hero ({hero}) {
                                         as="a"
                                         key={action.label}
                                         href={action.href}
-                                        target="_blank"
-                                        rel="noopener noreferrer"
+                                        target={action.target}
+                                        rel={action.rel}
                                     >
                                         {action.label}
                                     </Button>
