@@ -84,7 +84,7 @@ export default function PaymentSuccess() {
         return () => {
             cancelled = true;
         };
-    }, [orderId]);
+    }, [orderId, clearCart]);
 
     const formatPrice = (
         amount,
