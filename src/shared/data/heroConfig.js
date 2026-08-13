@@ -17,7 +17,7 @@ homepage: {
   primaryActions: [
     {
     label: "Get Started",
-    to: "#services",
+    href: "#services",
     variant: "accent",
     size: "large",
   },

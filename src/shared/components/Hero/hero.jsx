@@ -42,7 +42,9 @@ export function Hero ({hero}) {
                                         className={styles.button}
                                         as="a"
                                         key={action.label}
-                                        href={action.to}
+                                        href={action.href}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
                                     >
                                         {action.label}
                                     </Button>
