@@ -13,7 +13,6 @@ import {
 } from "lucide-react";
 
 export default function Footer() {
-      console.log("Footer rendered");
   return (
     <footer className="border-t bg-gray-50 border-gray-200">
         <Container>

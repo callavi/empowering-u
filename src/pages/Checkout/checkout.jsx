@@ -8,6 +8,8 @@ import { Button } from "../../shared/components/Button/Button";
 import Container from "../../shared/components/Container/Container";
 import { SectionHeading } from "../../shared/components/SectionHeading/SectionHeading";
 
+import { supabase } from "../../shared/lib/supabase";
+
 import styles from "./checkout.module.css";
 
 export default function Checkout() {
@@ -16,12 +18,14 @@ export default function Checkout() {
     const [products, setProducts] = useState([]);
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState(null);
+    const [paying, setPaying] = useState(false);
 
     const [customer, setCustomer] = useState({
         name: "",
         email: "",
         phone: "",
     });
+
 
     const [formError, setFormError] = useState("");
 
@@ -120,38 +124,92 @@ export default function Checkout() {
         }
     };
 
-    const handleSubmit = (event) => {
-        event.preventDefault();
+    const handleSubmit = async (event) => {
+    event.preventDefault();
 
-        if (!customer.name.trim()) {
-            setFormError("Please enter your name.");
-            return;
+    if (!customer.name.trim()) {
+        setFormError("Please enter your name.");
+        return;
+    }
+
+    if (!customer.email.trim()) {
+        setFormError("Please enter your email address.");
+        return;
+    }
+
+    if (!customer.phone.trim()) {
+        setFormError("Please enter your phone number.");
+        return;
+    }
+
+    if (hasCustomQuote) {
+        setFormError(
+            "One or more items require a custom quote. Please contact us before payment."
+        );
+        return;
+    }
+
+    try {
+        setPaying(true);
+        setFormError("");
+
+        const payload = {
+            items: checkoutItems.map(({ quantity, product }) => ({
+                service_id: product.commerce.serviceId,
+                quantity,
+            })),
+
+            customer: {
+                name: customer.name.trim(),
+                email: customer.email.trim(),
+                phone: customer.phone.trim(),
+            },
+        };
+
+        const { data, error } = await supabase.functions.invoke(
+            "create_payu_payment",
+            {
+                body: payload,
+            }
+        );
+
+        if (error) {
+            throw error;
         }
 
-        if (!customer.email.trim()) {
-            setFormError("Please enter your email address.");
-            return;
+        if (!data?.success || !data?.payment?.action) {
+            throw new Error("Invalid payment response.");
         }
 
-        if (!customer.phone.trim()) {
-            setFormError("Please enter your phone number.");
-            return;
-        }
+        const { action, fields } = data.payment;
 
-        if (hasCustomQuote) {
-            setFormError(
-                "One or more items require a custom quote. Please contact us before payment."
-            );
-            return;
-        }
+        const form = document.createElement("form");
 
-        // PayU will be connected here later.
-        console.log("Checkout submitted:", {
-            customer,
-            items: checkoutItems,
-            subtotal,
+        form.method = "POST";
+        form.action = action;
+
+        Object.entries(fields).forEach(([name, value]) => {
+            const input = document.createElement("input");
+
+            input.type = "hidden";
+            input.name = name;
+            input.value = String(value ?? "");
+
+            form.appendChild(input);
         });
-    };
+
+        document.body.appendChild(form);
+        form.submit();
+    } catch (error) {
+        console.error("Payment initialization failed:", error);
+
+        setFormError(
+            "We couldn't start your payment. Please try again."
+        );
+
+        setPaying(false);
+    }
+};
 
     if (items.length === 0) {
         return (
@@ -354,11 +412,12 @@ export default function Checkout() {
                             <Button
                                 type="submit"
                                 variant="primary"
+                                disabled={paying}
                                 size="large"
                                 fullWidth
                                 endIcon={<ArrowRight size={18} />}
                             >
-                                Proceed to Payment
+                                {paying ? "Preparing Payment..." : "Proceed to Payment"}
                             </Button>
 
                             <p className={styles.paymentNote}>

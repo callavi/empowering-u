@@ -1,8 +1,24 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { CartContext } from "./CartContext";
 
 export function CartProvider({ children }) {
-    const [items, setItems] = useState([]);
+    const [items, setItems] = useState(() => {
+        try {
+            const savedCart =
+                sessionStorage.getItem("empowering-u-cart");
+
+            return savedCart
+                ? JSON.parse(savedCart)
+                : [];
+        } catch (error) {
+            console.error(
+                "Failed to restore cart:",
+                error
+            );
+
+            return [];
+        }
+    });
     
 
     function addToCart(item) {
@@ -58,6 +74,27 @@ export function CartProvider({ children }) {
         setItems([]);
     }
 
+    useEffect(() => {
+        try {
+            if (items.length === 0) {
+                sessionStorage.removeItem(
+                    "empowering-u-cart"
+                );
+                return;
+            }
+
+            sessionStorage.setItem(
+                "empowering-u-cart",
+                JSON.stringify(items)
+            );
+        } catch (error) {
+            console.error(
+                "Failed to persist cart:",
+                error
+            );
+        }
+    }, [items]);
+
     return (
         <CartContext.Provider
             value={{
@@ -71,4 +108,5 @@ export function CartProvider({ children }) {
             {children}
         </CartContext.Provider>
     );
+
 }

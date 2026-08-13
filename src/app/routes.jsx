@@ -12,25 +12,32 @@ import StartYourBusiness from "../pages/CampaignPage/StartYourBusiness";
 import GrowYourBusiness from "../pages/CampaignPage/GrowYourBusiness";
 import Cart from "../pages/Cart/cart";
 import Checkout from "../pages/Checkout/checkout";
+import PaymentSuccess from "../pages/PaymentSuccess/paymentsuccess";
+import PaymentFailure from "../pages/PaymentFailure/paymentfailure";
+import PageTransition from "../shared/motion/PageTransition";
 
 export default function Router() {
   return (
-    <Routes>
-    <Route element={<MainLayout />}>
-      <Route path="/" element={<Home />} />
-      <Route path="/catalogue" element={<Catalogue />} />
-      <Route
-          path="/catalogue/:slug"
-          element={<CataloguePage />}
-      />
-      <Route path="/cart" element={<Cart />} />
-      <Route path="/checkout" element={<Checkout />} />
-      <Route path="/uidesign" element={<UIDesign />} />
-      <Route path="/contact" element={<Contact />} />
-      <Route path="/catalogue/start-your-business" element={<StartYourBusiness />} />
-      <Route path="/catalogue/grow-your-business" element={<GrowYourBusiness />} />
-    </Route>
-      <Route path="*" element={<NotFound />} />
-    </Routes>
+    <PageTransition>
+      <Routes>
+        <Route path="/payment/success" element={<PaymentSuccess />} />
+        <Route path="/payment/failure" element={<PaymentFailure />} />
+        <Route element={<MainLayout />}>
+          <Route path="/" element={<Home />} />
+          <Route path="/catalogue" element={<Catalogue />} />
+          <Route
+              path="/catalogue/:slug"
+              element={<CataloguePage />}
+          />
+          <Route path="/cart" element={<Cart />} />
+          <Route path="/checkout" element={<Checkout />} />
+          <Route path="/uidesign" element={<UIDesign />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/catalogue/start-your-business" element={<StartYourBusiness />} />
+          <Route path="/catalogue/grow-your-business" element={<GrowYourBusiness />} />
+        </Route>
+          <Route path="*" element={<NotFound />} />
+      </Routes>
+    </PageTransition>
   );
 }

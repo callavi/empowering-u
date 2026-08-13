@@ -47,6 +47,7 @@ export async function getService(slug) {
     purchaseType: data.purchase_type,
 
     commerce: {
+      serviceId: data.service_id,
       currency: data.currency,
       merchantProductId: data.merchant_product_id,
       merchantPriceId: data.merchant_price_id,
@@ -95,6 +96,7 @@ export async function getServices() {
         purchaseType: databaseService.purchase_type,
 
         commerce: {
+          serviceId: databaseService.service_id,
           currency: databaseService.currency,
           merchantProductId: databaseService.merchant_product_id,
           merchantPriceId: databaseService.merchant_price_id,
