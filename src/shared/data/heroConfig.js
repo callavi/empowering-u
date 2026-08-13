@@ -63,11 +63,6 @@ contact: {
 
   primaryActions: [
       {
-          label: "Contact Us",
-          href: "/contact",
-          variant: "secondary",
-      },
-      {
           label: "WhatsApp",
           href: "https://wa.me/917908466757?text=Hi%2C%20I%27m%20interested%20in%20your%20services.",
           variant: "outline",
