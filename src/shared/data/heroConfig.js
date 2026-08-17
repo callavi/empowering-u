@@ -1,6 +1,8 @@
 import {HomepageIllustration} from "../Illustration/HeroIllustrations/HomepageIllustration";
 import { UserPlus, ShieldCheck, Briefcase, TrendingUp, Clock3, MessageCircle} from "lucide-react";
 import { ContactPageIllustration } from "../Illustration/HeroIllustrations/ContactPageIllustration";
+import { AboutPageIllustration } from "../Illustration/HeroIllustrations/AboutPageIllustration";
+
 
 export const Heroes = {
 homepage: {
@@ -91,6 +93,55 @@ contact: {
         icon: ShieldCheck,
         label: "Trusted Support",
         className: "support",
+    },
+  ],
+},
+about: {
+  badge: "About Empowering U",
+
+  title: {
+    before: "Starting a business shouldn't mean figuring everything out",
+    highlight: "alone.",
+  },
+
+  description:
+    "Empowering U is an initiative by Empowering Minds created to help first-time entrepreneurs turn their ideas into real businesses — and give them the support to keep building and growing.",
+
+  primaryActions: [
+    {
+      label: "Start Your Business",
+      href: "/catalogue/start-your-business",
+      variant: "accent",
+      size: "large",
+    },
+  ],
+
+  illustration: AboutPageIllustration,
+
+  floatingCards: [
+    {
+      id: "aboutPill-1",
+      icon: UserPlus,
+      label: "Start with Confidence",
+      className: "registration",
+    },
+    {
+      id: "aboutPill-2",
+      icon: ShieldCheck,
+      label: "Practical Guidance",
+      className: "compliance",
+    },
+    {
+      id: "aboutPill-3",
+      icon: Briefcase,
+      label: "Build Your Business",
+      className: "consulting",
+    },
+    {
+      id: "aboutPill-4",
+      icon: TrendingUp,
+      label: "Keep Growing",
+      className: "growthservices",
     },
   ],
 },

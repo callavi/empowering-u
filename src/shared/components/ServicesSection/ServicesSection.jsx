@@ -14,7 +14,7 @@ export function ServicesSection () {
         <section className={styles.section}>
             <Container>
                 <div className="flex flex-col gap-4" id="services">
-                    <SectionHeading title="Or, browse all our services" align="center" />
+                    <SectionHeading title="What can we help you with?" align="center" eyebrow="our services"/>
                     <div className="grid gap-8 grid-cols-1 md:grid-cols-2 xl:grid-cols-3">
                     {services.map((item) => (
                         <ServiceCard

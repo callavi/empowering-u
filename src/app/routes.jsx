@@ -15,6 +15,7 @@ import Checkout from "../pages/Checkout/checkout";
 import PaymentSuccess from "../pages/PaymentSuccess/paymentsuccess";
 import PaymentFailure from "../pages/PaymentFailure/paymentfailure";
 import PageTransition from "../shared/motion/PageTransition";
+import About from "../pages/AboutPage/about";
 
 export default function Router() {
   return (
@@ -35,6 +36,7 @@ export default function Router() {
           <Route path="/contact" element={<Contact />} />
           <Route path="/catalogue/start-your-business" element={<StartYourBusiness />} />
           <Route path="/catalogue/grow-your-business" element={<GrowYourBusiness />} />
+          <Route path="/about" element={<About />} />
         </Route>
           <Route path="*" element={<NotFound />} />
       </Routes>

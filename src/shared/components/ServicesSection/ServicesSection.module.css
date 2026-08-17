@@ -10,27 +10,27 @@
 
 
 .section::after {
-    content: "";
-    position: absolute;
+  content: "";
+  position: absolute;
 
-    width: 700px;
-    height: 700px;
+  width: 700px;
+  height: 700px;
 
-    right: 120px;
-    top: 70%;
+  right: 120px;
+  top: 70%;
 
-    transform: translateY(-50%);
+  transform: translateY(-50%);
 
-    background:
-        radial-gradient(
-            circle,
-            rgba(255, 231, 217, 0.8) 0%,
-            rgba(255, 231, 217, 0.45) 35%,
-            transparent 75%
-        );
+  background:
+    radial-gradient(
+      circle,
+      rgba(109, 130, 99, 0.16) 0%,
+      rgba(109, 130, 99, 0.08) 35%,
+      transparent 75%
+    );
 
-    filter: blur(40px);
+  filter: blur(40px);
 
-    pointer-events: none;
-    z-index: -1;
+  pointer-events: none;
+  z-index: -1;
 }

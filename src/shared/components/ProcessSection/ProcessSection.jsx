@@ -8,7 +8,7 @@ import clsx from "clsx";
 
 import styles from "./ProcessSection.module.css";
 
-export function ProcessSection({heading,accent,features,variant="default",illustration: Illustration}) {
+export function ProcessSection({heading,accent,eyebrow,features,variant="default",illustration: Illustration}) {
 
 const isJourney = variant === "journey";
 const layout = isJourney ? "vertical" : "horizontal";
@@ -27,6 +27,7 @@ const layout = isJourney ? "vertical" : "horizontal";
               title={heading}
               align={variant === "journey" ? "left" : "center"}
               accent={accent}
+              eyebrow={eyebrow}
             />
 
             <div
