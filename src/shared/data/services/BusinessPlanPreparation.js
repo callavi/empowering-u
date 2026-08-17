@@ -23,6 +23,11 @@ export const businessPlanPreparation =
   category: CATEGORIES.CONSULTING,
   label: "Business Plan Preparation",
   subtitle: "Turn your business idea into a clear plan",
+  seo: {
+    title: "Business Plan Preparation | Empowering U",
+    description:
+      "Turn your business idea into a structured plan covering your market, operations, financial direction, and practical roadmap for moving forward.",
+  },
 
 
   hero: {

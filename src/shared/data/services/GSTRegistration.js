@@ -28,6 +28,13 @@ export const gst =
     label: "GST Registration",
     subtitle: "Register your Business under GST",
 
+    // GSTRegistration.js
+    seo: {
+      title: "GST Registration | Empowering U",
+      description:
+        "Get assistance with GST registration for your business, from document preparation and application support to receiving your GST registration certificate.",
+    },
+
 
     // Hero
     hero: {

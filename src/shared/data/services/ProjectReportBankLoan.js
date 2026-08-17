@@ -24,6 +24,11 @@ export const projectReportBankLoan =
   category: CATEGORIES.CONSULTING,
   label: "Project Report for Bank Loan",
   subtitle: "Prepare a clear project report for financing",
+  seo: {
+    title: "Project Report for Bank Loan | Empowering U",
+    description:
+      "Prepare a structured project report covering your business, project costs, operations, and financial projections for loan discussions.",
+  },
 
 
   hero: {

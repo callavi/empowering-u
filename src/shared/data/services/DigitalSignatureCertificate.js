@@ -25,7 +25,11 @@ export const digitalSignatureCertificate =
   category: CATEGORIES.REGISTRATION,
   label: "Digital Signature Certificate",
   subtitle: "Get a DSC for secure digital signing",
-
+  seo: {
+  title: "Digital Signature Certificate | Empowering U",
+  description:
+    "Get assistance obtaining a Digital Signature Certificate for eligible online filings and transactions that require secure digital signing.",
+  },
 
   hero: {
     title: "Digital Signature Certificate",

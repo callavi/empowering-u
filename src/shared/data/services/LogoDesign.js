@@ -26,7 +26,11 @@ export const logo =
   category: CATEGORIES.GROWTH,
   label: "Logo Design",
   subtitle: "Professional Branding for Your Business",
-
+  seo: {
+  title: "Logo Design for Businesses | Empowering U",
+  description:
+    "Create a memorable professional logo that reflects your brand, builds customer trust, strengthens recognition, and helps your business stand out.",
+  },
 
   hero: {
     title: "Logo Design",

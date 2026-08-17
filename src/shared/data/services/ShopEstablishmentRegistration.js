@@ -24,7 +24,11 @@ export const shopEstablishmentRegistration =
   category: CATEGORIES.REGISTRATION,
   label: "Shop & Establishment Registration",
   subtitle: "Register your business establishment",
-
+  seo: {
+  title: "Shop & Establishment Registration | Empowering U",
+  description:
+    "Get assistance registering your eligible shop or commercial establishment under the applicable local registration requirements.",
+  },
 
   hero: {
     title: "Shop & Establishment Registration",

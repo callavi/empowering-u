@@ -23,7 +23,11 @@ export const trademarkRegistration =
   category: CATEGORIES.REGISTRATION,
   label: "Trademark Registration",
   subtitle: "Protect your brand identity",
-
+  seo: {
+  title: "Trademark Registration | Empowering U",
+  description:
+    "Get assistance with trademark registration to help protect distinctive elements of your business name, logo, or brand identity.",
+  },
 
   hero: {
     title: "Trademark Registration",

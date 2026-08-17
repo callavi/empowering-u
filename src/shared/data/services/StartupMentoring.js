@@ -26,7 +26,11 @@ export const startup =
   category: CATEGORIES.CONSULTING,
   label: "Startup Mentoring",
   subtitle: "Guidance to Help Your Business Grow",
-
+  seo: {
+  title: "Startup Mentoring | Empowering U",
+  description:
+    "Get practical startup mentoring to validate your business idea, avoid common mistakes, plan for growth, and make informed business decisions.",
+  },
 
   hero: {
     title: "Startup Mentoring",

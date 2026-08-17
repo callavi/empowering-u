@@ -24,6 +24,11 @@ export const basicWebsite =
   category: CATEGORIES.GROWTH,
   label: "Basic Website",
   subtitle: "Get a professional website for your business",
+  seo: {
+  title: "Basic Website Design | Empowering U",
+  description:
+    "Get a clean, professional website that helps your business build credibility, showcase services, connect with customers, and grow its online presence.",
+  },
 
 
   hero: {

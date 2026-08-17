@@ -25,6 +25,11 @@ export const panTanRegistration =
   category: CATEGORIES.REGISTRATION,
   label: "PAN & TAN Registration",
   subtitle: "Get essential tax identification for your business",
+  seo: {
+  title: "PAN & TAN Registration | Empowering U",
+  description:
+    "Get assistance obtaining PAN and TAN registrations required for applicable business and tax activities, with guidance through the process.",
+  },
 
   hero: {
     title: "PAN & TAN Registration",

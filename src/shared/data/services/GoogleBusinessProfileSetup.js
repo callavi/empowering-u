@@ -23,7 +23,11 @@ export const googleBusinessProfileSetup =
   category: CATEGORIES.GROWTH,
   label: "Google Business Profile Setup",
   subtitle: "Help customers find your business on Google",
-
+  seo: {
+  title: "Google Business Profile Setup | Empowering U",
+  description:
+    "Set up and optimize your Google Business Profile so customers can find accurate business information and discover your business online.",
+  },
 
   hero: {
     title: "Google Business Profile Setup",

@@ -24,7 +24,11 @@ export const companyRegistrations =
   category: CATEGORIES.REGISTRATION,
   label: "Company Registrations",
   subtitle: "Choose the right structure for your business",
-
+  seo: {
+  title: "Company Registration | Empowering U",
+  description:
+    "Get expert assistance choosing and registering the business structure that fits your goals, with guidance through the practical registration process.",
+  },
 
   hero: {
     title: "Company Registrations",

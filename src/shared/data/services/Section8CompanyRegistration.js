@@ -25,7 +25,11 @@ export const section8CompanyRegistration =
   category: CATEGORIES.REGISTRATION,
   label: "Section 8 Company Registration",
   subtitle: "Set up a company for charitable or social objectives",
-
+  seo: {
+  title: "Section 8 Company Registration | Empowering U",
+  description:
+    "Get assistance setting up a Section 8 Company for eligible charitable, social, educational, or other approved objectives.",
+  },
 
   hero: {
     title: "Section 8 Company Registration",

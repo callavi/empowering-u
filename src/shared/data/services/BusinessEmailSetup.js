@@ -23,6 +23,11 @@ export const businessEmailSetup =
   category: CATEGORIES.REGISTRATION,
   label: "Business Email Setup",
   subtitle: "Use a professional email address for your business",
+  seo: {
+  title: "Business Email Setup | Empowering U",
+  description:
+    "Set up professional business email accounts using your own domain, with assistance configuring mailboxes, testing, and handing over your setup.",
+  },
 
 
   hero: {

@@ -26,6 +26,11 @@ export const tradeLicenseAssistance =
   category: CATEGORIES.REGISTRATION,
   label: "Trade License Assistance",
   subtitle: "Get help with your local trade license",
+  seo: {
+    title: "Trade License Assistance | Empowering U",
+    description:
+      "Get assistance preparing and submitting the information required for your applicable local trade license application.",
+  },
 
 
   hero: {

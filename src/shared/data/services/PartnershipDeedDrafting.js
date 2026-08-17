@@ -22,6 +22,11 @@ export const partnershipDeedDrafting =
   category: CATEGORIES.CONSULTING,
   label: "Partnership Deed Drafting",
   subtitle: "Document your partnership terms clearly",
+  seo: {
+  title: "Partnership Deed Drafting | Empowering U",
+  description:
+    "Prepare a clear partnership deed that records the agreed terms between partners and helps define how the partnership will operate.",
+  },
 
 
   hero: {

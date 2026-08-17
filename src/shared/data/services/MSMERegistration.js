@@ -24,6 +24,11 @@ export const msmeRegistration =
   category: CATEGORIES.REGISTRATION,
   label: "MSME (Udyam) Registration",
   subtitle: "Get your business registered as an MSME",
+  seo: {
+    title: "MSME (Udyam) Registration | Empowering U",
+    description:
+      "Get assistance with Udyam Registration for your eligible micro, small, or medium enterprise and guidance through the registration process.",
+  },
 
   hero: {
     title: "MSME (Udyam) Registration",

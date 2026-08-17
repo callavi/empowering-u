@@ -23,6 +23,11 @@ export const socialMediaManagement =
   category: CATEGORIES.GROWTH,
   label: "Social Media Management",
   subtitle: "Build a consistent social media presence",
+  seo: {
+    title: "Social Media Management | Empowering U",
+    description:
+      "Build a consistent social media presence with planned content and ongoing management to keep your business visible and connected with its audience.",
+  },
 
   hero: {
     title: "Social Media Management",

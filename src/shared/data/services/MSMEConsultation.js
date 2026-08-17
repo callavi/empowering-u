@@ -23,6 +23,11 @@ export const msmeConsultation =
   category: CATEGORIES.CONSULTING,
   label: "MSME Consultation",
   subtitle: "Get practical guidance for your MSME",
+  seo: {
+  title: "MSME Consultation | Empowering U",
+  description:
+    "Get practical MSME guidance covering setup, compliance, documentation, and business growth to help you make informed decisions for your business.",
+  },
 
   hero: {
     title: "MSME Consultation",

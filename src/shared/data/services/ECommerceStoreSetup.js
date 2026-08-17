@@ -23,6 +23,11 @@ export const eCommerceStoreSetup =
   category: CATEGORIES.GROWTH,
   label: "E-Commerce Store Setup",
   subtitle: "Start selling your products online",
+  seo: {
+  title: "E-Commerce Store Setup | Empowering U",
+  description:
+    "Set up an online store where customers can browse products, place orders, and complete purchases while building a direct online sales channel.",
+  },
 
 
   hero: {

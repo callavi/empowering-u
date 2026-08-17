@@ -24,7 +24,11 @@ export const fssaiRegistration =
   category: CATEGORIES.REGISTRATION,
   label: "FSSAI Registration",
   subtitle: "Get your food business registration support",
-
+  seo: {
+  title: "FSSAI Registration | Empowering U",
+  description:
+    "Get assistance with FSSAI registration or licensing for your eligible food business, with support through the required application process.",
+  },
 
   hero: {
     title: "FSSAI Registration",

@@ -24,6 +24,11 @@ export const copyrightRegistration =
   category: CATEGORIES.REGISTRATION,
   label: "Copyright Registration",
   subtitle: "Protect your original creative work",
+  seo: {
+  title: "Copyright Registration | Empowering U",
+  description:
+    "Get assistance registering eligible original creative works and organizing the documents required for your copyright registration application.",
+  },
 
 
   hero: {
