@@ -4,6 +4,7 @@ import { useParams } from "react-router-dom";
 import { getService } from "../../shared/lib/service";
 import { ProductPageTemplate } from "../../shared/components/ProductPageTemplate/ProductPageTemplate";
 import NotFound from "../NotFound/notfound";
+import { BreadcrumbStructuredData, ServiceStructuredData } from "../../shared/components/StructuredData/StructuredData";
 
 export default function CataloguePage() {
   const { slug } = useParams();
@@ -57,5 +58,23 @@ export default function CataloguePage() {
     return <NotFound />;
   }
 
-  return <ProductPageTemplate product={product} />;
+  return (
+    <>
+      <BreadcrumbStructuredData
+        items={[
+          { name: "Home", path: "/" },
+          { name: "Catalogue", path: "/catalogue" },
+          {
+            name: product.label || product.hero?.title || product.slug,
+            path: `/catalogue/${product.slug}`,
+          },
+        ]}
+      />
+      <ServiceStructuredData
+        product={product}
+        path={`/catalogue/${product.slug}`}
+      />
+      <ProductPageTemplate product={product} />
+    </>
+  );
 }

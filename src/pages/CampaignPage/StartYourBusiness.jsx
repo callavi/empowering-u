@@ -6,6 +6,7 @@ import { ProcessSection } from "../../shared/components/ProcessSection/ProcessSe
 import { FAQSection } from "../../shared/components/FAQ/FAQSection";
 
 import { getService } from "../../shared/lib/service";
+import { BreadcrumbStructuredData, ServiceStructuredData } from "../../shared/components/StructuredData/StructuredData";
 
 export default function StartYourBusiness() {
     const [campaign, setCampaign] = useState(null);
@@ -55,6 +56,20 @@ export default function StartYourBusiness() {
 
     return (
         <>
+            <BreadcrumbStructuredData
+                items={[
+                    { name: "Home", path: "/" },
+                    { name: "Catalogue", path: "/catalogue" },
+                    {
+                        name: campaign.label || campaign.hero?.title || "start-your-business",
+                        path: "/catalogue/start-your-business",
+                    },
+                ]}
+            />
+            <ServiceStructuredData
+                product={campaign}
+                path="/catalogue/start-your-business"
+            />
             <CampaignHero campaign={campaign} />
             <WhySection campaign={campaign} />
             <ProcessSection {...campaign.process} />

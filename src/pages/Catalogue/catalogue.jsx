@@ -1,14 +1,15 @@
 import { CatalogueSection } from "../../shared/components/CatalogueGrid/CatalogueSection";
-import SEO from "../../shared/components/SEO/seo";
+import { BreadcrumbStructuredData } from "../../shared/components/StructuredData/StructuredData";
 
 
 export default function Catalogue() {
   return (
     <>
-      <SEO
-        title="Business Services | Empowering U"
-        description="Explore business registration, compliance, digital, branding, and growth services from Empowering U, designed to help you start, build, and grow your business."
-        path="/catalogue"
+      <BreadcrumbStructuredData
+        items={[
+          { name: "Home", path: "/" },
+          { name: "Catalogue", path: "/catalogue" },
+        ]}
       />
       <CatalogueSection />
     </>
