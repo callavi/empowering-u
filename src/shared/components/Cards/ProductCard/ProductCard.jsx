@@ -11,6 +11,8 @@ export function ProductCard ({product}) {
     const {addToCart} = useCart();
     const [added, setAdded] = useState(false);
 
+    const Illustration = product.hero?.illustration;
+
 
     function handleAddToCart() {
         addToCart(product);
@@ -49,7 +51,12 @@ const priceText =
         : "/contact";
 
     return (
-        <article className = {`flex flex-col gap-4 p-6 sm:p-8 lg:p-10 w-full ${styles.card}`}>
+        <article className = {`flex flex-col gap-4 p-5 sm:p-6 w-full ${styles.card}`}>
+            {Illustration && (
+                <div className={styles.visual}>
+                    <Illustration />
+                </div>
+                )}
             <div className = "space-y-4">
                 <h3 className = {`min-h-16 ${styles.heading}`}>{product.label}</h3>
                 <p className= {`min-h-16 ${styles.subheading}`}>{product.subtitle}</p>

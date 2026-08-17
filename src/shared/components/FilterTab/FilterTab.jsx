@@ -1,7 +1,7 @@
 import { tabs } from "../../data/services/catalogueInfo"
 import styles from "./FilterTab.module.css"
 
-export function FilterTab({activeCategory, onChange}) {
+export function FilterTab({activeCategory, onChange,counts, totalCount,}) {
     return (
         <div className={`flex items-center justify-start md:justify-center gap-4 mb-10 ${styles.tabs}`}>
             {tabs.map((tab)=> (
@@ -11,6 +11,11 @@ export function FilterTab({activeCategory, onChange}) {
                     className={`${styles.tab} ${activeCategory === tab.value ? styles.active : ""}`}
                 >
                     {tab.label}
+                    <span className={styles.count}>
+                        {tab.value === "all"
+                            ? totalCount
+                            : counts[tab.value] || 0}
+                    </span>
                 </button>
             )
             )}
