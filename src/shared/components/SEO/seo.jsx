@@ -1,4 +1,4 @@
-const SITE_URL = "https://www.theempoweringminds.com";
+const SITE_URL = "https://empoweringu.theempoweringminds.com";
 
 export default function SEO({
   title,
@@ -8,7 +8,7 @@ export default function SEO({
   type = "website",
   noIndex = false,
 }) {
-  const canonicalUrl = `${SITE_URL}${path}`;
+  const canonicalUrl = new URL(path, SITE_URL).href;
 
   return (
     <>

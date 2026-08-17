@@ -6,6 +6,8 @@ import Container from "../Container/Container";
 import { SectionHeading } from "../SectionHeading/SectionHeading";
 import clsx from "clsx";
 
+import Reveal from "../../motion/Reveal";
+
 import styles from "./ProcessSection.module.css";
 
 export function ProcessSection({heading,accent,eyebrow,features,variant="default",illustration: Illustration}) {
@@ -38,16 +40,18 @@ const layout = isJourney ? "vertical" : "horizontal";
                   : styles.stepsHorizontal
               )}
             >
-              {features.map((step) => (
+              {features.map((step, index) => (
                 <Fragment key={step.id}>
-                  <ProcessStep
-                    number={step.number}
-                    icon={step.icon}
-                    iconVariant={step.variant}
-                    title={step.title}
-                    description={step.description}
-                    layout={layout}
-                  />
+                  <Reveal direction="left" delay={index * 0.23}>
+                    <ProcessStep
+                      number={step.number}
+                      icon={step.icon}
+                      iconVariant={step.variant}
+                      title={step.title}
+                      description={step.description}
+                      layout={layout}
+                    />
+                  </Reveal>
                 </Fragment>
               ))}
             </div>

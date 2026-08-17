@@ -12,6 +12,8 @@ import { TrustBar } from "../../shared/components/TrustBar/TrustBar";
 import { aboutContent } from "../../shared/data/about";
 import SEO from "../../shared/components/SEO/seo";
 
+import Reveal from "../../shared/motion/Reveal";
+
 export default function Home() {
   return (
     <>
@@ -21,12 +23,24 @@ export default function Home() {
       path="/"
     />
     <Hero hero={Heroes.homepage} />
-    <PathwaySection />
-    <TrustBar />
-    <AboutSection content={aboutContent.homepage} />
-    <ServicesSection />
-    <ProcessSection {...businessProcess}/>
-    <CTASection cta={ctas.consultation} />
+    <Reveal direction="up">
+      <PathwaySection />
+    </Reveal>
+    <Reveal direction="up">
+      <TrustBar />
+    </Reveal>
+    <Reveal direction="up">
+      <AboutSection content={aboutContent.homepage} />
+    </Reveal>
+    <Reveal direction="up">
+      <ServicesSection />
+    </Reveal>
+    <Reveal direction="up">
+      <ProcessSection {...businessProcess}/>
+    </Reveal>
+    <Reveal direction="up">
+      <CTASection cta={ctas.consultation} />
+    </Reveal>
   </>
   )
 }

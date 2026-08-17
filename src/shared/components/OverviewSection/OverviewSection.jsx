@@ -2,6 +2,7 @@ import Container from "../Container/Container"
 import { OverviewSectionContent } from "./OverviewSectionContent"
 import {PriceCard} from "../Cards/PriceCard/PriceCard"
 import styles from "./OverviewSection.module.css"
+import Reveal from "../../motion/Reveal"
 
 export function OverviewSection ({product}) {
     return (
@@ -13,10 +14,17 @@ export function OverviewSection ({product}) {
                                 gap-16
                                 xl:gap-24
                                 items-center">
-                    <OverviewSectionContent product={product} />
-                    <div className="flex items-center w-full justify-center m-auto">
-                        <PriceCard product={product}/>
-                    </div>
+
+                    <Reveal direction="left">
+                        <OverviewSectionContent product={product} />
+                    </Reveal>
+
+                    <Reveal direction="right" delay={0.19}>
+                        <div className="flex items-center w-full justify-center m-auto">
+                            <PriceCard product={product} />
+                        </div>
+                    </Reveal>
+
                 </section>
             </Container>
         </section>

@@ -8,4 +8,14 @@ export const transitions = {
         duration: 0.25,
         ease: "easeOut",
     },
+
+    reveal: {
+        duration: 0.5,
+        ease: "easeOut",
+    },
+
+    stagger: {
+        staggerChildren: 0.1,
+        delayChildren: 0,
+    },
 };

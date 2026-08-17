@@ -5,6 +5,7 @@ import Container from "../Container/Container";
 import { products } from "../../data/services/index";
 import { information } from "../../data/contactInfo";
 import { SectionHeading } from "../SectionHeading/SectionHeading";
+import Reveal from "../../motion/Reveal";
 
 const services = Object.values(products).map(({ label }) => label);
 
@@ -27,15 +28,20 @@ export function ContactFormSection() {
                     description="Don't worry—we'll help you choose the right one before you spend anything."
                     align="center" />
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 w-full">
-                        <div className="flex items-center justify-center">
-                            <ContactForm
-                                services={services}
-                                onSubmit={handleSubmit}
-                            />
-                        </div>
-                        <div>
-                            <ContactInfo {...information} />
-                        </div>
+                        <Reveal direction="left">
+                            <div className="flex items-center justify-center">
+                                <ContactForm
+                                    services={services}
+                                    onSubmit={handleSubmit}
+                                />
+                            </div>
+                        </Reveal>
+
+                        <Reveal direction="right" delay={0.1}>
+                            <div>
+                                <ContactInfo {...information} />
+                            </div>
+                        </Reveal>
                     </div>
                 </div>
             </Container>

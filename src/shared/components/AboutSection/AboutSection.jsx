@@ -4,6 +4,7 @@ import Container from "../Container/Container";
 import { SectionHeading } from "../SectionHeading/SectionHeading";
 
 import styles from "./AboutSection.module.css";
+import Reveal from "../../motion/Reveal";
 
 export function AboutSection({ content }) {
   return (
@@ -30,14 +31,15 @@ export function AboutSection({ content }) {
               <span aria-hidden="true"> →</span>
             </Link>
           </div>
+          <Reveal direction="up" delay="0.25">
+            <div className={styles.context}>
+              <span className={styles.eyebrow}>
+                {content.eyebrow}
+              </span>
 
-          <div className={styles.context}>
-            <span className={styles.eyebrow}>
-              {content.eyebrow}
-            </span>
-
-            <p>{content.empoweringMinds}</p>
-          </div>
+              <p>{content.empoweringMinds}</p>
+            </div>
+          </Reveal>
         </div>
       </Container>
     </section>

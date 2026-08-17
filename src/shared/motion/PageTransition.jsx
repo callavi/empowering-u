@@ -9,7 +9,7 @@ export default function PageTransition({ children }) {
 
     return (
         <AnimatePresence
-            initial={false}
+            initial
             mode="wait"
             onExitComplete={() => {
                 window.scrollTo({

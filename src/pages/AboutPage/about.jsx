@@ -13,6 +13,7 @@ import Container from "../../shared/components/Container/Container";
 import { SectionHeading } from "../../shared/components/SectionHeading/SectionHeading";
 
 import styles from "./about.module.css";
+import Reveal from "../../shared/motion/Reveal";
 
 export default function About() {
   return (
@@ -23,30 +24,40 @@ export default function About() {
     path="/about"
     />
     <Hero hero={Heroes.about} />
-    <WhySection campaign={aboutContent.whoWeAre} />
-    <ProcessSection {...aboutProcess} />
-    <WhySection campaign={aboutContent.whyEmpoweringU} />
-    <section className={styles.empoweringMinds}>
-        <Container>
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center">
-                <div>
-                    <SectionHeading
-                        title={aboutContent.empoweringMinds.heading}
-                        align="left"
-                    />
-                </div>
+    <Reveal direction="up">
+        <WhySection campaign={aboutContent.whoWeAre} />
+    </Reveal>
+    <Reveal direction="up">
+        <ProcessSection {...aboutProcess} />
+    </Reveal>
+    <Reveal direction="up">
+        <WhySection campaign={aboutContent.whyEmpoweringU} />
+    </Reveal>
+    <Reveal direction="up">
+        <section className={styles.empoweringMinds}>
+            <Container>
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center">
+                    <div>
+                        <SectionHeading
+                            title={aboutContent.empoweringMinds.heading}
+                            align="left"
+                        />
+                    </div>
 
-                <div className={styles.content}>
-                    {aboutContent.empoweringMinds.paragraphs.map(
-                        (paragraph, index) => (
-                        <p key={index}>{paragraph}</p>
-                        )
-                    )}
+                    <div className={styles.content}>
+                        {aboutContent.empoweringMinds.paragraphs.map(
+                            (paragraph, index) => (
+                            <p key={index}>{paragraph}</p>
+                            )
+                        )}
+                    </div>
                 </div>
-            </div>
-        </Container>
-    </section>
-    <CTASection cta={ctas.about} />
+            </Container>
+        </section>
+    </Reveal>
+    <Reveal direction="up">
+        <CTASection cta={ctas.about} />
+    </Reveal>
   </>
   )
 }

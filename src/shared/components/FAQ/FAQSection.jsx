@@ -7,6 +7,7 @@ import { SectionHeading } from "../SectionHeading/SectionHeading";
 import QuestionsIllustration from "../../Illustration/ProductIllustrations/QuestionsIllustration";
 
 import styles from "./FAQSection.module.css";
+import Reveal from "../../motion/Reveal";
 
 export function FAQSection({ contents }) {
   const { faqs } = contents;
@@ -26,49 +27,56 @@ export function FAQSection({ contents }) {
         />
       <section className="grid grid-cols-1 lg:grid-cols-2 gap-6">
         <div className="mx-auto mt-10 flex max-w-4xl flex-col gap-4">
-          {faqs.map((faq, index) => (
-              <div
-                key={faq.question}
-                className={clsx(
-                  styles.accordionItem,
-                  openIndex === index && styles.active
-                )}
-              >
-              <button
-                onClick={() => toggle(index)}
-                className="flex w-full items-center justify-between p-6 text-left"
-              >
-                <h3 className="font-semibold text-lg">
-                  {faq.question}
-                </h3>
-
-                <ChevronDown
-                  size={20}
-                  className={clsx(
-                    styles.chevron,
-                    openIndex === index && styles.rotate
-                  )}
-                />
-              </button>
-
-                <div
-                  className={clsx(
-                    styles.content,
-                    openIndex === index && styles.open
-                  )}
+            {faqs.map((faq, index) => (
+                <Reveal
+                    key={faq.question}
+                    direction="up"
+                    delay={index * 0.1}
                 >
-                <div className="px-6">
-                  <p className="m-0 pb-6">{faq.answer}</p>
-                </div>
-              </div>
-            </div>
-          ))}
+                    <div
+                        className={clsx(
+                            styles.accordionItem,
+                            openIndex === index && styles.active
+                        )}
+                    >
+                        <button
+                            onClick={() => toggle(index)}
+                            className="flex w-full items-center justify-between p-6 text-left"
+                        >
+                            <h3 className="font-semibold text-lg">
+                                {faq.question}
+                            </h3>
+
+                            <ChevronDown
+                                size={20}
+                                className={clsx(
+                                    styles.chevron,
+                                    openIndex === index && styles.rotate
+                                )}
+                            />
+                        </button>
+
+                        <div
+                            className={clsx(
+                                styles.content,
+                                openIndex === index && styles.open
+                            )}
+                        >
+                            <div className="px-6">
+                                <p className="m-0 pb-6">{faq.answer}</p>
+                            </div>
+                        </div>
+                    </div>
+                </Reveal>
+            ))}
         </div>
         {QuestionsIllustration && (
-                    <div className={styles.illustration}>
-                      <QuestionsIllustration />
-                    </div>
-                  )}
+          <Reveal direction="right" delay={0.2}>
+              <div className={styles.illustration}>
+                  <QuestionsIllustration />
+              </div>
+          </Reveal>
+        )}
       </section>
       </Container>
     </section>
