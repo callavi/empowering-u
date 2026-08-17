@@ -2,6 +2,7 @@ import { Hero } from "../../shared/components/Hero/hero"
 import { CTASection } from "../../shared/components/CTASection/CTASection";
 import { WhySection } from "../../shared/components/WhySection/WhySection";
 import { ProcessSection } from "../../shared/components/ProcessSection/ProcessSection";
+import SEO from "../../shared/components/SEO/seo";
 
 import { Heroes } from "../../shared/data/heroConfig";
 import { aboutContent } from "../../shared/data/about";
@@ -16,6 +17,11 @@ import styles from "./about.module.css";
 export default function About() {
   return (
     <>
+    <SEO
+    title="About Empowering U | Business Support for Entrepreneurs"
+    description="Learn how Empowering U helps first-time entrepreneurs turn their ideas into businesses with practical guidance, simple processes, and support from start to growth."
+    path="/about"
+    />
     <Hero hero={Heroes.about} />
     <WhySection campaign={aboutContent.whoWeAre} />
     <ProcessSection {...aboutProcess} />

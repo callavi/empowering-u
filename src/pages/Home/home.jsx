@@ -10,10 +10,16 @@ import { businessProcess } from "../../shared/data/businessprocess"
 import { ctas } from "../../shared/data/ctaConfig"
 import { TrustBar } from "../../shared/components/TrustBar/TrustBar";
 import { aboutContent } from "../../shared/data/about";
+import SEO from "../../shared/components/SEO/seo";
 
 export default function Home() {
   return (
     <>
+    <SEO
+      title="Empowering U | Start & Grow Your Business in India"
+      description="Empowering U helps you start and grow your business in India with registration, compliance, digital, branding, and business growth services."
+      path="/"
+    />
     <Hero hero={Heroes.homepage} />
     <PathwaySection />
     <TrustBar />
