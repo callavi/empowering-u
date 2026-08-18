@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useCallback } from "react";
 import { CartContext } from "./CartContext";
 
 export function CartProvider({ children }) {
@@ -70,9 +70,9 @@ export function CartProvider({ children }) {
         );
     }
 
-    function clearCart() {
+    const clearCart = useCallback(() => {
         setItems([]);
-    }
+    }, []);
 
     useEffect(() => {
         try {
