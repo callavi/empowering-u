@@ -21,7 +21,7 @@ export function CartProvider({ children }) {
     });
     
 
-    function addToCart(item) {
+    const addToCart = useCallback((item) => {
         setItems((currentItems) => {
             const existingItem = currentItems.find(
                 (cartItem) => cartItem.id === item.id
@@ -31,9 +31,9 @@ export function CartProvider({ children }) {
                 return currentItems.map((cartItem) =>
                     cartItem.id === item.id
                         ? {
-                              ...cartItem,
-                              quantity: cartItem.quantity + 1,
-                          }
+                            ...cartItem,
+                            quantity: cartItem.quantity + 1,
+                        }
                         : cartItem
                 );
             }
@@ -47,17 +47,19 @@ export function CartProvider({ children }) {
                 },
             ];
         });
-    }
+    }, []);
 
-    function removeFromCart(id) {
+    const removeFromCart = useCallback((id) => {
         setItems((currentItems) =>
             currentItems.filter((item) => item.id !== id)
         );
-    }
+    }, []);
 
-    function updateQuantity(id, quantity) {
+    const updateQuantity = useCallback((id, quantity) => {
         if (quantity <= 0) {
-            removeFromCart(id);
+            setItems((currentItems) =>
+                currentItems.filter((item) => item.id !== id)
+            );
             return;
         }
 
@@ -68,7 +70,7 @@ export function CartProvider({ children }) {
                     : item
             )
         );
-    }
+    }, []);
 
     const clearCart = useCallback(() => {
         setItems([]);
