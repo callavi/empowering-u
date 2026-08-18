@@ -7,30 +7,3 @@
   z-index: 2;
   padding-bottom: 6rem;
 }
-
-.section::before{
-    content:"";
-    position:absolute;
-    inset:0;
-
-    background:#FFDCC8;
-
-    filter: blur(140px);
-
-    opacity:.45;
-
-    mask-image: linear-gradient(
-        to bottom,
-        black 0%,
-        black 70%,
-        transparent 100%
-    );
-
-    -webkit-mask-image: linear-gradient(
-        to bottom,
-        black 0%,
-        black 70%,
-        transparent 100%
-    );
-    z-index: -1;
-}

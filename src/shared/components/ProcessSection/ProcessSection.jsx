@@ -42,7 +42,7 @@ const layout = isJourney ? "vertical" : "horizontal";
             >
               {features.map((step, index) => (
                 <Fragment key={step.id}>
-                  <Reveal direction="left" delay={index * 0.23}>
+                  <Reveal direction="up" delay={index * 0.2}>
                     <ProcessStep
                       number={step.number}
                       icon={step.icon}

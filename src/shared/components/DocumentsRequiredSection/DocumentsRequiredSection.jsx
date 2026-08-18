@@ -14,7 +14,7 @@ export function DocumentsRequiredSection ({contents}) {
         <section className={styles.section}>
             <Container>
                 <SectionHeading title="Documents Required" description="Keep these documents ready before you apply." align="left" />
-                    <div className="flex gap-16 flex-wrap">
+                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
                         {documents.map((group, index) => {
                             const Icon = group.icon;
 
@@ -25,7 +25,7 @@ export function DocumentsRequiredSection ({contents}) {
                                     delay={index * 0.19}
                                 >
                                     <div
-                                        className={`flex flex-col p-8 w-full max-w-sm min-h-[350px] ${styles.documentCard}`}
+                                        className={`flex flex-col p-8 w-full min-h-[350px] ${styles.documentCard}`}
                                     >
                                         <div className={styles.cardHeader}>
                                             <div className={styles.iconWrapper}>

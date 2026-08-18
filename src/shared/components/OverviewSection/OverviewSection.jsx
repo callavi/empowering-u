@@ -15,11 +15,11 @@ export function OverviewSection ({product}) {
                                 xl:gap-24
                                 items-center">
 
-                    <Reveal direction="left">
+                    <Reveal direction="up">
                         <OverviewSectionContent product={product} />
                     </Reveal>
 
-                    <Reveal direction="right" delay={0.19}>
+                    <Reveal direction="up" delay={0.1}>
                         <div className="flex items-center w-full justify-center m-auto">
                             <PriceCard product={product} />
                         </div>

@@ -22,10 +22,17 @@ import { PriceCard } from "../../shared/components/Cards/PriceCard/PriceCard";
 import { OverviewSection } from "../../shared/components/OverviewSection/OverviewSection";
 import { DocumentsRequiredSection } from "../../shared/components/DocumentsRequiredSection/DocumentsRequiredSection";
 import { FAQSection } from "../../shared/components/FAQ/FAQSection";
+import SEO from "../../shared/components/SEO/seo";
 
 export default function UIDesign() {
   return (
     <main>
+      <SEO
+        title="Design System | Empowering U"
+        description="Empowering U design system."
+        path="/uidesign"
+        noIndex={true}
+      />
       <Container>
 
         <h1 className="mb-12 text-4xl font-bold">

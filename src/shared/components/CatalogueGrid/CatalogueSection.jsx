@@ -4,6 +4,9 @@ import { CatalogueGrid } from "./CatalogueGrid";
 import { getServices } from "../../lib/service";
 import Container from "../Container/Container";
 import { SectionHeading } from "../SectionHeading/SectionHeading";
+import { CatalogueSkeleton } from "./CatalogueSkeleton";
+import { Hero } from "../Hero/hero";
+import { Heroes } from "../../data/heroConfig";
 
 export function CatalogueSection() {
     const [products, setProducts] = useState([]);
@@ -44,7 +47,9 @@ export function CatalogueSection() {
     }, []);
 
     return (
-        <section className={styles.section}>
+        <>
+        <Hero hero={Heroes.catalogue} />
+        <section className={styles.section} id="catalogue">
             <Container>
                 <SectionHeading
                     title="Our Services"
@@ -52,7 +57,7 @@ export function CatalogueSection() {
                     align="center"
                 />
 
-                {loading && <p>Loading services...</p>}
+                {loading && <CatalogueSkeleton />}
 
                 {error && (
                     <p>
@@ -65,5 +70,6 @@ export function CatalogueSection() {
                 )}
             </Container>
         </section>
+    </>
     );
 }

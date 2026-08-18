@@ -14,8 +14,10 @@ import { getService } from "../../shared/lib/service";
 import { Button } from "../../shared/components/Button/Button";
 import Container from "../../shared/components/Container/Container";
 import { SectionHeading } from "../../shared/components/SectionHeading/SectionHeading";
+import { motion, AnimatePresence } from "motion/react";
 
 import styles from "./cart.module.css";
+import SEO from "../../shared/components/SEO/seo";
 
 export default function Cart() {
     const {
@@ -113,6 +115,12 @@ export default function Cart() {
     if (items.length === 0) {
         return (
             <main className={styles.page}>
+                <SEO
+                    title="Your Cart | Empowering U"
+                    description="Review the services you've selected."
+                    path="/cart"
+                    noIndex={true}
+                />
                 <Container>
                     <div className={styles.empty}>
                         <div className={styles.emptyIcon}>
@@ -142,6 +150,12 @@ export default function Cart() {
 
     return (
         <main className={styles.page}>
+            <SEO
+                title="Your Cart | Empowering U"
+                description="Review the services you've selected."
+                path="/cart"
+                noIndex={true}
+            />
             <Container>
                 <header className={styles.header}>
                     <div>
@@ -187,112 +201,142 @@ export default function Cart() {
                                 </button>
                             </div>
 
-                            <div className={styles.items}>
-                                {cartItems.map(({ id, quantity, product }) => {
-                                    const isFixed =
-                                        product.priceType === "fixed";
+                            <AnimatePresence mode="popLayout">
+                                    <div className={styles.items}>
+                                        {cartItems.map(({ id, quantity, product }, index) => {
+                                        const isFixed =
+                                            product.priceType === "fixed";
 
-                                    const currency =
-                                        product.commerce?.currency ?? "INR";
+                                        const currency =
+                                            product.commerce?.currency ?? "INR";
 
-                                    return (
-                                        <article
-                                            key={id}
-                                            className={styles.item}
-                                        >
-                                            <div className={styles.itemContent}>
-                                                <div>
-                                                    <p className={styles.itemCategory}>
-                                                        {product.category}
-                                                    </p>
-
-                                                    <h3>
-                                                        {product.label}
-                                                    </h3>
-
-                                                    {product.subtitle && (
-                                                        <p className={styles.itemDescription}>
-                                                            {product.subtitle}
+                                        return (
+                                            <motion.article
+                                                key={id}
+                                                layout
+                                                initial={{ opacity: 0, y: 20 }}
+                                                animate={{ opacity: 1, y: 0 }}
+                                                exit={{ opacity: 0, x: -20, scale: 0.98 }}
+                                                transition={{
+                                                    duration: 0.3,
+                                                    delay: index * 0.06,
+                                                    ease: "easeOut",
+                                                }}
+                                                className={styles.item}
+                                            >
+                                                <div className={styles.itemContent}>
+                                                    <div>
+                                                        <p className={styles.itemCategory}>
+                                                            {product.category}
                                                         </p>
-                                                    )}
-                                                </div>
 
-                                                <button
-                                                    type="button"
-                                                    onClick={() =>
-                                                        removeFromCart(id)
-                                                    }
-                                                    className={styles.removeButton}
-                                                    aria-label={`Remove ${product.label} from cart`}
-                                                >
-                                                    <Trash2 size={17} />
-                                                    <span>Remove</span>
-                                                </button>
-                                            </div>
+                                                        <h3>
+                                                            {product.label}
+                                                        </h3>
 
-                                            <div className={styles.itemBottom}>
-                                                <div className={styles.quantity}>
-                                                    <button
-                                                        type="button"
-                                                        onClick={() =>
-                                                            updateQuantity(
-                                                                id,
-                                                                quantity - 1
-                                                            )
-                                                        }
-                                                        aria-label={`Decrease quantity of ${product.label}`}
-                                                    >
-                                                        <Minus size={15} />
-                                                    </button>
-
-                                                    <span>{quantity}</span>
+                                                        {product.subtitle && (
+                                                            <p className={styles.itemDescription}>
+                                                                {product.subtitle}
+                                                            </p>
+                                                        )}
+                                                    </div>
 
                                                     <button
                                                         type="button"
                                                         onClick={() =>
-                                                            updateQuantity(
-                                                                id,
-                                                                quantity + 1
-                                                            )
+                                                            removeFromCart(id)
                                                         }
-                                                        aria-label={`Increase quantity of ${product.label}`}
+                                                        className={styles.removeButton}
+                                                        aria-label={`Remove ${product.label} from cart`}
                                                     >
-                                                        <Plus size={15} />
+                                                        <Trash2 size={17} />
+                                                        <span>Remove</span>
                                                     </button>
                                                 </div>
 
-                                                <div className={styles.itemPrice}>
-                                                    {isFixed ? (
-                                                        <>
-                                                            <span>
-                                                                {formatPrice(
-                                                                    product.price,
-                                                                    currency
-                                                                )}
-                                                            </span>
+                                                <div className={styles.itemBottom}>
+                                                    <div className={styles.quantity}>
+                                                        <button
+                                                            type="button"
+                                                            onClick={() =>
+                                                                updateQuantity(
+                                                                    id,
+                                                                    quantity - 1
+                                                                )
+                                                            }
+                                                            aria-label={`Decrease quantity of ${product.label}`}
+                                                        >
+                                                            <Minus size={15} />
+                                                        </button>
 
+                                                        <AnimatePresence mode="wait" initial={false}>
+                                                            <motion.span
+                                                                key={quantity}
+                                                                initial={{ opacity: 0, y: 6 }}
+                                                                animate={{ opacity: 1, y: 0 }}
+                                                                exit={{ opacity: 0, y: -6 }}
+                                                                transition={{ duration: 0.15 }}
+                                                            >
+                                                                {quantity}
+                                                            </motion.span>
+                                                        </AnimatePresence>
+
+                                                        <button
+                                                            type="button"
+                                                            onClick={() =>
+                                                                updateQuantity(
+                                                                    id,
+                                                                    quantity + 1
+                                                                )
+                                                            }
+                                                            aria-label={`Increase quantity of ${product.label}`}
+                                                        >
+                                                            <Plus size={15} />
+                                                        </button>
+                                                    </div>
+
+                                                    <div className={styles.itemPrice}>
+                                                        {isFixed ? (
+                                                            <>
+                                                                <span>
+                                                                    {formatPrice(
+                                                                        product.price,
+                                                                        currency
+                                                                    )}
+                                                                </span>
+
+                                                                <strong>
+                                                                    {formatPrice(
+                                                                        product.price *
+                                                                            quantity,
+                                                                        currency
+                                                                    )}
+                                                                </strong>
+                                                            </>
+                                                        ) : (
                                                             <strong>
-                                                                {formatPrice(
-                                                                    product.price *
-                                                                        quantity,
-                                                                    currency
-                                                                )}
+                                                                Custom Quote
                                                             </strong>
-                                                        </>
-                                                    ) : (
-                                                        <strong>
-                                                            Custom Quote
-                                                        </strong>
-                                                    )}
+                                                        )}
+                                                    </div>
                                                 </div>
-                                            </div>
-                                        </article>
-                                    );
-                                })}
-                            </div>
+                                            </motion.article>
+                                        );
+                                    })}
+                                </div>
+                            </AnimatePresence>
                         </section>
 
-                        <aside className={styles.summary}>
+                        <motion.aside
+                            className={styles.summary}
+                            initial={{ opacity: 0, y : 20 }}
+                            animate={{ opacity: 1, x: 0 }}
+                            transition={{
+                                duration: 0.4,
+                                delay: 0.15,
+                                ease: "easeOut",
+                            }}
+                        >
                             <h2>Order Summary</h2>
 
                             <div className={styles.summaryRow}>
@@ -312,9 +356,14 @@ export default function Cart() {
                             <div className={styles.summaryRow}>
                                 <span>Subtotal</span>
 
-                                <strong>
-                                    {formatPrice(subtotal)}
-                                </strong>
+                            <motion.strong
+                                key={subtotal}
+                                initial={{ opacity: 0.5, scale: 0.95 }}
+                                animate={{ opacity: 1, scale: 1 }}
+                                transition={{ duration: 0.2 }}
+                            >
+                                {formatPrice(subtotal)}
+                            </motion.strong>
                             </div>
 
                             {hasCustomQuote && (
@@ -349,7 +398,7 @@ export default function Cart() {
                             <p className={styles.secureNote}>
                                 You'll review your order before payment.
                             </p>
-                        </aside>
+                        </motion.aside>
                     </div>
                 )}
             </Container>

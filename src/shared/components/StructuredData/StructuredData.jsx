@@ -1,4 +1,4 @@
-const SITE_URL = "https://www.theempoweringminds.com";
+const SITE_URL = "https://empoweringu.theempoweringminds.com";
 const BUSINESS_ID = `${SITE_URL}/#business`;
 const WEBSITE_ID = `${SITE_URL}/#website`;
 

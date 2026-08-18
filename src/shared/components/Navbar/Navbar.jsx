@@ -14,27 +14,31 @@ export default function Navbar() {
     const cartCount = items.reduce(
     (total, item) => total + item.quantity,
     0);
-      useEffect(() => {
-            const body = document.body;
-            const html = document.documentElement;
+    useEffect(() => {
+        if (!menuOpen) return;
 
-            if (menuOpen) {
-                html.style.overflow = "hidden";
-                body.style.overflow = "hidden";
-            } else {
-                html.style.overflow = "";
-                body.style.overflow = "";
-            }
+        const scrollY = window.scrollY;
 
-            return () => {
-                html.style.overflow = "";
-                body.style.overflow = "";
-            };
-            }, [menuOpen]);
+        document.body.style.position = "fixed";
+        document.body.style.top = `-${scrollY}px`;
+        document.body.style.left = "0";
+        document.body.style.right = "0";
+        document.body.style.overflow = "hidden";
+
+        return () => {
+            document.body.style.position = "";
+            document.body.style.top = "";
+            document.body.style.left = "";
+            document.body.style.right = "";
+            document.body.style.overflow = "";
+
+            window.scrollTo(0, scrollY);
+        };
+    }, [menuOpen]);
   return (
-    <header className="sticky top-0 z-50 bg-white/90 backdrop-blur relative">
+    <header className="sticky top-0 z-50 bg-white/100 relative md:backdrop-blur">
         <section className="mx-auto max-w-7xl px-4">
-            <div className="flex min-h-20 items-center justify-between py-2 md:h-20 md:py-0">
+            <div className="flex min-h-20 items-center justify-between py-2 md:h-20 md:py-0 ">
                 <div className="flex items-center justify-between gap-6">
                     <NavLink to="/" className = {`flex items-center gap-3 ${styles.logo}`}>
                         <img src={logo} alt="Empowering U Logo" className="h-12 w-auto md:h-16" />

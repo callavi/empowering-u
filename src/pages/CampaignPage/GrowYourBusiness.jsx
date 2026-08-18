@@ -7,6 +7,7 @@ import { FAQSection } from "../../shared/components/FAQ/FAQSection";
 
 import { getService } from "../../shared/lib/service";
 import { BreadcrumbStructuredData, ServiceStructuredData } from "../../shared/components/StructuredData/StructuredData";
+import SEO from "../../shared/components/SEO/seo";
 
 export default function GrowYourBusiness() {
     const [campaign, setCampaign] = useState(null);
@@ -56,6 +57,11 @@ export default function GrowYourBusiness() {
 
     return (
         <>
+            <SEO
+                title={campaign.seo?.title}
+                description={campaign.seo?.description}
+                path={`/catalogue/${campaign.slug}`}
+              />
             <BreadcrumbStructuredData
                 items={[
                     { name: "Home", path: "/" },

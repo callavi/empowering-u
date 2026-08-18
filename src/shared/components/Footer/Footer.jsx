@@ -17,17 +17,17 @@ export default function Footer() {
     <footer className="border-t bg-gray-50 border-gray-200">
         <Container>
       <div className="grid gap-12 py-16 md:grid-cols-3">
-        <div className="flex flex-col gap-3">
+        <div className="flex flex-col gap-3 items-center md:items-start">
             <Link to="/" className = {`flex items-center gap-3 ${styles.logo}`}>
                 <img src={logo} alt="Empowering U Logo" className="h-12 w-auto" />
                 Empowering U
             </Link>
-            <p className={`max-w-xs ${styles.infoText}`}>
+            <p className={`max-w-xs text-center md:text-left ${styles.infoText}`}>
                 Empowering U helps entrepreneurs and businesses navigate registration, compliance, and growth with practical guidance and straightforward services.
             </p>
         </div>
 
-      <nav aria-label="Footer navigation" className={`flex flex-col gap-3 text-center ${styles.infoText} `}>
+      <nav aria-label="Footer navigation" className={`flex flex-col gap-3 text-center md:text-left ${styles.infoText} `}>
         <h3 className={styles.footerHeading}>Quick Links</h3>
         {navLinks.map((link) => (
         <Link
@@ -39,21 +39,21 @@ export default function Footer() {
         </Link>
         ))}
       </nav>
-      <div className={`flex flex-col gap-4 ${styles.infoText} `}>
+      <div className={`flex flex-col gap-4 text-center md:text-left ${styles.infoText} `}>
         <h3 className={styles.footerHeading}>Contact Us</h3>
-        <div className="flex items-center gap-2">
+        <div className="flex items-center gap-2 min-w-0">
             <MapPin size={16} 
                     className = {styles.icon}
             />
             <span>{contactInfo.address}</span>
         </div>
-        <div className="flex items-center gap-2">
+        <div className="flex items-center gap-2 min-w-0">
             <Phone size={16} 
                     className = {styles.icon}
             />
             <span>{contactInfo.phone}</span>
         </div>
-        <div className="flex items-center gap-2">
+        <div className="flex items-center gap-2 min-w-0">
             <Mail size={16} 
                     className = {styles.icon}
             />
@@ -67,7 +67,7 @@ export default function Footer() {
         </div>  
         </div>
       </div>
-        <div className="flex flex-col gap-3 mt-12 border-t border-gray-200 pt-6 md:flex-row md:justify-between">
+        <div className="flex flex-col gap-3 mt-12 border-t border-gray-200 pt-6 md:flex-row md:justify-between text-center">
             <p className={styles.infoText}>
                 © 2026 Empowering U. All rights reserved.
             </p>

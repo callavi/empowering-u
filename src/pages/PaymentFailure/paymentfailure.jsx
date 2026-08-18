@@ -12,6 +12,7 @@ import Container from "../../shared/components/Container/Container";
 import { supabase } from "../../shared/lib/supabase";
 
 import styles from "./paymentfailure.module.css";
+import SEO from "../../shared/components/SEO/seo";
 
 export default function PaymentFailure() {
     const [searchParams] = useSearchParams();
@@ -99,7 +100,14 @@ export default function PaymentFailure() {
 
     if (loading) {
         return (
+            
             <main className={styles.page}>
+                <SEO
+                    title="Payment Failed | Empowering U"
+                    description="Your payment could not be completed."
+                    path="/payment/failure"
+                    noIndex={true}
+                />
                 <Container>
                     <div className={styles.loading}>
                         <div className={styles.loadingIcon}>

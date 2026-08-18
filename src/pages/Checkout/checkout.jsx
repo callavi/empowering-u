@@ -11,6 +11,7 @@ import { SectionHeading } from "../../shared/components/SectionHeading/SectionHe
 import { supabase } from "../../shared/lib/supabase";
 
 import styles from "./checkout.module.css";
+import SEO from "../../shared/components/SEO/seo";
 
 export default function Checkout() {
     const { items } = useCart();
@@ -214,6 +215,12 @@ export default function Checkout() {
     if (items.length === 0) {
         return (
             <main className={styles.page}>
+                <SEO
+                    title="Checkout | Empowering U"
+                    description="Complete your service order with Empowering U."
+                    path="/checkout"
+                    noIndex={true}
+                />
                 <Container>
                     <div className={styles.empty}>
                         <h1>Your cart is empty</h1>

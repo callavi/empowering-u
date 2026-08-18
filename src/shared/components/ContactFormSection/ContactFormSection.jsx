@@ -28,7 +28,7 @@ export function ContactFormSection() {
                     description="Don't worry—we'll help you choose the right one before you spend anything."
                     align="center" />
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 w-full">
-                        <Reveal direction="left">
+                        <Reveal direction="up">
                             <div className="flex items-center justify-center">
                                 <ContactForm
                                     services={services}
@@ -37,7 +37,7 @@ export function ContactFormSection() {
                             </div>
                         </Reveal>
 
-                        <Reveal direction="right" delay={0.1}>
+                        <Reveal direction="up" delay={0.1}>
                             <div>
                                 <ContactInfo {...information} />
                             </div>

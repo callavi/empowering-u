@@ -12,6 +12,7 @@ import { supabase } from "../../shared/lib/supabase";
 import { useCart } from "../../shared/context/useCart";
 
 import styles from "./paymentsuccess.module.css";
+import SEO from "../../shared/components/SEO/seo";
 
 export default function PaymentSuccess() {
     const [searchParams] = useSearchParams();
@@ -103,6 +104,12 @@ export default function PaymentSuccess() {
     if (loading) {
         return (
             <main className={styles.page}>
+                <SEO
+                    title="Payment Successful | Empowering U"
+                    description="Your payment has been successfully processed."
+                    path="/payment/success"
+                    noIndex={true}
+                />
                 <Container>
                     <div className={styles.loading}>
                         <div className={styles.loadingIcon}>

@@ -5,6 +5,8 @@ import { getService } from "../../shared/lib/service";
 import { ProductPageTemplate } from "../../shared/components/ProductPageTemplate/ProductPageTemplate";
 import NotFound from "../NotFound/notfound";
 import { BreadcrumbStructuredData, ServiceStructuredData } from "../../shared/components/StructuredData/StructuredData";
+import { LoaderCircle } from "lucide-react";
+import SEO from "../../shared/components/SEO/seo";
 
 export default function CataloguePage() {
   const { slug } = useParams();
@@ -47,7 +49,16 @@ export default function CataloguePage() {
   }, [slug]);
 
   if (loading) {
-    return <div>Loading...</div>;
+        return (
+        <div className="min-h-[60vh] flex items-center justify-center">
+            <LoaderCircle
+                className="animate-spin text-primary-500"
+                size={36}
+                strokeWidth={2}
+                aria-label="Loading"
+            />
+        </div>
+    );
   }
 
   if (error) {
@@ -60,6 +71,16 @@ export default function CataloguePage() {
 
   return (
     <>
+      <SEO
+        title="Business Services | Empowering U"
+        description="Explore business registration, compliance, digital, branding, and growth services from Empowering U, designed to help you start, build, and grow your business."
+        path="/catalogue"
+      />
+      <SEO
+        title={product.seo?.title}
+        description={product.seo?.description}
+        path={`/catalogue/${product.slug}`}
+      />
       <BreadcrumbStructuredData
         items={[
           { name: "Home", path: "/" },

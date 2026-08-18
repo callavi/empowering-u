@@ -106,16 +106,13 @@
     position: fixed;
     inset: 0;
 
-    width: 100vw;
-    height: 100vh;
-
     padding: 0;
     margin: 0;
     border: none;
 
     background: rgb(0 0 0 / 35%);
 
-    z-index: 30;
+    z-index: 50;
   }
 
   .mobileMenu {
@@ -129,7 +126,6 @@
     bottom: 0;
 
     width: min(80vw, 320px);
-    height: 100vh;
 
     padding: 6rem 1.5rem 2rem;
 
@@ -138,7 +134,7 @@
     transform: translateX(100%);
     transition: transform 300ms ease;
 
-    z-index: 40;
+    z-index: 60;
   }
 
   .mobileMenuOpen {
@@ -151,7 +147,7 @@
     justify-content: center;
 
     position: relative;
-    z-index: 50;
+    z-index: 70;
 
     width: 40px;
     height: 40px;

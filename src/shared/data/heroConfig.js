@@ -2,6 +2,8 @@ import {HomepageIllustration} from "../Illustration/HeroIllustrations/HomepageIl
 import { UserPlus, ShieldCheck, Briefcase, TrendingUp, Clock3, MessageCircle} from "lucide-react";
 import { ContactPageIllustration } from "../Illustration/HeroIllustrations/ContactPageIllustration";
 import { AboutPageIllustration } from "../Illustration/HeroIllustrations/AboutPageIllustration";
+import { CataloguePageIllustration } from "../Illustration/HeroIllustrations/CataloguePageIllustration";
+
 
 
 export const Heroes = {
@@ -144,5 +146,27 @@ about: {
       className: "growthservices",
     },
   ],
+},
+catalogue: {
+  badge: "Business Services",
+
+  title: {
+    before: "Everything you need to",
+    highlight: "build your business.",
+  },
+
+  description:
+    "Explore business registration, compliance, digital, branding, and growth services designed to help you start, build, and grow with confidence.",
+
+  primaryActions: [
+    {
+      label: "Explore Services",
+      href: "#catalogue",
+      variant: "accent",
+      size: "large",
+    },
+  ],
+
+  illustration: CataloguePageIllustration,
 },
 };
