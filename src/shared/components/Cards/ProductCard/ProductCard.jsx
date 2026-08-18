@@ -25,30 +25,32 @@ export function ProductCard ({product}) {
     }
 
 
-const priceText =
-    isFixed
-        ? product.price.toLocaleString("en-IN", {
-              style: "currency",
-              currency: "INR",
-              maximumFractionDigits: 0,
-          })
-        : isStartingFrom
-        ? `Starting from ${product.price.toLocaleString("en-IN", {
-              style: "currency",
-              currency: "INR",
-              maximumFractionDigits: 0,
-          })}`
-        : "Pricing on Request";
+    const formattedPrice = product.price.toLocaleString("en-IN", {
+        style: "currency",
+        currency: "INR",
+        maximumFractionDigits: 0,
+    });
 
-    const canAddToCart = product.purchaseType === "cart";
+    const unitLabel =
+        product.purchaseType === "session"
+            ? "/session"
+            : product.purchaseType === "month"
+            ? "/month"
+            : "";
+
+    const priceText = isFixed
+        ? formattedPrice
+        : isStartingFrom
+        ? `Starting from ${formattedPrice}${unitLabel}`
+        : `${formattedPrice}${unitLabel}`;
+
+        const canAddToCart = ["cart", "session", "month"].includes(
+            product.purchaseType
+        );
 
     const buttonText = canAddToCart
         ? "Add to Cart"
         : "Request Quote";
-
-    const primaryLink = canAddToCart
-        ? "/cart"
-        : "/contact";
 
     return (
         <article className = {`flex flex-col gap-4 p-5 sm:p-6 w-full ${styles.card}`}>
@@ -66,7 +68,7 @@ const priceText =
                     <Button variant = "primary" fullWidth type="button" 
                         onClick={canAddToCart ? handleAddToCart : undefined}
                         as={!canAddToCart ? NavLink : undefined}
-                        to={!canAddToCart ? primaryLink : undefined}>
+                        to={!canAddToCart ? "/cart" : undefined}>
                         {canAddToCart && added ? " ✓ Added to Cart": buttonText}
                     </Button>
                     <Button 

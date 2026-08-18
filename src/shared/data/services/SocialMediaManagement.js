@@ -65,7 +65,7 @@ export const socialMediaManagement =
       { text: "Dedicated Support" },
     ],
     cta: {
-      primary: { text: "Get Started Now", link: "/cart" },
+      primary: { text: "Add to Cart", link: "/cart" },
       secondary: { text: "Request a Callback", link: "/contact" },
     },
   },

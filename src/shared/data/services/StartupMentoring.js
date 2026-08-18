@@ -99,7 +99,7 @@ export const startup =
     ],
     cta: {
       primary: {
-        text: "Get Started Now",
+        text: "Add to Cart",
         link: "/cart",
       },
       secondary: {

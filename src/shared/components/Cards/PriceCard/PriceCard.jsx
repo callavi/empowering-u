@@ -7,8 +7,6 @@ import { useState } from "react";
 
 
 export function PriceCard ({product}) {
-const isFixed = product.priceType === "fixed";
-const isStartingFrom = product.priceType === "starting_from";
 const {addToCart} = useCart();
 const [added, setAdded] = useState(false);
 
@@ -34,21 +32,17 @@ const formattedPrice = product.price?.toLocaleString("en-IN", {
     maximumFractionDigits: 0,
 });
 
-const price = isFixed
-    ? formattedPrice
-    : isStartingFrom
+const price = product.purchaseType === "session"
     ? `${formattedPrice}/session`
-    : "Custom Quote";
-
-const description = isFixed
-    ? null
-    : isStartingFrom
-    ? "Final pricing depends on your requirements."
-    : "Pricing depends on your requirements.";
+    : product.purchaseType === "month"
+    ? `${formattedPrice}/month`
+    : formattedPrice;
 
 const primary = cta.primary;
 const secondary = cta.secondary;
-const canAddToCart = product.purchaseType === "cart";
+const canAddToCart = ["cart", "session", "month"].includes(
+    product.purchaseType
+);
 
 
     return (
@@ -58,12 +52,6 @@ const canAddToCart = product.purchaseType === "cart";
                 <h2 className={styles.heading}>
                     {price}
                 </h2>
-
-                {description && (
-                    <p className={styles.eyebrow}>
-                        {description}
-                    </p>
-                )}
             </div>
             <div className="mb-4 mt-4 ">
                 <ul className = "flex-1">

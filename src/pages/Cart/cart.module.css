@@ -138,6 +138,7 @@
     border: 1px solid var(--color-primary-700);
     border-radius: 0.6rem;
     overflow: hidden;
+    padding: 0.75rem;
 }
 
 .quantity button {
@@ -149,6 +150,12 @@
     background: transparent;
     color: var(--color-text-heading);
     cursor: pointer;
+}
+
+.quantityLabel {
+    font-size: 0.75rem;
+    color: var(--color-text-placeholder);
+    white-space: nowrap;
 }
 
 .quantity button:hover {

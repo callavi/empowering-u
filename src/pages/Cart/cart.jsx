@@ -93,16 +93,14 @@ export default function Cart() {
     }, [items, products]);
 
     const subtotal = cartItems.reduce((total, item) => {
-        if (item.product.priceType !== "fixed") {
+        const { purchaseType } = item.product;
+
+        if (!["cart", "session", "month"].includes(purchaseType)) {
             return total;
         }
 
         return total + item.product.price * item.quantity;
     }, 0);
-
-    const hasCustomQuote = cartItems.some(
-        (item) => item.product.priceType !== "fixed"
-    );
 
     const formatPrice = (price, currency = "INR") => {
         return price.toLocaleString("en-IN", {
@@ -204,8 +202,23 @@ export default function Cart() {
                             <AnimatePresence mode="popLayout">
                                     <div className={styles.items}>
                                         {cartItems.map(({ id, quantity, product }, index) => {
-                                        const isFixed =
-                                            product.priceType === "fixed";
+                                        const purchaseType = product.purchaseType;
+                                        const unitLabel =
+                                            purchaseType === "session"
+                                                ? "session"
+                                                : purchaseType === "month"
+                                                ? "month"
+                                                : null;
+                                        const quantityLabel =
+                                            purchaseType === "session"
+                                                ? quantity === 1
+                                                    ? "session"
+                                                    : "sessions"
+                                                : purchaseType === "month"
+                                                ? quantity === 1
+                                                    ? "month"
+                                                    : "months"
+                                                : null;
 
                                         const currency =
                                             product.commerce?.currency ?? "INR";
@@ -293,31 +306,28 @@ export default function Cart() {
                                                         >
                                                             <Plus size={15} />
                                                         </button>
+                                                        {quantityLabel && (
+                                                            <span className={styles.quantityLabel}>
+                                                                {quantityLabel}
+                                                            </span>
+                                                        )}
                                                     </div>
 
                                                     <div className={styles.itemPrice}>
-                                                        {isFixed ? (
-                                                            <>
-                                                                <span>
-                                                                    {formatPrice(
-                                                                        product.price,
-                                                                        currency
-                                                                    )}
-                                                                </span>
+                                                        <span>
+                                                            {formatPrice(
+                                                                product.price,
+                                                                currency
+                                                            )}
+                                                            {unitLabel && ` / ${unitLabel}`}
+                                                        </span>
 
-                                                                <strong>
-                                                                    {formatPrice(
-                                                                        product.price *
-                                                                            quantity,
-                                                                        currency
-                                                                    )}
-                                                                </strong>
-                                                            </>
-                                                        ) : (
-                                                            <strong>
-                                                                Custom Quote
-                                                            </strong>
-                                                        )}
+                                                        <strong>
+                                                            {formatPrice(
+                                                                product.price * quantity,
+                                                                currency
+                                                            )}
+                                                        </strong>
                                                     </div>
                                                 </div>
                                             </motion.article>
@@ -365,14 +375,6 @@ export default function Cart() {
                                 {formatPrice(subtotal)}
                             </motion.strong>
                             </div>
-
-                            {hasCustomQuote && (
-                                <p className={styles.quoteNote}>
-                                    One or more selected services require a
-                                    custom quote. We'll confirm pricing before
-                                    payment.
-                                </p>
-                            )}
 
                             <div className={styles.divider} />
 

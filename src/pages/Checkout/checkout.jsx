@@ -92,16 +92,10 @@ export default function Checkout() {
             .filter(Boolean);
     }, [items, products]);
 
-    const subtotal = checkoutItems.reduce((total, item) => {
-        if (item.product.priceType !== "fixed") {
-            return total;
-        }
-
-        return total + item.product.price * item.quantity;
-    }, 0);
-
-    const hasCustomQuote = checkoutItems.some(
-        (item) => item.product.priceType !== "fixed"
+    const subtotal = checkoutItems.reduce(
+        (total, item) =>
+            total + item.product.price * item.quantity,
+        0
     );
 
     const formatPrice = (price, currency = "INR") => {
@@ -140,13 +134,6 @@ export default function Checkout() {
 
     if (!customer.phone.trim()) {
         setFormError("Please enter your phone number.");
-        return;
-    }
-
-    if (hasCustomQuote) {
-        setFormError(
-            "One or more items require a custom quote. Please contact us before payment."
-        );
         return;
     }
 
@@ -371,19 +358,26 @@ export default function Checkout() {
                                                     </strong>
 
                                                     <span>
-                                                        Qty {quantity}
+                                                        {quantity}{" "}
+                                                        {product.purchaseType === "session"
+                                                            ? quantity === 1
+                                                                ? "session"
+                                                                : "sessions"
+                                                            : product.purchaseType === "month"
+                                                            ? quantity === 1
+                                                                ? "month"
+                                                                : "months"
+                                                            : quantity === 1
+                                                            ? "unit"
+                                                            : "units"}
                                                     </span>
                                                 </div>
 
                                                 <strong>
-                                                    {product.priceType ===
-                                                    "fixed"
-                                                        ? formatPrice(
-                                                              product.price *
-                                                                  quantity,
-                                                              currency
-                                                          )
-                                                        : "Custom Quote"}
+                                                    {formatPrice(
+                                                        product.price * quantity,
+                                                        currency
+                                                    )}
                                                 </strong>
                                             </div>
                                         );
@@ -400,13 +394,6 @@ export default function Checkout() {
                                     {formatPrice(subtotal)}
                                 </strong>
                             </div>
-
-                            {hasCustomQuote && (
-                                <p className={styles.quoteNote}>
-                                    One or more selected services require a
-                                    custom quote and cannot be paid online yet.
-                                </p>
-                            )}
 
                             <div className={styles.totalRow}>
                                 <span>Total</span>

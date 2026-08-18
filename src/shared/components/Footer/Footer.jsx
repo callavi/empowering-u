@@ -3,7 +3,7 @@ import styles from "./Footer.module.css";
 import { navLinks } from "../../data/navbar.js";
 import { contactInfo } from "../../data/contactInfo.js";
 import Container from "../Container/Container";
-import logo from "../../../assets/logo-without-name-500x500.svg";
+import logo from "../../../assets/logo-without-name.webp";
 
 import {
   MapPin,
