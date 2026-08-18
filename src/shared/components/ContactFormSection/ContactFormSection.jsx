@@ -11,12 +11,33 @@ const services = Object.values(products).map(({ label }) => label);
 
 export function ContactFormSection() {
 
-    async function handleSubmit(formData) {
-        console.log(formData);
+async function handleSubmit(formData) {
+    try {
+        const response = await fetch(
+            "https://ulledgxoqjdndyrwlmma.supabase.co/functions/v1/contact-form",
+            {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json",
+                },
+                body: JSON.stringify(formData),
+            }
+        );
 
-        // Later:
-        // await fetch(...)
+        const result = await response.json();
+
+        if (!response.ok) {
+            throw new Error(result.error || "Failed to send message.");
+        }
+
+        console.log("Contact form submitted:", result);
+            return result;
+
+    } catch (error) {
+        console.error("Contact form error:", error);
+        throw error;
     }
+}
 
     return (
         <section className={styles.section}>

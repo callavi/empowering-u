@@ -12,6 +12,7 @@ const INITIAL_FORM = {
 
 export function ContactForm({ services, onSubmit }) {
     const [form, setForm] = useState(INITIAL_FORM);
+    const [status, setStatus] = useState("idle");
 
     function handleChange(e) {
         const { name, value } = e.target;
@@ -22,10 +23,20 @@ export function ContactForm({ services, onSubmit }) {
         }));
     }
 
-    function handleSubmit(e) {
+    async function handleSubmit(e) {
         e.preventDefault();
 
-        onSubmit?.(form);
+        setStatus("submitting");
+
+        try {
+            await onSubmit?.(form);
+
+            setStatus("success");
+            setForm(INITIAL_FORM);
+        } catch (error) {
+            console.error("Contact form error:", error);
+            setStatus("error");
+        }
     }
 
     return (
@@ -109,9 +120,37 @@ export function ContactForm({ services, onSubmit }) {
                 />
             </label>
 
-            <Button type="submit" variant="primary" fullWidth>
-                Send Message
+            <Button
+                type="submit"
+                variant="primary"
+                fullWidth
+                disabled={status === "submitting"}
+            >
+                {status === "submitting"
+                    ? "Sending..."
+                    : "Send Message"}
             </Button>
+            
+
+            {status === "success" && (
+                <p
+                    className="text-sm text-center"
+                    role="status"
+                    aria-live="polite"
+                >
+                    Thanks! We've received your message and will get back to
+                    you soon.
+                </p>
+            )}
+
+            {status === "error" && (
+                <p
+                    className="text-sm text-center"
+                    role="alert"
+                >
+                    Something went wrong. Please try again.
+                </p>
+            )}
         </form>
     );
 }
