@@ -1,9 +1,32 @@
 .section {
-  min-height: calc(100vh - 80px);
-  display:flex;
-  align-items:center;
-  padding-block:clamp(3rem, 6vw, 5rem);
   position: relative;
-  z-index: 2;
-  padding-bottom: 6rem;
+
+  padding-block: clamp(4rem, 8vw, 7rem);
+
+  overflow: hidden;
+
+  background:
+    linear-gradient(
+      135deg,
+      var(--color-surface-warm) 0%,
+      var(--color-page) 50%,
+      var(--color-surface) 100%
+    );
+}
+.catalogue {
+  margin-top: var(--space-3xl);
+}
+
+.error {
+  margin: var(--space-2xl) auto 0;
+
+  max-width: 32rem;
+
+  color: var(--color-text-muted);
+
+  font-family: var(--font-body);
+  font-size: var(--text-base);
+  line-height: var(--line-height-relaxed);
+
+  text-align: center;
 }

@@ -1,98 +1,180 @@
 .section {
   position: relative;
+
   padding-block: clamp(4rem, 8vw, 7rem);
-  background: var(--surface-primary);
+
   overflow: hidden;
+
+  background:
+    linear-gradient(
+      135deg,
+      var(--color-page) 0%,
+      var(--color-surface) 55%,
+      var(--color-surface-warm) 100%
+    );
 }
+
+/* ---------------------------------------------------------
+   Intro
+--------------------------------------------------------- */
 
 .intro {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: var(--spacing-lg);
+
+  gap: var(--space-lg);
 }
 
 .description {
   max-width: 38rem;
+
   margin: 0;
-  color: var(--color-text-body);
+
+  color: var(--color-text-muted);
+
+  font-family: var(--font-body);
   font-size: var(--text-lg);
+  font-weight: var(--weight-normal);
   line-height: var(--line-height-relaxed);
 }
+
+/* ---------------------------------------------------------
+   Link
+--------------------------------------------------------- */
 
 .link {
   display: inline-flex;
   align-items: center;
-  gap: var(--spacing-xs);
-  color: var(--color-primary-700);
+
+  gap: var(--space-xs);
+
+  color: var(--color-brand-dark);
+
+  font-family: var(--font-body);
   font-size: var(--text-base);
-  font-weight: var(--font-weight-semibold);
+  font-weight: var(--weight-semibold);
+
   text-decoration: none;
+
   transition:
-    color var(--duration-medium) var(--ease-standard),
-    transform var(--duration-medium) var(--ease-standard);
+    color var(--duration-fast) var(--ease-standard),
+    transform var(--duration-fast) var(--ease-standard);
 }
 
 .link:hover {
-  color: var(--color-primary-800);
-  transform: translateX(3px);
+  color: var(--color-brand);
+
+  transform: translateX(4px);
 }
 
 .link:focus-visible {
   outline: none;
-  box-shadow: var(--focus-ring);
+
   border-radius: var(--radius-sm);
+
+  box-shadow: var(--focus-ring);
 }
+
+/* ---------------------------------------------------------
+   Context / statement
+--------------------------------------------------------- */
 
 .context {
   position: relative;
-  padding: clamp(2rem, 4vw, 3rem);
-  background: var(--surface-secondary);
-  border-radius: var(--radius-7xl);
-  border: 1px solid var(--color-primary-200);
-  box-shadow: var(--shadow-md);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  min-height: 100%;
+
+  padding: clamp(2.5rem, 5vw, 4.5rem);
+
+  border-left: 3px solid var(--color-brand);
+
+  background:
+    linear-gradient(
+      135deg,
+      var(--color-surface-warm) 0%,
+      var(--color-brand-soft) 100%
+    );
 }
 
-.context::before {
+/* ---------------------------------------------------------
+   Decorative detail
+--------------------------------------------------------- */
+
+.context::after {
   content: "";
+
   position: absolute;
-  width: 10rem;
-  height: 10rem;
-  border-radius: var(--radius-full);
-  background: var(--surface-page);
-  opacity: 0.5;
-  filter: blur(40px);
-  top: -4rem;
-  right: -3rem;
+
+  right: -5rem;
+  bottom: -5rem;
+
+  width: 14rem;
+  height: 14rem;
+
+  border: 1px solid rgb(109 130 99 / 16%);
+  border-radius: 50%;
+
   pointer-events: none;
 }
+
+/* ---------------------------------------------------------
+   Eyebrow
+--------------------------------------------------------- */
 
 .eyebrow {
   position: relative;
   z-index: 1;
+
   display: block;
-  margin-bottom: var(--spacing-md);
-  color: var(--color-primary-700);
+
+  margin-bottom: var(--space-md);
+
+  color: var(--color-brand);
+
+  font-family: var(--font-body);
   font-size: var(--text-sm);
-  font-weight: var(--font-weight-semibold);
-  letter-spacing: 0.04em;
+  font-weight: var(--weight-semibold);
+
+  letter-spacing: 0.12em;
+  line-height: var(--line-height-normal);
+
   text-transform: uppercase;
 }
+
+/* ---------------------------------------------------------
+   Statement
+--------------------------------------------------------- */
 
 .context p {
   position: relative;
   z-index: 1;
+
   max-width: 36rem;
+
   margin: 0;
-  color: var(--color-text-heading);
-  font-size: var(--text-xl);
-  font-weight: var(--font-weight-medium);
-  line-height: var(--line-height-relaxed);
+
+  color: var(--color-text);
+
+  font-family: var(--font-heading);
+  font-size: clamp(1.75rem, 3vw, 2.75rem);
+  font-weight: var(--weight-semibold);
+  line-height: var(--line-height-tight);
+
+  letter-spacing: -0.015em;
 }
+
+/* ---------------------------------------------------------
+   Responsive
+--------------------------------------------------------- */
 
 @media (max-width: 767px) {
   .section {
-    padding-block: var(--spacing-4xl);
+    padding-block: var(--space-3xl);
   }
 
   .description {
@@ -100,11 +182,15 @@
   }
 
   .context {
-    padding: var(--spacing-2xl);
-    border-radius: var(--radius-6xl);
+    min-height: auto;
+
+    padding: var(--space-2xl);
+
+    border-top: 3px solid var(--color-brand);
+    border-left: 0;
   }
 
   .context p {
-    font-size: var(--text-lg);
+    font-size: var(--text-xl);
   }
 }

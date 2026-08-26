@@ -1,67 +1,106 @@
 .empoweringMinds {
   position: relative;
+
   padding-block: clamp(4rem, 8vw, 7rem);
-  background: var(--surface-secondary);
+
   overflow: hidden;
+
+  background:
+    linear-gradient(
+      135deg,
+      var(--color-surface) 0%,
+      var(--color-surface-warm) 45%,
+      var(--color-page) 100%
+    );
 }
 
-.empoweringMinds::before {
-  content: "";
-  position: absolute;
-  width: 22rem;
-  height: 22rem;
-  border-radius: var(--radius-full);
-  background: var(--color-primary-100);
-  opacity: 0.45;
-  filter: blur(60px);
-  left: -10rem;
-  top: 50%;
-  transform: translateY(-50%);
-  pointer-events: none;
+.layout {
+  display: grid;
+
+  grid-template-columns: minmax(0, 0.85fr) minmax(0, 1.15fr);
+
+  gap: clamp(3rem, 7vw, 6rem);
+
+  align-items: center;
 }
 
-.empoweringMinds::after {
-  content: "";
-  position: absolute;
-  width: 18rem;
-  height: 18rem;
-  border-radius: var(--radius-full);
-  background: var(--surface-page);
-  opacity: 0.35;
-  filter: blur(60px);
-  right: -8rem;
-  bottom: -6rem;
-  pointer-events: none;
-}
+/* ---------------------------------------------------------
+   Content
+--------------------------------------------------------- */
 
 .content {
   position: relative;
   z-index: 1;
+
   display: flex;
   flex-direction: column;
-  gap: var(--spacing-lg);
+
+  gap: var(--space-lg);
+
   max-width: 42rem;
 }
 
 .content p {
   margin: 0;
-  color: var(--color-text-body);
-  font-size: var(--text-base);
-  font-weight: var(--font-weight-normal);
+
+  color: var(--color-text-muted);
+
+  font-family: var(--font-body);
+  font-size: var(--text-lg);
+  font-weight: var(--weight-normal);
   line-height: var(--line-height-relaxed);
 }
 
 .content p:first-child {
-  font-weight: var(--font-weight-medium);
-  color: var(--color-text-heading);
+  color: var(--color-brand-dark);
+
+  font-size: var(--text-xl);
+  font-weight: var(--weight-semibold);
+  line-height: var(--line-height-relaxed);
 }
+
+/* ---------------------------------------------------------
+   Decorative detail
+--------------------------------------------------------- */
+
+.empoweringMinds::after {
+  content: "";
+
+  position: absolute;
+  z-index: 0;
+
+  right: -6rem;
+  bottom: -8rem;
+
+  width: 20rem;
+  height: 20rem;
+
+  border: 1px solid rgb(109 130 99 / 14%);
+  border-radius: var(--radius-full);
+
+  pointer-events: none;
+}
+
+/* ---------------------------------------------------------
+   Responsive
+--------------------------------------------------------- */
 
 @media (max-width: 767px) {
   .empoweringMinds {
-    padding-block: var(--spacing-4xl);
+    padding-block: var(--space-3xl);
   }
 
   .content {
-    gap: var(--spacing-md);
+    gap: var(--space-md);
+  }
+
+  .content p:first-child {
+    font-size: var(--text-base);
+  }
+
+  .layout {
+    grid-template-columns: 1fr;
+
+    gap: var(--space-2xl);
   }
 }

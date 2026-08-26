@@ -1,71 +1,93 @@
 .logo {
-    font-size: var(--text-2xl);
-    font-weight: var(--font-bold);
-    color: var(--color-primary-500);
-    text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
 
-    transition: transform var(--duration-medium) var(--ease-standard);
+  color: var(--color-brand-dark);
+  font-size: var(--text-2xl);
+  font-weight: var(--weight-bold);
+  text-decoration: none;
+
+  transition:
+    transform var(--duration-fast) var(--ease-standard),
+    color var(--duration-fast) var(--ease-standard);
+}
+
+.logo img {
+  width: auto;
+  height: 3.5rem;
+  aspect-ratio: 1 / 1;
+  object-fit: contain;
 }
 
 .logo:hover {
-    transform: scale(1.03);
+  color: var(--color-brand-dark);
+  transform: translateY(-1px);
 }
 
-.link {
-    position: relative;
-
-    color: var(--color-primary-500);
-    text-decoration: none;
-
-    transition: color var(--duration-medium) var(--ease-standard);
+.logoText {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
 }
 
 .highlight {
-    position: inherit;
+  color: var(--color-text-muted);
+  font-size: var(--text-sm);
+  font-weight: var(--weight-medium);
+}
 
-    font-size: 1rem;
-    font-weight: 500;
+.link {
+  position: relative;
+
+  color: var(--color-text-muted);
+  text-decoration: none;
+  font-weight: var(--weight-semibold);
+
+  transition:
+    color var(--duration-fast) var(--ease-standard);
 }
 
 .link:hover {
-    color: var(--color-primary-700);
+  color: var(--color-brand-dark);
 }
 
 .link::after {
-    content: "";
+  content: "";
 
-    position: absolute;
+  position: absolute;
+  left: 0;
+  bottom: -0.45rem;
 
-    left: 0;
-    bottom: -6px;
+  width: 100%;
+  height: 2px;
 
-    width: 100%;
-    height: 2px;
+  border-radius: var(--radius-full);
+  background: var(--color-brand);
 
-    background: var(--color-primary-500);
+  transform: scaleX(0);
+  transform-origin: left;
 
-    transform: scaleX(0);
-
-    transform-origin: left;
-
-    transition: transform var(--duration-medium) var(--ease-standard);
+  transition:
+    transform var(--duration-fast) var(--ease-standard);
 }
 
 .link:hover::after,
 .active::after {
-    transform: scaleX(1); 
+  transform: scaleX(1);
 }
 
 .active {
-    color: var(--color-primary-700);
+  color: var(--color-brand-dark);
+  font-weight: var(--weight-bold);
 }
 
 .menuButton {
-    display: none;
+  display: none;
 }
 
 .mobileMenu {
-    display: none;
+  display: none;
 }
 
 .backdrop {
@@ -73,30 +95,31 @@
 }
 
 .cartLink {
-    position: relative;
+  position: relative;
 }
 
 .cartBadge {
-    position: absolute;
-    top: -0.45rem;
-    right: -0.6rem;
+  position: absolute;
+  top: -0.45rem;
+  right: -0.6rem;
 
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
 
-    min-width: 1.15rem;
-    height: 1.15rem;
-    padding: 0 0.3rem;
+  min-width: 1.15rem;
+  height: 1.15rem;
+  padding: 0 0.3rem;
 
-    border-radius: 999px;
+  border: 2px solid var(--color-page);
+  border-radius: var(--radius-full);
 
-    background: var(--color-primary-500);
-    color: var(--color-text-inverse);
+  background: var(--color-brand);
+  color: var(--color-text-inverse);
 
-    font-size: 0.65rem;
-    font-weight: 700;
-    line-height: 1;
+  font-size: 0.65rem;
+  font-weight: var(--weight-bold);
+  line-height: 1;
 }
 
 @media (max-width: 767px) {
@@ -110,35 +133,59 @@
     margin: 0;
     border: none;
 
-    background: rgb(0 0 0 / 35%);
+    background: rgb(35 50 40 / 28%);
+    backdrop-filter: blur(2px);
 
-    z-index: 50;
+    z-index: var(--z-overlay);
   }
 
   .mobileMenu {
     display: flex;
     flex-direction: column;
-    gap: 1.25rem;
+    gap: 0.5rem;
 
     position: fixed;
     top: 0;
     right: 0;
     bottom: 0;
 
-    width: min(80vw, 320px);
+    width: min(82vw, 340px);
 
-    padding: 6rem 1.5rem 2rem;
+    padding: 6.5rem 1.5rem 2rem;
 
-    background: var(--surface-page);
+    background: var(--color-surface-warm);
+    border-left: 1px solid var(--color-border);
+    box-shadow: var(--shadow-lg);
 
     transform: translateX(100%);
-    transition: transform 300ms ease;
+    transition:
+      transform var(--duration-normal) var(--ease-standard);
 
-    z-index: 60;
+    z-index: var(--z-modal);
   }
 
   .mobileMenuOpen {
     transform: translateX(0);
+  }
+
+  .mobileMenu .link {
+    display: block;
+    padding: 0.8rem 0.75rem;
+
+    border-radius: var(--radius-md);
+    color: var(--color-text);
+
+    font-size: var(--text-lg);
+  }
+
+  .mobileMenu .link:hover,
+  .mobileMenu .active {
+    background: var(--color-brand-soft);
+    color: var(--color-brand-dark);
+  }
+
+  .mobileMenu .link::after {
+    display: none;
   }
 
   .menuButton {
@@ -147,30 +194,51 @@
     justify-content: center;
 
     position: relative;
-    z-index: 70;
+    z-index: var(--z-modal);
 
-    width: 40px;
-    height: 40px;
+    width: 2.5rem;
+    height: 2.5rem;
 
     padding: 0;
-    border: none;
-    background: transparent;
 
-    font-size: 1.75rem;
-    line-height: 1;
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-full);
+
+    background: var(--color-surface);
+    color: var(--color-text);
+
     cursor: pointer;
+
+    transition:
+      background var(--duration-fast) var(--ease-standard),
+      border-color var(--duration-fast) var(--ease-standard),
+      color var(--duration-fast) var(--ease-standard);
   }
 
-    .logoText {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-
-        font-size: 0.8rem;
-        line-height: 1.15;
+  .menuButton:hover {
+    background: var(--color-brand-soft);
+    border-color: var(--color-brand);
+    color: var(--color-brand-dark);
   }
-    .highlight {
-        display: block;
-        font-size: 0.65rem;
+
+  .logo img {
+    height: 3rem;
+  }
+
+  .logoText {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    font-size: var(--text-sm);
+    line-height: 1.15;
+  }
+
+  .highlight {
+    display: block;
+    margin-top: 0.15rem;
+
+    color: var(--color-text-muted);
+    font-size: var(--text-xs);
   }
 }

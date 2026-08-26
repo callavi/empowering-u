@@ -31,12 +31,16 @@ export default function About() {
         <ProcessSection {...aboutProcess} />
     </Reveal>
     <Reveal direction="up">
-        <WhySection campaign={aboutContent.whyEmpoweringU} />
+        <WhySection 
+        campaign={aboutContent.whyEmpoweringU}
+        variant="emphasis" 
+        size="small"
+        />
     </Reveal>
     <Reveal direction="up">
         <section className={styles.empoweringMinds}>
             <Container>
-                <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center">
+                <div className={styles.layout}>
                     <div>
                         <SectionHeading
                             title={aboutContent.empoweringMinds.heading}

@@ -1,106 +1,206 @@
-.heading {
-    font-size: clamp(2.5rem, 8vw, 3rem);
-    font-weight: var(--font-weight-bold);
-    line-height: var(--line-height-relaxed);
-    color: var(--color-primary-900);
-}
-
-.subheading {
-    font-size: var(--text-base);
-    font-weight: var(--font-weight-medium);
-    line-height: var(--line-height-relaxed);
-}
-.highlight {
-  text-decoration: underline;
-  font-style: italic;
-  color:var(--color-primary-500);
-}
-
-.bundleHeading {
-    font-size: var(--text-lg);
-    font-weight: var(--font-weight-medium);
-    margin-bottom: 1rem;
-    color: var(--color-text-body);
-}
+/* ---------------------------------------------------------
+   Section
+--------------------------------------------------------- */
 
 .section {
-  min-height: calc(100vh - 80px);
-  display:flex;
-  align-items:center;
-  padding-block:clamp(3rem, 6vw, 5rem);
   position: relative;
-  overflow-x: hidden;
   z-index: 1;
-  padding-bottom: 6rem;
-}
 
-.section::before{
-    content:"";
-    position:absolute;
-    inset:0;
+  min-height: calc(100vh - 80px);
 
-    background:#FFDCC8;
+  display: flex;
+  align-items: center;
 
-    filter: blur(140px);
+  overflow: hidden;
 
-    opacity:.45;
-    z-index: -1;
-
-    mask-image: linear-gradient(
-        to bottom,
-        black 0%,
-        black 70%,
-        transparent 100%
-    );
-
-    -webkit-mask-image: linear-gradient(
-        to bottom,
-        black 0%,
-        black 70%,
-        transparent 100%
-    );
-}
-
-.section::after {
-  content: "";
-
-  position: absolute;
-  inset: 0;
-  display: none;
+  padding-block: clamp(4rem, 7vw, 6rem);
 
   background:
     linear-gradient(
-      120deg,
-      transparent,
-      rgba(1, 50, 156, 0.13),
-      transparent
+      135deg,
+      var(--color-surface) 0%,
+      var(--color-surface-warm) 30%,
+      var(--color-page) 100%
     );
-    z-index: -1;
-
-  pointer-events: none;
 }
+
+/* ---------------------------------------------------------
+   Heading
+--------------------------------------------------------- */
+
+.heading {
+  max-width: 18ch;
+
+  margin: 0;
+
+  color: var(--color-text);
+
+  font-family: var(--font-heading);
+  font-size: clamp(2.75rem, 6vw, 4.5rem);
+  font-weight: var(--weight-semibold);
+  line-height: var(--line-height-tighter);
+
+  letter-spacing: -0.025em;
+}
+
+/* ---------------------------------------------------------
+   Accent
+--------------------------------------------------------- */
+
+.highlight {
+  color: var(--color-brand);
+
+  font-style: italic;
+}
+
+/* ---------------------------------------------------------
+   Description
+--------------------------------------------------------- */
+
+.subheading {
+  max-width: 44rem;
+
+  margin: 0;
+
+  color: var(--color-text-muted);
+
+  font-family: var(--font-body);
+  font-size: var(--text-xl);
+  font-weight: var(--weight-normal);
+  line-height: var(--line-height-relaxed);
+}
+
+/* ---------------------------------------------------------
+   Main illustration
+--------------------------------------------------------- */
 
 .illustration {
-    position: relative;
-    z-index: 2;
-    align-content: center;
-    display: block  ;
-    overflow: visible;
-    width: 100%;
-    margin: auto
+  position: relative;
+  z-index: 2;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 100%;
+
+  margin: auto;
+
+  overflow: visible;
 }
 
+.illustration::before {
+  content: "";
+
+  position: absolute;
+  z-index: -1;
+
+  width: 75%;
+  aspect-ratio: 1;
+
+  border-radius: 50%;
+
+  background:
+    radial-gradient(
+      circle,
+      rgb(109 130 99 / 14%) 0%,
+      rgb(109 130 99 / 6%) 45%,
+      transparent 72%
+    );
+
+  filter: blur(8px);
+}
+
+.illustration > * {
+  width: 100%;
+  max-width: 42rem;
+}
+
+/* ---------------------------------------------------------
+   Bundle
+--------------------------------------------------------- */
+
+.bundleHeading {
+  margin: 0 0 var(--space-md);
+
+  color: var(--color-text);
+
+  font-family: var(--font-heading);
+  font-size: var(--text-2xl);
+  font-weight: var(--weight-semibold);
+  line-height: var(--line-height-tight);
+}
+
+/* ---------------------------------------------------------
+   Bundle list
+--------------------------------------------------------- */
+
 .listItem {
-  display: inline-flex;
+  display: flex;
   align-items: center;
-  gap: 0.75rem;
-  width: 200px;
 
+  gap: var(--space-sm);
 
-  padding: 0.75rem;
-  color: var(--color-text-alternative);
-  font-size: var(--color-text-body);
-  font-weight: 500;
-  font-size: var(--text-sm);
-  line-height: 1.4;
+  width: fit-content;
+
+  padding-block: var(--space-xs);
+
+  color: var(--color-text-muted);
+
+  font-family: var(--font-body);
+  font-size: var(--text-lg);
+  font-weight: var(--weight-medium);
+  line-height: var(--line-height-normal);
+}
+
+.listItem svg {
+  flex-shrink: 0;
+
+  color: var(--color-brand);
+}
+
+/* ---------------------------------------------------------
+   Responsive
+--------------------------------------------------------- */
+
+@media (max-width: 1023px) {
+  .section {
+    min-height: auto;
+  }
+
+  .heading {
+    max-width: 16ch;
+  }
+
+  .illustration {
+    max-width: 40rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .section {
+    padding-block: 3.5rem 4rem;
+  }
+
+  .heading {
+    max-width: 100%;
+
+    font-size: clamp(2.5rem, 11vw, 3.5rem);
+  }
+
+  .subheading {
+    font-size: var(--text-base);
+  }
+
+  .bundleHeading {
+    font-size: var(--text-xl);
+  }
+
+  .listItem {
+    width: 100%;
+  }
+
+  .illustration::before {
+    width: 90%;
+  }
 }

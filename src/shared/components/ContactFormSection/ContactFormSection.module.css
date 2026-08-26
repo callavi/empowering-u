@@ -1,50 +1,105 @@
 .section {
-  min-height: calc(100vh - 80px);
-  box-sizing: border-box;
-  display:flex;
-  align-items:center;
-  padding-block:clamp(3rem, 6vw, 5rem);
   position: relative;
-  z-index: 2;
-  padding-bottom: 6rem;
+
+  padding-block: clamp(4rem, 8vw, 7rem);
+
+  overflow: hidden;
+
+  background:
+    linear-gradient(
+      135deg,
+      var(--color-page) 0%,
+      var(--color-surface-warm) 48%,
+      var(--color-surface) 100%
+    );
 }
 
-.section::before{
-    content:"";
-    position:absolute;
+/* ---------------------------------------------------------
+   Section layout
+--------------------------------------------------------- */
 
-    width:700px;
-    height:700px;
+.wrapper {
+  display: flex;
+  flex-direction: column;
 
-    background:var(--surface-page);
-    border-radius:50%;
-
-    left:-150px;
-    top:50%;
-
-    transform:translateY(-50%);
-    opacity: 0.5;
-
-    filter:blur(50px);
-    z-index: -1;
+  gap: var(--space-3xl);
 }
 
-.section::after{
-    content:"";
-    position:absolute;
+.content {
+  display: grid;
 
-    width:500px;
-    height:500px;
+  grid-template-columns: minmax(0, 1.2fr) minmax(280px, 0.8fr);
 
-    background:var(--surface-page);
-    border-radius:50%;
+  gap: clamp(2rem, 5vw, 5rem);
 
-    right:50px;
-    top:70%;
+  width: 100%;
 
-    transform:translateY(-50%);
-    opacity: 0.5;
+  align-items: start;
+}
 
-    filter:blur(50px);
-    z-index: -1;
+/* ---------------------------------------------------------
+   Form
+--------------------------------------------------------- */
+
+.formPanel {
+  width: 100%;
+
+  padding: clamp(
+    var(--space-xl),
+    4vw,
+    var(--space-2xl)
+  );
+
+  border: 1px solid var(--color-border);
+
+  border-radius: var(--radius-xl);
+
+  background: var(--color-surface);
+
+  box-shadow: var(--shadow-md);
+}
+
+/* ---------------------------------------------------------
+   Contact information
+--------------------------------------------------------- */
+
+.infoPanel {
+  display: flex;
+  align-items: flex-start;
+
+  width: 100%;
+
+  padding-block: var(--space-lg);
+}
+
+/* ---------------------------------------------------------
+   Responsive
+--------------------------------------------------------- */
+
+@media (max-width: 900px) {
+  .content {
+    grid-template-columns: 1fr;
+
+    gap: var(--space-2xl);
+  }
+
+  .infoPanel {
+    padding-block: 0;
+  }
+}
+
+@media (max-width: 600px) {
+  .section {
+    padding-block: var(--space-3xl);
+  }
+
+  .wrapper {
+    gap: var(--space-2xl);
+  }
+
+  .formPanel {
+    padding: var(--space-lg);
+
+    border-radius: var(--radius-lg);
+  }
 }

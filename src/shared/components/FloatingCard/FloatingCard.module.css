@@ -4,147 +4,210 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 0.5rem;
 
-  padding: 0.75rem 1rem;
+  gap: var(--space-xs);
 
+  padding: var(--space-xs) var(--space-sm);
+
+  border: 1px solid rgb(109 130 99 / 20%);
   border-radius: var(--radius-full);
 
-  background: var(--color-neutral-0);
+  color: var(--color-brand-dark);
+  background: rgba(255, 243, 234, 0.94);
 
-  box-shadow: var(--shadow-md);
+  box-shadow:
+    0 8px 20px rgb(35 50 40 / 8%),
+    0 2px 6px rgb(35 50 40 / 6%);
+
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+
+  font-family: var(--font-body);
+  font-size: var(--text-sm);
+  font-weight: var(--weight-semibold);
+  line-height: var(--line-height-normal);
+
   will-change: transform;
   transform-origin: center;
-  color: var(--color-primary-200);
-  background-color: #3f3908;
+
+  transition:
+    background-color var(--duration-fast) var(--ease-standard),
+    border-color var(--duration-fast) var(--ease-standard),
+    box-shadow var(--duration-fast) var(--ease-standard);
 }
 
-.iconOnly {
-  width: 3.5rem;
-  height: 3.5rem;
-  padding: 0;
-  justify-content: center;
-  align-items: center;
+.card:hover {
+  background: var(--color-surface);
+  border-color: var(--color-brand);
+  box-shadow: var(--shadow-lg);
 }
+
+.icon {
+  flex-shrink: 0;
+
+  color: var(--color-brand);
+}
+
+/* ---------------------------------------------------------
+   Icon-only
+--------------------------------------------------------- */
+
+.iconOnly {
+  width: 3.25rem;
+  height: 3.25rem;
+
+  padding: 0;
+}
+
+/* ---------------------------------------------------------
+   Existing positions
+--------------------------------------------------------- */
 
 .registration,
 .guidance {
   top: 15%;
   right: 5%;
-  transform: translate(-50%, -50%);
-}
 
+  transform: translate(-50%, -50%);
+  filter: drop-shadow(0 8px 12px rgb(35 50 40 / 8%));
+}
 
 .compliance {
   top: 15%;
   left: 8%;
+
   transform: translate(-50%, -50%);
 }
 
 .consulting {
   bottom: 20%;
   left: 5%;
+
   transform: translate(-50%, -50%);
 }
 
 .response {
-  bottom: 0.5%;
   right: 0.5%;
+  bottom: 0.5%;
+
   transform: translate(-50%, -50%);
 }
 
 .support {
   bottom: 0.5%;
   left: 0.5%;
+
   transform: translate(-50%, -50%);
+  filter: drop-shadow(0 8px 12px rgb(35 50 40 / 8%));
 }
 
 .growthservices {
-  bottom: 0.5%;
   right: 0.5%;
+  bottom: 0.5%;
+
   transform: translate(-50%, -50%);
 }
 
 .top-right {
   top: 15%;
   right: 5%;
+
   transform: translate(-50%, -50%);
-  font-weight: var(--font-weight-bold);
+
   font-size: var(--text-xl);
+  font-weight: var(--weight-bold);
+  filter: drop-shadow(0 8px 12px rgb(35 50 40 / 8%));
 }
 
 .top-left {
   top: 15%;
   left: 25%;
+
   transform: translate(-50%, -50%);
 }
 
 .bottom-left {
   bottom: 20%;
   left: 5%;
+
   transform: translate(-50%, -50%);
+  filter: drop-shadow(0 8px 12px rgb(35 50 40 / 8%));
 }
 
 .bottom-right {
-  bottom: 30%;
   right: 10%;
+  bottom: 30%;
+
   transform: translate(-50%, -50%);
 }
+
+/* ---------------------------------------------------------
+   Mobile
+--------------------------------------------------------- */
 
 @media (max-width: 767px) {
   .registration,
   .guidance {
     top: 15%;
     right: 2%;
+
     transform: translate(0, -50%);
   }
 
   .compliance {
     top: 15%;
     left: 2%;
+
     transform: translate(0, -50%);
   }
 
   .consulting {
     bottom: 20%;
     left: 2%;
+
     transform: translate(0, 50%);
   }
 
   .response,
   .growthservices {
-    bottom: 0.5%;
     right: 2%;
+    bottom: 0.5%;
+
     transform: translate(0, 50%);
   }
 
   .support {
     bottom: 0.5%;
     left: 2%;
+
     transform: translate(0, 50%);
   }
 
   .top-right {
     top: 15%;
     right: 2%;
+
     transform: translate(0, -50%);
   }
 
   .top-left {
     top: 15%;
     left: 2%;
+
     transform: translate(0, -50%);
   }
 
   .bottom-left {
     bottom: 20%;
     left: 2%;
+
     transform: translate(0, 50%);
   }
 
   .bottom-right {
-    bottom: 30%;
     right: 2%;
+    bottom: 30%;
+
     transform: translate(0, 50%);
   }
 }

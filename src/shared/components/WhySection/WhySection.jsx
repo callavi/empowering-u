@@ -4,7 +4,7 @@ import Container from "../Container/Container";
 import {SectionHeading} from "../SectionHeading/SectionHeading"
 import Reveal from "../../motion/Reveal";
 
-export function WhySection ({campaign}) {
+export function WhySection ({campaign, variant, size}) {
     const {headline,features} = campaign.benefits;
     return (
         <section className={styles.section}>
@@ -17,7 +17,11 @@ export function WhySection ({campaign}) {
                                 direction="left"
                                 delay={index * 0.2}
                             >
-                                <WhyCard campaign={item} />
+                                <WhyCard 
+                                campaign={item} 
+                                variant={variant}
+                                size={size}
+                                />
                             </Reveal>
                         ))}
                     </div>

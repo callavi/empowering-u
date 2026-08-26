@@ -3,53 +3,57 @@ import Container from "../Container/Container";
 import styles from "./DocumentsRequiredSection.module.css"
 import Reveal from "../../motion/Reveal";
 
-export function DocumentsRequiredSection ({contents}) {
-    const {
-        documents,
-    } = contents;
+export function DocumentsRequiredSection({ contents }) {
+  const { documents } = contents;
 
+  return (
+    <section className={styles.section}>
+      <Container>
+        <SectionHeading
+          title="Documents Required"
+          description="Keep these documents ready before you apply."
+          align="left"
+        />
 
-    
-    return (
-        <section className={styles.section}>
-            <Container>
-                <SectionHeading title="Documents Required" description="Keep these documents ready before you apply." align="left" />
-                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-                        {documents.map((group, index) => {
-                            const Icon = group.icon;
+        <div className={styles.documents}>
+          {documents.map((group, index) => {
+            const Icon = group.icon;
 
-                            return (
-                                <Reveal
-                                    key={group.title}
-                                    direction="up"
-                                    delay={index * 0.19}
-                                >
-                                    <div
-                                        className={`flex flex-col p-8 w-full min-h-[350px] ${styles.documentCard}`}
-                                    >
-                                        <div className={styles.cardHeader}>
-                                            <div className={styles.iconWrapper}>
-                                                <Icon size={24} />
-                                            </div>
+            return (
+              <Reveal
+                key={group.title}
+                direction="up"
+                delay={index * 0.12}
+              >
+                <article className={styles.documentGroup}>
+                  <div className={styles.groupHeader}>
+                    <span className={styles.number}>
+                      {String(index + 1).padStart(2, "0")}
+                    </span>
 
-                                            <h3 className={styles.heading}>
-                                                {group.title}
-                                            </h3>
-                                        </div>
-
-                                        <ul className="m-0 p-0 flex flex-col gap-4">
-                                            {group.list.map((item) => (
-                                                <li key={item} className={styles.list}>
-                                                    {item}
-                                                </li>
-                                            ))}
-                                        </ul>
-                                    </div>
-                                </Reveal>
-                            );
-                        })}
+                    <div className={styles.iconWrapper}>
+                      <Icon size={22} strokeWidth={1.8} />
                     </div>
-            </Container>
-        </section>
-    )
+
+                    <h3 className={styles.heading}>
+                      {group.title}
+                    </h3>
+                  </div>
+
+                  <ul className={styles.list}>
+                    {group.list.map((item) => (
+                      <li key={item}>
+                        <span className={styles.bullet} />
+                        <span>{item}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </article>
+              </Reveal>
+            );
+          })}
+        </div>
+      </Container>
+    </section>
+  );
 }

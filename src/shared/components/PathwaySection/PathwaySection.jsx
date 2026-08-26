@@ -13,7 +13,7 @@ export function PathwaySection () {
             <Container>
                 <div className="flex flex-col gap-4" id="pathway">
                     <SectionHeading title="Choose Your Path. We'll handle the rest" eyebrow="Not sure what you need?" align="center"/>
-                        <div className="grid gap-18 md:grid-cols-2 mb-4">
+                        <div className={styles.grid}>
                             {pathways.map((item, index) => (
                                 <Reveal
                                     key={item.id}

@@ -1,35 +1,153 @@
+.form {
+  display: flex;
+  flex-direction: column;
+
+  gap: var(--space-xl);
+
+  width: 100%;
+}
+
+.fieldGroup {
+  width: 100%;
+}
+
+.row {
+  display: grid;
+
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+
+  gap: var(--space-lg);
+}
+
+.control {
+  display: flex;
+  flex-direction: column;
+
+  gap: var(--space-sm);
+
+  width: 100%;
+}
+
+/* ---------------------------------------------------------
+   Labels
+--------------------------------------------------------- */
+
+.label {
+  color: var(--color-text);
+
+  font-family: var(--font-body);
+  font-size: var(--text-sm);
+  font-weight: var(--weight-semibold);
+  line-height: var(--line-height-normal);
+}
+
+.label span {
+  color: var(--color-brand);
+}
+
+/* ---------------------------------------------------------
+   Fields
+--------------------------------------------------------- */
+
 .field {
-    width: 100%;
-    border: 1px solid var(--color-border);
-    border-radius: var(--radius-lg);
-    padding: 0.9rem 1rem;
-    background: var(--color-surface);
-    transition:
-        border-color .2s ease,
-        box-shadow .2s ease;
+  width: 100%;
+
+  min-height: 3rem;
+
+  padding: 0.75rem 0.875rem;
+
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+
+  background: var(--color-page);
+
+  color: var(--color-text);
+
+  font-family: var(--font-body);
+  font-size: var(--text-sm);
+  line-height: var(--line-height-normal);
+
+  transition:
+    border-color var(--duration-fast) var(--ease-standard),
+    background-color var(--duration-fast) var(--ease-standard),
+    box-shadow var(--duration-fast) var(--ease-standard);
 }
 
 .field:hover {
-    border-color: var(--color-primary-300);
+  border-color: var(--color-brand);
 }
 
 .field:focus {
-    outline: none;
-    border-color: var(--color-primary-500);
-    box-shadow: var(--shadow-sm);
+  outline: none;
+
+  border-color: var(--color-brand);
+
+  background: var(--color-surface);
+
+  box-shadow: var(--focus-ring);
 }
 
-.label {
-    font-size: var(--text-sm);
-    font-weight: var(--font-semibold);
-    color: var(--color-text-body);
+.field::placeholder {
+  color: var(--color-text-muted);
 }
+
+/* ---------------------------------------------------------
+   Select
+--------------------------------------------------------- */
+
+select.field {
+  cursor: pointer;
+}
+
+/* ---------------------------------------------------------
+   Textarea
+--------------------------------------------------------- */
 
 .textarea {
-    resize: vertical;
-    min-height: 9rem;
+  min-height: 9rem;
+
+  resize: vertical;
 }
 
-.select {
-    appearance: none;
+/* ---------------------------------------------------------
+   Submit
+--------------------------------------------------------- */
+
+.submit {
+  margin-top: var(--space-sm);
+}
+
+/* ---------------------------------------------------------
+   Status
+--------------------------------------------------------- */
+
+.success,
+.error {
+  margin: 0;
+
+  font-family: var(--font-body);
+  font-size: var(--text-sm);
+  line-height: var(--line-height-relaxed);
+
+  text-align: center;
+}
+
+.success {
+  color: var(--color-brand-dark);
+}
+
+.error {
+  color: var(--color-text);
+}
+
+/* ---------------------------------------------------------
+   Responsive
+--------------------------------------------------------- */
+
+@media (max-width: 640px) {
+  .row {
+    grid-template-columns: 1fr;
+
+    gap: var(--space-xl);
+  }
 }

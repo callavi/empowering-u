@@ -52,22 +52,24 @@ export function CatalogueSection() {
         <section className={styles.section} id="catalogue">
             <Container>
                 <SectionHeading
-                    title="Our Services"
-                    description="We offer a wide range of services to meet your needs. Explore our catalogue below"
-                    align="center"
+                title="Our Services"
+                description="We offer a wide range of services to meet your needs. Explore our catalogue below."
+                align="center"
                 />
 
+                <div className={styles.catalogue}>
                 {loading && <CatalogueSkeleton />}
 
                 {error && (
-                    <p>
-                        Something went wrong while loading our services.
+                    <p className={styles.error}>
+                    Something went wrong while loading our services.
                     </p>
                 )}
 
                 {!loading && !error && (
                     <CatalogueGrid products={products} />
                 )}
+                </div>
             </Container>
         </section>
     </>

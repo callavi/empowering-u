@@ -1,0 +1,38 @@
+.loading {
+  min-height: 60vh;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  gap: var(--space-md);
+
+  background:
+    linear-gradient(
+      135deg,
+      var(--color-surface) 0%,
+      var(--color-surface-warm) 45%,
+      var(--color-page) 100%
+    );
+}
+
+.loader {
+  color: var(--color-brand);
+
+  animation: spin 1s linear infinite;
+}
+
+.loadingText {
+  color: var(--color-text-muted);
+
+  font-family: var(--font-body);
+  font-size: var(--text-sm);
+  font-weight: var(--weight-medium);
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}

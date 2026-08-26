@@ -1,39 +1,93 @@
-.heading {
-    font-weight: var(--font-weight-semibold);
-    font-size: var(--text-3xl);
-    color: var(--color-primary-100);
-}
-
-.subheading {
-    font-weight: var(--font-weight-normal);
-    font-size: var(--text-lg);
-    color: var(--color-primary-100);
-}
-
 .cta {
-    background-color: var(--color-primary-500);
-    border-radius: var(--radius-2xl);
-    transition: transform var(--duration-medium) var(--ease-standard),
-                box-shadow var(--duration-medium) var(--ease-standard),
-                background-color var(--duration-medium) var(--ease-standard);
+  position: relative;
+
+  display: grid;
+
+  overflow: hidden;
+
+  width: 100%;
+
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-xl);
+
+  background:
+    linear-gradient(
+      135deg,
+      var(--color-surface) 0%,
+      var(--color-surface-warm) 55%,
+      var(--color-brand-soft) 100%
+    );
+
+  box-shadow: var(--shadow-sm);
+
+  transition:
+    transform var(--duration-normal) var(--ease-standard),
+    box-shadow var(--duration-normal) var(--ease-standard),
+    border-color var(--duration-normal) var(--ease-standard);
 }
 
 .cta:hover {
-    box-shadow: var(--shadow-md);
-    transform: translateY(-6px);
+  transform: translateY(-3px);
+
+  border-color: var(--color-brand);
+
+  box-shadow: var(--shadow-md);
 }
 
+/* ---------------------------------------------------------
+   Heading
+--------------------------------------------------------- */
+
+.heading {
+  margin: 0;
+
+  color: var(--color-text);
+
+  font-family: var(--font-heading);
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: var(--weight-semibold);
+  line-height: var(--line-height-tight);
+
+  letter-spacing: -0.02em;
+}
+
+/* ---------------------------------------------------------
+   Supporting text
+--------------------------------------------------------- */
+
+.subheading {
+  max-width: 38rem;
+  margin: 0;
+
+  color: var(--color-text-muted);
+
+  font-family: var(--font-body);
+  font-size: var(--text-lg);
+  font-weight: var(--weight-normal);
+  line-height: var(--line-height-relaxed);
+}
+
+/* ---------------------------------------------------------
+   Actions
+--------------------------------------------------------- */
+
 .button {
-    transition: transform var(--duration-medium) var(--ease-standard),
-                box-shadow var(--duration-medium) var(--ease-standard);
+  transition:
+    transform var(--duration-fast) var(--ease-standard),
+    box-shadow var(--duration-fast) var(--ease-standard);
 }
 
 .button:hover {
-    transform: translateY(-2px);
-    box-shadow: var(--shadow-lg);
+  transform: translateY(-2px);
 }
 
+/* ---------------------------------------------------------
+   Illustration
+--------------------------------------------------------- */
+
 .illustration {
-    width: min(100%, 320px);
-    height: auto;
+  width: min(100%, 320px);
+  height: auto;
+
+  max-height: 320px;
 }

@@ -48,7 +48,19 @@ export default function StartYourBusiness() {
     }, []);
 
     if (loading) {
-        return <div>Loading...</div>;
+        return (
+            <div className="flex min-h-[40vh] items-center justify-center">
+                <div className="flex items-center gap-3">
+                    <span
+                        className="h-4 w-4 animate-spin rounded-full border-2 border-[var(--color-primary-200)] border-t-[var(--color-primary-600)]"
+                        aria-hidden="true"
+                    />
+                    <span className="text-sm text-[var(--color-text-body)]">
+                        Loading...
+                    </span>
+                </div>
+            </div>
+        );
     }
 
     if (error || !campaign) {

@@ -1,62 +1,144 @@
 .heading {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    margin-bottom: 3rem;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+
+  margin-bottom: var(--space-2xl);
 }
 
+/* ---------------------------------------------------------
+   Alignment
+--------------------------------------------------------- */
+
 .left {
-    text-align: left;
-    align-items: flex-start;
+  text-align: left;
+  align-items: flex-start;
 }
 
 .center {
-    text-align: center;
-    align-items: center;
+  text-align: center;
+  align-items: center;
 }
 
 .right {
-    text-align: right;
-    align-items: flex-end;
+  text-align: right;
+  align-items: flex-end;
 }
+
+/* ---------------------------------------------------------
+   Eyebrow
+--------------------------------------------------------- */
 
 .eyebrow {
-    font-size: var(--text-sm);
-    font-weight: var(--font-weight-semibold);
-    text-transform: uppercase;
-    letter-spacing: .12em;
-    color: var(--color-text-alternative);
+  margin: 0;
+
+  color: var(--color-brand);
+
+  font-family: var(--font-body);
+  font-size: var(--text-sm);
+  font-weight: var(--weight-semibold);
+  line-height: var(--line-height-normal);
+
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
 }
+
+/* ---------------------------------------------------------
+   Title
+--------------------------------------------------------- */
 
 .title {
-    font-size: clamp(2rem, 5vw, 3rem);
-    line-height: 1.1;
-    color: var(--color-text-heading);
+  margin: 0;
 
+  color: var(--color-text);
+
+  font-family: var(--font-heading);
+  font-size: clamp(2.25rem, 5vw, 3.5rem);
+  font-weight: var(--weight-semibold);
+  line-height: var(--line-height-tight);
+  letter-spacing: -0.02em;
 }
+
+/*
+ * Small decorative rule beneath the title.
+ * The gradient keeps it softer than a solid accent bar.
+ */
 
 .title::after {
-    content: "";
-    display: block;
-    width: 56px;
-    height: 4px;
-    margin-top: 0.75rem;
-    border-radius: 999px;
-    background: linear-gradient(
-        90deg,
-        var(--color-accent),
-        transparent
-    );
+  content: "";
+
+  display: block;
+
+  width: 4rem;
+  height: 3px;
+
+  margin-top: var(--space-md);
+
+  border-radius: var(--radius-full);
+
+  background: linear-gradient(
+    90deg,
+    var(--color-brand),
+    transparent
+  );
 }
+
+/* ---------------------------------------------------------
+   Center alignment
+--------------------------------------------------------- */
+
+.center .title::after {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/* ---------------------------------------------------------
+   Right alignment
+--------------------------------------------------------- */
+
+.right .title::after {
+  margin-left: auto;
+}
+
+/* ---------------------------------------------------------
+   Inline accent
+--------------------------------------------------------- */
 
 .accent {
-    color: var(--color-accent);
+  color: var(--color-brand);
 }
 
+/* ---------------------------------------------------------
+   Description
+--------------------------------------------------------- */
 
 .description {
-    max-width: 60ch;
-    color: var(--color-text-body);
-    font-size: var(--text-lg);
-    margin-top: 1rem;
+  max-width: 60ch;
+  margin: 0;
+
+  color: var(--color-text-muted);
+
+  font-family: var(--font-body);
+  font-size: var(--text-lg);
+  font-weight: var(--weight-normal);
+  line-height: var(--line-height-relaxed);
+}
+
+/* ---------------------------------------------------------
+   Responsive
+--------------------------------------------------------- */
+
+@media (max-width: 767px) {
+  .heading {
+    gap: var(--space-sm);
+    margin-bottom: var(--space-xl);
+  }
+
+  .title {
+    font-size: clamp(2rem, 10vw, 2.75rem);
+  }
+
+  .description {
+    font-size: var(--text-base);
+  }
 }

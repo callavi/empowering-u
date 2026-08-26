@@ -11,32 +11,41 @@ import Reveal from "../../motion/Reveal";
 
 
 
-export function ServicesSection () {
-    return (
-        <section className={styles.section}>
-            <Container>
-                <div className="flex flex-col gap-4" id="services">
-                    <SectionHeading title="What can we help you with?" align="center" eyebrow="our services"/>
-                        <div className="grid gap-8 grid-cols-1 md:grid-cols-2 xl:grid-cols-3">
-                            {services.map((item, index) => (
-                                <Reveal
-                                    key={item.id}
-                                    direction="up"
-                                    delay={index * 0.19}
-                                >
-                                    <ServiceCard service={item} />
-                                </Reveal>
-                            ))}
-                        </div>
-                    <div className="flex items-center justify-center mt-4">
-                            <Button variant="text" size="large"
-                            as={NavLink}
-                            to="/catalogue">
-                            View All
-                            </Button>
-                    </div>
-                </div>
-            </Container>
-        </section>
-    )
+export function ServicesSection() {
+  return (
+    <section className={styles.section}>
+      <Container>
+        <div className="flex flex-col gap-4" id="services">
+          <SectionHeading
+            title="What can we help you with?"
+            align="center"
+            eyebrow="our services"
+          />
+
+          <div className={styles.grid}>
+            {services.map((item, index) => (
+              <Reveal
+                key={item.id}
+                direction="up"
+                delay={index * 0.19}
+              >
+                <ServiceCard service={item} />
+              </Reveal>
+            ))}
+          </div>
+
+          <div className={styles.viewAll}>
+            <Button
+              variant="text"
+              size="large"
+              as={NavLink}
+              to="/catalogue"
+            >
+              View All
+            </Button>
+          </div>
+        </div>
+      </Container>
+    </section>
+  );
 }

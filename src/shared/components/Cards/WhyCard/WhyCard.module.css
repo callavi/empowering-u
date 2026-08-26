@@ -1,9 +1,38 @@
+/* ---------------------------------------------------------
+   Base
+--------------------------------------------------------- */
+
 .article {
-    background: var(--color-primary-100);
-    box-shadow: var(--shadow-md);
-    border-radius: 28px;
-    border: 1px solid transparent;
+  position: relative;
+
+  min-height: 100%;
+
+  overflow: hidden;
+
+  padding: var(--space-2xl);
+
+  background: var(--color-surface);
+
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+
+  transition:
+    transform var(--duration-normal) var(--ease-standard),
+    box-shadow var(--duration-normal) var(--ease-standard),
+    border-color var(--duration-normal) var(--ease-standard);
 }
+
+.article:hover {
+  transform: translateY(-4px);
+
+  border-color: rgb(109 130 99 / 35%);
+
+  box-shadow: var(--shadow-md);
+}
+
+/* ---------------------------------------------------------
+   Size
+--------------------------------------------------------- */
 
 .large {
   grid-column: span 2;
@@ -13,25 +42,163 @@
   grid-column: span 1;
 }
 
-.icon {
-    color: var(--color-text-inverse);
-    stroke-width: 2.5px;
+/* ---------------------------------------------------------
+   Content
+--------------------------------------------------------- */
+
+.content {
+  display: flex;
+  flex-direction: column;
+
+  gap: var(--space-xl);
+
+  height: 100%;
 }
+
+.copy {
+  display: flex;
+  flex-direction: column;
+
+  gap: var(--space-sm);
+}
+
+/* ---------------------------------------------------------
+   Icon
+--------------------------------------------------------- */
 
 .iconWrapper {
-    background-color: var(--color-primary-500);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 4.5rem;
+  height: 4.5rem;
+
+  flex-shrink: 0;
+
+  border-radius: var(--radius-lg);
+
+  background: var(--color-brand-soft);
+
+  transition:
+    background-color var(--duration-normal) var(--ease-standard),
+    transform var(--duration-normal) var(--ease-standard);
 }
 
+.article:hover .iconWrapper {
+  background: var(--color-brand);
+
+  transform: translateY(-2px);
+}
+
+.icon {
+  color: var(--color-brand);
+}
+
+.article:hover .icon {
+  color: var(--color-text-inverse);
+}
+
+/* ---------------------------------------------------------
+   Typography
+--------------------------------------------------------- */
+
 .cardheading {
-    font-size: var(--text-2xl);
-    font-weight: var(--font-weight-semibold);
-    line-height: var(--line-height-tight);
-    color: var(--color-primary-700);
+  margin: 0;
+
+  color: var(--color-text);
+
+  font-family: var(--font-heading);
+  font-size: var(--text-2xl);
+  font-weight: var(--weight-semibold);
+  line-height: var(--line-height-tight);
 }
 
 .carddescription {
-    color: var(--color-neutral-400);
-    font-weight: var(--font-weight-medium);
-    font-size: var(--text-base);
+  margin: 0;
+
+  max-width: 38rem;
+
+  color: var(--color-text-muted);
+
+  font-family: var(--font-body);
+  font-size: var(--text-base);
+  font-weight: var(--weight-normal);
+  line-height: var(--line-height-relaxed);
 }
 
+/* ---------------------------------------------------------
+   Default variant
+--------------------------------------------------------- */
+
+.default {
+  background: transparent;
+
+  border: 1px solid var(--color-border);
+
+  box-shadow: none;
+}
+
+.default .iconWrapper {
+  background: var(--color-brand-soft);
+}
+
+.default .icon {
+  color: var(--color-brand);
+}
+
+.default:hover {
+  background: var(--color-surface);
+
+  border-color: rgb(109 130 99 / 35%);
+
+  box-shadow: var(--shadow-sm);
+}
+/* ---------------------------------------------------------
+   Emphasis variant
+--------------------------------------------------------- */
+
+.emphasis {
+  background:
+    linear-gradient(
+      135deg,
+      var(--color-surface-warm) 0%,
+      var(--color-brand-soft) 100%
+    );
+
+  border: 1px solid transparent;
+
+  box-shadow: var(--shadow-sm);
+}
+
+.emphasis .iconWrapper {
+  background: var(--color-brand);
+}
+
+.emphasis .icon {
+  color: var(--color-text-inverse);
+}
+
+.emphasis:hover {
+  border-color: rgb(109 130 99 / 20%);
+
+  box-shadow: var(--shadow-md);
+}
+
+/* ---------------------------------------------------------
+   Responsive
+--------------------------------------------------------- */
+
+@media (max-width: 767px) {
+  .large {
+    grid-column: span 1;
+  }
+
+  .article {
+    padding: var(--space-xl);
+  }
+
+  .cardheading {
+    font-size: var(--text-xl);
+  }
+}

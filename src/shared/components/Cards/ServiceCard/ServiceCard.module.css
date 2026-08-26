@@ -1,51 +1,84 @@
 .article {
-    background: var(--color-neutral-0);
-    box-shadow: var(--shadow-md);
-    border-radius: var(--radius-xl);
-    transition:
-        transform var(--duration-medium) var(--ease-standard),
-        box-shadow var(--duration-medium) var(--ease-standard),
-        border-color var(--duration-medium) var(--ease-standard),
-        background-color var(--duration-medium) var(--ease-standard);
-    border: 1px solid var(--color-alternative);
+  display: flex;
+  flex-direction: column;
+
+  min-height: 300px;
+  width: 100%;
+  max-width: 24rem;
+
+  padding: var(--space-xl);
+
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+
+  background: var(--color-surface);
+
+  box-shadow: var(--shadow-sm);
+
+  transition:
+    transform var(--duration-normal) var(--ease-standard),
+    box-shadow var(--duration-normal) var(--ease-standard),
+    border-color var(--duration-normal) var(--ease-standard),
+    background var(--duration-normal) var(--ease-standard);
 }
 
 .article:hover {
-    transform: translateY(-6px);
-    box-shadow: var(--shadow-md);
-    border: 1px solid var(--color-primary-200);
-    background: linear-gradient(to bottom,var(--color-primary-300) 0%, 
-    var(--color-primary-100) 30%, 
-    var(--color-primary-50) 60%,
-    white 100%);
+  transform: translateY(-4px);
+
+  border-color: var(--color-brand);
+
+  background: var(--gradient-soft);
+
+  box-shadow: var(--shadow-md);
+}
+
+/* Icon */
+
+.iconWrapper {
+  background: var(--color-brand-soft);
+
+  border-radius: var(--radius-full);
+
+  transition:
+    background-color var(--duration-normal) var(--ease-standard),
+    transform var(--duration-normal) var(--ease-standard);
 }
 
 .icon {
-    color: var(--color-primary-600);
-}
+  color: var(--color-brand-dark);
 
-.iconWrapper {
-    border-radius: var(--radius-4xl);
-    background-color: var(--color-primary-50);
-}
-
-.article:hover .icon {
-    color: var(--color-primary-200);
+  transition:
+    color var(--duration-normal) var(--ease-standard);
 }
 
 .article:hover .iconWrapper {
-    background-color: var(--color-primary-700);
+  background: var(--color-brand);
+
+  transform: translateY(-2px);
 }
 
+.article:hover .icon {
+  color: var(--color-text-inverse);
+}
+
+/* Typography */
+
 .cardheading {
-    font-size: var(--text-2xl);
-    font-weight: var(--font-weight-semibold);
-    line-height: var(--line-height-tight);
-    color: var(--color-primary-700);
+  margin: 0;
+
+  color: var(--color-text);
+
+  font-family: var(--font-heading);
+  font-size: var(--text-2xl);
+  font-weight: var(--weight-semibold);
+  line-height: var(--line-height-tight);
 }
 
 .carddescription {
-    color: var(--color-neutral-400);
-    font-weight: var(--font-weight-medium);
-    font-size: var(--text-base);
+  color: var(--color-text-muted);
+
+  font-family: var(--font-body);
+  font-size: var(--text-base);
+  font-weight: var(--weight-medium);
+  line-height: var(--line-height-relaxed);
 }

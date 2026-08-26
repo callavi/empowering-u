@@ -7,6 +7,7 @@ import NotFound from "../NotFound/notfound";
 import { BreadcrumbStructuredData, ServiceStructuredData } from "../../shared/components/StructuredData/StructuredData";
 import { LoaderCircle } from "lucide-react";
 import SEO from "../../shared/components/SEO/seo";
+import styles from "../CataloguePage/CataloguePage.module.css";
 
 export default function CataloguePage() {
   const { slug } = useParams();
@@ -48,18 +49,21 @@ export default function CataloguePage() {
     };
   }, [slug]);
 
-  if (loading) {
-        return (
-        <div className="min-h-[60vh] flex items-center justify-center">
-            <LoaderCircle
-                className="animate-spin text-primary-500"
-                size={36}
-                strokeWidth={2}
-                aria-label="Loading"
-            />
-        </div>
-    );
-  }
+if (loading) {
+  return (
+    <div className={styles.loading}>
+      <LoaderCircle
+        className={styles.loader}
+        size={40}
+        strokeWidth={1.75}
+        aria-label="Loading"
+      />
+      <span className={styles.loadingText}>
+        Loading service...
+      </span>
+    </div>
+  );
+}
 
   if (error) {
     return <div>Something went wrong while loading this service.</div>;

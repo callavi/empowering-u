@@ -1,65 +1,114 @@
 .step {
-    position: relative;
+  position: relative;
+
+  z-index: 1;
 }
+
+/* ---------------------------------------------------------
+   Horizontal
+--------------------------------------------------------- */
 
 .stepHorizontal {
-    text-align: center;
-    display:flex;
-    flex-direction: column;
-    align-items: center;
-    flex: 1;
-    min-width: 0;
-}
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
-.stepVertical {
-    display: flex;
-    gap: 1rem;
-    align-items: center;
+  min-width: 0;
 
-    width: 100%;
-    max-width: none;
-}
-
-.visual {
-    flex-shrink: 0;
-    width: 120px;
-    height: 120px;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  text-align: center;
 }
 
 .stepHorizontal .visual {
-    margin-bottom: 1rem;
+  margin-bottom: var(--space-xl);
+}
+
+/* ---------------------------------------------------------
+   Vertical / journey
+--------------------------------------------------------- */
+
+.stepVertical {
+  display: flex;
+  align-items: flex-start;
+
+  gap: var(--space-md);
+
+  width: 100%;
 }
 
 .stepVertical .visual {
-    margin-top: 0;
+  margin-top: 0;
+  width: 5rem;
+  height: 5rem;
 }
 
+/* ---------------------------------------------------------
+   Visual
+--------------------------------------------------------- */
+
+.visual {
+  position: relative;
+
+  flex-shrink: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 6.5rem;
+  height: 6.5rem;
+}
+
+/* ---------------------------------------------------------
+   Content
+--------------------------------------------------------- */
+
 .content {
-    flex: 1;
+  flex: 1;
+  min-width: 0;
 }
 
 .stepHorizontal .content {
-    text-align: center;
+  max-width: 15rem;
+
+  text-align: center;
 }
 
 .stepVertical .content {
-    text-align: left;
+  padding-top: var(--space-xs);
+
+  text-align: left;
 }
 
+/* ---------------------------------------------------------
+   Typography
+--------------------------------------------------------- */
+
 .title {
-    font-size: var(--text-lg);
-    font-weight: var(--font-weight-semibold);
-    color: var(--color-primary-500);
-    margin-bottom: 0.5rem;
+  margin: 0 0 var(--space-xs);
+
+  color: var(--color-text);
+
+  font-family: var(--font-heading);
+  font-size: var(--text-xl);
+  font-weight: var(--weight-semibold);
+  line-height: var(--line-height-tight);
 }
 
 .subtitle {
-    color: var(--color-neutral-400);
-    font-weight: var(--font-weight-medium);
-    font-size: var(--text-sm);
-    line-height: var(--line-height-tight);
+  margin: 0;
+
+  color: var(--color-text-muted);
+
+  font-family: var(--font-body);
+  font-size: var(--text-sm);
+  font-weight: var(--weight-medium);
+  line-height: var(--line-height-relaxed);
+}
+
+/* ---------------------------------------------------------
+   Hover
+--------------------------------------------------------- */
+
+.step:hover .visual {
+  box-shadow: var(--shadow-md);
 }

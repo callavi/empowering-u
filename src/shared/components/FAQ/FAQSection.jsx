@@ -25,59 +25,64 @@ export function FAQSection({ contents }) {
           description="Everything you need to know before applying."
           align="center"
         />
-      <section className="grid grid-cols-1 lg:grid-cols-2 gap-6">
-        <div className="mx-auto mt-10 flex max-w-4xl flex-col gap-4">
+
+        <div className={styles.layout}>
+          <div className={styles.faqList}>
             {faqs.map((faq, index) => (
-                <Reveal
-                    key={faq.question}
-                    direction="up"
-                    delay={index * 0.1}
+              <Reveal
+                key={faq.question}
+                direction="up"
+                delay={index * 0.1}
+              >
+                <div
+                  className={clsx(
+                    styles.accordionItem,
+                    openIndex === index && styles.active
+                  )}
                 >
-                    <div
-                        className={clsx(
-                            styles.accordionItem,
-                            openIndex === index && styles.active
-                        )}
-                    >
-                        <button
-                            onClick={() => toggle(index)}
-                            className="flex w-full items-center justify-between p-6 text-left"
-                        >
-                            <h3 className="font-semibold text-lg">
-                                {faq.question}
-                            </h3>
+                  <button
+                    type="button"
+                    onClick={() => toggle(index)}
+                    className={styles.question}
+                    aria-expanded={openIndex === index}
+                  >
+                    <h3>{faq.question}</h3>
 
-                            <ChevronDown
-                                size={20}
-                                className={clsx(
-                                    styles.chevron,
-                                    openIndex === index && styles.rotate
-                                )}
-                            />
-                        </button>
+                    <ChevronDown
+                      size={20}
+                      strokeWidth={1.8}
+                      className={clsx(
+                        styles.chevron,
+                        openIndex === index && styles.rotate
+                      )}
+                    />
+                  </button>
 
-                        <div
-                            className={clsx(
-                                styles.content,
-                                openIndex === index && styles.open
-                            )}
-                        >
-                            <div className="px-6">
-                                <p className="m-0 pb-6">{faq.answer}</p>
-                            </div>
-                        </div>
+                  <div
+                    className={clsx(
+                      styles.content,
+                      openIndex === index && styles.open
+                    )}
+                  >
+                    <div>
+                      <p className={styles.answer}>
+                        {faq.answer}
+                      </p>
                     </div>
-                </Reveal>
+                  </div>
+                </div>
+              </Reveal>
             ))}
-        </div>
-        {QuestionsIllustration && (
-          <Reveal direction="right" delay={0.2}>
+          </div>
+
+          {QuestionsIllustration && (
+            <Reveal direction="right" delay={0.2}>
               <div className={styles.illustration}>
-                  <QuestionsIllustration />
+                <QuestionsIllustration />
               </div>
-          </Reveal>
-        )}
-      </section>
+            </Reveal>
+          )}
+        </div>
       </Container>
     </section>
   );
