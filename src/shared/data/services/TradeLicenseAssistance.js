@@ -52,7 +52,7 @@ export const tradeLicenseAssistance =
 
   overview: {
     title: 'Who may need a Trade License?',
-    description: 'Businesses operating from a physical location may need local authorization depending on their activity and jurisdiction.\n\nWe help you:',
+    description: 'Assistance with understanding and completing the process for obtaining a trade license where applicable to your business activity and location.\n\nIt helps businesses navigate required documentation and formalities.\n\nSuitable for eligible commercial establishments and local business operations.\n\nWe help you:',
     benefits: [
       'Understand the application requirements',
       'Prepare the required documents',

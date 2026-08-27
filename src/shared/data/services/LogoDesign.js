@@ -81,7 +81,7 @@ export const logo =
   overview: {
     title: "Who needs a logo?",
     description:
-      "Every business deserves a professional visual identity.\n\nA good logo helps you:",
+      "Create a distinctive logo that represents your business identity and communicates your brand visually.\n\nThe design can provide a consistent foundation for your digital and printed materials.\n\nIdeal for new businesses or brands needing a professional identity.\n\nA good logo helps you:",
     benefits: [
       "Build brand recognition",
       "Create customer trust",

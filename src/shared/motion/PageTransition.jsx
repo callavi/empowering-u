@@ -12,11 +12,13 @@ export default function PageTransition({ children }) {
             initial
             mode="wait"
             onExitComplete={() => {
-                window.scrollTo({
-                    top: 0,
-                    left: 0,
-                    behavior: "instant",
-                });
+                if (!location.hash) {
+                    window.scrollTo({
+                        top: 0,
+                        left: 0,
+                        behavior: "instant",
+                    });
+                }
             }}
         >
             <motion.div

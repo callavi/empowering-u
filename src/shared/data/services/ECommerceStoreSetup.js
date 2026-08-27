@@ -49,7 +49,7 @@ export const eCommerceStoreSetup =
 
   overview: {
     title: 'Who needs an e-commerce store?',
-    description: 'An online store gives product-based businesses a direct channel to sell online.\n\nIt can help you:',
+    description: 'Build and configure an online store where customers can browse products, place orders, and complete purchases digitally.\n\nThe setup focuses on creating a smooth and organized shopping experience.\n\nIdeal for businesses looking to start selling online.\n\nIt can help you:',
     benefits: [
       'Sell products online',
       'Reach customers beyond your location',

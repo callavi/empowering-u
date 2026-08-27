@@ -49,7 +49,7 @@ export const businessPlanPreparation =
 
   overview: {
     title: 'Who needs a business plan?',
-    description: 'A business plan helps entrepreneurs turn an idea into a practical roadmap.\n\nIt can help you:',
+    description: 'A structured business plan that clearly presents your business idea, goals, market opportunity, operations, and financial expectations.\n\nIt provides a practical roadmap for launching or growing your business.\n\nUseful for planning, decision-making, and funding discussions.\n\nIt can help you:',
     benefits: [
       'Clarify your business model',
       'Understand your target market',

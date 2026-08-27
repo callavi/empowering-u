@@ -49,7 +49,7 @@ export const fssaiRegistration =
 
   overview: {
     title: 'Who needs FSSAI registration?',
-    description: 'Food businesses may require FSSAI registration or licensing depending on their nature and scale.\n\nIt helps you:',
+    description: 'Assistance with the registration or licensing process required for eligible food-related businesses under applicable food safety regulations.\n\nIt helps businesses meet required regulatory formalities.\n\nSuitable for food manufacturers, sellers, distributors, restaurants, and other eligible food operators.\n\nIt helps you:',
     benefits: [
       'Meet applicable food safety requirements',
       'Build customer confidence',
@@ -61,6 +61,7 @@ export const fssaiRegistration =
   pricing: {
     headline: null,
     highlights: [
+      { text: "Govt Fees Extra" },
       { text: "Expert Assistance" },
       { text: "Transparent Process" },
       { text: "Dedicated Support" },

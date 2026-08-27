@@ -46,7 +46,7 @@ export const startYourBusiness = {
   },
 
   pricing: {
-    headline: "Special Price",
+    headline: "According to your needs",
     highlights: [
       { text: "Expert Assistance Included" },
       { text: "No Hidden Charges" },
@@ -57,7 +57,7 @@ export const startYourBusiness = {
         link: "/cart",
       },
       secondary: {
-        text: "Request a Callback",
+        text: "Talk to an Expert",
         link: "/contact",
       },
     },

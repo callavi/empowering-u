@@ -48,7 +48,7 @@ export const trademarkRegistration =
 
   overview: {
     title: 'Why register a trademark?',
-    description: 'A trademark can help protect distinctive elements of your brand.\n\nIt can help you:',
+    description: 'Assistance with registering your business name, brand name, logo, or other eligible trademarks.\n\nThe process helps establish formal protection for your brand identity under applicable trademark laws.\n\nUseful for businesses building recognizable and protectable brands.\n\nIt can help you:',
     benefits: [
       'Protect your brand identity',
       'Build customer trust',
@@ -60,6 +60,7 @@ export const trademarkRegistration =
   pricing: {
     headline: null,
     highlights: [
+      { text: "Govt Fees Extra" },
       { text: "Expert Assistance" },
       { text: "Transparent Process" },
       { text: "Dedicated Support" },

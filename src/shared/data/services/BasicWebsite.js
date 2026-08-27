@@ -50,7 +50,8 @@ export const basicWebsite =
 
   overview: {
     title: 'Who needs a basic website?',
-    description: 'A professional website gives customers a place to learn about your business and contact you.\n\nIt can help you:',
+    description: 
+    'A professionally designed basic website that establishes your online presence with clear information about your business, services, and contact details.\n\nIt provides a simple, responsive, and user-friendly experience across devices.\n\nIdeal for businesses building their first digital presence.\n\nIt can help you:',
     benefits: [
       'Build online credibility',
       'Showcase your services',

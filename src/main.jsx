@@ -19,11 +19,13 @@ import "@fontsource/manrope/700.css";
 
 import App from "./app/App";
 import { CartProvider } from "./shared/context/CartProvider";
+import ScrollToHashElement from "./shared/components/utils/ScrollToHashElement";
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
     <CartProvider>
       <BrowserRouter>
+        <ScrollToHashElement />
         <App />
       </BrowserRouter>
     </CartProvider>

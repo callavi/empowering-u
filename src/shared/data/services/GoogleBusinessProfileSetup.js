@@ -48,7 +48,7 @@ export const googleBusinessProfileSetup =
 
   overview: {
     title: 'Why set up a Google Business Profile?',
-    description: 'A complete profile helps local customers discover your business and access important information.\n\nIt can help you:',
+    description: 'Set up and optimize your Google Business Profile so customers can easily discover your business through Google Search and Maps.\n\nIt helps present accurate business information online.\n\nUseful for improving local visibility, customer discovery, and trust.\n\nIt can help you:',
     benefits: [
       'Improve local visibility',
       'Show accurate business information',

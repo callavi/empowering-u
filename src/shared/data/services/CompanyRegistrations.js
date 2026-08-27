@@ -49,7 +49,7 @@ export const companyRegistrations =
 
   overview: {
     title: 'Which business structure is right for you?',
-    description: 'Every business has different needs. We help you choose and register the structure that fits your goals.\n\nYou can choose from:',
+    description: 'Assistance with registering your company and completing the necessary documentation for establishing a formal business entity.\n\nThe process helps you create a recognized legal business structure.\n\nSuitable for entrepreneurs starting a new venture or formalizing operations.\n\nYou can choose from:',
     benefits: [
       'Sole Proprietorship',
       'Partnership',
@@ -62,6 +62,7 @@ export const companyRegistrations =
   pricing: {
     headline: null,
     highlights: [
+      { text: "Govt Fees Extra" },
       { text: "Expert Assistance" },
       { text: "Transparent Process" },
       { text: "Dedicated Support" },

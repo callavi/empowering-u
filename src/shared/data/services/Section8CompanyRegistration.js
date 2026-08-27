@@ -50,7 +50,7 @@ export const section8CompanyRegistration =
 
   overview: {
     title: 'Who is a Section 8 Company for?',
-    description: 'Section 8 Companies are intended for eligible objectives such as charitable, educational, social, or other approved purposes.\n\nIt can help you:',
+    description: 'Assistance with establishing a Section 8 company for eligible organizations pursuing charitable, social, educational, or other permitted non-profit objectives.\n\nThe process focuses on completing the required registration formalities.\n\nSuitable for organizations working toward defined social or public-benefit goals.\n\nIt can help you:',
     benefits: [
       'Create a formal nonprofit structure',
       'Establish organizational credibility',
@@ -62,6 +62,7 @@ export const section8CompanyRegistration =
   pricing: {
     headline: null,
     highlights: [
+      { text: "Govt Fees Extra" },
       { text: "Expert Assistance" },
       { text: "Transparent Process" },
       { text: "Dedicated Support" },

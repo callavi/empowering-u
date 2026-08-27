@@ -49,7 +49,7 @@ export const shopEstablishmentRegistration =
 
   overview: {
     title: 'Who may need Shop & Establishment Registration?',
-    description: 'Commercial establishments may be required to register under applicable state rules.\n\nRegistration can help you:',
+    description: 'Assistance with registration under applicable Shops and Establishments regulations for eligible businesses and workplaces.\n\nIt helps businesses complete required local registration formalities.\n\nSuitable for shops, offices, commercial establishments, and other covered workplaces operating within applicable jurisdictions.\n\nRegistration can help you:',
     benefits: [
       'Maintain required business records',
       'Support legal operation of the establishment',

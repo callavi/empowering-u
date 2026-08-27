@@ -93,9 +93,19 @@ export default function Checkout() {
     }, [items, products]);
 
     const subtotal = checkoutItems.reduce(
-        (total, item) =>
-            total + item.product.price * item.quantity,
-        0
+    (total, item) => {
+        const { purchaseType, price } = item.product;
+
+        if (
+        !["cart", "session", "month"].includes(purchaseType) ||
+        price == null
+        ) {
+        return total;
+        }
+
+        return total + price * item.quantity;
+    },
+    0
     );
 
     const formatPrice = (price, currency = "INR") => {
@@ -374,7 +384,9 @@ export default function Checkout() {
                                                 </div>
 
                                                 <strong>
-                                                    {formatPrice(
+                                                {product.purchaseType === "callback"
+                                                    ? "Flexible pricing"
+                                                    : formatPrice(
                                                         product.price * quantity,
                                                         currency
                                                     )}

@@ -50,7 +50,7 @@ export const premiumWebsite =
 
   overview: {
     title: 'Who needs a premium website?',
-    description: 'Businesses that want a stronger digital presence can benefit from a more customized website.\n\nIt can help you:',
+    description: 'A professionally designed premium website focused on stronger branding, polished presentation, engaging user experiences, and advanced business functionality.\n\nIt creates a more distinctive digital presence for growing businesses.\n\nIdeal for brands seeking credibility, visibility, and stronger customer engagement.\n\nIt can help you:',
     benefits: [
       'Create a stronger brand experience',
       'Showcase more services or products',

@@ -87,7 +87,7 @@ export const gst =
     overview: {
       title: "Who needs GST Registration?",
       description:
-        "If your business turnover exceeds...\n\nIt helps you:",
+        "Assistance with completing GST registration requirements and preparing the relevant business information and documentation.\n\nIt helps eligible businesses establish their GST registration correctly.\n\nUseful for businesses that need to meet applicable tax and invoicing requirements.\n\nIt helps you:",
       benefits: [
         "Collect tax legally",
         "Build business credibility",

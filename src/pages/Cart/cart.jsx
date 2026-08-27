@@ -92,15 +92,18 @@ export default function Cart() {
             .filter(Boolean);
     }, [items, products]);
 
-    const subtotal = cartItems.reduce((total, item) => {
-        const { purchaseType } = item.product;
+  const subtotal = cartItems.reduce((total, item) => {
+    const { purchaseType, price } = item.product;
 
-        if (!["cart", "session", "month"].includes(purchaseType)) {
-            return total;
-        }
+    if (
+      !["cart", "session", "month"].includes(purchaseType) ||
+      price == null
+    ) {
+      return total;
+    }
 
-        return total + item.product.price * item.quantity;
-    }, 0);
+    return total + price * item.quantity;
+  }, 0);
 
     const formatPrice = (price, currency = "INR") => {
         return price.toLocaleString("en-IN", {
@@ -338,21 +341,27 @@ return (
                           </div>
 
                           <div className={styles.itemPrice}>
-                            <span>
-                              {formatPrice(
-                                product.price,
-                                currency
-                              )}
-                              {unitLabel &&
-                                ` / ${unitLabel}`}
-                            </span>
+                            {product.purchaseType === "callback" ? (
+                              <span>Flexible pricing</span>
+                            ) : (
+                              <>
+                                <span>
+                                  {formatPrice(
+                                    product.price,
+                                    currency
+                                  )}
+                                  {unitLabel &&
+                                    ` / ${unitLabel}`}
+                                </span>
 
-                            <strong>
-                              {formatPrice(
-                                product.price * quantity,
-                                currency
-                              )}
-                            </strong>
+                                <strong>
+                                  {formatPrice(
+                                    product.price * quantity,
+                                    currency
+                                  )}
+                                </strong>
+                              </>
+                            )}
                           </div>
                         </div>
                       </motion.article>

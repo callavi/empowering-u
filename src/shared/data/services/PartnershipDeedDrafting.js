@@ -48,7 +48,7 @@ export const partnershipDeedDrafting =
 
   overview: {
     title: 'Why prepare a partnership deed?',
-    description: 'A written partnership deed helps partners clearly document their agreed business terms.\n\nIt can help define:',
+    description: 'Preparation of a structured partnership deed outlining the roles, responsibilities, contributions, profit-sharing arrangements, and operating terms between partners.\n\nIt helps establish clear expectations from the beginning.\n\nUseful for reducing misunderstandings and creating a stronger business foundation.\n\nIt can help define:',
     benefits: [
       'Partner roles and responsibilities',
       'Profit and loss sharing',

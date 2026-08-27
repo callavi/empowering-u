@@ -3,7 +3,7 @@ import styles from "./Footer.module.css";
 import { navLinks } from "../../data/navbar.js";
 import { contactInfo } from "../../data/contactInfo.js";
 import Container from "../Container/Container";
-import logo from "../../../assets/logo-without-name.webp";
+import logo from "../../../assets/logo-without-name-dark.webp";
 
 import {
   MapPin,
@@ -25,7 +25,12 @@ export default function Footer() {
             src={logo}
             alt="Empowering U Logo"
           />
-          Empowering U
+          <span className={styles.logoText}>
+            <span>Empowering U</span>
+            <span className={styles.highlight}>
+              An Empowering Minds Initiative
+            </span>
+          </span>
         </Link>
 
         <p className={styles.infoText}>

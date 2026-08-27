@@ -50,7 +50,7 @@ export const copyrightRegistration =
 
   overview: {
     title: 'What can copyright protect?',
-    description: 'Copyright can apply to eligible original creative works.\n\nRegistration can help you:',
+    description: 'Support for registering original creative and intellectual works under applicable copyright regulations.\n\nRegistration can provide formal documentation supporting ownership of eligible creative content.\n\nUseful for protecting original designs, written material, artwork, software, and other creative assets.\n\nRegistration can help you:',
     benefits: [
       'Create a formal record of your work',
       'Strengthen ownership documentation',
@@ -62,6 +62,7 @@ export const copyrightRegistration =
   pricing: {
     headline: null,
     highlights: [
+      { text: "Govt Fees Extra" },
       { text: "Expert Assistance" },
       { text: "Transparent Process" },
       { text: "Dedicated Support" },

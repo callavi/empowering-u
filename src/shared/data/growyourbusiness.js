@@ -44,7 +44,7 @@ export const growYourBusiness = {
   },
 
   pricing: {
-    headline: "Special Bundle Price",
+    headline: "According to your needs",
     highlights: [
       { text: "Expert Team Included" },
       { text: "Custom Growth Strategy" },

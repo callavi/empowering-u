@@ -50,7 +50,7 @@ export const panTanRegistration =
 
   overview: {
     title: 'Why does your business need PAN & TAN?',
-    description: 'PAN and TAN serve different tax-related purposes for businesses and entities.\n\nThey help you:',
+    description: 'Assistance with applying for PAN and TAN requirements relevant to your business and tax-related activities.\n\nThe process helps establish the necessary tax identification details.\n\nSuitable for businesses handling taxable transactions, deductions, collections, and related statutory responsibilities.\n\nThey help you:',
     benefits: [
       'Maintain proper tax records',
       'Handle applicable TDS requirements',
@@ -62,6 +62,7 @@ export const panTanRegistration =
   pricing: {
     headline: null,
     highlights: [
+      { text: "Govt Fees Extra" },
       { text: "Expert Assistance" },
       { text: "Transparent Process" },
       { text: "Dedicated Support" },

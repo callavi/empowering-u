@@ -50,7 +50,7 @@ export const projectReportBankLoan =
 
   overview: {
     title: 'Why prepare a project report?',
-    description: 'A project report gives lenders a structured view of your proposed business or expansion.\n\nIt can help you:',
+    description: 'A detailed project report presenting your proposed business, investment requirements, operational plan, market opportunity, and financial projections.\n\nIt gives lenders a structured understanding of the project.\n\nUseful for supporting bank loan applications and funding discussions.\n\nIt can help you:',
     benefits: [
       'Present the project clearly',
       'Explain funding requirements',
@@ -68,7 +68,7 @@ export const projectReportBankLoan =
     ],
     cta: {
       primary: { text: "Get Started Now", link: "/cart" },
-      secondary: { text: "Request a Callback", link: "/contact" },
+      secondary: { text: "Talk to an Expert", link: "/contact" },
     },
   },
 

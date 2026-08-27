@@ -41,7 +41,7 @@ export function ContactFormSection() {
   }
 
   return (
-    <section className={styles.section}>
+    <section className={styles.section} id="form">
       <Container>
         <div className={styles.wrapper}>
           <SectionHeading

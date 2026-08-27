@@ -50,7 +50,7 @@ export const digitalSignatureCertificate =
 
   overview: {
     title: 'Why do you need a DSC?',
-    description: 'A Digital Signature Certificate can be required for certain online filings and transactions.\n\nIt helps you:',
+    description: 'Assistance with obtaining and setting up a Digital Signature Certificate for secure online authentication and document signing.\n\nIt simplifies digitally signed applications and business submissions.\n\nUseful for registrations, government portals, compliance processes, and electronic transactions.\n\nIt helps you:',
     benefits: [
       'Sign documents digitally',
       'Complete applicable online filings',

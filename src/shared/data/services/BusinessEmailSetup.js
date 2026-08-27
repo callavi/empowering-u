@@ -49,7 +49,7 @@ export const businessEmailSetup =
 
   overview: {
     title: 'Why use a business email?',
-    description: 'A domain-based email address helps your business communicate professionally.\n\nIt can help you:',
+    description: 'Set up professional business email accounts using your domain to create a more credible and consistent communication experience.\n\nIt helps separate business communication from personal email.\n\nIdeal for improving professionalism, organization, and customer trust.\n\nIt can help you:',
     benefits: [
       'Build customer trust',
       'Create a professional brand image',

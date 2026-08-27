@@ -49,7 +49,7 @@ export const msmeRegistration =
 
   overview: {
     title: 'Who should consider Udyam Registration?',
-    description: 'Eligible micro, small, and medium enterprises can register under the Udyam system.\n\nRegistration can help you:',
+    description: 'Assistance with completing the Udyam registration process for eligible micro, small, and medium enterprises.\n\nProper registration can help establish your business within the MSME framework.\n\nUseful for accessing applicable government schemes, recognition, and business opportunities.\n\nRegistration can help you:',
     benefits: [
       'Establish MSME identity',
       'Access eligible government schemes',
@@ -61,6 +61,7 @@ export const msmeRegistration =
   pricing: {
     headline: null,
     highlights: [
+      { text: "Govt Fees Extra" },
       { text: "Expert Assistance" },
       { text: "Transparent Process" },
       { text: "Dedicated Support" },

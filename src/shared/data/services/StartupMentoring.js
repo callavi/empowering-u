@@ -81,7 +81,7 @@ export const startup =
   overview: {
     title: "Who is this for?",
     description:
-      "Ideal for aspiring entrepreneurs, founders, and small business owners.\n\nMentoring helps you:",
+      "Practical guidance for entrepreneurs navigating the early stages of building and developing a startup.\n\nMentoring can cover business direction, positioning, planning, challenges, and growth opportunities.\n\nIdeal for founders seeking structured thinking, practical feedback, and greater clarity.\n\nMentoring helps you:",
     benefits: [
       "Validate business ideas",
       "Avoid common startup mistakes",

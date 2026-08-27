@@ -6,6 +6,7 @@ import { useState } from "react";
 import { useCart } from "../../../context/useCart";
 
 export function ProductCard({ product }) {
+  const isCallback = product.purchaseType === "callback";
   const isFixed = product.priceType === "fixed";
   const isStartingFrom = product.priceType === "starting_from";
 
@@ -24,12 +25,6 @@ export function ProductCard({ product }) {
     }, 1800);
   }
 
-  const formattedPrice = product.price.toLocaleString("en-IN", {
-    style: "currency",
-    currency: "INR",
-    maximumFractionDigits: 0,
-  });
-
   const unitLabel =
     product.purchaseType === "session"
       ? "/session"
@@ -37,19 +32,35 @@ export function ProductCard({ product }) {
         ? "/month"
         : "";
 
-  const priceText = isFixed
-    ? formattedPrice
-    : isStartingFrom
-      ? `Starting from ${formattedPrice}${unitLabel}`
-      : `${formattedPrice}${unitLabel}`;
+  const priceText = isCallback
+    ? "Flexible pricing"
+    : isFixed
+      ? product.price.toLocaleString("en-IN", {
+          style: "currency",
+          currency: "INR",
+          maximumFractionDigits: 0,
+        })
+      : isStartingFrom
+        ? `Starting from ${product.price.toLocaleString("en-IN", {
+            style: "currency",
+            currency: "INR",
+            maximumFractionDigits: 0,
+          })}${unitLabel}`
+        : `${product.price.toLocaleString("en-IN", {
+            style: "currency",
+            currency: "INR",
+            maximumFractionDigits: 0,
+          })}${unitLabel}`;
 
   const canAddToCart = ["cart", "session", "month"].includes(
     product.purchaseType
   );
 
-  const buttonText = canAddToCart
-    ? "Add to Cart"
-    : "Request Quote";
+  const buttonText = isCallback
+    ? "Request a Callback"
+    : canAddToCart
+      ? "Add to Cart"
+      : "Request Quote";
 
   return (
     <article className={styles.card}>
@@ -85,7 +96,7 @@ export function ProductCard({ product }) {
                 : undefined
             }
             as={!canAddToCart ? NavLink : undefined}
-            to={!canAddToCart ? "/cart" : undefined}
+            to={!canAddToCart ? "/contact#form" : undefined}
           >
             {canAddToCart && added
               ? "✓ Added to Cart"

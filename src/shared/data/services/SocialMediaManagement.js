@@ -48,7 +48,7 @@ export const socialMediaManagement =
 
   overview: {
     title: 'Who needs social media management?',
-    description: 'Consistent social media activity helps businesses stay visible and connected with their audience.\n\nIt can help you:',
+    description: 'Manage your business social media presence with consistent content, publishing, engagement, and profile activity.\n\nThe goal is to maintain an active and professional online presence.\n\nIdeal for businesses wanting to build visibility, communicate with audiences, and stay consistent.\n\nIt can help you:',
     benefits: [
       'Maintain a consistent presence',
       'Showcase products and services',

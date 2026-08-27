@@ -48,7 +48,7 @@ export const msmeConsultation =
 
   overview: {
     title: 'Who can benefit from MSME consultation?',
-    description: 'MSME consultation is useful for entrepreneurs and small businesses that need help making informed decisions.\n\nIt can help you:',
+    description: 'Practical consultation for businesses exploring MSME-related registrations, benefits, documentation, and compliance considerations.\n\nIt helps business owners understand relevant requirements and available opportunities.\n\nSuitable for small and medium businesses looking to organize and strengthen their operations.\n\nIt can help you:',
     benefits: [
       'Understand applicable registrations',
       'Identify documentation requirements',
