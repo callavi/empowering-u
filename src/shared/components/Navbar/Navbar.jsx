@@ -40,7 +40,7 @@ export default function Navbar() {
   }, [menuOpen]);
 
   return (
-    <header className="sticky top-0 z-50 bg-[var(--color-surface-warm)]/90 backdrop-blur-md">
+    <header className="sticky top-0 z-50 bg-[var(--color-surface-warm)]/90">
       <section className="mx-auto max-w-7xl px-4">
         <div className="flex items-center justify-between py-2 md:h-30 md:py-0">
           <div className="flex items-center justify-between gap-6">

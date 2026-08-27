@@ -13,4 +13,9 @@ export const navLinks = [
     name: "Catalogue",
     path: "/catalogue",
   },
+
+  {
+    name: "Empowering Minds",
+    path: "https://www.theempoweringminds.com"
+  }
 ];

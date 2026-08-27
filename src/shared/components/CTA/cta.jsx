@@ -12,13 +12,13 @@ export function CTA ({info}) {
 
     return (
         <section className="flex items-center justify-center">
-            <div className={`grid md:grid-cols-2 gap-4 cta-illustration ${styles.cta}`}>
+            <div className={`grid grid-cols-1 md:grid-cols-2 gap-4 cta-illustration ${styles.cta}`}>
                 <div className="flex flex-col justify-center gap-4 p-6">
                     <div className="flex flex-col items-start justify-center gap-4">
                         <h3 className={styles.heading}>{heading}</h3>
                         <p className={styles.subheading}>{subheading}</p>
                     </div>
-                    <div className="flex justify-start gap-2">
+                    <div className="flex flex-col md:flex-row justify-start gap-2">
                         {actions.map((action) => {
                             const Icon = action.icon;
                             return (

@@ -43,6 +43,7 @@
 .logoText {
   display: flex;
   align-items: center;
+  flex-direction: flex-row;
   gap: 0.4rem;
 }
 
@@ -173,6 +174,10 @@
     grid-template-columns: 1fr;
     gap: 2.5rem;
     padding-block: 3.5rem;
+  }
+
+  .logoText {
+    flex-direction: column;
   }
 
   .brand {

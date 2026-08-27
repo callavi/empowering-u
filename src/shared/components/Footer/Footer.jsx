@@ -25,12 +25,12 @@ export default function Footer() {
             src={logo}
             alt="Empowering U Logo"
           />
-          <span className={styles.logoText}>
+          <div className={styles.logoText}>
             <span>Empowering U</span>
             <span className={styles.highlight}>
               An Empowering Minds Initiative
             </span>
-          </span>
+          </div>
         </Link>
 
         <p className={styles.infoText}>
