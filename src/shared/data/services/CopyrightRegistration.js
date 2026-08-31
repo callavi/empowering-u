@@ -22,6 +22,7 @@ export const copyrightRegistration =
   slug: "copyright-registration",
 
   category: CATEGORIES.REGISTRATION,
+  subcategory: "intellectual-property-legal",
   label: "Copyright Registration",
   subtitle: "Protect your original creative work",
   seo: {

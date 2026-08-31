@@ -22,6 +22,7 @@ export const companyRegistrations =
   slug: "company-registrations",
 
   category: CATEGORIES.REGISTRATION,
+  subcategory: "business-registration-setup",
   label: "Company Registrations",
   subtitle: "Choose the right structure for your business",
   seo: {

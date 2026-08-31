@@ -21,6 +21,7 @@ export const trademarkRegistration =
   slug: "trademark-registration",
 
   category: CATEGORIES.REGISTRATION,
+  subcategory: "intellectual-property-legal",
   label: "Trademark Registration",
   subtitle: "Protect your brand identity",
   seo: {

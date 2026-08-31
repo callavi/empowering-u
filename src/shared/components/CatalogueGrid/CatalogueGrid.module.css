@@ -17,12 +17,77 @@
   gap: var(--space-lg);
 }
 
+.groups {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+
+.group {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  scroll-margin-top: 200px;
+}
+
+.groupHeading {
+  margin: 0;
+  font-size: var(--text-2xl);
+  text-align: center;
+}
+
 .more {
   display: flex;
   justify-content: center;
 
   margin-top: var(--space-2xl);
 }
+
+.subcategoryNav {
+  position: sticky;
+  top: 120px;
+  z-index: 10;
+  margin-bottom: 3.5rem;
+  padding: 0.75rem 0;
+  background: var(--color-surface-soft);
+  border-bottom: 1px solid var(--color-border);
+  border-radius: var(--radius-2xl);
+}
+
+.subcategoryNavInner {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  overflow-x: auto;
+  scrollbar-width: none;
+  white-space: nowrap;
+}
+
+.subcategoryNavInner::-webkit-scrollbar {
+  display: none;
+}
+
+.subcategoryLink {
+  flex-shrink: 0;
+  border: 0;
+  background: transparent;
+  padding: 0.55rem 0.85rem;
+  border-radius: var(--radius-full);
+  font: inherit;
+  font-size: var(--text-sm);
+  font-weight: var(--weight-semibold);
+  color: var(--color-text-muted);
+  cursor: pointer;
+  transition:
+    background-color 0.2s ease,
+    color 0.2s ease;
+}
+
+.subcategoryLink:hover {
+  background: var(--color-surface);
+  color: var(--color-text);
+}
+
 
 @media (max-width: 1023px) {
   .grid {

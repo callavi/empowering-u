@@ -22,6 +22,7 @@ export const fssaiRegistration =
   slug: "fssai-registration",
 
   category: CATEGORIES.REGISTRATION,
+  subcategory: "business-registration-setup",
   label: "FSSAI Registration",
   subtitle: "Get your food business registration support",
   seo: {

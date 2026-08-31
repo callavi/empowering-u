@@ -23,6 +23,43 @@ import { tradeLicenseAssistance } from "./TradeLicenseAssistance";
 import { trademarkRegistration } from "./TrademarkRegistration";
 import { startYourBusiness } from "../startyourbusinessprocess";
 import { growYourBusiness } from "../growyourbusiness";
+import { AOC4Filing } from "./AOC4Filing";
+import { AdvanceTaxCalculations } from "./AdvanceTaxCalculations";
+import { AnnualROCFilings } from "./AnnualROCFilings";
+import { BoardResolutionsMinutes } from "./BoardResolutionsMinutes";
+import { BusinessAgreements } from "./BusinessAgreements";
+import { DirectorRelatedFilings } from "./DirectorRelatedFilings";
+import { EInvoicingEWayBillSupport } from "./EInvoicingEWayBillSupport";
+import { EPFOPFCompliance } from "./EPFOPFCompliance";
+import { ESICCompliance } from "./ESICCompliance";
+import { EmployeeDocumentation } from "./EmployeeDocumentation";
+import { EmploymentAgreements } from "./EmploymentAgreements";
+import { Form16Support } from "./Form16Support";
+import { GSTAnnualReturn } from "./GSTAnnualReturn";
+import { GSTCancellationAmendment } from "./GSTCancellationAmendment";
+import { GSTNoticeResponse } from "./GSTNoticeResponse";
+import { GSTReconciliation } from "./GSTReconciliation";
+import { GSTReturnFiling } from "./GSTReturnFiling";
+import { IPDocumentation } from "./IPDocumentation";
+import { IncomeTaxReturnFiling } from "./IncomeTaxReturnFiling";
+import { IncorporationCompliance } from "./IncorporationCompliance";
+import { LLPAnnualFilings } from "./LLPAnnualFilings";
+import { LabourLawRegistrationsFilings } from "./LabourLawRegistrationsFilings";
+import { LeaveAttendanceSalaryCompliance } from "./LeaveAttendanceSalaryCompliance";
+import { MGT7MGT7AFiling } from "./MGT7MGT7AFiling";
+import { NDAConfidentialityAgreements } from "./NDAConfidentialityAgreements";
+import { PayrollProcessing } from "./PayrollProcessing";
+import { PrivacyPolicy } from "./PrivacyPolicy";
+import { ProfessionalTaxCompliance } from "./ProfessionalTaxCompliance";
+import { ProfessionalTaxRegistration } from "./ProfessionalTaxRegistration";
+import { TDSReturnFiling } from "./TDSReturnFiling";
+import { TaxAuditSupport } from "./TaxAuditSupport";
+import { TaxNoticeResponse } from "./TaxNoticeResponse";
+import { TermsConditions } from "./TermsConditions";
+import { TrademarkObjectionOpposition } from "./TrademarkObjectionOpposition";
+import { TrademarkRenewal } from "./TrademarkRenewal";
+import { VendorAgreements } from "./VendorAgreements";
+import { WebsiteComplianceDocumentation } from "./WebsiteComplianceDocumentation";
 
 export const products = {
 
@@ -51,6 +88,43 @@ export const products = {
     [trademarkRegistration.slug]: trademarkRegistration,
     [startYourBusiness.slug]: startYourBusiness,
     [growYourBusiness.slug]: growYourBusiness,
+    [AOC4Filing.slug]: AOC4Filing,
+    [AdvanceTaxCalculations.slug]: AdvanceTaxCalculations,
+    [AnnualROCFilings.slug]: AnnualROCFilings,
+    [BoardResolutionsMinutes.slug]: BoardResolutionsMinutes,
+    [BusinessAgreements.slug]: BusinessAgreements,
+    [DirectorRelatedFilings.slug]: DirectorRelatedFilings,
+    [EInvoicingEWayBillSupport.slug]: EInvoicingEWayBillSupport,
+    [EPFOPFCompliance.slug]: EPFOPFCompliance,
+    [ESICCompliance.slug]: ESICCompliance,
+    [EmployeeDocumentation.slug]: EmployeeDocumentation,
+    [EmploymentAgreements.slug]: EmploymentAgreements,
+    [Form16Support.slug]: Form16Support,
+    [GSTAnnualReturn.slug]: GSTAnnualReturn,
+    [GSTCancellationAmendment.slug]: GSTCancellationAmendment,
+    [GSTNoticeResponse.slug]: GSTNoticeResponse,
+    [GSTReconciliation.slug]: GSTReconciliation,
+    [GSTReturnFiling.slug]: GSTReturnFiling,
+    [IPDocumentation.slug]: IPDocumentation,
+    [IncomeTaxReturnFiling.slug]: IncomeTaxReturnFiling,
+    [IncorporationCompliance.slug]: IncorporationCompliance,
+    [LLPAnnualFilings.slug]: LLPAnnualFilings,
+    [LabourLawRegistrationsFilings.slug]: LabourLawRegistrationsFilings,
+    [LeaveAttendanceSalaryCompliance.slug]: LeaveAttendanceSalaryCompliance,
+    [MGT7MGT7AFiling.slug]: MGT7MGT7AFiling,
+    [NDAConfidentialityAgreements.slug]: NDAConfidentialityAgreements,
+    [PayrollProcessing.slug]: PayrollProcessing,
+    [PrivacyPolicy.slug]: PrivacyPolicy,
+    [ProfessionalTaxCompliance.slug]: ProfessionalTaxCompliance,
+    [ProfessionalTaxRegistration.slug]: ProfessionalTaxRegistration,
+    [TDSReturnFiling.slug]: TDSReturnFiling,
+    [TaxAuditSupport.slug]: TaxAuditSupport,
+    [TaxNoticeResponse.slug]: TaxNoticeResponse,
+    [TermsConditions.slug]: TermsConditions,
+    [TrademarkObjectionOpposition.slug]: TrademarkObjectionOpposition,
+    [TrademarkRenewal.slug]: TrademarkRenewal,
+    [VendorAgreements.slug]: VendorAgreements,
+    [WebsiteComplianceDocumentation.slug]: WebsiteComplianceDocumentation,
 };
 
 export default products;

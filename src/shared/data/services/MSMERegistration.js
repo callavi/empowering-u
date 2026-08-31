@@ -22,6 +22,7 @@ export const msmeRegistration =
   slug: "msme-registration",
 
   category: CATEGORIES.REGISTRATION,
+  subcategory: "business-registration-setup",
   label: "MSME (Udyam) Registration",
   subtitle: "Get your business registered as an MSME",
   seo: {

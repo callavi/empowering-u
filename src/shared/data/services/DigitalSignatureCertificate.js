@@ -23,6 +23,7 @@ export const digitalSignatureCertificate =
   slug: "digital-signature-certificate",
 
   category: CATEGORIES.REGISTRATION,
+  subcategory: "business-registration-setup",
   label: "Digital Signature Certificate",
   subtitle: "Get a DSC for secure digital signing",
   seo: {

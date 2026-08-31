@@ -24,6 +24,7 @@ export const tradeLicenseAssistance =
   slug: "trade-license-assistance",
 
   category: CATEGORIES.REGISTRATION,
+  subcategory: "business-registration-setup",
   label: "Trade License Assistance",
   subtitle: "Get help with your local trade license",
   seo: {

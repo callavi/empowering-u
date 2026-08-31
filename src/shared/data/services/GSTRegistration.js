@@ -25,6 +25,7 @@ export const gst =
 
     // Catalogue
     category: CATEGORIES.REGISTRATION,
+    subcategory: "business-registration-setup",
     label: "GST Registration",
     subtitle: "Register your Business under GST",
 

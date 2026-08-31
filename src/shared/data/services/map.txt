@@ -1,0 +1,81 @@
+ALL SERVICES
+│
+├── REGISTRATION & COMPLIANCE
+│   │
+│   ├── Business Registration & Setup
+│   │   ├── Company Registrations
+│   │   ├── Section 8 Company Registration
+│   │   ├── GST Registration
+│   │   ├── MSME Registration
+│   │   ├── PAN & TAN Registration
+│   │   ├── FSSAI Registration
+│   │   ├── Digital Signature Certificate
+│   │   ├── Shop & Establishment Registration
+│   │   ├── Trade License Assistance
+│   │   └── Professional Tax Registration
+│   │
+│   ├── Tax & GST Compliance
+│   │   ├── GST Return Filing
+│   │   ├── GST Annual Return
+│   │   ├── GST Reconciliation
+│   │   ├── E-Invoicing / E-Way Bill
+│   │   ├── GST Notice Assistance
+│   │   ├── GST Cancellation / Amendment
+│   │   ├── Income Tax Return Filing
+│   │   ├── TDS Return Filing
+│   │   ├── Tax Audit Support
+│   │   ├── Advance Tax Calculations
+│   │   ├── Tax Notice Assistance
+│   │   └── Form 16 / 16A Support
+│   │
+│   ├── Corporate Compliance
+│   │   ├── Annual ROC Filings
+│   │   ├── AOC-4
+│   │   ├── MGT-7 / MGT-7A
+│   │   ├── Director-Related Filings
+│   │   ├── Board Resolutions & Minutes
+│   │   ├── Incorporation-Related Compliance
+│   │   └── LLP Annual Filings
+│   │
+│   ├── Payroll & Labour Compliance
+│   │   ├── EPFO / PF
+│   │   ├── ESIC
+│   │   ├── Professional Tax Compliance
+│   │   ├── Labour Law Registrations & Filings
+│   │   ├── Payroll Processing
+│   │   ├── Employee Documentation
+│   │   └── Leave / Attendance / Salary Compliance
+│   │
+│   └── Intellectual Property & Legal
+│       ├── Trademark Registration
+│       ├── Trademark Renewal
+│       ├── Trademark Objection / Opposition
+│       ├── Copyright Registration
+│       ├── IP Documentation
+│       ├── Business Agreements
+│       ├── Vendor Agreements
+│       ├── Employment Agreements
+│       ├── NDA / Confidentiality Agreements
+│       ├── Terms & Conditions
+│       ├── Privacy Policy
+│       └── Website Compliance Documentation
+│
+├── BUSINESS PLANNING & SUPPORT
+│   ├── Startup Mentoring
+│   ├── Business Plan Preparation
+│   ├── MSME Consultation
+│   ├── Partnership Deed Drafting
+│   └── Project Report for Bank Loan
+│
+├── BUSINESS GROWTH
+│   ├── Logo Design
+│   ├── Basic Website
+│   ├── Business Email Setup
+│   ├── E-commerce Store Setup
+│   ├── Google Business Profile Setup
+│   ├── Premium Website
+│   └── Social Media Management
+│
+└── PREMIUM PACKAGES
+    ├── Start Your Business
+    └── Grow Your Business

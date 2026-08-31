@@ -22,6 +22,7 @@ export const shopEstablishmentRegistration =
   slug: "shop-establishment-registration",
 
   category: CATEGORIES.REGISTRATION,
+  subcategory: "business-registration-setup",
   label: "Shop & Establishment Registration",
   subtitle: "Register your business establishment",
   seo: {

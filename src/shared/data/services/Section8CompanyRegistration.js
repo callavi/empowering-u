@@ -23,6 +23,7 @@ export const section8CompanyRegistration =
   slug: "section-8-company-registration",
 
   category: CATEGORIES.REGISTRATION,
+  subcategory: "business-registration-setup",
   label: "Section 8 Company Registration",
   subtitle: "Set up a company for charitable or social objectives",
   seo: {

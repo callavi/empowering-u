@@ -23,6 +23,7 @@ export const panTanRegistration =
   slug: "pan-tan-registration",
 
   category: CATEGORIES.REGISTRATION,
+  subcategory: "business-registration-setup",
   label: "PAN & TAN Registration",
   subtitle: "Get essential tax identification for your business",
   seo: {
