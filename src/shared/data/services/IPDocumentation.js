@@ -16,7 +16,7 @@ export const IPDocumentation = {
   label: "IP Documentation",
   subtitle: "Get assistance preparing and organizing documentation relating to intellectual property ownership, use, and protection.",
   seo: {
-    title: "IP Documentation | Empowering U",
+    title: "IP Documentation | Empowering Biz",
     description: "Get assistance preparing and organizing documentation relating to intellectual property ownership, use, and protection.",
   },
 

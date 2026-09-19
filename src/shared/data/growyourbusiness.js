@@ -18,7 +18,7 @@ export const growYourBusiness = {
     subtitle: "Scale to your heart's content",
 
   seo: {
-    title: "Grow Your Business | Empowering U",
+    title: "Grow Your Business | Empowering Biz",
     description:
       "Build a stronger brand and reach more customers with website design, SEO, logo design, branding, and business mentoring in one complete growth package.",
   },

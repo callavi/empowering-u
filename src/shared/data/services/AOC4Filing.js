@@ -17,7 +17,7 @@ export const AOC4Filing = {
   label: "AOC-4 Filing",
   subtitle: "Get assistance preparing and filing applicable AOC-4 forms with the Registrar of Companies.",
   seo: {
-    title: "AOC-4 Filing | Empowering U",
+    title: "AOC-4 Filing | Empowering Biz",
     description: "Get assistance preparing and filing applicable AOC-4 forms with the Registrar of Companies.",
   },
 

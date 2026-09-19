@@ -25,7 +25,7 @@ export const projectReportBankLoan =
   label: "Project Report for Bank Loan",
   subtitle: "Prepare a clear project report for financing",
   seo: {
-    title: "Project Report for Bank Loan | Empowering U",
+    title: "Project Report for Bank Loan | Empowering Biz",
     description:
       "Prepare a structured project report covering your business, project costs, operations, and financial projections for loan discussions.",
   },

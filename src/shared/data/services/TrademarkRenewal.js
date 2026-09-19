@@ -16,7 +16,7 @@ export const TrademarkRenewal = {
   label: "Trademark Renewal",
   subtitle: "Get assistance with applicable trademark renewal formalities and supporting documentation.",
   seo: {
-    title: "Trademark Renewal | Empowering U",
+    title: "Trademark Renewal | Empowering Biz",
     description: "Get assistance with applicable trademark renewal formalities and supporting documentation.",
   },
 

@@ -16,7 +16,7 @@ export const TaxAuditSupport = {
   label: "Tax Audit Support",
   subtitle: "Get assistance organizing records and information required for applicable tax audit processes and coordination.",
   seo: {
-    title: "Tax Audit Support | Empowering U",
+    title: "Tax Audit Support | Empowering Biz",
     description: "Get assistance organizing records and information required for applicable tax audit processes and coordination.",
   },
 

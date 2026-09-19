@@ -213,8 +213,8 @@ export default function Checkout() {
         return (
             <main className={styles.page}>
                 <SEO
-                    title="Checkout | Empowering U"
-                    description="Complete your service order with Empowering U."
+                    title="Checkout | Empowering Biz"
+                    description="Complete your service order with Empowering Biz."
                     path="/checkout"
                     noIndex={true}
                 />

@@ -105,7 +105,7 @@ export default function PaymentSuccess() {
         return (
             <main className={styles.page}>
                 <SEO
-                    title="Payment Successful | Empowering U"
+                    title="Payment Successful | Empowering Biz"
                     description="Your payment has been successfully processed."
                     path="/payment/success"
                     noIndex={true}

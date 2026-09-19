@@ -49,13 +49,13 @@ export default function Navbar() {
               className={`flex items-center gap-3 ${styles.logo}`}
             >
               <img
-                src={logo}
-                alt="Empowering U Logo"
+                src="/logo.png"
+                alt="Empowering Biz Logo"
                 className="h-12 w-auto md:h-16"
               />
 
               <span className={styles.logoText}>
-                <span>Empowering U</span>
+                <span>Empowering Biz</span>
                 <span className={styles.highlight}>
                   An Empowering Minds Initiative
                 </span>

@@ -16,7 +16,7 @@ export const ProfessionalTaxRegistration = {
   label: "Professional Tax Registration",
   subtitle: "Get assistance with Professional Tax registration and the required setup formalities for eligible businesses and employers.",
   seo: {
-    title: "Professional Tax Registration | Empowering U",
+    title: "Professional Tax Registration | Empowering Biz",
     description: "Get assistance with Professional Tax registration and the required setup formalities for eligible businesses and employers.",
   },
 

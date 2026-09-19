@@ -18,8 +18,8 @@ export default function Home() {
   return (
     <>
     <SEO
-      title="Empowering U | Start & Grow Your Business in India"
-      description="Empowering U helps you start and grow your business in India with registration, compliance, digital, branding, and business growth services."
+      title="Empowering Biz | Start & Grow Your Business in India"
+      description="Empowering Biz helps you start and grow your business in India with registration, compliance, digital, branding, and business growth services."
       path="/"
     />
     <Hero hero={Heroes.homepage} />

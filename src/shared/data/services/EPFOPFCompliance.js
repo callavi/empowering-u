@@ -16,7 +16,7 @@ export const EPFOPFCompliance = {
   label: "EPFO / PF Compliance",
   subtitle: "Get assistance with applicable EPFO and provident fund compliance requirements for employers.",
   seo: {
-    title: "EPFO / PF Compliance | Empowering U",
+    title: "EPFO / PF Compliance | Empowering Biz",
     description: "Get assistance with applicable EPFO and provident fund compliance requirements for employers.",
   },
 

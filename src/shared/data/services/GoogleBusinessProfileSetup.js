@@ -24,7 +24,7 @@ export const googleBusinessProfileSetup =
   label: "Google Business Profile Setup",
   subtitle: "Help customers find your business on Google",
   seo: {
-  title: "Google Business Profile Setup | Empowering U",
+  title: "Google Business Profile Setup | Empowering Biz",
   description:
     "Set up and optimize your Google Business Profile so customers can find accurate business information and discover your business online.",
   },

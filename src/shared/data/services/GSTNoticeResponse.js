@@ -16,7 +16,7 @@ export const GSTNoticeResponse = {
   label: "GST Notices & Response Support",
   subtitle: "Get assistance reviewing GST notices and preparing an appropriate response based on the records and information available.",
   seo: {
-    title: "GST Notices & Response Support | Empowering U",
+    title: "GST Notices & Response Support | Empowering Biz",
     description: "Get assistance reviewing GST notices and preparing an appropriate response based on the records and information available.",
   },
 

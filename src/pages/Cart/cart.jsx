@@ -117,7 +117,7 @@ export default function Cart() {
         return (
             <main className={styles.page}>
                 <SEO
-                    title="Your Cart | Empowering U"
+                    title="Your Cart | Empowering Biz"
                     description="Review the services you've selected."
                     path="/cart"
                     noIndex={true}
@@ -152,7 +152,7 @@ export default function Cart() {
 return (
   <main className={styles.page}>
     <SEO
-      title="Your Cart | Empowering U"
+      title="Your Cart | Empowering Biz"
       description="Review the services you've selected."
       path="/cart"
       noIndex={true}

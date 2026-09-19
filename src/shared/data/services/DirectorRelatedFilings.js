@@ -16,7 +16,7 @@ export const DirectorRelatedFilings = {
   label: "Director-Related Filings",
   subtitle: "Get assistance with applicable MCA filings and documentation relating to company directors and changes in director information.",
   seo: {
-    title: "Director-Related Filings | Empowering U",
+    title: "Director-Related Filings | Empowering Biz",
     description: "Get assistance with applicable MCA filings and documentation relating to company directors and changes in director information.",
   },
 

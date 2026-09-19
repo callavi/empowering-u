@@ -23,10 +23,10 @@ export default function Footer() {
         <Link to="/" className={styles.logo}>
           <img
             src={logo}
-            alt="Empowering U Logo"
+            alt="Empowering Biz Logo"
           />
           <div className={styles.logoText}>
-            <span>Empowering U</span>
+            <span>Empowering Biz</span>
             <span className={styles.highlight}>
               An Empowering Minds Initiative
             </span>
@@ -34,7 +34,7 @@ export default function Footer() {
         </Link>
 
         <p className={styles.infoText}>
-          Empowering U helps entrepreneurs and businesses navigate
+          Empowering Biz helps entrepreneurs and businesses navigate
           registration, compliance, and growth with practical guidance
           and straightforward services.
         </p>
@@ -96,7 +96,7 @@ export default function Footer() {
     {/* Bottom Bar */}
     <div className={styles.bottomBar}>
       <p className={styles.infoText}>
-        © 2026 Empowering U. All rights reserved.
+        © 2026 Empowering Biz. All rights reserved.
       </p>
 
       <div className={styles.credits}>

@@ -24,7 +24,7 @@ export const msmeConsultation =
   label: "MSME Consultation",
   subtitle: "Get practical guidance for your MSME",
   seo: {
-  title: "MSME Consultation | Empowering U",
+  title: "MSME Consultation | Empowering Biz",
   description:
     "Get practical MSME guidance covering setup, compliance, documentation, and business growth to help you make informed decisions for your business.",
   },

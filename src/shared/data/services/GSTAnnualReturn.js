@@ -17,7 +17,7 @@ export const GSTAnnualReturn = {
   label: "GST Annual Return",
   subtitle: "Get assistance preparing and filing the applicable annual GST return using your year's GST records and reported transactions.",
   seo: {
-    title: "GST Annual Return | Empowering U",
+    title: "GST Annual Return | Empowering Biz",
     description: "Get assistance preparing and filing the applicable annual GST return using your year's GST records and reported transactions.",
   },
 

@@ -17,7 +17,7 @@ export const PayrollProcessing = {
   label: "Payroll Processing",
   subtitle: "Get assistance processing payroll using approved employee, attendance, salary, deduction, and compliance information.",
   seo: {
-    title: "Payroll Processing | Empowering U",
+    title: "Payroll Processing | Empowering Biz",
     description: "Get assistance processing payroll using approved employee, attendance, salary, deduction, and compliance information.",
   },
 

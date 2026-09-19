@@ -16,7 +16,7 @@ export const PrivacyPolicy = {
   label: "Privacy Policy",
   subtitle: "Get assistance preparing privacy documentation based on the information collected, business processes, and website or service operations described.",
   seo: {
-    title: "Privacy Policy | Empowering U",
+    title: "Privacy Policy | Empowering Biz",
     description: "Get assistance preparing privacy documentation based on the information collected, business processes, and website or service operations described.",
   },
 

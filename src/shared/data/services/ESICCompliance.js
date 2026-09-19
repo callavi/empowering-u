@@ -16,7 +16,7 @@ export const ESICCompliance = {
   label: "ESIC Compliance",
   subtitle: "Get assistance with applicable ESIC registration, contribution, and filing-related compliance requirements.",
   seo: {
-    title: "ESIC Compliance | Empowering U",
+    title: "ESIC Compliance | Empowering Biz",
     description: "Get assistance with applicable ESIC registration, contribution, and filing-related compliance requirements.",
   },
 

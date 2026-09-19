@@ -1,6 +1,6 @@
-# Empowering U
+# Empowering Biz
 
-Empowering U is a React-based business services website for helping entrepreneurs and businesses in India with registration, compliance, business support, and growth services.
+Empowering Biz is a React-based business services website for helping entrepreneurs and businesses in India with registration, compliance, business support, and growth services.
 
 The project combines a component-driven React frontend with Tailwind CSS for layout and responsive utilities, CSS Modules for component-specific styling, Motion for page transitions and animation, and Supabase for dynamic service/commerce data.
 
@@ -677,7 +677,7 @@ The checkout route is currently disabled/commented out, so the commerce layer is
 
 ## License
 
-This repository contains the Empowering U website and its associated application code.
+This repository contains the Empowering Biz website and its associated application code.
 
 See `LICENSE.md` for the repository's license information.
 

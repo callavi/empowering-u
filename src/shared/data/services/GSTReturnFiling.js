@@ -16,7 +16,7 @@ export const GSTReturnFiling = {
   label: "GST Return Filing",
   subtitle: "Get assistance with preparing and filing applicable monthly or quarterly GST returns based on your business records.",
   seo: {
-    title: "GST Return Filing | Empowering U",
+    title: "GST Return Filing | Empowering Biz",
     description: "Get assistance with preparing and filing applicable monthly or quarterly GST returns based on your business records.",
   },
 

@@ -25,7 +25,7 @@ export const basicWebsite =
   label: "Basic Website",
   subtitle: "Get a professional website for your business",
   seo: {
-  title: "Basic Website Design | Empowering U",
+  title: "Basic Website Design | Empowering Biz",
   description:
     "Get a clean, professional website that helps your business build credibility, showcase services, connect with customers, and grow its online presence.",
   },

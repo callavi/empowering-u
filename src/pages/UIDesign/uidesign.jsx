@@ -28,8 +28,8 @@ export default function UIDesign() {
   return (
     <main>
       <SEO
-        title="Design System | Empowering U"
-        description="Empowering U design system."
+        title="Design System | Empowering Biz"
+        description="Empowering Biz design system."
         path="/uidesign"
         noIndex={true}
       />

@@ -16,7 +16,7 @@ export const WebsiteComplianceDocumentation = {
   label: "Website Compliance Documentation",
   subtitle: "Get assistance organizing and preparing standard website compliance documentation based on the website's business model and information practices.",
   seo: {
-    title: "Website Compliance Documentation | Empowering U",
+    title: "Website Compliance Documentation | Empowering Biz",
     description: "Get assistance organizing and preparing standard website compliance documentation based on the website's business model and information practices.",
   },
 

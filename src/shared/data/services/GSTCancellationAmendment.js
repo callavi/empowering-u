@@ -16,7 +16,7 @@ export const GSTCancellationAmendment = {
   label: "GST Cancellation / Amendment",
   subtitle: "Get assistance with applicable GST registration amendments or cancellation formalities and supporting documentation.",
   seo: {
-    title: "GST Cancellation / Amendment | Empowering U",
+    title: "GST Cancellation / Amendment | Empowering Biz",
     description: "Get assistance with applicable GST registration amendments or cancellation formalities and supporting documentation.",
   },
 

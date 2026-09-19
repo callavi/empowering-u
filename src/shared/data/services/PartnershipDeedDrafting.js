@@ -23,7 +23,7 @@ export const partnershipDeedDrafting =
   label: "Partnership Deed Drafting",
   subtitle: "Document your partnership terms clearly",
   seo: {
-  title: "Partnership Deed Drafting | Empowering U",
+  title: "Partnership Deed Drafting | Empowering Biz",
   description:
     "Prepare a clear partnership deed that records the agreed terms between partners and helps define how the partnership will operate.",
   },

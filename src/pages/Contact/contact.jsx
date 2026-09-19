@@ -13,8 +13,8 @@ export default function Contact() {
   return (
     <>
     <SEO
-      title="Contact Empowering U | Get Business Support"
-      description="Have questions about starting, registering, or growing your business? Contact Empowering U and get practical guidance for your next step."
+      title="Contact Empowering Biz | Get Business Support"
+      description="Have questions about starting, registering, or growing your business? Contact Empowering Biz and get practical guidance for your next step."
       path="/contact"
     />
     <Hero hero={Heroes.contact} />

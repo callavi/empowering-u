@@ -17,7 +17,7 @@ export const TermsConditions = {
   label: "Terms & Conditions",
   subtitle: "Get assistance preparing business terms and conditions appropriate to the services, products, and operating model provided.",
   seo: {
-    title: "Terms & Conditions | Empowering U",
+    title: "Terms & Conditions | Empowering Biz",
     description: "Get assistance preparing business terms and conditions appropriate to the services, products, and operating model provided.",
   },
 

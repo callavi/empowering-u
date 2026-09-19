@@ -103,7 +103,7 @@ export default function PaymentFailure() {
             
             <main className={styles.page}>
                 <SEO
-                    title="Payment Failed | Empowering U"
+                    title="Payment Failed | Empowering Biz"
                     description="Your payment could not be completed."
                     path="/payment/failure"
                     noIndex={true}

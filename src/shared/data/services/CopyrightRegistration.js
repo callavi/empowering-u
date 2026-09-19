@@ -26,7 +26,7 @@ export const copyrightRegistration =
   label: "Copyright Registration",
   subtitle: "Protect your original creative work",
   seo: {
-  title: "Copyright Registration | Empowering U",
+  title: "Copyright Registration | Empowering Biz",
   description:
     "Get assistance registering eligible original creative works and organizing the documents required for your copyright registration application.",
   },

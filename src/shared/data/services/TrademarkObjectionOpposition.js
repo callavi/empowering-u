@@ -15,7 +15,7 @@ export const TrademarkObjectionOpposition = {
   label: "Trademark Objection / Opposition Support",
   subtitle: "Get assistance reviewing trademark objections or opposition matters and organizing information for an appropriate response.",
   seo: {
-    title: "Trademark Objection / Opposition Support | Empowering U",
+    title: "Trademark Objection / Opposition Support | Empowering Biz",
     description: "Get assistance reviewing trademark objections or opposition matters and organizing information for an appropriate response.",
   },
 

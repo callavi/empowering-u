@@ -17,7 +17,7 @@ export const NDAConfidentialityAgreements = {
   label: "NDA / Confidentiality Agreements",
   subtitle: "Get assistance preparing confidentiality documentation for business relationships where sensitive information needs defined protections.",
   seo: {
-    title: "NDA / Confidentiality Agreements | Empowering U",
+    title: "NDA / Confidentiality Agreements | Empowering Biz",
     description: "Get assistance preparing confidentiality documentation for business relationships where sensitive information needs defined protections.",
   },
 

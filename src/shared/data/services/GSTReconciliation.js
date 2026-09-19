@@ -17,7 +17,7 @@ export const GSTReconciliation = {
   label: "GST Reconciliation",
   subtitle: "Review GST records and reported transactions to help identify differences and support reconciliation before filing or reporting.",
   seo: {
-    title: "GST Reconciliation | Empowering U",
+    title: "GST Reconciliation | Empowering Biz",
     description: "Review GST records and reported transactions to help identify differences and support reconciliation before filing or reporting.",
   },
 

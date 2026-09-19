@@ -17,7 +17,7 @@ export const AnnualROCFilings = {
   label: "Annual ROC Filings",
   subtitle: "Get assistance with applicable annual ROC filing requirements and preparation of supporting information.",
   seo: {
-    title: "Annual ROC Filings | Empowering U",
+    title: "Annual ROC Filings | Empowering Biz",
     description: "Get assistance with applicable annual ROC filing requirements and preparation of supporting information.",
   },
 

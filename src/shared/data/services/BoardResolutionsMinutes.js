@@ -16,7 +16,7 @@ export const BoardResolutionsMinutes = {
   label: "Board Resolutions & Minutes",
   subtitle: "Get assistance preparing business documentation for board decisions, resolutions, and meeting minutes.",
   seo: {
-    title: "Board Resolutions & Minutes | Empowering U",
+    title: "Board Resolutions & Minutes | Empowering Biz",
     description: "Get assistance preparing business documentation for board decisions, resolutions, and meeting minutes.",
   },
 

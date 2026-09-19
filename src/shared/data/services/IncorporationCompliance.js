@@ -15,7 +15,7 @@ export const IncorporationCompliance = {
   label: "Company Incorporation-Related Compliance",
   subtitle: "Get assistance with compliance and documentation requirements arising during or immediately following company incorporation.",
   seo: {
-    title: "Company Incorporation-Related Compliance | Empowering U",
+    title: "Company Incorporation-Related Compliance | Empowering Biz",
     description: "Get assistance with compliance and documentation requirements arising during or immediately following company incorporation.",
   },
 

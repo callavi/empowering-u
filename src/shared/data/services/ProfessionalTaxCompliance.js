@@ -17,7 +17,7 @@ export const ProfessionalTaxCompliance = {
   label: "Professional Tax Compliance",
   subtitle: "Get assistance with ongoing Professional Tax compliance, applicable filings, and related employer records.",
   seo: {
-    title: "Professional Tax Compliance | Empowering U",
+    title: "Professional Tax Compliance | Empowering Biz",
     description: "Get assistance with ongoing Professional Tax compliance, applicable filings, and related employer records.",
   },
 

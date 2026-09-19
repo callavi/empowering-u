@@ -25,7 +25,7 @@ export const trademarkRegistration =
   label: "Trademark Registration",
   subtitle: "Protect your brand identity",
   seo: {
-  title: "Trademark Registration | Empowering U",
+  title: "Trademark Registration | Empowering Biz",
   description:
     "Get assistance with trademark registration to help protect distinctive elements of your business name, logo, or brand identity.",
   },

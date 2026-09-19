@@ -16,7 +16,7 @@ export const IncomeTaxReturnFiling = {
   label: "Income Tax Return Filing",
   subtitle: "Get assistance preparing and filing the applicable income tax return using the information and records provided.",
   seo: {
-    title: "Income Tax Return Filing | Empowering U",
+    title: "Income Tax Return Filing | Empowering Biz",
     description: "Get assistance preparing and filing the applicable income tax return using the information and records provided.",
   },
 

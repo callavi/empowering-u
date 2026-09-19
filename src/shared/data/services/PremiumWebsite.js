@@ -26,7 +26,7 @@ export const premiumWebsite =
   label: "Premium Website",
   subtitle: "Build a polished website designed for growth",
   seo: {
-  title: "Premium Website Design | Empowering U",
+  title: "Premium Website Design | Empowering Biz",
   description:
     "Build a polished, customized website with stronger branding, interactions, and business-focused functionality for a stronger digital presence.",
   },

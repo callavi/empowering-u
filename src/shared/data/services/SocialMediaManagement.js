@@ -24,7 +24,7 @@ export const socialMediaManagement =
   label: "Social Media Management",
   subtitle: "Build a consistent social media presence",
   seo: {
-    title: "Social Media Management | Empowering U",
+    title: "Social Media Management | Empowering Biz",
     description:
       "Build a consistent social media presence with planned content and ongoing management to keep your business visible and connected with its audience.",
   },

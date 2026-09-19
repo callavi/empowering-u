@@ -16,7 +16,7 @@ export const AdvanceTaxCalculations = {
   label: "Advance Tax Calculations",
   subtitle: "Get assistance estimating applicable advance tax obligations based on available income and tax information.",
   seo: {
-    title: "Advance Tax Calculations | Empowering U",
+    title: "Advance Tax Calculations | Empowering Biz",
     description: "Get assistance estimating applicable advance tax obligations based on available income and tax information.",
   },
 

@@ -17,7 +17,7 @@ export const LabourLawRegistrationsFilings = {
   label: "Labour Law Registrations & Filings",
   subtitle: "Get assistance identifying and completing applicable labour-law registrations and filing requirements.",
   seo: {
-    title: "Labour Law Registrations & Filings | Empowering U",
+    title: "Labour Law Registrations & Filings | Empowering Biz",
     description: "Get assistance identifying and completing applicable labour-law registrations and filing requirements.",
   },
 

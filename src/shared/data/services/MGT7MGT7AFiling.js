@@ -16,7 +16,7 @@ export const MGT7MGT7AFiling = {
   label: "MGT-7 / MGT-7A Filing",
   subtitle: "Get assistance preparing and filing the applicable annual return for a company with the Registrar of Companies.",
   seo: {
-    title: "MGT-7 / MGT-7A Filing | Empowering U",
+    title: "MGT-7 / MGT-7A Filing | Empowering Biz",
     description: "Get assistance preparing and filing the applicable annual return for a company with the Registrar of Companies.",
   },
 

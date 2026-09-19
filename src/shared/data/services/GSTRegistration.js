@@ -31,7 +31,7 @@ export const gst =
 
     // GSTRegistration.js
     seo: {
-      title: "GST Registration | Empowering U",
+      title: "GST Registration | Empowering Biz",
       description:
         "Get assistance with GST registration for your business, from document preparation and application support to receiving your GST registration certificate.",
     },

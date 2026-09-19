@@ -56,7 +56,7 @@ export default function SEO({
 
       <meta
         property="og:site_name"
-        content="Empowering U"
+        content="Empowering Biz"
       />
 
       <meta

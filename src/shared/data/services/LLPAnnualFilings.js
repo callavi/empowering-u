@@ -16,7 +16,7 @@ export const LLPAnnualFilings = {
   label: "LLP Annual Filings",
   subtitle: "Get assistance preparing and filing applicable annual LLP compliance forms and supporting information.",
   seo: {
-    title: "LLP Annual Filings | Empowering U",
+    title: "LLP Annual Filings | Empowering Biz",
     description: "Get assistance preparing and filing applicable annual LLP compliance forms and supporting information.",
   },
 

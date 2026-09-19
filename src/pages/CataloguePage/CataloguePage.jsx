@@ -76,8 +76,8 @@ if (loading) {
   return (
     <>
       <SEO
-        title="Business Services | Empowering U"
-        description="Explore business registration, compliance, digital, branding, and growth services from Empowering U, designed to help you start, build, and grow your business."
+        title="Business Services | Empowering Biz"
+        description="Explore business registration, compliance, digital, branding, and growth services from Empowering Biz, designed to help you start, build, and grow your business."
         path="/catalogue"
       />
       <SEO

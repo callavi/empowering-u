@@ -16,7 +16,7 @@ export const EmployeeDocumentation = {
   label: "Employee Documentation",
   subtitle: "Get assistance organizing and preparing standard employee documentation and records for business use.",
   seo: {
-    title: "Employee Documentation | Empowering U",
+    title: "Employee Documentation | Empowering Biz",
     description: "Get assistance organizing and preparing standard employee documentation and records for business use.",
   },
 

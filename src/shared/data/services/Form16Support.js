@@ -17,7 +17,7 @@ export const Form16Support = {
   label: "Form 16 / 16A Support",
   subtitle: "Get assistance with preparing or organizing information required for Form 16 or Form 16A documentation.",
   seo: {
-    title: "Form 16 / 16A Support | Empowering U",
+    title: "Form 16 / 16A Support | Empowering Biz",
     description: "Get assistance with preparing or organizing information required for Form 16 or Form 16A documentation.",
   },
 

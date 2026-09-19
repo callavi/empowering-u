@@ -16,7 +16,7 @@ export const BusinessAgreements = {
   label: "Business Agreements",
   subtitle: "Get assistance preparing standard business agreements based on the commercial arrangement and information provided.",
   seo: {
-    title: "Business Agreements | Empowering U",
+    title: "Business Agreements | Empowering Biz",
     description: "Get assistance preparing standard business agreements based on the commercial arrangement and information provided.",
   },
 

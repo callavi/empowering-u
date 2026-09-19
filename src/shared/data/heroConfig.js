@@ -99,7 +99,7 @@ contact: {
   ],
 },
 about: {
-  badge: "About Empowering U",
+  badge: "About Empowering Biz",
 
   title: {
     before: "Starting a business shouldn't mean figuring everything out",
@@ -107,7 +107,7 @@ about: {
   },
 
   description:
-    "Empowering U is an initiative by Empowering Minds created to help first-time entrepreneurs turn their ideas into real businesses — and give them the support to keep building and growing.",
+    "Empowering Biz is an initiative by Empowering Minds created to help first-time entrepreneurs turn their ideas into real businesses — and give them the support to keep building and growing.",
 
   primaryActions: [
     {

@@ -20,7 +20,7 @@ export function WebsiteStructuredData() {
           "@context": "https://schema.org",
           "@type": "WebSite",
           "@id": WEBSITE_ID,
-          name: "Empowering U",
+          name: "Empowering Biz",
           url: SITE_URL,
           publisher: {
             "@id": BUSINESS_ID,
@@ -30,7 +30,7 @@ export function WebsiteStructuredData() {
           "@context": "https://schema.org",
           "@type": "LocalBusiness",
           "@id": BUSINESS_ID,
-          name: "Empowering U",
+          name: "Empowering Biz",
           url: SITE_URL,
           telephone: "+917908466757",
           email: "empoweringminds19@gmail.com",

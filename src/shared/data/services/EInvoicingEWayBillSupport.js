@@ -17,7 +17,7 @@ export const EInvoicingEWayBillSupport = {
   label: "E-Invoicing / E-Way Bill Support",
   subtitle: "Get assistance with applicable e-invoicing and e-way bill processes for GST-compliant business transactions.",
   seo: {
-    title: "E-Invoicing / E-Way Bill Support | Empowering U",
+    title: "E-Invoicing / E-Way Bill Support | Empowering Biz",
     description: "Get assistance with applicable e-invoicing and e-way bill processes for GST-compliant business transactions.",
   },
 

@@ -19,8 +19,8 @@ export default function About() {
   return (
     <>
     <SEO
-    title="About Empowering U | Business Support for Entrepreneurs"
-    description="Learn how Empowering U helps first-time entrepreneurs turn their ideas into businesses with practical guidance, simple processes, and support from start to growth."
+    title="About Empowering Biz | Business Support for Entrepreneurs"
+    description="Learn how Empowering Biz helps first-time entrepreneurs turn their ideas into businesses with practical guidance, simple processes, and support from start to growth."
     path="/about"
     />
     <Hero hero={Heroes.about} />

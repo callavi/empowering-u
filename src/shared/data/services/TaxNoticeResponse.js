@@ -16,7 +16,7 @@ export const TaxNoticeResponse = {
   label: "Tax Notices & Response Assistance",
   subtitle: "Get assistance reviewing income-tax related notices and preparing a response based on available records.",
   seo: {
-    title: "Tax Notices & Response Assistance | Empowering U",
+    title: "Tax Notices & Response Assistance | Empowering Biz",
     description: "Get assistance reviewing income-tax related notices and preparing a response based on available records.",
   },
 

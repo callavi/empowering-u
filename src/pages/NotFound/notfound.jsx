@@ -11,7 +11,7 @@ export default function NotFound() {
     return (
         <main className={styles.page}>
             <SEO
-                title="Page Not Found | Empowering U"
+                title="Page Not Found | Empowering Biz"
                 description="The page you're looking for could not be found."
                 path="/404"
                 noIndex={true}

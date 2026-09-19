@@ -17,7 +17,7 @@ export const EmploymentAgreements = {
   label: "Employment Agreements",
   subtitle: "Get assistance preparing employment agreements based on the role, compensation, responsibilities, and agreed employment terms.",
   seo: {
-    title: "Employment Agreements | Empowering U",
+    title: "Employment Agreements | Empowering Biz",
     description: "Get assistance preparing employment agreements based on the role, compensation, responsibilities, and agreed employment terms.",
   },
 

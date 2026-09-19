@@ -27,7 +27,7 @@ export const panTanRegistration =
   label: "PAN & TAN Registration",
   subtitle: "Get essential tax identification for your business",
   seo: {
-  title: "PAN & TAN Registration | Empowering U",
+  title: "PAN & TAN Registration | Empowering Biz",
   description:
     "Get assistance obtaining PAN and TAN registrations required for applicable business and tax activities, with guidance through the process.",
   },

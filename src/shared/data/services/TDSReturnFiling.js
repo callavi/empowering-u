@@ -15,7 +15,7 @@ export const TDSReturnFiling = {
   label: "TDS Return Filing",
   subtitle: "Get assistance preparing and filing applicable TDS returns using deduction and payment records.",
   seo: {
-    title: "TDS Return Filing | Empowering U",
+    title: "TDS Return Filing | Empowering Biz",
     description: "Get assistance preparing and filing applicable TDS returns using deduction and payment records.",
   },
 

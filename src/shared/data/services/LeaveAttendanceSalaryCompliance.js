@@ -16,7 +16,7 @@ export const LeaveAttendanceSalaryCompliance = {
   label: "Leave, Attendance & Salary Compliance",
   subtitle: "Get assistance organizing leave, attendance, and salary records to support consistent payroll and employee compliance processes.",
   seo: {
-    title: "Leave, Attendance & Salary Compliance | Empowering U",
+    title: "Leave, Attendance & Salary Compliance | Empowering Biz",
     description: "Get assistance organizing leave, attendance, and salary records to support consistent payroll and employee compliance processes.",
   },
 

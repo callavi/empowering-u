@@ -18,7 +18,7 @@ export const startYourBusiness = {
 
 
   seo: {
-    title: "Start Your Business | Empowering U",
+    title: "Start Your Business | Empowering Biz",
     description:
       "Start your business the right way with company registration, GST, PAN, TAN, MSME registration, business email setup, and expert guidance—all in one convenient package.",
   },

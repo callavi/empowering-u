@@ -16,7 +16,7 @@ export const VendorAgreements = {
   label: "Vendor Agreements",
   subtitle: "Get assistance preparing vendor agreements covering the commercial relationship, responsibilities, and agreed terms.",
   seo: {
-    title: "Vendor Agreements | Empowering U",
+    title: "Vendor Agreements | Empowering Biz",
     description: "Get assistance preparing vendor agreements covering the commercial relationship, responsibilities, and agreed terms.",
   },
 

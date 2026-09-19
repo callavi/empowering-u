@@ -52,7 +52,7 @@ export const aboutContent = {
 
   whyEmpoweringU: {
     benefits: {
-      headline: "Why Empowering U?",
+      headline: "Why Empowering Biz?",
       features: [
         {
           id: "we-explain",
@@ -89,20 +89,20 @@ export const aboutContent = {
   empoweringMinds: {
     heading: "An Initiative by Empowering Minds",
     paragraphs: [
-      "Empowering U is an initiative by Empowering Minds, a Human Capital Development initiative focused on strengthening people, institutions, and organisations through structured behavioural, emotional, and mind-based transformation.",
+      "Empowering Biz is an initiative by Empowering Minds, a Human Capital Development initiative focused on strengthening people, institutions, and organisations through structured behavioural, emotional, and mind-based transformation.",
       "Empowering Minds believes that meaningful development moves people from awareness to capability, confidence, impact, and sustainable change.",
-      "Empowering U brings that philosophy into entrepreneurship — helping individuals build the understanding, confidence, and practical capability they need to start and grow a business.",
+      "Empowering Biz brings that philosophy into entrepreneurship — helping individuals build the understanding, confidence, and practical capability they need to start and grow a business.",
     ],
   },
 
 homepage: {
-    eyebrow: "About Empowering U",
+    eyebrow: "About Empowering Biz",
     heading: "Helping you turn an idea into a",
     accent: "business.",
     description:
-      "Empowering U is an initiative by Empowering Minds created to help first-time entrepreneurs navigate the practical journey of starting a business and take their next steps toward growth.",
+      "Empowering Biz is an initiative by Empowering Minds created to help first-time entrepreneurs navigate the practical journey of starting a business and take their next steps toward growth.",
     empoweringMinds:
-      "Built on Empowering Minds' people-focused approach to awareness, capability, confidence, and sustainable impact, Empowering U brings that philosophy into entrepreneurship.",
+      "Built on Empowering Minds' people-focused approach to awareness, capability, confidence, and sustainable impact, Empowering Biz brings that philosophy into entrepreneurship.",
     link: {
       label: "Learn more about us",
       to: "/about",
