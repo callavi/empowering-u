@@ -7,7 +7,7 @@ const projectRoot = resolve(__dirname, "..");
 const servicesIndexPath = resolve(projectRoot, "src/shared/data/services/index.js");
 const outputPath = resolve(projectRoot, "dist/sitemap.xml");
 
-const SITE_URL = "https://empoweringu.theempoweringminds.com";
+const SITE_URL = "https://empoweringbiz.theempoweringminds.com";
 
 const staticRoutes = [
   "/",
