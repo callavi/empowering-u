@@ -159,6 +159,30 @@ export default function Navbar() {
           <Button variant="primary">
             Contact Us
           </Button>
+          <Button
+              variant="icon"
+              as={NavLink}
+              to="/cart"
+              className={styles.cartLink}
+            >
+              <ShoppingCart />
+
+              {cartCount > 0 && (
+                <motion.span
+                  key={cartCount}
+                  className={styles.cartBadge}
+                  initial={{ scale: 0.5 }}
+                  animate={{ scale: 1 }}
+                  transition={{
+                    type: "spring",
+                    stiffness: 500,
+                    damping: 20,
+                  }}
+                >
+                  {cartCount}
+                </motion.span>
+              )}
+            </Button>
         </NavLink>
       </nav>
     </header>
